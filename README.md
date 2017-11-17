@@ -1,6 +1,4 @@
-# vthackswww2018
-
-> VTHacks 2018 Website
+# VTHacks 2018 Website
 
 ## Build Setup
 
