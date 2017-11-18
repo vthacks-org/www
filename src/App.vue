@@ -11,7 +11,8 @@ export default {
 }
 </script>
 
-<style>
+<!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
