@@ -5,8 +5,8 @@
 
 <script>
 export default {
-  name: 'MapSection'
-}
+  name: 'MapSection',
+};
 </script>
 
 <!-- Add "scoped" attribute to limit SCSS to this component only -->

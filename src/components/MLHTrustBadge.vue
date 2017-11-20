@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'MLHTrustBadge'
-}
+  name: 'MLHTrustBadge',
+};
 </script>
