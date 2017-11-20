@@ -28,5 +28,6 @@ module.exports = {
   globals: {
     "$": true,
     "jQuery": true,
+    "google": true,
   }
 }
