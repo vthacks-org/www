@@ -11,8 +11,8 @@
 
 <script>
 export default {
-  name: 'SplashSection'
-}
+  name: 'SplashSection',
+};
 </script>
 
 <!-- Add "scoped" attribute to limit SCSS to this component only -->

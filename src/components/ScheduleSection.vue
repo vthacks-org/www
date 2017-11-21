@@ -5,8 +5,8 @@
 
 <script>
 export default {
-  name: 'ScheduleSection'
-}
+  name: 'ScheduleSection',
+};
 </script>
 
 <!-- Add "scoped" attribute to limit SCSS to this component only -->

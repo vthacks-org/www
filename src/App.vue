@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'app'
-}
+  name: 'app',
+};
 </script>
 
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
