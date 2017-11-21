@@ -19,7 +19,6 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../styles/colors';
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 .splash-section {
   width: 100vw;
