@@ -1,0 +1,18 @@
+/* This is a SCSS variable file for storing
+ * colors used across the website. Colors can
+ * be accessed from a component for example by
+ * importing the scss file as seen below:
+ *    @import '../styles/colors';
+ * Then colors can be accessed by their name:
+ *    div { color: $vth-red; }
+ */
+
+/* VTHacks Colors */
+$vth-red: #ec4150;
+$vth-blue: #1bcffc;
+
+/* Background Colors */
+$background-splash: #333;
+
+/* Text Colors */
+$text-primary: #fff;
