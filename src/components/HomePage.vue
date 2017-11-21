@@ -9,11 +9,12 @@
 </template>
 
 <script>
-import MLHTrustBadge from './MLHTrustBadge.vue'
-import SplashSection from './SplashSection.vue'
-import AboutSection from './AboutSection.vue'
-import ScheduleSection from './ScheduleSection.vue'
-import MapSection from './MapSection.vue'
+import MLHTrustBadge from './MLHTrustBadge.vue';
+import SplashSection from './SplashSection.vue';
+import AboutSection from './AboutSection.vue';
+import ScheduleSection from './ScheduleSection.vue';
+import MapSection from './MapSection.vue';
+
 export default {
   name: 'HomePage',
   components: {
@@ -21,9 +22,9 @@ export default {
     SplashSection,
     AboutSection,
     ScheduleSection,
-    MapSection
-  }
-}
+    MapSection,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
