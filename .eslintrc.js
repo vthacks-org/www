@@ -24,11 +24,9 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'import/no-unresolved': 0,
-    // Were developing on windows so this is necessary
-    'linebreak-style': ['error', 'windows'],
   },
   globals: {
     "$": true,
-    "jQuery": true
+    "jQuery": true,
   }
 }
