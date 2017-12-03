@@ -1,5 +1,5 @@
 <template>
-  <div class="splash-section">
+  <div id="splash-section">
     <div class="centered-content">
       <div>VTHacks V</div>
       <img class="vthacks-logo" src="src/assets/vthacks-logo.png">
@@ -21,7 +21,7 @@ export default {
 @import '../styles/colors';
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
-.splash-section {
+#splash-section {
   width: 100vw;
   min-height: 400px;
   background-color: $background-splash;
@@ -30,7 +30,7 @@ export default {
 .centered-content {
   text-align: center;
   padding: 120px 20px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', monospace;
   color: $text-primary;
   font-size: 2em;
   line-height: 1.5em;
