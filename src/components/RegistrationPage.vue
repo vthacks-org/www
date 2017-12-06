@@ -114,13 +114,14 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-  @import '../styles/form-colors.scss';
+  @import '../styles/form-colors';
+  @import '../styles/vars';
 
   .registration-page {
     background-color: black;
     width: 100vw;
     height: 100vh;
-    font-family: 'VT323', monospace;
+    font-family: $font-VT232;
 
     display: flex;
     align-items: center;

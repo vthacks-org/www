@@ -23,8 +23,8 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-  @import '../styles/form-colors.scss';
-  @import url('https://fonts.googleapis.com/css?family=VT323');
+  @import '../styles/form-colors';
+  @import '../styles/vars';
 
   .TerminalCheckbox {
     padding: 5px;

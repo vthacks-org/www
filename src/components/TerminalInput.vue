@@ -27,8 +27,8 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-  @import '../styles/form-colors.scss';
-  @import url('https://fonts.googleapis.com/css?family=VT323');
+  @import '../styles/form-colors';
+  @import '../styles/vars';
 
   .TerminalInput {
     padding: 5px;
@@ -40,7 +40,7 @@ export default {
     border: none;
     background-color: rgba(0, 0, 0, 0);
     letter-spacing: 2px;
-    font-family: 'VT323', monospace;
+    font-family: $terminal-font-VT232;
     font-size: $terminal-font-size;
   }
 

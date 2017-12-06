@@ -19,7 +19,7 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../styles/colors';
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import '../styles/vars';
 
 .splash-section {
   width: 100vw;
@@ -30,7 +30,7 @@ export default {
 .centered-content {
   text-align: center;
   padding: 120px 20px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: $font-2P;
   color: $text-primary;
   font-size: 2em;
   line-height: 1.5em;
