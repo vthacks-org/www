@@ -40,7 +40,7 @@ export default {
     border: none;
     background-color: rgba(0, 0, 0, 0);
     letter-spacing: 2px;
-    font-family: $terminal-font-VT232;
+    font-family: $font-VT232;
     font-size: $terminal-font-size;
   }
 
