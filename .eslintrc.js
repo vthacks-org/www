@@ -24,5 +24,10 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'import/no-unresolved': 0,
+  },
+  globals: {
+    "$": true,
+    "jQuery": true,
+    "google": true,
   }
 }
