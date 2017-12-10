@@ -61,6 +61,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .navigation-content {
@@ -71,7 +72,7 @@ export default {
   height: 44px;
   display: flex;
   justify-content: center;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.8);
 }
 
 .navigation-link {
@@ -127,7 +128,6 @@ export default {
     .navigation-content {
       display: flex;
       height: 100%;
-      background-color: rgba(0,0,0,0.8);
       flex-direction: column;
       padding: 20px;
     }
