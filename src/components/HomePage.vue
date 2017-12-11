@@ -39,4 +39,9 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
+#homepage {
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
 </style>
