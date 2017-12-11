@@ -9,3 +9,11 @@ export default {
   name: 'MLHTrustBadge',
 };
 </script>
+
+<style lang="scss" scoped>
+@media(max-width: 480px) {
+  #mlh-trust-badge {
+    right: 8px !important;
+  }
+}
+</style>
