@@ -1,5 +1,5 @@
 <template>
-  <div class="about-section">
+  <div id="about-section">
     <div class="vth-logo-term">
       <img src="src/assets/vthacks-logo.png">
       <div class="specs">
@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/colors";
 
-.about-section {
+#about-section {
   position: relative;
   background-color: $vth-term-background;
   padding: 40px;
