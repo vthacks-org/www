@@ -28,6 +28,7 @@ export default {
           mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
             'styled_map'],
         },
+        gestureHandling: 'cooperative',
       });
       map.mapTypes.set('styled_map', styledMapType);
       map.setMapTypeId('styled_map');
