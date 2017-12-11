@@ -3,7 +3,6 @@
     <Navigation></Navigation>
     <MLHTrustBadge></MLHTrustBadge>
     <SplashSection></SplashSection>
-    <MapSection></MapSection>
     <AboutSection></AboutSection>
     <ScheduleSection></ScheduleSection>
     <MapSection></MapSection>
