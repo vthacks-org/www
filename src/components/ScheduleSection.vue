@@ -249,29 +249,29 @@ export default {
     #neon-sign-off {
       position: absolute;
       top: 0;
-      animation: animation2 3s infinite;
+      animation: animation2 4s infinite;
     }
     #neon-sign-on {
-      animation: animation1 3s infinite;
+      animation: animation1 4s infinite;
     }
   }
 
   @keyframes animation1 {
     0% { opacity: 0; }
-    80% { opacity: 0; }
-    85% { opacity: 0.95; }
-    90% { opacity: 0; }
-    95% { opacity: 0.95; }
-    100% { opacity: 0;}
+    60% { opacity: 0; }
+    65% { opacity: 0.95; }
+    70% { opacity: 0.85;}
+    85% { opacity: 0; }
+    100% { opacity: 0.85;}
   }
 
   @keyframes animation2 {
     0% { opacity: 0.5; }
-    80% { opacity: 0.5; }
-    85% { opacity: 0; }
-    90% { opacity: 0.5; }
-    95% { opacity: 0; }
-    100% { opacity: 0.5; }
+    60% { opacity: 0.5; }
+    65% { opacity: 0; }
+    70% { opacity: 0;}
+    85% { opacity: 0.5; }
+    100% { opacity: 0;}
   }
 
   /* This probably will be going soon */
