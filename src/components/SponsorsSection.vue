@@ -1,21 +1,21 @@
 <template>
-  <div id="about-section">
+  <div id="sponsors-section">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AboutSection',
+  name: 'SponsorsSection',
 };
 </script>
 
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-#about-section {
+#sponsors-section {
   width: 100vw;
   height: 80vh;
   min-height: 400px;
-  background-color: #444;
+  background-color: #777;
 }
 </style>
