@@ -20,7 +20,6 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../styles/colors';
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 $splash-min-width: 600px;
 
 @font-face {
@@ -39,16 +38,16 @@ $splash-min-width: 600px;
 
 #splash-logo {
   position: absolute;
-  width: 18%;
+  width: 23%;
   left: 50%;
-  top: 60px;
+  top: 5%;
   transform: translateX(-50%);
 }
 
 #splash-date {
   position: absolute;
   color: white;
-  top: 48px;
+  top: 16px;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
@@ -87,20 +86,14 @@ $splash-min-width: 600px;
   line-height: 1.5em;
 }
 
-.vthacks-logo {
-  width: 300px;
-  max-width: 60vw;
-}
-
 @media (max-width: $splash-min-width) {
   #splash-section {
     height: calc(600px * 2 / 3);
-    margin-top: 0;
   }
 
   #splash-logo {
-    width: 100px;
-    top: 60px;
+    width: 130px;
+    top: 30px;
   }
 
   #splash-apply {
@@ -109,6 +102,10 @@ $splash-min-width: 600px;
 }
 
 @media (max-width: 480px) {
+  #splash-section {
+    margin-top: 0;
+  }
+
   #splash-date {
     top: 8px;
   }
