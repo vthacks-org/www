@@ -1,5 +1,5 @@
 <template>
-  <div class="schedule-section">
+  <div id="schedule-section">
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-.schedule-section {
+#schedule-section {
   width: 100vw;
   height: 80vh;
   min-height: 400px;

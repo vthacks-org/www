@@ -1,5 +1,5 @@
 <template>
-  <div class="splash-section">
+  <div id="splash-section">
     <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
     <img id="splash-background" src="src/assets/splash-background.png">
     <img id="splash-grid" src="src/assets/splash-grid.png">
@@ -69,18 +69,19 @@ $splash-min-width: 600px;
   font-size: 64px;
 }
 
-.splash-section {
+#splash-section {
   position: relative;
   width: 100%;
   height: calc(100vw * 2 / 3);
   overflow: hidden;
   background-color: $background-splash;
+  margin-top: 44px;
 }
 
 .centered-content {
   text-align: center;
   padding: 120px 20px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', monospace;
   color: $text-primary;
   font-size: 2em;
   line-height: 1.5em;
@@ -92,8 +93,9 @@ $splash-min-width: 600px;
 }
 
 @media (max-width: $splash-min-width) {
-  .splash-section {
+  #splash-section {
     height: calc(600px * 2 / 3);
+    margin-top: 0;
   }
 
   #splash-logo {
