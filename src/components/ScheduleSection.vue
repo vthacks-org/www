@@ -6,7 +6,8 @@
     <p class="warn-term"> $> WARN: This schedule is just preliminary. It will update more as we get closer to the hackathon</p>
     <div class="schedule-breakdown">
       <div class="neon-sign">
-          <img src="../assets/neon_sign.svg"/>
+          <img id="neon-sign-on" src="../assets/neon_sign.svg"/>
+          <img id="neon-sign-off" src="../assets/neon_sign_off.svg">
       </div>
       <ul class="schedule">
         <div class="container">
@@ -237,14 +238,40 @@ export default {
   }
 
   .neon-sign {
-      display: flex;
-      flex-grow: 2;
+    flex-grow: 2;
+    position: relative;
 
-      img {
-        width: 100%;
-        height: 100%;
-        align-self: center;
-      }
+    img {
+      width: 100%;
+      height: 100%;
+      align-self: center;
+    }
+    #neon-sign-off {
+      position: absolute;
+      top: 0;
+      animation: animation2 3s infinite;
+    }
+    #neon-sign-on {
+      animation: animation1 3s infinite;
+    }
+  }
+
+  @keyframes animation1 {
+    0% { opacity: 0; }
+    80% { opacity: 0; }
+    85% { opacity: 0.95; }
+    90% { opacity: 0; }
+    95% { opacity: 0.95; }
+    100% { opacity: 0;}
+  }
+
+  @keyframes animation2 {
+    0% { opacity: 0.5; }
+    80% { opacity: 0.5; }
+    85% { opacity: 0; }
+    90% { opacity: 0.5; }
+    95% { opacity: 0; }
+    100% { opacity: 0.5; }
   }
 
   /* This probably will be going soon */
@@ -254,32 +281,32 @@ export default {
     align-self: center;
     font-family: 'Titillium Web', sans-serif;
     text-transform: uppercase;
-  	// main background is gradient
-  	display: block;
-  	position: relative;
+    // main background is gradient
+    display: block;
+    position: relative;
     font-size: $font-size;
     margin-bottom: 10px;
     background: $pink-gradient;
-  	background-blend-mode: multiply;
-  	background-size: 10px $font-size;
-  	background-repeat: repeat;
-  	line-height: 1;
+    background-blend-mode: multiply;
+    background-size: 10px $font-size;
+    background-repeat: repeat;
+    line-height: 1;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-  	// Shadows
-  	&::after {
-  		background: none;
-  		content: attr(data-text);
-  		position: absolute;
-  		left: 0;
-  		top: 0;
-  		text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
-  								 3px 1px 3px rgba(255,0,255,0.85),
-  								 -3px -2px 3px rgba(0,0,255,0.85),
-  								 1px -2px 0 rgba(255,255,255,0.8);
-  		z-index: -2;
-  	}
+    // Shadows
+    &::after {
+      background: none;
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
+                   3px 1px 3px rgba(255,0,255,0.85),
+                   -3px -2px 3px rgba(0,0,255,0.85),
+                   1px -2px 0 rgba(255,255,255,0.8);
+      z-index: -2;
+    }
 
   }
 
