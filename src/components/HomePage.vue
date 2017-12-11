@@ -2,6 +2,7 @@
   <div id="homepage">
     <MLHTrustBadge></MLHTrustBadge>
     <SplashSection></SplashSection>
+    <FirstSection></FirstSection>
     <MapSection></MapSection>
     <AboutSection></AboutSection>
     <ScheduleSection></ScheduleSection>
@@ -11,6 +12,7 @@
 <script>
 import MLHTrustBadge from './MLHTrustBadge.vue';
 import SplashSection from './SplashSection.vue';
+import FirstSection from './FirstSection.vue';
 import AboutSection from './AboutSection.vue';
 import ScheduleSection from './ScheduleSection.vue';
 import MapSection from './MapSection.vue';
@@ -20,6 +22,7 @@ export default {
   components: {
     MLHTrustBadge,
     SplashSection,
+    FirstSection,
     AboutSection,
     ScheduleSection,
     MapSection,
