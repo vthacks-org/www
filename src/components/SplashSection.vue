@@ -75,6 +75,7 @@ $splash-min-width: 600px;
   height: calc(100vw * 2 / 3);
   overflow: hidden;
   background-color: $background-splash;
+  margin-top: 44px;
 }
 
 .centered-content {
@@ -94,6 +95,7 @@ $splash-min-width: 600px;
 @media (max-width: $splash-min-width) {
   #splash-section {
     height: calc(600px * 2 / 3);
+    margin-top: 0;
   }
 
   #splash-logo {

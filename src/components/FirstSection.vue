@@ -18,6 +18,7 @@ export default {
   height: 80vh;
   min-height: 400px;
   background-color: #111;
+  overflow: hidden;
 }
 
 #inverted-splash-grid {
