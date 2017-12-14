@@ -15,6 +15,7 @@ export default {
 #sponsors-section {
   width: 100vw;
   height: 80vh;
+  max-width: 100%; /* to fix scroll bar offset */
   min-height: 400px;
   background-color: #777;
 }

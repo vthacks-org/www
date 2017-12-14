@@ -42,6 +42,7 @@ export default {
 <style lang="scss" scoped>
 #map-section {
   width: 100vw;
+  max-width: 100%; /* to fix scroll bar offset */
 }
 #event-map {
   display: block;
