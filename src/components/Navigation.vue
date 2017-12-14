@@ -44,7 +44,8 @@ export default {
     scrollToId(id) {
       const el = document.getElementById(id);
       // 44px is the height of the navigation bar.
-      document.documentElement.scrollTop = el.offsetTop - (this.opened ? 0 : 44);
+      const target = el.offsetTop - (this.opened ? 0 : 44);
+      this.$SmoothScroll(target, 400);
       this.opened = false;
     },
   },
