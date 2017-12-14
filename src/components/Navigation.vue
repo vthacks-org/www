@@ -82,6 +82,7 @@ export default {
   font-size: 14px;
   line-height: 28px;
   text-decoration: none;
+  cursor: pointer;
   span {
     padding-bottom: 2px;
     padding-left: 4px;
