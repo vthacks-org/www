@@ -22,7 +22,7 @@ export default {
     VueGoogleMaps.loaded.then(() => {
       const styledMapType = new google.maps.StyledMapType(mapStyles, { name: 'VTHacks' });
       const map = new google.maps.Map(document.getElementById('event-map'), {
-        center: { lat: 37.2329557, lng: -80.4229729 },
+        center: { lat: 37.232971, lng: -80.422820 },
         zoom: 18,
         mapTypeControlOptions: {
           mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
@@ -32,6 +32,22 @@ export default {
       });
       map.mapTypes.set('styled_map', styledMapType);
       map.setMapTypeId('styled_map');
+      const marker = new google.maps.Marker({
+        position: { lat: 37.232971, lng: -80.422820 },
+        icon: {
+          url: 'static/vthacks-favicon.png',
+          scaledSize: new google.maps.Size(30, 30),
+          anchor: new google.maps.Point(10, 10),
+        },
+        title: 'VTHacks V',
+        map,
+      });
+      const markerWindow = new google.maps.InfoWindow({
+        content: '<div>VTHacks V</div>',
+      });
+      marker.addListener('click', () => {
+        markerWindow.open(map, marker);
+      });
     });
   },
 };
