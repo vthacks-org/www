@@ -63,4 +63,10 @@ export default {
   display: block;
   height: 400px;
 }
+
+@media (max-width: 480px) {
+  #event-map {
+    height: 300px;
+  }
+}
 </style>
