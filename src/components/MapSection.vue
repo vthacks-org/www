@@ -41,8 +41,7 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 #map-section {
-  width: 100vw;
-  max-width: 100%; /* to fix scroll bar offset */
+  width: 100%;
 }
 #event-map {
   display: block;
