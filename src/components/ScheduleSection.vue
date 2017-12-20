@@ -188,7 +188,7 @@ export default {
   @import '../styles/headers';
 
   #schedule-section {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     min-height: 400px;
     background-color: #000;
@@ -276,6 +276,5 @@ export default {
     95% { opacity: 0;}
     100% { opacity: 0.5;}
   }
-
 </style>
 
