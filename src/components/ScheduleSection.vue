@@ -4,34 +4,38 @@
     <div class="seperator pink large"></div>
 
     <p class="warn-term"> $> WARN: This schedule is just preliminary. It will update more as we get closer to the hackathon</p>
+
     <div class="schedule-breakdown">
+      <div class="neon-sign-padding"></div>
       <div class="neon-sign">
           <img id="neon-sign-on" src="../assets/neon_sign.svg"/>
           <img id="neon-sign-off" src="../assets/neon_sign_off.svg">
       </div>
-      <ul class="schedule">
-        <div class="container">
-          <div class="date"> Fri </div>
-          <div class="seperator blue small"></div>
-          <li v-for="event in events" v-if="event.date == 'Friday'" class="schedule-item">
-            <div class="time"> {{event.start}}></div>
-            <div class="title"> {{event.title}}</div>
-          </li>
-        </div>
-      </ul>
-
-      <ul class="schedule">
-        <div class="container">
-          <div class="date"> Sat  </div>
-          <div class="seperator blue small"></div>
-            <li v-for="event in events" v-if="event.date == 'Saturday'" class="schedule-item">
+      <div class="neon-sign-padding"></div>
+      <div class="schedules">
+        <ul class="schedule">
+          <div class="container">
+            <div class="date"> Fri </div>
+            <div class="seperator blue small"></div>
+            <li v-for="event in events" v-if="event.date == 'Friday'" class="schedule-item">
               <div class="time"> {{event.start}}></div>
               <div class="title"> {{event.title}}</div>
             </li>
-        </div>
-      </ul>
+          </div>
+        </ul>
 
-      <ul class="schedule">
+        <ul class="schedule">
+          <div class="container">
+            <div class="date"> Sat  </div>
+            <div class="seperator blue small"></div>
+              <li v-for="event in events" v-if="event.date == 'Saturday'" class="schedule-item">
+                <div class="time"> {{event.start}}></div>
+                <div class="title"> {{event.title}}</div>
+              </li>
+          </div>
+        </ul>
+
+        <ul class="schedule">
         <div class="container">
           <div class="date"> Sun   </div>
           <div class="seperator blue small"></div>
@@ -41,7 +45,7 @@
           </li>
         </div>
       </ul>
-
+      </div>
     </div>
   </div>
 </template>
@@ -188,17 +192,41 @@ export default {
 
   #schedule-section {
     width: 100vw;
-    height: 100vh;
-    min-height: 400px;
+    min-height: 100vh;
+    // min-height: 400px;
     background-color: #000;
     display: flex;
     flex-direction: column;
   }
 
+  a {
+    text-decoration: none;
+    color: purple;
+  }
+
   .schedule-breakdown{
     margin-top: 20px;
     display: flex;
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
     flex-direction: row;
+
+    .date {
+      display: inline-block;
+      color: $neon-blue;
+      @media only screen and (max-width: 767px) {
+        font-size: 4vw;
+      }
+      font-size: 2vw;
+      font-family: 'Titillium Web', sans-serif;
+    }
+
+    .schedules{
+      flex-grow: 1;
+      display: flex;
 
       ul.schedule {
         font-family: $font-VT232;
@@ -210,23 +238,28 @@ export default {
           align-items: center;
           margin: 0 auto;
         }
-
-
         .schedule-item {
           padding-bottom: 20px;
         }
         .time {
           font-family: $font-2P;
           color: $neon-pink;
-          font-size: 15px;
+          /* All Mobile Sizes (devices and browser) */
+          @media only screen and (max-width: 767px) {
+            font-size: 2vw;
+          }
+          font-size: 1.1vw;
         }
         .title {
           margin-top: -2px;
-          font-size: 20px;
+          @media only screen and (max-width: 767px) {
+            font-size: 2.5vw;
+          }
+          font-size: 1.3vw;
           color: grey;
         }
       }
-
+    }
 
   }
 
@@ -235,12 +268,13 @@ export default {
     color: yellow;
     word-wrap: normal;
     align-self: center;
+    padding: 15px;
   }
 
   .neon-sign {
     flex-grow: 2;
     position: relative;
-
+    min-height: 250px;
     img {
       width: 100%;
       height: 100%;
@@ -252,6 +286,8 @@ export default {
       animation: animation2 3s infinite;
     }
     #neon-sign-on {
+      position: absolute;
+      top: 0;
       animation: animation1 3s infinite;
     }
   }
@@ -336,12 +372,7 @@ export default {
 
   }
 
-  .date {
-    display: inline-block;
-    color: $neon-blue;
-    font-size: 30px;
-    font-family: 'Titillium Web', sans-serif;
-  }
+
 
 </style>
 
