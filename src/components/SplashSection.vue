@@ -1,11 +1,11 @@
 <template>
   <div id="splash-section">
-    <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
     <img id="splash-background" src="src/assets/splash-background.png">
     <img id="splash-grid" src="src/assets/splash-grid.png">
     <img id="splash-torg" src="src/assets/splash-torg.png">
     <img id="splash-pylons" src="src/assets/splash-pylons.png">
     <img id="splash-logo" src="src/assets/splash-logo.svg">
+    <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
     <div id="splash-apply">Hack The Planet</div>
   </div>
 </template>
@@ -49,7 +49,6 @@ $splash-min-width: 600px;
   color: white;
   top: 16px;
   left: 50%;
-  z-index: 1;
   transform: translateX(-50%);
   font-family: monospace;
   border-left: 2px solid white;
