@@ -1,6 +1,6 @@
 <template>
   <div id="schedule-section">
-    <h1 class="futuristic" data-text="SCHEDULE">schedule</h1>
+    <h1 class="futuristic pink" data-text="SCHEDULE">schedule</h1>
     <div class="seperator pink large"></div>
 
     <p class="warn-term"> $> WARN: This schedule is just preliminary. It will update more as we get closer to the hackathon</p>
@@ -185,6 +185,7 @@ export default {
 <style lang="scss" scoped>
   @import '../styles/colors';
   @import '../styles/vars';
+  @import '../styles/headers';
 
   #schedule-section {
     width: 100%;
@@ -274,73 +275,6 @@ export default {
     85% { opacity: 0.5; }
     95% { opacity: 0;}
     100% { opacity: 0.5;}
-  }
-
-  /* This probably will be going soon */
-  $font-size: 50px;
-  @import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
-  .futuristic {
-    align-self: center;
-    font-family: 'Titillium Web', sans-serif;
-    text-transform: uppercase;
-    // main background is gradient
-    display: block;
-    position: relative;
-    font-size: $font-size;
-    margin-bottom: 10px;
-    background: $pink-gradient;
-    background-blend-mode: multiply;
-    background-size: 10px $font-size;
-    background-repeat: repeat;
-    line-height: 1;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    // Shadows
-    &::after {
-      background: none;
-      content: attr(data-text);
-      position: absolute;
-      left: 0;
-      top: 0;
-      text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
-                   3px 1px 3px rgba(255,0,255,0.85),
-                   -3px -2px 3px rgba(0,0,255,0.85),
-                   1px -2px 0 rgba(255,255,255,0.8);
-      z-index: -2;
-    }
-
-  }
-
-  .seperator {
-    align-self: center;
-    border-style: solid;
-    margin-bottom: 15px;
-    border-bottom: 1px;
-
-    &.pink {
-      border-color: $neon-pink;
-      background-color: $neon-pink;
-    }
-    &.blue {
-      border-color: $neon-blue;
-      background-color: $neon-blue;
-    }
-
-    &.small {
-      width: 20px;
-    }
-    &.large {
-      width: 70px;
-    }
-
-  }
-
-  .date {
-    display: inline-block;
-    color: $neon-blue;
-    font-size: 30px;
-    font-family: 'Titillium Web', sans-serif;
   }
 </style>
 
