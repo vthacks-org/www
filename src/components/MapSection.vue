@@ -57,7 +57,7 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 #map-section {
-  width: 100vw;
+  width: 100%;
 }
 #event-map {
   display: block;
