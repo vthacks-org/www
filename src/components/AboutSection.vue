@@ -8,12 +8,10 @@
       </div>
     </div>
     <div>
-      <div class="about-title">> About/FAQ:</div>
-      <div class="about-content">
-        <div>- Hello, world!</div>
-        <div>- Hello, world!</div>
-        <div>- Hello, world!</div>
-        <div>- Hello, world!</div>
+      <div class="about-title">$> cat about.faq</div>
+      <div class="about-content" v-for="question in questions">
+        <div class="question" v-html="question.q"></div>
+        <div class="answer" v-html="question.a"></div>
       </div>
     </div>
     <div class="scanlines"></div>
@@ -23,6 +21,48 @@
 <script>
 export default {
   name: 'AboutSection',
+  data() {
+    return {
+      questions: [
+        {
+          q: 'What is VTHacks?',
+          a: 'It\'s an annual event where students of local schools come together at Virginia Tech and spend 36 hours working on teams of up to four people to create and build a project they are passionate about.',
+        },
+        {
+          q: 'How much does it cost?',
+          a: 'The event is completely free for all registered participants.',
+        },
+        {
+          q: 'Will there be food?',
+          a: 'Absolutely! We have an entire weekend of catered food waiting for you and your team.',
+        },
+        {
+          q: 'What should I bring?',
+          a: 'All you need is your computer, a toothbrush, toothpaste, possibly a sleeping bag, and lots of excitement!',
+        },
+        {
+          q: 'How big can each team be?',
+          a: 'We like to keep teams at 4 or less participants, so that the competition is fair between teams',
+        },
+        {
+          q: 'Will there be hardware?',
+          a: 'Yes, we\'ll have lots of cool hardware you can build with!',
+        },
+        {
+          q: 'What about transportation?',
+          a: 'We will be sponsoring several busses to bring hackers from select schools to VTHacks. Send us an email at <a href="mailto:transportation@vthacks.com">transportation@vthacks.com</a> if you want your school to be selected.',
+        },
+        {
+          q: 'Do I have to have fun?',
+          a: 'Yes. We\'ll make sure that you do.',
+        },
+        {
+          q: 'Any more questions?',
+          a: 'Send us an email at <a href="mailto:hackathon@vthacks.com">hackathon@vthacks.com</a> and we\'ll get back to you!',
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -46,6 +86,7 @@ export default {
     color: white;
   }
 }
+
 .scanlines {
   position: absolute;
   top: 0;
@@ -60,6 +101,22 @@ export default {
     rgba(0,0,0,0.6));
   background-size: 100% 0.3rem;
   pointer-events: none;
+}
+
+.about-title {
+    padding-bottom: 10px;
+}
+
+.about-content {
+    .question {
+      font-size: 1.2em;
+      color: $vth-red;
+    }
+    .answer {
+      font-size: .8em;
+      color: white;
+      padding-bottom: 15px;
+    }
 }
 
 .vth-logo-term {
