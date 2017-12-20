@@ -46,3 +46,12 @@ export default {
   width: 100%; /* to fix scroll bar offset */
 }
 </style>
+
+<!-- This is a global, unscoped, change -->
+<style lang="scss">
+  a {
+    background-color: rgba(13, 12, 216, 0.7); // blue highlight
+    text-decoration: none;
+    color: white;
+  }
+</style>
