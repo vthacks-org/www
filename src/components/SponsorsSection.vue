@@ -13,7 +13,7 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 #sponsors-section {
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   min-height: 400px;
   background-color: #777;

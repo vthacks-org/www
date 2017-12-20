@@ -1,0 +1,93 @@
+/*
+This is the chrome style "futuristic" header made by Ha but in CSS
+*/
+$header-size: 40px;
+@import '../styles/colors';
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
+
+/* Gradients Used for Headers */
+$pink-gradient: linear-gradient(to bottom,
+  $neon-pink                0%,
+  lighten($neon-blue, 10%)  50%,
+  darken($neon-pink,  40%)  51%,
+  $neon-pink                100%);
+
+$blue-gradient: linear-gradient(to bottom,
+  $neon-blue                0%,
+  lighten($neon-pink, 10%)  50%,
+  darken($neon-blue,  35%)  51%,
+  $neon-blue                100%);
+
+
+/*
+Usage
+<h1 class="futuristic <blue/pink>">HEADER TEXT</h1>
+*/
+.futuristic {
+  align-self: center;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  // main background is gradient
+  display: block;
+  position: relative;
+  font-size: $header-size;
+  margin-bottom: 10px;
+
+  &.pink {
+    background: $pink-gradient;
+    -webkit-text-stroke-color: lighten($neon-pink, 30%);
+
+    /* Order matters so this has to be explicit in the sub class */
+    background-blend-mode: multiply;
+    background-size: 10px $header-size;
+    background-repeat: repeat;
+    line-height: 1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &.blue {
+    background: $blue-gradient;
+    -webkit-text-stroke-color: lighten($neon-blue, 30%);
+
+    /* Order matters so this has to be explicit in the sub class*/
+    background-blend-mode: multiply;
+    background-size: 10px $header-size;
+    background-repeat: repeat;
+    line-height: 1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  -webkit-text-stroke-width: 1px;
+
+
+}
+
+/*
+These are the seperator bars
+Usage:
+<div class="seperator <small/large> <pink/blue>"></div>
+*/
+
+.seperator {
+  align-self: center;
+  border-style: solid;
+  margin-bottom: 15px;
+  border-bottom: 1px;
+
+  &.pink {
+    border-color: $neon-pink;
+    background-color: $neon-pink;
+  }
+  &.blue {
+    border-color: $neon-blue;
+    background-color: $neon-blue;
+  }
+
+  &.small {
+    width: 20px;
+  }
+  &.large {
+    width: 70px;
+  }
+
+}
