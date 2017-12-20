@@ -187,7 +187,7 @@ export default {
   @import '../styles/vars';
 
   #schedule-section {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     min-height: 400px;
     background-color: #000;
@@ -342,6 +342,5 @@ export default {
     font-size: 30px;
     font-family: 'Titillium Web', sans-serif;
   }
-
 </style>
 

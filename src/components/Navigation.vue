@@ -44,7 +44,8 @@ export default {
     scrollToId(id) {
       const el = document.getElementById(id);
       // 44px is the height of the navigation bar.
-      document.documentElement.scrollTop = el.offsetTop - (this.opened ? 0 : 44);
+      const target = el.offsetTop - (this.opened ? 0 : 44);
+      this.$SmoothScroll(target, 400);
       this.opened = false;
     },
   },
@@ -82,6 +83,7 @@ export default {
   font-size: 14px;
   line-height: 28px;
   text-decoration: none;
+  cursor: pointer;
   span {
     padding-bottom: 2px;
     padding-left: 4px;
