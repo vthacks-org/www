@@ -43,5 +43,6 @@ export default {
   background-color: black;
   position: absolute;
   top: 0;
+  width: 100%; /* to fix scroll bar offset */
 }
 </style>
