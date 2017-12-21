@@ -28,9 +28,8 @@ export default {
 
 #sponsors-section {
   width: 100%;
-  height: 20vh;
-  min-height: 400px;
-  background-color: #000;
+  min-height: 300px;
+  background-color: #111;
   display: flex;
   flex-direction: column;
 }
