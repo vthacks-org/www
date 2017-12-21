@@ -11,7 +11,7 @@
       <div class="about-title">$> cat about.faq</div>
       <div class="about-content" v-for="question in questions">
         <div class="question" v-html="question.q"></div>
-        <div class="answer" v-html="question.a"></div>
+        <div class="answer">> <span v-html="question.a"></span></div>
       </div>
     </div>
     <div class="scanlines"></div>
