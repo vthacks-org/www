@@ -1,7 +1,7 @@
 <template>
   <div id="about-section">
     <div class="vth-logo-term">
-      <img src="src/assets/vthacks-logo.png">
+      <img src="../assets/vthacks-logo.png">
       <div class="specs">
         <div><span>OS:</span> VTHacks x86_64</div>
         <div><span>Model:</span> SURGE 5TH EDITION</div>
@@ -11,7 +11,7 @@
       <div class="about-title">$> cat about.faq</div>
       <div class="about-content" v-for="question in questions">
         <div class="question" v-html="question.q"></div>
-        <div class="answer" v-html="question.a"></div>
+        <div class="answer">> <span v-html="question.a"></span></div>
       </div>
     </div>
     <div class="scanlines"></div>
@@ -141,6 +141,12 @@ export default {
     width: fit-content;
     width: intrinsic;
     margin: 0 auto;
+  }
+}
+
+@media(max-width: 480px) {
+  #about-section {
+    font-size: 1.5em;
   }
 }
 </style>
