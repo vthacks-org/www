@@ -193,7 +193,7 @@ export default {
 
   #schedule-section {
     width: 100%;
-    height: 100vh;
+    padding: 24px 0;
     background-color: #000;
     display: flex;
     flex-direction: column;

@@ -1,7 +1,7 @@
 <template>
   <div id="about-section">
     <div class="vth-logo-term">
-      <img src="src/assets/vthacks-logo.png">
+      <img src="../assets/vthacks-logo.png">
       <div class="specs">
         <div><span>OS:</span> VTHacks x86_64</div>
         <div><span>Model:</span> SURGE 5TH EDITION</div>
@@ -141,6 +141,12 @@ export default {
     width: fit-content;
     width: intrinsic;
     margin: 0 auto;
+  }
+}
+
+@media(max-width: 480px) {
+  #about-section {
+    font-size: 1.5em;
   }
 }
 </style>
