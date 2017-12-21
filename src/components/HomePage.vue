@@ -3,11 +3,11 @@
     <Navigation></Navigation>
     <MLHTrustBadge></MLHTrustBadge>
     <SplashSection></SplashSection>
-    <FirstSection></FirstSection>
     <AboutSection></AboutSection>
     <ScheduleSection></ScheduleSection>
     <MapSection></MapSection>
     <SponsorsSection></SponsorsSection>
+    <FooterSection></FooterSection>
   </div>
 </template>
 
@@ -15,11 +15,11 @@
 import Navigation from './Navigation.vue';
 import MLHTrustBadge from './MLHTrustBadge.vue';
 import SplashSection from './SplashSection.vue';
-import FirstSection from './FirstSection.vue';
 import AboutSection from './AboutSection.vue';
 import ScheduleSection from './ScheduleSection.vue';
 import MapSection from './MapSection.vue';
 import SponsorsSection from './SponsorsSection.vue';
+import FooterSection from './FooterSection.vue';
 
 export default {
   name: 'HomePage',
@@ -27,11 +27,11 @@ export default {
     Navigation,
     MLHTrustBadge,
     SplashSection,
-    FirstSection,
     AboutSection,
     ScheduleSection,
     MapSection,
     SponsorsSection,
+    FooterSection,
   },
 };
 </script>

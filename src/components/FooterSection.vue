@@ -1,7 +1,8 @@
 <template>
   <div id="footer-section">
     <div class="code-of-conduct">
-      <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"> $> cat MLH Code of Conduct </a>
+       <p> $> <span style="color: blue"> INFO: </span> VTHack adheres to the MLH Code of Conduct, for more info please see it here </p>
+       <p> $> cmd cat <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">( MLH Code of Conduct )</a> | new tab</p>
     </div>
   </div>
 </template>
@@ -25,14 +26,10 @@ export default {
   }
 
   .code-of-conduct {
+    color: white;
     padding: 20px;
     align-self: center;
-  }
-
-  a {
     font-family: $font-VT232;
-    color: yellow;
-    background-color: blue;
   }
 
 
