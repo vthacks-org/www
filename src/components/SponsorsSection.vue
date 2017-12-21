@@ -1,12 +1,14 @@
 <template>
   <div id="sponsors-section">
-    <h1 class="futuristic blue"> Sponsors </h1>
+    <div style="margin: 0 auto; justify-content:center">
+      <h6 class="supertitle"> Our amazing </h6>
+      <h1 class="futuristic blue"> Sponsors </h1>
+    </div>
     <div class="seperator large pink"></div>
 
     <div class="info-term">
-      <p>$> <span style="color: blue;">INFO:</span> Sponsors will be published when the list is complete closer to the event</p>
-      <p>$> <span style="color: green;">OPPORUNITY:</span> Want to sponsor us? Check out our prospectus for more info</p>
-      <p>$> cmd open <a href="https://vthacks.com/sponsorship/prospectus" target="_blank"> ( prospectus )</a> | new tab </p>
+      <p>$> <span style="color: #48d247;">INFO: </span> we are working with some great sponsors to bring VTHacks V to life. </p>
+      <p>$> If you’re interested in being one of them, send us an email at <a href="mailto:sponsorship@vthacks.com">sponsorship@vthacks.com</a> </p>
     </div>
   </div>
 </template>
@@ -22,15 +24,18 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/headers';
 @import '../styles/vars';
+@import '../styles/colors';
 
 #sponsors-section {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   min-height: 400px;
   background-color: #000;
   display: flex;
   flex-direction: column;
 }
+
+
 
 .info-term {
   .tag {
