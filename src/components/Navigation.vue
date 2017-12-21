@@ -1,7 +1,7 @@
 <template>
   <nav :class="'navigation' + (opened ? ' opened' : '')">
     <div class="nav-drawer-button">
-      <img :src="'src/assets/menu-' + (opened ? 'close' : 'open') + '-8bit.png'"
+      <img :src="'static/menu-' + (opened ? 'close' : 'open') + '-8bit.png'"
            v-on:click="opened = !opened">
     </div>
     <div class="navigation-content">
