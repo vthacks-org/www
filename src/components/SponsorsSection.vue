@@ -1,5 +1,6 @@
 <template>
   <div id="sponsors-section">
+    <div class="gradient-seperator"></div>
     <div style="margin: 0 auto; justify-content:center">
       <h6 class="supertitle"> Our amazing </h6>
       <h1 class="futuristic blue"> Sponsors </h1>
@@ -34,7 +35,13 @@ export default {
   flex-direction: column;
 }
 
+.gradient-seperator{
+    height: 2px;
+    background: linear-gradient(to right,
+      $neon-blue                0%,
+      $neon-pink                100%);
 
+}
 
 .info-term {
   .tag {
