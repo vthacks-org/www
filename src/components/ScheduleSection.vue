@@ -227,12 +227,14 @@ export default {
     .schedules{
       flex-grow: 1;
       display: flex;
+      margin: 8px;
 
       ul.schedule {
         font-family: $font-VT232;
         padding: 0;
         flex-grow: 1;
         display: flex;
+        list-style-type: none;
 
         .container {
           align-items: center;
