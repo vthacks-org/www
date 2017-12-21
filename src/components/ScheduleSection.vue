@@ -218,7 +218,7 @@ export default {
       display: inline-block;
       color: $neon-blue;
       @media only screen and (max-width: 767px) {
-        font-size: 4vw;
+        font-size: 1.5em;
       }
       font-size: 2vw;
       font-family: 'Titillium Web', sans-serif;
@@ -246,14 +246,14 @@ export default {
           color: $neon-pink;
           /* All Mobile Sizes (devices and browser) */
           @media only screen and (max-width: 767px) {
-            font-size: 2vw;
+            font-size: .7em;
           }
           font-size: 1.1vw;
         }
         .title {
           margin-top: -2px;
           @media only screen and (max-width: 767px) {
-            font-size: 2.5vw;
+            font-size: .9em;
           }
           font-size: 1.3vw;
           color: grey;
