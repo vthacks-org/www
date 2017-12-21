@@ -55,12 +55,16 @@ $splash-min-width: 600px;
   padding: 0 8px;
   border-right: 2px solid white;
   text-align: center;
+  font-size: 18px;
 }
 
 #splash-apply {
   position: absolute;
   color: white;
   font-family: EndlessBummer, monospace;
+  @media only screen and (min-width : 1824px) {
+    bottom: 30%;
+  }
   bottom: 20%;
   width: 100%;
   text-align: center;
@@ -70,7 +74,7 @@ $splash-min-width: 600px;
 #splash-section {
   position: relative;
   width: 100%;
-  height: calc(100vw * 2 / 3);
+  height: 65vw;
   overflow: hidden;
   background-color: $background-splash;
   margin-top: 44px;
