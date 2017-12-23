@@ -1,9 +1,6 @@
 <template>
   <div id="splash-section">
-    <img id="splash-background" src="../assets/splash-background.png">
-    <img id="splash-grid" src="../assets/splash-grid.png">
-    <img id="splash-torg" src="../assets/splash-torg.png">
-    <img id="splash-pylons" src="../assets/splash-pylons.png">
+    <img id="splash-combined" src="../assets/splash-combined.png">
     <img id="splash-logo" src="../assets/splash-logo.svg">
     <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
     <div id="splash-apply">Hack The Planet</div>
@@ -27,7 +24,7 @@ $splash-min-width: 600px;
     src: url("../assets/ENDLESSBUMMER-Regular.otf") format("opentype");
 }
 
-#splash-background, #splash-grid, #splash-torg, #splash-pylons {
+#splash-combined {
   position: absolute;
   width: 100%;
   min-width: $splash-min-width;
