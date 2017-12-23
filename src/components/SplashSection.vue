@@ -97,6 +97,10 @@ $splash-min-width: 600px;
     top: 30px;
   }
 
+  #splash-date {
+    font-size: 14px;
+  }
+
   #splash-apply {
     font-size: 48px;
   }
