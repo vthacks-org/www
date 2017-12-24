@@ -3,7 +3,10 @@
     <img id="splash-combined" src="../assets/splash-combined.png">
     <img id="splash-logo" src="../assets/splash-logo.svg">
     <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
-    <div id="splash-apply">Hack The Planet</div>
+    <div id="splash-apply">
+      <div>Hack The Planet</div>
+      <div id="coming-soon">Registration Coming Soon</div>
+    </div>
   </div>
 </template>
 
@@ -67,6 +70,9 @@ $splash-min-width: 600px;
   width: 100%;
   text-align: center;
   font-size: 64px;
+  #coming-soon {
+    font-size: 0.5em;
+  }
 }
 
 #splash-section {
