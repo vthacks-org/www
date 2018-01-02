@@ -295,23 +295,21 @@ export default {
   }
 
   @keyframes animation1 {
-    0% { opacity: 0; }
-    60% { opacity: 0; }
-    65% { opacity: 0.95; }
-    70% { opacity: 0.85;}
-    85% { opacity: 0; }
-    95% { opacity: .95}
-    100% { opacity: 0;}
+    0% { opacity: .95; }
+    90% { opacity: .95; }
+    92% { opacity: 0; }
+    94% { opacity: 0.85;}
+    98% { opacity: 0; }
+    100% { opacity: .95}
   }
 
   @keyframes animation2 {
-    0% { opacity: 0.5; }
-    60% { opacity: 0.5; }
-    65% { opacity: 0; }
-    70% { opacity: 0;}
-    85% { opacity: 0.5; }
-    95% { opacity: 0;}
-    100% { opacity: 0.5;}
+    0% { opacity: 0; }
+    90% { opacity: 0; }
+    92% { opacity: 0.5; }
+    94% { opacity: 0;}
+    98% { opacity: 0.5; }
+    100% { opacity: 0}
   }
 </style>
 
