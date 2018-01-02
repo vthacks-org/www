@@ -4,8 +4,8 @@
     <img id="splash-logo" src="../assets/splash-logo.svg">
     <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
     <div id="splash-apply">
-      <div>Hack The Planet</div>
       <a id="registration-link" href="/register">
+        <div>Hack The Planet</div>
         <img id="apply-image" src="../assets/apply-now.png">
       </a>
     </div>
@@ -68,7 +68,7 @@ $splash-min-width: 600px;
   top: 62%;
   width: 100%;
   text-align: center;
-  font-size: 64px;
+  font-size: 58px;
   #registration-link {
     background-color: transparent;
   }
