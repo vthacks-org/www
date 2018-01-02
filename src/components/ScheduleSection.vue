@@ -18,7 +18,7 @@
             <div class="date"> Fri </div>
             <div class="seperator blue small"></div>
             <li v-for="event in events" v-if="event.date == 'Friday'" class="schedule-item">
-              <div class="time"> {{event.start}}></div>
+              <div class="time"> {{event.start}}</div>
               <div class="title"> {{event.title}}</div>
             </li>
           </div>
@@ -29,7 +29,7 @@
             <div class="date"> Sat  </div>
             <div class="seperator blue small"></div>
               <li v-for="event in events" v-if="event.date == 'Saturday'" class="schedule-item">
-                <div class="time"> {{event.start}}></div>
+                <div class="time"> {{event.start}}</div>
                 <div class="title"> {{event.title}}</div>
               </li>
           </div>
@@ -40,7 +40,7 @@
           <div class="date"> Sun   </div>
           <div class="seperator blue small"></div>
           <li v-for="event in events" v-if="event.date == 'Sunday'" class="schedule-item">
-            <div class="time"> {{event.start}}></div>
+            <div class="time"> {{event.start}}</div>
             <div class="title"> {{event.title}}</div>
           </li>
         </div>

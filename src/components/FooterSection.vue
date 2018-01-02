@@ -32,7 +32,6 @@ export default {
       background: linear-gradient(to right,
         $neon-pink                0%,
         $neon-blue                100%);
-
   }
 
   .code-of-conduct {
