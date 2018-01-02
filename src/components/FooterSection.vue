@@ -2,7 +2,7 @@
   <div id="footer-section">
     <div class="gradient-seperator"></div>
     <div class="code-of-conduct">
-       <p> $> <span style="color: #48d247"> INFO: </span> VTHacs adheres to the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">( MLH Code of Conduct )</a> </p>
+       <p> $> <span style="color: #48d247"> INFO: </span> VTHacks adheres to the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">( MLH Code of Conduct )</a> </p>
     </div>
   </div>
 </template>
