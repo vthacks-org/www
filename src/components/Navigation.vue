@@ -8,7 +8,7 @@
       <div v-for="section in sections"
           class="navigation-link"
           v-on:click="scrollToId(section.id)">
-        ><span>{{section.name}}</span>
+        <span>{{section.name}}</span>
       </div>
     </div>
   </nav>
