@@ -5,7 +5,9 @@
     <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
     <div id="splash-apply">
       <div>Hack The Planet</div>
-      <div id="coming-soon">Registration Coming Soon</div>
+      <a id="registration-link" href="/register">
+        <img id="apply-image" src="../assets/apply-now.png">
+      </a>
     </div>
   </div>
 </template>
@@ -63,15 +65,15 @@ $splash-min-width: 600px;
   position: absolute;
   color: white;
   font-family: EndlessBummer, monospace;
-  @media only screen and (min-width : 1824px) {
-    bottom: 30%;
-  }
-  bottom: 20%;
+  top: 62%;
   width: 100%;
   text-align: center;
   font-size: 64px;
-  #coming-soon {
-    font-size: 0.5em;
+  #registration-link {
+    background-color: transparent;
+  }
+  #apply-image {
+    width: 300px;
   }
 }
 
@@ -109,6 +111,9 @@ $splash-min-width: 600px;
 
   #splash-apply {
     font-size: 48px;
+    #apply-image {
+      width: 230px;
+    }
   }
 }
 
