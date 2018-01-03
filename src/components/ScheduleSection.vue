@@ -3,8 +3,6 @@
     <h1 class="futuristic pink" data-text="SCHEDULE">schedule</h1>
     <div class="seperator pink large"></div>
 
-    <p class="warn-term"> $> WARN: This schedule is just preliminary. It will update more as we get closer to the hackathon</p>
-
     <div class="schedule-breakdown">
       <div class="neon-sign-padding"></div>
       <div class="neon-sign">
@@ -264,15 +262,6 @@ export default {
     }
 
   }
-
-  .warn-term {
-    font-family: $font-VT232;
-    color: yellow;
-    word-wrap: normal;
-    align-self: center;
-    padding: 15px;
-  }
-
   .neon-sign {
     flex-grow: 2;
     position: relative;
