@@ -1,7 +1,7 @@
 <template>
   <div id="splash-section">
     <img id="splash-combined" src="../assets/splash-combined.png">
-    <img id="splash-logo" src="../assets/splash-logo.svg">
+    <img id="splash-logo" src="../assets/splash-neon-sign-logo.svg">
     <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
     <div id="splash-apply">
       <a id="registration-link" href="/register">
@@ -40,9 +40,9 @@ $splash-min-width: 600px;
 
 #splash-logo {
   position: absolute;
-  width: 23%;
+  width: 21%;
   left: 50%;
-  top: 5%;
+  top: 6%;
   transform: translateX(-50%);
 }
 
