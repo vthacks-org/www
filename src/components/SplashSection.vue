@@ -74,6 +74,10 @@ $splash-min-width: 600px;
   }
   #apply-image {
     width: 300px;
+
+    &:hover {
+      width: 310px;
+    }
   }
 }
 
