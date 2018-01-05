@@ -56,13 +56,6 @@ export default {
       events: [
         /* Friday */
         {
-          title: 'Setup',
-          description: '',
-          date: 'Friday',
-          start: '4:00 PM',
-          end: '8:00 PM',
-        },
-        {
           title: 'Check-in Opens',
           description: '',
           date: 'Friday',
@@ -168,13 +161,6 @@ export default {
           date: 'Sunday',
           start: '1:30 PM',
           end: '2:30 PM',
-        },
-        {
-          title: 'Clean Up',
-          description: '',
-          date: 'Sunday',
-          start: '2:30 PM',
-          end: '6:00 PM',
         },
       ],
     };
