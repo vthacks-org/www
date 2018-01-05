@@ -1,13 +1,15 @@
 <template>
   <div id="splash-section">
-    <img id="splash-combined" src="../assets/splash-combined.png">
-    <img id="splash-logo" src="../assets/splash-neon-sign-logo.svg">
-    <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
-    <div id="splash-apply">
-      <a id="registration-link" href="/register">
-        <div>Hack The Planet</div>
-        <img id="apply-image" src="../assets/apply-now.png">
-      </a>
+    <div id="splash-container">
+      <img id="splash-combined" src="../assets/splash-combined.png">
+      <img id="splash-logo" src="../assets/splash-neon-sign-logo.svg">
+      <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
+      <div id="splash-apply">
+        <a id="registration-link" href="/register">
+          <div>Hack The Planet</div>
+          <img id="apply-image" src="../assets/apply-now.png">
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -83,11 +85,21 @@ $splash-min-width: 600px;
 
 #splash-section {
   position: relative;
-  width: 100%;
-  height: 65vw;
   overflow: hidden;
   background-color: $background-splash;
   margin-top: 44px;
+  @media (min-width: 1200px) {
+    max-height: calc(100vw * 2 / 3 * 0.62 + 200px);
+  }
+}
+
+#splash-section, #splash-container {
+  width: 100%;
+  height: 65vw;
+}
+
+#splash-container {
+  position: absolute;
 }
 
 .centered-content {
@@ -100,7 +112,7 @@ $splash-min-width: 600px;
 }
 
 @media (max-width: $splash-min-width) {
-  #splash-section {
+  #splash-section, #splash-container {
     height: calc(600px * 2 / 3);
   }
 
