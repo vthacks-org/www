@@ -1,6 +1,5 @@
 <template>
   <div id="footer-section">
-    <div class="gradient-seperator"></div>
     <div class="code-of-conduct">
        <p> $> <span style="color: #48d247"> INFO: </span> VTHacks adheres to the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">( MLH Code of Conduct )</a> </p>
     </div>
@@ -25,13 +24,6 @@ export default {
     display: flex;
     flex-direction: column;
     background: url('../assets/splash-background.png');
-  }
-
-  .gradient-seperator{
-      height: 2px;
-      background: linear-gradient(to right,
-        $neon-pink                0%,
-        $neon-blue                100%);
   }
 
   .code-of-conduct {
