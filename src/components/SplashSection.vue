@@ -24,7 +24,7 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../styles/colors';
-$splash-min-width: 600px;
+@import '../styles/vars';
 
 @font-face {
     font-family: EndlessBummer;

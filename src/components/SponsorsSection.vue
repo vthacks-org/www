@@ -5,12 +5,13 @@
       <h6 class="supertitle"> Our amazing </h6>
       <h1 class="futuristic blue"> Sponsors </h1>
     </div>
-    <div class="seperator large pink"></div>
+    <div class="seperator large blue"></div>
 
     <div class="info-term">
       <p>$> <span style="color: #48d247;">INFO: </span> we are working with some great sponsors to bring VTHacks V to life. </p>
       <p>$> If you’re interested in being one of them, send us an email at <a href="mailto:sponsorship@vthacks.com">sponsorship@vthacks.com</a> </p>
     </div>
+    <div class="gradient-seperator reversed"></div>
   </div>
 </template>
 
@@ -33,14 +34,6 @@ export default {
   background-color: #111;
   display: flex;
   flex-direction: column;
-}
-
-.gradient-seperator{
-    height: 2px;
-    background: linear-gradient(to right,
-      $neon-blue                0%,
-      $neon-pink                100%);
-
 }
 
 .info-term {
