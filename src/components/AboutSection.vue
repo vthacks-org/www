@@ -4,7 +4,7 @@
       <img src="../assets/vthacks-logo.png">
       <div class="specs">
         <div><span>OS:</span> VTHacks x86_64</div>
-        <div><span>Model:</span> SURGE 5TH EDITION</div>
+        <div><span>Model:</span> 5TH EDITION</div>
       </div>
     </div>
     <div>
