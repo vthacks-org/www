@@ -44,6 +44,7 @@ $splash-min-width: 600px;
   flex-direction: column;
   padding: 16px;
   align-items: center;
+  padding: 70px 0;
 }
 
 #details-background {

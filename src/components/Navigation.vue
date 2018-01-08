@@ -26,6 +26,10 @@ export default {
           id: 'splash-section',
         },
         {
+          name: 'Register',
+          id: 'details-section',
+        },
+        {
           name: 'About',
           id: 'about-section',
         },
