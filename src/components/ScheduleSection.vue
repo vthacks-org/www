@@ -260,30 +260,30 @@ export default {
     #neon-sign-off {
       position: absolute;
       top: 0;
-      animation: animation2 3s infinite;
+      animation: animation2 9s infinite;
     }
     #neon-sign-on {
       position: absolute;
       top: 0;
-      animation: animation1 3s infinite;
+      animation: animation1 9s infinite;
     }
   }
 
   @keyframes animation1 {
     0% { opacity: .95; }
-    90% { opacity: .95; }
-    92% { opacity: 0; }
-    94% { opacity: 0.85;}
-    98% { opacity: 0; }
+    95% { opacity: .95; }
+    96% { opacity: 0; }
+    97% { opacity: 0.85;}
+    99% { opacity: 0; }
     100% { opacity: .95}
   }
 
   @keyframes animation2 {
     0% { opacity: 0; }
-    90% { opacity: 0; }
-    92% { opacity: 0.5; }
-    94% { opacity: 0;}
-    98% { opacity: 0.5; }
+    95% { opacity: 0; }
+    96% { opacity: 0.5; }
+    97% { opacity: 0;}
+    99% { opacity: 0.5; }
     100% { opacity: 0}
   }
 </style>
