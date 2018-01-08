@@ -110,13 +110,23 @@ $splash-min-width: 600px;
   }
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 375px) {
+  #details-section{
+    padding: 16px;
+  }
   .se-title, .where-title {
     margin-bottom: 0px;
     margin-top: 0px;
   }
-  .se-date, .where-location {
-    font-size: 0.8em;
+
+  .start-and-end, .where {
+    .se-title, .where-title {
+      font-size: 1.25em;
+    }
+    .se-date, .where-location {
+      font-size: .8em;
+    }
   }
 
   .start-and-end, .where {

@@ -108,6 +108,17 @@ export default {
     }
 }
 
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 480px) {
+  .eightbit-btn {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .info-term {
+    font-size: 10px;
+  }
+}
+
 }
 
 .info-term {
