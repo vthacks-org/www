@@ -122,7 +122,7 @@ $splash-min-width: 600px;
   }
 
   #splash-date {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   #splash-apply {
@@ -139,7 +139,7 @@ $splash-min-width: 600px;
   }
 
   #splash-date {
-    top: 8px;
+    top: 12px;
   }
 
   #splash-logo {
