@@ -11,7 +11,7 @@
       <p>$> <span style="color: #48d247;">INFO: </span> we are working with some great sponsors to bring VTHacks V to life. </p>
       <p>$> If you’re interested in being one of them, send us an email at <a href="mailto:sponsorship@vthacks.com">sponsorship@vthacks.com</a> </p>
     </div>
-    <div class="gradient-seperator reversed"></div>
+    <div class="gradient-seperator bottom reversed"></div>
   </div>
 </template>
 
