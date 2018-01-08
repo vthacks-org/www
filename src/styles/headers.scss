@@ -20,6 +20,11 @@ $blue-gradient: linear-gradient(to bottom,
   darken($neon-blue,  35%)  51%,
   $neon-blue                100%);
 
+$yellow-gradient: linear-gradient(to bottom,
+  $neon-yellow                0%,
+  lighten($vth-red, 10%)    50%,
+  darken($neon-yellow,  35%)  51%,
+  $neon-yellow                100%);
 
 /*
 Usage
@@ -59,6 +64,27 @@ Usage
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  &.yellow {
+    background: $yellow-gradient;
+    -webkit-text-stroke-color: lighten($neon-yellow, 30%);
+
+    /* Order matters so this has to be explicit in the sub class*/
+    background-blend-mode: multiply;
+    background-size: 10px $header-size;
+    background-repeat: repeat;
+    line-height: 1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &.center {
+    text-align: center;
+  }
+  &.small {
+    font-size: $header-size * 0.8;
+  }
+  @media (max-width: $splash-min-width) {
+    font-size: $header-size * 0.8;
+  }
   -webkit-text-stroke-width: 1px;
 
 
@@ -86,6 +112,7 @@ Usage:
 */
 
 .seperator {
+  position: relative;
   align-self: center;
   border-style: solid;
   margin-bottom: 15px;
@@ -99,6 +126,10 @@ Usage:
     border-color: $neon-blue;
     background-color: $neon-blue;
   }
+  &.yellow {
+    border-color: $neon-yellow;
+    background-color: $neon-yellow;
+  }
 
   &.small {
     width: 20px;
@@ -106,5 +137,19 @@ Usage:
   &.large {
     width: 70px;
   }
+}
 
+.gradient-seperator{
+  height: 2px;
+  background: linear-gradient(to right,
+    $neon-pink                0%,
+    $neon-blue                100%);
+  &.reversed {
+    background: linear-gradient(to left,
+      $neon-pink                0%,
+      $neon-blue                100%);
+  }
+  &.bottom{
+    margin-top: auto;
+  }
 }
