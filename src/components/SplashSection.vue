@@ -7,7 +7,6 @@
       <div id="splash-apply">
         <a id="registration-link" href="/register">
           <div>Hack The Planet</div>
-          <img id="apply-image" src="../assets/apply-now.png">
         </a>
       </div>
     </div>
@@ -67,7 +66,7 @@ export default {
   position: absolute;
   color: white;
   font-family: EndlessBummer, monospace;
-  top: 62%;
+  top: 65%;
   width: 100%;
   text-align: center;
   font-size: 58px;
