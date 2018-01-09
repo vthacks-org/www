@@ -47,7 +47,6 @@ export default {
 
 #sponsors-section {
   width: 100%;
-  height: auto;
   background-color: #111;
   display: flex;
   flex-direction: column;
@@ -66,30 +65,27 @@ export default {
   flex-wrap: wrap;
   margin-bottom: 25px;
 
-  img {
-    width: auto;
-    height: auto;
-    max-width: 95vw;
-  }
-
   &.big{
     img {
-      padding: 10px;
       max-height: 13vh;
+      max-width: 100%;
+      padding: 10px;
     }
   }
   &.medium{
     img {
       max-height: 11vh;
+      max-width: 50%;
+      min-width: 200px;
       padding: 5px;
     }
   }
   &.small{
-    max-height: 15vh;
-    width: auto;
     img {
-      height: auto;
-      width: 20%;
+      max-height: 10vh;
+      max-width: 20%;
+      min-width: 150px;
+      padding: 5px;
     }
   }
   &.center{
