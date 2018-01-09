@@ -10,7 +10,7 @@
       </div>
       <div class="register">
         <!-- This is explicit because off www -->
-        <a href="https://vthacks.com/register" class="register-link eightbit-btn">Sign Up &gt;</a>
+        <a href="/register" class="register-link eightbit-btn">Sign Up &gt;</a>
       </div>
     </div>
     <div class="gradient-seperator bottom reversed"></div>
