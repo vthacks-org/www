@@ -5,8 +5,8 @@
       <div class="register-deadline futuristic blue center">Registration is Open!</div>
       <div id="register-separator" class="seperator blue large"></div>
       <div class="info-term">
-        <p>$> <span style="color: #48d247;">INFO: </span> VTHacks accepts applicants on a first-come, first-served basis.
-          Applicatants from all backgrounds are encouraged to apply. </p>
+        <p>$> <span style="color: #48d247;">INFO: </span> VTHacks accepts applicants on a first-come, first-serve basis.
+          Applicants from all backgrounds are encouraged to apply. </p>
       </div>
       <div class="register">
         <!-- This is explicit because off www -->
