@@ -11,6 +11,17 @@
       <p>$> <span style="color: #48d247;">INFO: </span> we are working with some great sponsors to bring VTHacks V to life. </p>
       <p>$> If you’re interested in being one of them, send us an email at <a href="mailto:sponsorship@vthacks.com">sponsorship@vthacks.com</a> </p>
     </div>
+
+    <div class="sponsor-logos">
+      <div class="sponsor-tier big center">
+        <img v-lazy="microstrategy"/>
+      </div>
+
+      <div class="sponsor-tier medium center">
+        <img v-lazy="jbHunt"/>
+      </div>
+    </div>
+
     <div class="gradient-seperator bottom reversed"></div>
   </div>
 </template>
@@ -18,6 +29,12 @@
 <script>
 export default {
   name: 'SponsorsSection',
+  data() {
+    return {
+      jbHunt: '/src/assets/sponsors/JBHunt.jpg',
+      microstrategy: '/src/assets/sponsors/MicroStrategy.png',
+    };
+  },
 };
 </script>
 
@@ -30,10 +47,51 @@ export default {
 
 #sponsors-section {
   width: 100%;
-  min-height: 300px;
   background-color: #111;
   display: flex;
   flex-direction: column;
+}
+
+.sponsor-logos {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.sponsor-tier{
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
+  &.big{
+    img {
+      max-height: 13vh;
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+  &.medium{
+    img {
+      max-height: 11vh;
+      max-width: 50%;
+      min-width: 200px;
+      padding: 5px;
+    }
+  }
+  &.small{
+    img {
+      max-height: 10vh;
+      max-width: 20%;
+      min-width: 150px;
+      padding: 5px;
+    }
+  }
+  &.center{
+    justify-content: center;
+  }
+
 }
 
 .info-term {
