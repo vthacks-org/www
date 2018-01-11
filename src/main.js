@@ -3,11 +3,13 @@
 import Vue from 'vue';
 import smoothScroll from 'vue-smoothscroll';
 import VueAnalytics from 'vue-analytics';
+import VueLazyload from 'vue-lazyload';
 import App from './App.vue';
 import router from './router';
 
 Vue.config.productionTip = false;
 Vue.use(smoothScroll);
+Vue.use(VueLazyload);
 Vue.use(VueAnalytics, {
   id: 'UA-107929421-1',
   checkDuplicatedScript: true,
