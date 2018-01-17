@@ -33,8 +33,8 @@ export default {
   name: 'SponsorsSection',
   data() {
     return {
-      jbHunt: '/src/assets/sponsors/JBHunt.jpg',
-      microstrategy: '/src/assets/sponsors/MicroStrategy.png',
+      jbHunt: '/static/sponsors/JBHunt.jpg',
+      microstrategy: '/static/sponsors/MicroStrategy.png',
     };
   },
 };
