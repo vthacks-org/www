@@ -66,7 +66,7 @@ export default {
   position: absolute;
   color: white;
   font-family: EndlessBummer, monospace;
-  top: 65%;
+  top: 62%;
   width: 100%;
   text-align: center;
   font-size: 58px;
