@@ -13,11 +13,9 @@
     </div>
 
     <div class="sponsor-logos">
-      <!--
       <div class="sponsor-tier big center">
         <img v-lazy="microstrategy"/>
       </div>
-    -->
 
       <div class="sponsor-tier medium center">
         <img v-lazy="jbHunt"/>
