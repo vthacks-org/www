@@ -19,6 +19,7 @@
 
       <div class="sponsor-tier medium center">
         <img v-lazy="jbHunt"/>
+        <img v-lazy="wolfram"/>
       </div>
     </div>
 
@@ -31,8 +32,9 @@ export default {
   name: 'SponsorsSection',
   data() {
     return {
-      jbHunt: '/static/sponsors/JBHunt.jpg',
+      jbHunt: '/static/sponsors/JBHunt.svg',
       microstrategy: '/static/sponsors/MicroStrategy.png',
+      wolfram: '/static/sponsors/WolframLanguageLogo.png',
     };
   },
 };
@@ -67,25 +69,25 @@ export default {
 
   &.big{
     img {
-      max-height: 13vh;
+      max-height: 11vh;
       max-width: 100%;
       padding: 10px;
     }
   }
   &.medium{
     img {
-      max-height: 11vh;
+      max-height: 10vh;
       max-width: 50%;
       min-width: 200px;
-      padding: 5px;
+      padding: 15px;
     }
   }
   &.small{
     img {
-      max-height: 10vh;
+      max-height: 9vh;
       max-width: 20%;
       min-width: 150px;
-      padding: 5px;
+      padding: 15px;
     }
   }
   &.center{
