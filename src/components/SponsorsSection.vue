@@ -19,7 +19,7 @@
 
       <div class="sponsor-tier medium center">
         <img v-lazy="jbHunt"/>
-        <img v-lazy="wolfram"/>
+        <img v-lazy="wolfram" class="dark logo"/>
       </div>
     </div>
 
@@ -49,7 +49,7 @@ export default {
 
 #sponsors-section {
   width: 100%;
-  background-color: #111;
+  background-color: #010B13;
   display: flex;
   flex-direction: column;
 }
@@ -62,7 +62,6 @@ export default {
 
 .sponsor-tier{
   align-self: center;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 25px;
@@ -92,6 +91,10 @@ export default {
   }
   &.center{
     justify-content: center;
+  }
+
+  .dark.logo {
+    background-color: #ECEFF1;
   }
 
 }
