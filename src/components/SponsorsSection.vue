@@ -20,6 +20,7 @@
       <div class="sponsor-tier medium center">
         <img v-lazy="jbHunt"/>
         <img v-lazy="wolfram" class="dark logo"/>
+        <img v-lazy="willowtree"/>
       </div>
     </div>
 
@@ -35,6 +36,7 @@ export default {
       jbHunt: '/static/sponsors/JBHunt.svg',
       microstrategy: '/static/sponsors/MicroStrategy.png',
       wolfram: '/static/sponsors/WolframLanguageLogo.png',
+      willowtree: '/static/sponsors/WillowTree.svg',
     };
   },
 };
@@ -65,28 +67,23 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 25px;
+  display: flex;
+
+  img {
+      padding: 20px;
+  }
 
   &.big{
     img {
       max-height: 11vh;
       max-width: 100%;
-      padding: 10px;
     }
   }
   &.medium{
     img {
       max-height: 10vh;
       max-width: 50%;
-      min-width: 200px;
-      padding: 15px;
-    }
-  }
-  &.small{
-    img {
-      max-height: 9vh;
-      max-width: 20%;
-      min-width: 150px;
-      padding: 15px;
+      min-width: 250px;
     }
   }
   &.center{
