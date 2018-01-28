@@ -70,7 +70,7 @@ export default {
   display: flex;
 
   img {
-      padding: 20px;
+      margin: 20px;
   }
 
   &.big{
@@ -92,6 +92,7 @@ export default {
 
   .dark.logo {
     background-color: #ECEFF1;
+    padding: 10px;
   }
 
 }
