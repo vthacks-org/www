@@ -41,7 +41,7 @@ export default {
       microstrategy: '/static/sponsors/MicroStrategy.png',
       wolfram: '/static/sponsors/WolframLanguageLogo.png',
       willowtree: '/static/sponsors/WillowTree.svg',
-      capitalOne: '/static/sponsors/capitalOneWhite.png',
+      capitalOne: '/static/sponsors/CapitalOneWhite.png',
     };
   },
 };
