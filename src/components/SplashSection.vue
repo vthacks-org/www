@@ -1,7 +1,7 @@
 <template>
   <div id="splash-section">
     <div id="splash-container">
-      <img id="splash-combined" src="../assets/splash-combined.png">
+      <img id="splash-combined" src="../assets/composite_splash.png">
       <img id="splash-logo" src="../assets/splash-neon-sign-logo.svg">
       <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
       <div id="splash-apply">
