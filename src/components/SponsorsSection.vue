@@ -19,8 +19,12 @@
 
       <div class="sponsor-tier medium center">
         <img v-lazy="jbHunt"/>
-        <img v-lazy="wolfram" class="dark logo"/>
         <img v-lazy="willowtree"/>
+        <img v-lazy="capitalOne"/>
+      </div>
+
+      <div class="sponsor-tier small center">
+        <img v-lazy="wolfram" class="dark logo"/>
       </div>
     </div>
 
@@ -37,6 +41,7 @@ export default {
       microstrategy: '/static/sponsors/MicroStrategy.png',
       wolfram: '/static/sponsors/WolframLanguageLogo.png',
       willowtree: '/static/sponsors/WillowTree.svg',
+      capitalOne: '/static/sponsors/capitalOneWhite.png',
     };
   },
 };
@@ -73,18 +78,18 @@ export default {
       margin: 20px;
   }
 
-  &.big{
-    img {
+  &.big > img {
       max-height: 11vh;
       max-width: 100%;
-    }
   }
-  &.medium{
-    img {
+  &.medium > img {
       max-height: 10vh;
       max-width: 50%;
       min-width: 250px;
-    }
+  }
+  &.small > img {
+      max-height: 8vh;
+      max-width: 200px;
   }
   &.center{
     justify-content: center;
