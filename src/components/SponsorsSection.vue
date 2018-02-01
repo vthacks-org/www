@@ -13,18 +13,16 @@
     </div>
 
     <div class="sponsor-logos">
-      <div class="sponsor-tier big center">
-        <img v-lazy="microstrategy"/>
+      <div class="sponsor-tier big center" >
+          <img v-for="image in sponsors.big" v-lazy="image"/>
       </div>
 
       <div class="sponsor-tier medium center">
-        <img v-lazy="jbHunt"/>
-        <img v-lazy="willowtree"/>
-        <img v-lazy="capitalOne"/>
+          <img v-for="image in sponsors.medium" v-lazy="image"/>
       </div>
 
       <div class="sponsor-tier small center">
-        <img v-lazy="wolfram" class="dark logo"/>
+          <img v-for="image in sponsors.smallDark" class="dark logo" v-lazy="image"/>
       </div>
     </div>
 
@@ -37,11 +35,19 @@ export default {
   name: 'SponsorsSection',
   data() {
     return {
-      jbHunt: '/static/sponsors/JBHunt.svg',
-      microstrategy: '/static/sponsors/MicroStrategy.png',
-      wolfram: '/static/sponsors/WolframLanguageLogo.png',
-      willowtree: '/static/sponsors/WillowTree.svg',
-      capitalOne: '/static/sponsors/CapitalOneWhite.png',
+      sponsors: {
+        big: [
+          '/static/sponsors/MicroStrategy.png',
+        ],
+        medium: [
+          '/static/sponsors/JBHunt.svg',
+          '/static/sponsors/WillowTree.svg',
+          '/static/sponsors/CapitalOneWhite.png',
+        ],
+        smallDark: [
+          '/static/sponsors/WolframLanguageLogo.png',
+        ],
+      },
     };
   },
 };
@@ -76,20 +82,20 @@ export default {
 
   img {
       margin: 20px;
+      min-height: 7vh;
   }
 
   &.big > img {
-      max-height: 11vh;
-      max-width: 100%;
+      max-height: 13vh;
+      min-width: 400px;
   }
   &.medium > img {
       max-height: 10vh;
-      max-width: 50%;
       min-width: 250px;
   }
   &.small > img {
       max-height: 8vh;
-      max-width: 200px;
+      min-width: 125px;
   }
   &.center{
     justify-content: center;
