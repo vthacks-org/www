@@ -73,14 +73,14 @@ export default {
           title: 'Opening Ceremony',
           description: '',
           date: 'Friday',
-          start: '7:30 PM',
-          end: '8:30 PM',
+          start: '8:00 PM',
+          end: '8:45 PM',
         },
         {
           title: 'Team Formation',
           description: '',
           date: 'Friday',
-          start: '8:30 PM',
+          start: '8:45 PM',
           end: '9:00 PM',
         },
         {
