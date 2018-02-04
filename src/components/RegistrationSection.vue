@@ -9,7 +9,7 @@
           Applicants from all backgrounds are encouraged to apply. </p>
       </div>
       <div class="register">
-        <a href="/register" class="register-link medium vth-blue eightbit-btn">Sign Up &gt;</a>
+        <a href="/register" class="register-link medium blue eightbit-btn">Sign Up &gt;</a>
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5vh 25px 7vh 25px;
+  margin: 3vh 25px;
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -60,5 +60,6 @@ export default {
   color: white;
   word-wrap: normal;
   align-self: center;
+  max-width: 80%;
 }
 </style>

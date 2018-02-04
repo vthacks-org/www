@@ -1,13 +1,13 @@
 <template>
   <div id="volunteer-section">
     <div class="volunteer-content">
-      <div class="register-deadline futuristic pink center">Volunteering</div>
-      <div id="volunteer-separator" class="seperator pink large"></div>
+      <div class="register-deadline futuristic small pink center">Volunteering</div>
+      <div id="register-separator" class="seperator pink large"></div>
 
       <div class="info-term">
         <p>$> <span style="color: #48d247;">INFO: </span> Want to help us out? VTHacks
           always needs volunteers to help during the event. You don't need any special skills or anything but
-           if you have any questions email us at <a href="mailto:info@vthacks.com">info@vthacks.com</a></p>
+           if you have any questions email us at <a href="mailto:info@vthacks.com">info@vthacks.com</a>.</p>
       </div>
 
       <div class="actions">
@@ -33,7 +33,7 @@ export default {
 @import '../styles/eightbit-btn';
 
 #volunteer-section{
-  min-height: 40vh;
+  min-height: 35vh;
   background-color: $rich-black;
   overflow: hidden;
 }
@@ -46,7 +46,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5vh 25px 7vh 25px;
+  margin: 3vh 25px;
 }
 
 .info-term {
@@ -57,6 +57,7 @@ export default {
   color: white;
   word-wrap: normal;
   align-self: center;
+  max-width: 80%;
 }
 
 /* All Mobile Sizes (devices and browser) */
