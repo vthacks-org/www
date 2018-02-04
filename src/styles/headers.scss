@@ -80,7 +80,7 @@ Usage
     text-align: center;
   }
   &.small {
-    font-size: $header-size * 0.8;
+    font-size: $header-size * 0.9;
   }
   @media (max-width: $splash-min-width) {
     font-size: $header-size * 0.8;

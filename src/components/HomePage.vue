@@ -5,10 +5,11 @@
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
     <RegistrationSection></RegistrationSection>
-    <VolunteerSection></VolunteerSection>    
     <AboutSection></AboutSection>
     <ScheduleSection></ScheduleSection>
     <MapSection></MapSection>
+    <VolunteerSection></VolunteerSection>
+    <TravelSection></TravelSection>
     <SponsorsSection></SponsorsSection>
     <FooterSection></FooterSection>
   </div>
@@ -20,6 +21,7 @@ import MLHTrustBadge from './MLHTrustBadge.vue';
 import SplashSection from './SplashSection.vue';
 import DetailsSection from './DetailsSection.vue';
 import VolunteerSection from './VolunteerSection.vue';
+import TravelSection from './TravelSection.vue';
 import RegistrationSection from './RegistrationSection.vue';
 import AboutSection from './AboutSection.vue';
 import ScheduleSection from './ScheduleSection.vue';
@@ -35,6 +37,7 @@ export default {
     SplashSection,
     DetailsSection,
     VolunteerSection,
+    TravelSection,
     RegistrationSection,
     AboutSection,
     ScheduleSection,
