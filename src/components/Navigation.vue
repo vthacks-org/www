@@ -27,7 +27,7 @@ export default {
         },
         {
           name: 'Register',
-          id: 'details-section',
+          id: 'registration-section',
         },
         {
           name: 'About',

@@ -2,18 +2,16 @@
   <div id="registration-section">
     <div class="gradient-seperator"></div>
     <div class="register-content">
-      <div class="register-deadline futuristic blue center">Registration is Open!</div>
+      <div class="register-deadline futuristic blue center">Registration</div>
       <div id="register-separator" class="seperator blue large"></div>
       <div class="info-term">
         <p>$> <span style="color: #48d247;">INFO: </span> VTHacks accepts applicants on a first-come, first-serve basis.
           Applicants from all backgrounds are encouraged to apply. </p>
       </div>
       <div class="register">
-        <!-- This is explicit because off www -->
-        <a href="/register" class="register-link eightbit-btn">Sign Up &gt;</a>
+        <a href="/register" class="register-link big blue eightbit-btn">Sign Up &gt;</a>
       </div>
     </div>
-    <div class="gradient-seperator bottom reversed"></div>
   </div>
 </template>
 
@@ -28,9 +26,11 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/headers';
 @import '../styles/vars';
+@import '../styles/eightbit-btn';
 
 #registration-section {
-  background-color: #111;
+  min-height: 40vh;
+  background-color: $rich-black;
   overflow: hidden;
 }
 
@@ -42,83 +42,14 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5vh 25px 7vh 25px;
-}
-
-.register {
-  padding: 16px;
-  .register-link {
-    font-family: $font-2P;
-    padding: 16px;
-  }
-
-
-  $outline-width: 4px;
-  $outline-color: white;
-  $shadow-width: 5px;
-
-  $button-background: darken(blue, 30%);
-  $sec-button-background: lighten(blue, 10%);
-  $shadow-color:  blue;
-
-
-  .eightbit-btn {
-    background: $button-background;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-size: 20px;
-    padding: 20px;
-    font-family: $font-2P;
-    text-decoration: none;
-    color: white;
-    box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
-
-    &:hover,
-    &:focus {
-        background: $sec-button-background;
-        box-shadow: inset (-$shadow-width*1.5) (-$shadow-width*1.5) 0px 0px $shadow-color;
-    }
-
-    &:active {
-        box-shadow: inset $shadow-width $shadow-width 0px 0px $shadow-color;
-    }
-
-    &:before,
-    &:after {
-    content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        box-sizing: content-box;
-    }
-
-    &:before {
-        top: -$outline-width;
-        left: 0;
-        border-top: $outline-width $outline-color solid;
-        border-bottom: $outline-width $outline-color solid;
-    }
-
-    &:after {
-        left: -$outline-width;
-        top: 0;
-        border-left: $outline-width $outline-color solid;
-        border-right: $outline-width $outline-color solid;
-    }
+  margin: 3vh 25px;
 }
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 480px) {
-  .eightbit-btn {
-    font-size: 12px;
-    padding: 10px;
-  }
   .info-term {
-    font-size: 10px;
+    font-size: 11px;
   }
-}
-
 }
 
 .info-term {
@@ -129,5 +60,6 @@ export default {
   color: white;
   word-wrap: normal;
   align-self: center;
+  max-width: 80%;
 }
 </style>
