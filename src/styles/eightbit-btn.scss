@@ -64,11 +64,23 @@ $shadow-width: 5px;
     &.big {
       font-size: 20px;
       padding: 20px;
+
+      /* All Mobile Sizes (devices and browser) */
+      @media only screen and (max-width: 480px) {
+        font-size: 16px;
+        padding: 16px;
+      }
     }
 
     &.medium {
       font-size: 14px;
       padding: 14px;
+
+      /* All Mobile Sizes (devices and browser) */
+      @media only screen and (max-width: 480px) {
+        font-size: 12px;
+        padding: 12px;
+      }
     }
 
     display: inline-block;
@@ -100,14 +112,6 @@ $shadow-width: 5px;
         top: 0;
         border-left: $outline-width $outline-color solid;
         border-right: $outline-width $outline-color solid;
-    }
-
-    /* All Mobile Sizes (devices and browser) */
-    @media only screen and (max-width: 480px) {
-      .eightbit-btn {
-        font-size: 12px;
-        padding: 10px;
-      }
     }
 
 }

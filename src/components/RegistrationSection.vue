@@ -9,7 +9,7 @@
           Applicants from all backgrounds are encouraged to apply. </p>
       </div>
       <div class="register">
-        <a href="/register" class="register-link medium blue eightbit-btn">Sign Up &gt;</a>
+        <a href="/register" class="register-link big blue eightbit-btn">Sign Up &gt;</a>
       </div>
     </div>
   </div>
