@@ -15,8 +15,8 @@
         <!-- <a href="/travel-reimbursement" class="register-link medium vth-red eightbit-btn">Request Bus &gt;</a>
         <a href="/bus-interest" class="register-link medium vth-blue eightbit-btn">Travel Reimbursement &gt;</a> -->
       </div>
-      <div class="gradient-seperator bottom reversed"></div>
     </div>
+    <div class="gradient-seperator bottom reversed"></div>
   </div>
 </template>
 
@@ -33,7 +33,7 @@ export default {
 @import '../styles/eightbit-btn';
 
 #volunteer-section{
-  min-height: 35vh;
+  min-height: 30vh;
   background-color: $rich-black;
   overflow: hidden;
 }

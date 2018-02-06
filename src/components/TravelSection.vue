@@ -32,7 +32,7 @@ export default {
 @import '../styles/eightbit-btn';
 
 #travel-section{
-  min-height: 35vh;
+  min-height: 30vh;
   background-color: $rich-black;
   overflow: hidden;
 }
