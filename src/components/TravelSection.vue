@@ -41,6 +41,10 @@ export default {
   margin-bottom: 0px;
 }
 
+.actions {
+  text-align: center;
+}
+
 .travel-content{
   display: flex;
   flex-direction: column;
