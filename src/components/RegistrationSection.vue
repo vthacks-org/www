@@ -29,7 +29,7 @@ export default {
 @import '../styles/eightbit-btn';
 
 #registration-section {
-  min-height: 40vh;
+  min-height: 30vh;
   background-color: $rich-black;
   overflow: hidden;
 }
@@ -42,7 +42,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3vh 25px;
+  margin: 5vh 25px;
 }
 
 /* All Mobile Sizes (devices and browser) */
