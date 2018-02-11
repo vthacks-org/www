@@ -19,20 +19,24 @@
       <div class="sponsor-tier small center">
           <img v-for="image in sponsors.smallDark" class="dark logo" v-lazy="image"/>
       </div>
+    </div>
 
+    <div class="gradient-seperator bottom reversed"></div>
+
+    <div class="sponsor-logos">
       <div style="margin: 0 auto; justify-content:center">
-        <h6 class="supertitle"> and Our awesome </h6>
+        <h6 class="supertitle pink"> and Our awesome </h6>
         <h3 class="futuristic pink"> Caterers </h3>
       </div>
+      <div class="seperator large pink"></div>
+
+
       <div class="sponsor-tier catering center">
           <img v-for="image in food.square" class="square" v-lazy="image"/>
           <img v-for="image in food.rectangular" class="rectangular" v-lazy="image"/>
       </div>
     </div>
-
-
-
-    <div class="gradient-seperator bottom reversed"></div>
+    <div class="gradient-seperator bottom"></div>
   </div>
 </template>
 
