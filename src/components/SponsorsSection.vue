@@ -57,7 +57,6 @@ export default {
       food: {
         rectangular: [
           '/static/sponsors/Campus Cookies.png',
-          '/static/sponsors/Idego Coffee.png',
         ],
         square: [
           '/static/sponsors/Carol Lee.jpg',
@@ -65,6 +64,7 @@ export default {
           '/static/sponsors/Marco and Lucas.png',
           '/static/sponsors/NDBS.png',
           '/static/sponsors/Zeppoli_s.jpg',
+          '/static/sponsors/IdegoCoffee.svg',
         ],
       },
     };
