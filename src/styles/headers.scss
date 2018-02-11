@@ -102,6 +102,10 @@ container
   text-transform: uppercase;
   font-family: $font-2P;
   color: $neon-blue;
+
+  &.pink {
+    color: lighten($neon-pink, 10%);
+  }
 }
 
 
