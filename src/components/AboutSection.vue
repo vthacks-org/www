@@ -49,10 +49,6 @@ export default {
           a: 'Yes, we\'ll have lots of cool hardware you can build with!',
         },
         {
-          q: 'What about transportation?',
-          a: 'We will be sponsoring several busses to bring hackers from select schools to VTHacks. Send us an email at <a href="mailto:transportation@vthacks.com">transportation@vthacks.com</a> if you want your school to be selected.',
-        },
-        {
           q: 'Do I have to have fun?',
           a: 'Yes. We\'ll make sure that you do.',
         },

@@ -1,0 +1,117 @@
+/* This button is used on a lot of the registration sections so I moved it there
+The mixin allows for coloring the button easily */
+
+// Button styling
+$outline-width: 4px;
+$outline-color: white;
+$shadow-width: 5px;
+
+/* Mixin to change the button colour */
+@mixin technicolor($color){
+  // Create colours from the base
+  $button-background: darken($color, 10%);
+  $sec-button-background: lighten($color, 10%);
+  $shadow-color:  $color;
+
+  /* Properties */
+  background: $button-background;
+  box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
+
+  &:hover,
+  &:focus {
+      background: $sec-button-background;
+      box-shadow: inset (-$shadow-width*1.5) (-$shadow-width*1.5) 0px 0px $shadow-color;
+  }
+
+  &:active {
+      box-shadow: inset $shadow-width $shadow-width 0px 0px $shadow-color;
+  }
+}
+
+// Usage: class="[ big | medium ] [ red | green | blue | vth-red | vth-blue | ...] eightbit-btn"
+
+.eightbit-btn {
+    $outline-width: 4px;
+    $outline-color: white;
+    $shadow-width: 5px;
+
+    &.blue {
+      @include technicolor(blue);
+    }
+    &.green {
+      @include technicolor(green);
+    }
+    &.red {
+      @include technicolor(red);
+    }
+    &.neon-blue {
+      @include technicolor(darken($neon-blue, 20%));
+    }
+    &.neon-pink {
+      @include technicolor(darken($neon-pink, 10%));
+    }
+    &.neon-yellow {
+      @include technicolor(darken($neon-yellow, 5%));
+      color: black;
+    }
+    &.vth-red{
+      @include technicolor($vth-red);
+    }
+    &.vth-blue{
+      @include technicolor(darken($vth-blue,10%));
+    }
+
+    &.big {
+      font-size: 20px;
+      padding: 20px;
+
+      /* All Mobile Sizes (devices and browser) */
+      @media only screen and (max-width: 480px) {
+        font-size: 16px;
+        padding: 16px;
+      }
+    }
+
+    &.medium {
+      font-size: 14px;
+      padding: 14px;
+
+      /* All Mobile Sizes (devices and browser) */
+      @media only screen and (max-width: 480px) {
+        font-size: 12px;
+        padding: 12px;
+      }
+    }
+
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-family: $font-2P;
+    text-decoration: none;
+    color: white;
+    margin: 12px;
+
+    &:before,
+    &:after {
+    content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: content-box;
+    }
+
+    &:before {
+        top: -$outline-width;
+        left: 0;
+        border-top: $outline-width $outline-color solid;
+        border-bottom: $outline-width $outline-color solid;
+    }
+
+    &:after {
+        left: -$outline-width;
+        top: 0;
+        border-left: $outline-width $outline-color solid;
+        border-right: $outline-width $outline-color solid;
+    }
+
+}
