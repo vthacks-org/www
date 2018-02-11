@@ -7,11 +7,6 @@
     </div>
     <div class="seperator large blue"></div>
 
-    <div class="info-term">
-      <p>$> <span style="color: #48d247;">INFO: </span> we are working with some great sponsors to bring VTHacks V to life. </p>
-      <p>$> If you’re interested in being one of them, send us an email at <a href="mailto:sponsorship@vthacks.com">sponsorship@vthacks.com</a> </p>
-    </div>
-
     <div class="sponsor-logos">
       <div class="sponsor-tier big center" >
           <img v-for="image in sponsors.big" v-lazy="image"/>
@@ -24,7 +19,18 @@
       <div class="sponsor-tier small center">
           <img v-for="image in sponsors.smallDark" class="dark logo" v-lazy="image"/>
       </div>
+
+      <div style="margin: 0 auto; justify-content:center">
+        <h6 class="supertitle"> and Our awesome </h6>
+        <h3 class="futuristic pink"> Caterers </h3>
+      </div>
+      <div class="sponsor-tier catering center">
+          <img v-for="image in food.square" class="square" v-lazy="image"/>
+          <img v-for="image in food.rectangular" class="rectangular" v-lazy="image"/>
+      </div>
     </div>
+
+
 
     <div class="gradient-seperator bottom reversed"></div>
   </div>
@@ -46,6 +52,19 @@ export default {
         ],
         smallDark: [
           '/static/sponsors/WolframLanguageLogo.png',
+        ],
+      },
+      food: {
+        rectangular: [
+          '/static/sponsors/Campus Cookies.png',
+        ],
+        square: [
+          '/static/sponsors/Carol Lee.jpg',
+          '/static/sponsors/Chinese Kitchen.png',
+          '/static/sponsors/Marco and Lucas.png',
+          '/static/sponsors/NDBS.png',
+          '/static/sponsors/Zeppoli_s.jpg',
+          '/static/sponsors/IdegoCoffee.svg',
         ],
       },
     };
@@ -81,13 +100,25 @@ export default {
   display: flex;
 
   img {
+      max-width: 80%;
       margin: 20px;
       min-height: 7vh;
   }
 
+  &.catering {
+
+    & > .square {
+      max-height: 15vh;
+    }
+    & > .rectangular {
+      max-height: 10vh;
+      height: auto;
+    }
+  }
+
   &.big > img {
       max-height: 13vh;
-      min-width: 400px;
+      min-width: 350px;
   }
   &.medium > img {
       max-height: 10vh;
@@ -97,8 +128,27 @@ export default {
       max-height: 8vh;
       min-width: 125px;
   }
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 480px) {
+    img {
+      margin: 15px;
+    }
+
+    &.medium > img {
+        max-height: 6vh;
+        min-width: 130px;
+    }
+    &.small > img {
+        max-height: 6vh;
+        max-width: 70px;
+        margin: 5px;
+    }
+  }
+
   &.center{
     justify-content: center;
+    align-items: center;
   }
 
   .dark.logo {
