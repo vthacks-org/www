@@ -30,6 +30,7 @@ export default {
 @import '../styles/vars';
 @import '../styles/colors';
 @import '../styles/eightbit-btn';
+@import '../styles/info-term';
 
 #travel-section{
   min-height: 30vh;
@@ -52,21 +53,4 @@ export default {
   margin: 3vh 25px;
 }
 
-.info-term {
-  .tag {
-    color: #48d247;
-  }
-  font-family: $font-VT232;
-  color: white;
-  word-wrap: normal;
-  align-self: center;
-  max-width: 80%;
-}
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 480px) {
-  .info-term {
-    font-size: 11px;
-  }
-}
 </style>

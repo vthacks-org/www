@@ -7,7 +7,8 @@
     <div class="seperator yellow large"></div>
     <div class="where">
       <div class="where-title futuristic small center">@ Virginia Tech</div>
-      <div class="where-location">Blacksburg, Virginia</div>
+      <div class="where-location">Surge Space Building</div>
+      <div class="where-location">435 Turner St NW,<br>Blacksburg, VA 24060</div>
     </div>
     <div class="start-and-end">
       <div class="start">
@@ -107,6 +108,8 @@ $splash-min-width: 600px;
   .where-location {
     font-family: $font-2P;
     color: $neon-pink;
+    text-align: center;
+    line-height: 24px;
   }
 }
 
