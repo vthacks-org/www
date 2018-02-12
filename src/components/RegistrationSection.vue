@@ -11,6 +11,13 @@
       <div class="register">
         <a href="/register" class="register-link big blue eightbit-btn">Sign Up &gt;</a>
       </div>
+      <div class="info-term">
+        <p>
+          $> <span style="color: rgba(233, 233, 0, 1);">Note: </span>
+          Applicants who are under the age of 18 are required to fill out the
+          <a href="/files/minors-form.pdf">VTHacks Minors Form</a>.
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -27,6 +34,7 @@ export default {
 @import '../styles/headers';
 @import '../styles/vars';
 @import '../styles/eightbit-btn';
+@import '../styles/info-term';
 
 #registration-section {
   min-height: 30vh;
@@ -43,23 +51,5 @@ export default {
   flex-direction: column;
   align-items: center;
   margin: 5vh 25px;
-}
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 480px) {
-  .info-term {
-    font-size: 11px;
-  }
-}
-
-.info-term {
-  .tag {
-    color: blue;
-  }
-  font-family: $font-VT232;
-  color: white;
-  word-wrap: normal;
-  align-self: center;
-  max-width: 80%;
 }
 </style>

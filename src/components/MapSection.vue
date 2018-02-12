@@ -43,11 +43,18 @@ export default {
         map,
       });
       const markerWindow = new google.maps.InfoWindow({
-        content: '<div>VTHacks V</div>',
+        content: `
+          <div>
+            <strong>VTHacks V</strong><br>
+            435 Turner St NW,<br>
+            Blacksburg, VA 24060<br>
+            <a href="#" style="background-color: initial; color: #427fed;">View on Google Maps</a>
+          </div>`,
       });
       marker.addListener('click', () => {
         markerWindow.open(map, marker);
       });
+      markerWindow.open(map, marker);
     });
   },
 };

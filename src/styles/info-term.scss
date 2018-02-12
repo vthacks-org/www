@@ -1,0 +1,17 @@
+.info-term {
+  .tag {
+    color: #48d247;
+  }
+  font-family: $font-VT232;
+  color: white;
+  word-wrap: normal;
+  align-self: center;
+  max-width: 80%;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 480px) {
+  .info-term {
+    font-size: 12px;
+  }
+}
