@@ -26,10 +26,6 @@ export default {
           id: 'splash-section',
         },
         {
-          name: 'Register',
-          id: 'registration-section',
-        },
-        {
           name: 'About',
           id: 'about-section',
         },

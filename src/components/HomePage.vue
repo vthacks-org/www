@@ -4,7 +4,6 @@
     <MLHTrustBadge></MLHTrustBadge>
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
-    <RegistrationSection></RegistrationSection>
     <AboutSection></AboutSection>
     <ScheduleSection></ScheduleSection>
     <MapSection></MapSection>
@@ -22,7 +21,6 @@ import SplashSection from './SplashSection.vue';
 import DetailsSection from './DetailsSection.vue';
 import VolunteerSection from './VolunteerSection.vue';
 import TravelSection from './TravelSection.vue';
-import RegistrationSection from './RegistrationSection.vue';
 import AboutSection from './AboutSection.vue';
 import ScheduleSection from './ScheduleSection.vue';
 import MapSection from './MapSection.vue';
@@ -38,7 +36,6 @@ export default {
     DetailsSection,
     VolunteerSection,
     TravelSection,
-    RegistrationSection,
     AboutSection,
     ScheduleSection,
     MapSection,
