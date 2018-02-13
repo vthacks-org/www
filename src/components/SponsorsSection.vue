@@ -53,6 +53,7 @@ export default {
           '/static/sponsors/JBHunt.svg',
           '/static/sponsors/WillowTree.svg',
           '/static/sponsors/CapitalOneWhite.png',
+          '/static/sponsors/Eastman.png',
         ],
         smallDark: [
           '/static/sponsors/WolframLanguageLogo.png',
