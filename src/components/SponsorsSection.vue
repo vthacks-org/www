@@ -128,6 +128,8 @@ export default {
   &.medium > img {
       max-height: 10vh;
       min-width: 250px;
+      max-width: 300px;
+      object-fit: contain;
   }
   &.small > img {
       max-height: 8vh;
