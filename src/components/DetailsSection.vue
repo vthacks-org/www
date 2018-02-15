@@ -20,10 +20,6 @@
         <div class="se-date">Feb 18 @ 3PM</div>
       </div>
     </div>
-    <div class="registration closed">
-      <h3 class="futuristic small center"> Registration </h3>
-      <h4 class="see-ya-there"> Registration is now closed and we had a huge number of applicants. We hope to see you all at the event! </h4>
-    </div>
   </div>
 </template>
 
@@ -117,21 +113,6 @@ $splash-min-width: 600px;
   }
 }
 
-.registration.closed{
-  position: relative;
-  color: $neon-blue;
-  -webkit-text-stroke-color: darken($neon-blue, 30%);
-  width: 50%;
-
-  .see-ya-there {
-    margin: 5px;
-    font-family: $font-2P;
-    color: $neon-pink;
-    text-align: center;
-    line-height: 20px;
-  }
-}
-
 @media (max-width: 480px) {
   #details-section{
     padding: 16px;
@@ -152,15 +133,6 @@ $splash-min-width: 600px;
 
   .start-and-end, .where {
     padding-bottom: 0px;
-  }
-
-  .registration.closed{
-    .futuristic.small {
-      font-size: 1.55em;
-      margin-top: 10px;
-    }
-    font-size: .8em;
-    width: 85%;
   }
 }
 </style>
