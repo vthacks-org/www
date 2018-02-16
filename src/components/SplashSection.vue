@@ -143,8 +143,8 @@ export default {
   }
 
   #splash-logo {
-    width: 130px;
-    top: 36px;
+    width: 110px;
+    top: 40px;
   }
 }
 </style>
