@@ -4,20 +4,24 @@
     <div class="seperator pink large"></div>
 
     <div class="schedule-breakdown">
-      <div class="neon-sign-padding"></div>
+      <div style="flex: 1"></div>
       <div class="neon-sign">
           <img id="neon-sign-on" src="../assets/neon_sign.svg"/>
           <img id="neon-sign-off" src="../assets/neon_sign_off.svg">
       </div>
-      <div class="neon-sign-padding"></div>
+      <div style="flex: 1"></div>
       <div class="schedules">
         <ul class="schedule">
           <div class="container">
             <div class="date"> Fri </div>
             <div class="seperator blue small"></div>
             <li v-for="event in events" v-if="event.date == 'Friday'" class="schedule-item">
-              <div class="time"> {{event.start}}</div>
+              <div class="time">
+                {{event.start}}
+                <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
+              </div>
               <div class="title"> {{event.title}}</div>
+              <div v-if="event.description" class="description"> {{event.description}}</div>
             </li>
           </div>
         </ul>
@@ -27,8 +31,12 @@
             <div class="date"> Sat  </div>
             <div class="seperator blue small"></div>
               <li v-for="event in events" v-if="event.date == 'Saturday'" class="schedule-item">
-                <div class="time"> {{event.start}}</div>
+                <div class="time">
+                  {{event.start}}
+                  <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
+                </div>
                 <div class="title"> {{event.title}}</div>
+                <div v-if="event.description" class="description"> {{event.description}}</div>
               </li>
           </div>
         </ul>
@@ -38,8 +46,12 @@
           <div class="date"> Sun   </div>
           <div class="seperator blue small"></div>
           <li v-for="event in events" v-if="event.date == 'Sunday'" class="schedule-item">
-            <div class="time"> {{event.start}}</div>
+            <div class="time">
+              {{event.start}}
+              <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
+            </div>
             <div class="title"> {{event.title}}</div>
+            <div v-if="event.description" class="description"> {{event.description}}</div>
           </li>
         </div>
       </ul>
@@ -64,24 +76,24 @@ export default {
         },
         {
           title: 'Dinner',
-          description: '',
+          description: 'Marco & Luca',
           date: 'Friday',
           start: '6:00 PM',
-          end: '7:00 PM',
+          end: '',
         },
         {
           title: 'Opening Ceremony',
           description: '',
           date: 'Friday',
           start: '8:00 PM',
-          end: '8:45 PM',
+          end: '',
         },
         {
           title: 'Team Formation',
           description: '',
           date: 'Friday',
           start: '8:45 PM',
-          end: '9:00 PM',
+          end: '',
         },
         {
           title: 'Hacking Begins',
@@ -90,49 +102,84 @@ export default {
           start: '9:00 PM',
           end: '',
         },
+        {
+          title: 'J. B. Hunt Tech Talk',
+          description: 'Room 118C',
+          date: 'Friday',
+          start: '9:30 PM',
+          end: '10:30 PM',
+        },
+        {
+          title: 'MicroStrategy Tech Talk',
+          description: '',
+          date: 'Friday',
+          start: '10:35 PM',
+          end: '11:35 PM',
+        },
+        {
+          title: 'Beginner GitHub Workshop by VT GitHub Organization',
+          description: '',
+          date: 'Friday',
+          start: '11:40 PM',
+          end: '12:10 PM',
+        },
         /* Saturday */
         {
           title: 'Midnight Snack',
-          description: '',
+          description: 'Campus Cookies',
           date: 'Saturday',
           start: '12:00 AM',
-          end: '1:00 AM',
+          end: '',
         },
         {
           title: 'Breakfast',
-          description: '',
+          description: 'Idego Coffee & Carol Lee Donuts',
           date: 'Saturday',
           start: '7:00 AM',
-          end: '9:30 AM',
+          end: '',
+        },
+        {
+          title: 'NodeJS Workshop by Kenny Worden',
+          description: '',
+          date: 'Saturday',
+          start: '10:00 AM',
+          end: '11:00 AM',
         },
         {
           title: 'Lunch',
-          description: '',
+          description: 'Zeppoli\'s',
           date: 'Saturday',
           start: '12:00 PM',
-          end: '1:00 PM',
+          end: '',
+        },
+        {
+          title: 'Smash Bros Tournament by MicroStrategy',
+          description: '',
+          date: 'Saturday',
+          start: '4:00 PM',
+          end: '5:30 PM',
         },
         {
           title: 'Dinner',
-          description: '',
+          description: 'Chinese Kitchen',
           date: 'Saturday',
           start: '7:00 PM',
-          end: '8:00 PM',
+          end: '',
         },
         /* Sunday */
         {
           title: 'Midnight Snack',
-          description: '',
+          description: 'Next Door Bakeshop & Gobblecakes',
           date: 'Sunday',
           start: '12:00 AM',
-          end: '1:00 AM',
+          end: '',
         },
         {
           title: 'Breakfast',
-          description: '',
+          description: 'Idego Coffee & Other',
           date: 'Sunday',
           start: '7:00 AM',
-          end: '9:30 AM',
+          end: '',
         },
         {
           title: 'Hacking Ends',
@@ -146,21 +193,21 @@ export default {
           description: '',
           date: 'Sunday',
           start: '11:00 AM',
-          end: '1:00 PM',
+          end: '',
         },
         {
           title: 'Lunch (open)',
-          description: '',
+          description: 'Zeppoli\'s',
           date: 'Sunday',
           start: '11:00 AM',
-          end: '1:30 PM',
+          end: '',
         },
         {
           title: 'Closing Ceremony',
           description: '',
           date: 'Sunday',
           start: '1:30 PM',
-          end: '2:30 PM',
+          end: '',
         },
       ],
     };
@@ -209,8 +256,9 @@ export default {
     }
 
     .schedules{
-      flex-grow: 1;
+      flex-grow: 4;
       display: flex;
+      justify-content: center;
       margin: 8px;
 
       ul.schedule {
@@ -219,7 +267,12 @@ export default {
         flex-grow: 1;
         display: flex;
         list-style-type: none;
+        max-width: 250px;
+        margin: 0 auto;
 
+        @media only screen and (max-width: 767px) {
+          margin: 10px; // Things get squished on mobile now
+        }
         .container {
           align-items: center;
           margin: 0 auto;
@@ -232,26 +285,50 @@ export default {
           color: $neon-pink;
           /* All Mobile Sizes (devices and browser) */
           @media only screen and (max-width: 767px) {
-            font-size: .7em;
+            font-size: .6em;
+          }
+          @media only screen and (min-width: 1600px) {
+            font-size: 1.0em;
           }
           font-size: 1.1vw;
+          line-height: 1.2em;
         }
         .title {
           margin-top: -2px;
           @media only screen and (max-width: 767px) {
             font-size: .9em;
           }
-          font-size: 1.3vw;
+          @media only screen and (min-width: 1600px) {
+            font-size: 1.25em;
+          }
+          font-size: 1.15em;
           color: grey;
+        }
+        .description {
+          margin-top: -2px;
+          // @media only screen and (max-width: 767px) {
+          //   font-size: .9em;
+          // }
+          @media only screen and (max-width: 767px) {
+            font-size: .85em;
+          }
+          font-size: 1.1em;
+          color: $neon-blue;
         }
       }
     }
 
   }
+
+  .nowrap {
+    white-space: nowrap;
+    padding-left: 10px;
+  }
+
   .neon-sign {
-    flex-grow: 2;
+    flex-grow: 5;
     position: relative;
-    min-height: 250px;
+    min-width: 250px;
     img {
       width: 100%;
       height: 100%;
