@@ -204,10 +204,10 @@ export default {
         },
         {
           title: 'Closing Ceremony',
-          description: '',
+          description: 'MCB 100',
           date: 'Sunday',
           start: '1:30 PM',
-          end: 'MCB 100',
+          end: '',
         },
       ],
     };
