@@ -103,7 +103,7 @@ export default {
           end: '',
         },
         {
-          title: 'Intro to Data Analytics" by J. B. Hunt',
+          title: '"Intro to Data Analytics" by J. B. Hunt',
           description: 'Room 118C',
           date: 'Friday',
           start: '9:30 PM',
