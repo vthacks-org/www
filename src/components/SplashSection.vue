@@ -8,16 +8,6 @@
         <a id="registration-link" href="#">
           <div>Hack The Planet</div>
         </a>
-        <div>
-          <a href="https://goo.gl/gyuEGx" id="slack-button" target="_blank" class="register-link medium slack eightbit-btn">
-            <img src="../assets/slack_small.png">
-            Slack &gt;
-          </a>
-          <a href="https://vthacks-v.devpost.com/" id="devpost-button" target="_blank" class="register-link medium devpost eightbit-btn">
-            <img src="../assets/devpost_small.png">
-            Devpost &gt;
-          </a>
-        </div>
       </div>
     </div>
   </div>
@@ -90,16 +80,6 @@ export default {
     &:hover {
       width: 310px;
     }
-  }
-}
-
-#slack-button, #devpost-button {
-  @media (max-width: 480px) {
-    padding: 8px;
-  }
-  img {
-    height: 18px;
-    margin-right: 8px;
   }
 }
 

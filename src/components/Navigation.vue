@@ -26,6 +26,10 @@ export default {
           id: 'splash-section',
         },
         {
+          name: 'Getting_Started',
+          id: 'links-section',
+        },
+        {
           name: 'About',
           id: 'about-section',
         },
