@@ -31,7 +31,10 @@
             <div class="date"> Sat  </div>
             <div class="seperator blue small"></div>
               <li v-for="event in events" v-if="event.date == 'Saturday'" class="schedule-item">
-                <div class="time"> {{event.start}}</div>
+                <div class="time">
+                  {{event.start}}
+                  <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
+                </div>
                 <div class="title"> {{event.title}}</div>
               </li>
           </div>
@@ -42,7 +45,10 @@
           <div class="date"> Sun   </div>
           <div class="seperator blue small"></div>
           <li v-for="event in events" v-if="event.date == 'Sunday'" class="schedule-item">
-            <div class="time"> {{event.start}}</div>
+            <div class="time">
+              {{event.start}}
+              <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
+            </div>
             <div class="title"> {{event.title}}</div>
           </li>
         </div>
@@ -273,9 +279,9 @@ export default {
           /* All Mobile Sizes (devices and browser) */
           @media only screen and (max-width: 767px) {
             font-size: .7em;
-            line-height: 1.2em;
           }
           font-size: 1.1vw;
+          line-height: 1.2em;
         }
         .title {
           margin-top: -2px;
