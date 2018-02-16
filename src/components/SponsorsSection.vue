@@ -14,10 +14,10 @@
 
       <div class="sponsor-tier medium center">
           <img v-for="image in sponsors.medium" v-lazy="image"/>
+          <img class="wolfram" v-lazy="sponsors.wolfram"/>
       </div>
 
       <div class="sponsor-tier small center">
-          <img v-for="image in sponsors.smallDark" class="dark logo" v-lazy="image"/>
       </div>
     </div>
 
@@ -55,9 +55,7 @@ export default {
           '/static/sponsors/CapitalOneWhite.png',
           '/static/sponsors/Eastman.png',
         ],
-        smallDark: [
-          '/static/sponsors/WolframLanguageLogo.png',
-        ],
+        wolfram: '/static/sponsors/WolframLanguageLogo.png',
       },
       food: {
         rectangular: [
@@ -97,12 +95,14 @@ export default {
   margin: 20px;
 }
 
+
 .sponsor-tier{
   align-self: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 25px;
   display: flex;
+  max-width: 1200px;
 
   img {
       max-width: 80%;
@@ -131,6 +131,12 @@ export default {
       max-width: 300px;
       object-fit: contain;
   }
+  &.medium > .wolfram {
+    background-color: #ECEFF1;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 200px;
+  }
   &.small > img {
       max-height: 8vh;
       min-width: 125px;
@@ -157,12 +163,6 @@ export default {
     justify-content: center;
     align-items: center;
   }
-
-  .dark.logo {
-    background-color: #ECEFF1;
-    padding: 10px;
-  }
-
 }
 
 .info-term {
