@@ -54,6 +54,7 @@ export default {
           '/static/sponsors/WillowTree.svg',
           '/static/sponsors/CapitalOneWhite.png',
           '/static/sponsors/Eastman.png',
+          '/static/sponsors/CyberRange.svg',
         ],
         wolfram: '/static/sponsors/WolframLanguageLogo.png',
       },

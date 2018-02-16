@@ -18,7 +18,7 @@
             <li v-for="event in events" v-if="event.date == 'Friday'" class="schedule-item">
               <div class="time">
                 {{event.start}}
-                <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
+                <span v-if="event.end">-<span class="nowrap">{{event.end}}</span></span>
               </div>
               <div class="title"> {{event.title}}</div>
               <div v-if="event.description" class="description"> {{event.description}}</div>
@@ -33,7 +33,7 @@
               <li v-for="event in events" v-if="event.date == 'Saturday'" class="schedule-item">
                 <div class="time">
                   {{event.start}}
-                  <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
+                  <span v-if="event.end">-<span class="nowrap">{{event.end}}</span></span>
                 </div>
                 <div class="title"> {{event.title}}</div>
                 <div v-if="event.description" class="description"> {{event.description}}</div>
@@ -48,7 +48,7 @@
           <li v-for="event in events" v-if="event.date == 'Sunday'" class="schedule-item">
             <div class="time">
               {{event.start}}
-              <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
+              <span v-if="event.end">-<span class="nowrap">{{event.end}}</span></span>
             </div>
             <div class="title"> {{event.title}}</div>
             <div v-if="event.description" class="description"> {{event.description}}</div>
@@ -78,12 +78,12 @@ export default {
           title: 'Dinner',
           description: 'Marco & Luca',
           date: 'Friday',
-          start: '6:00 PM',
+          start: '6:30 PM',
           end: '',
         },
         {
           title: 'Opening Ceremony',
-          description: '',
+          description: 'MCB 100',
           date: 'Friday',
           start: '8:00 PM',
           end: '',
@@ -103,22 +103,22 @@ export default {
           end: '',
         },
         {
-          title: 'J. B. Hunt Tech Talk',
+          title: 'Intro to Data Analytics" by J. B. Hunt',
           description: 'Room 118C',
           date: 'Friday',
           start: '9:30 PM',
           end: '10:30 PM',
         },
         {
-          title: 'MicroStrategy Tech Talk',
-          description: '',
+          title: '"Future of Data Analytics" by MicroStrategy',
+          description: 'Room 118C',
           date: 'Friday',
           start: '10:35 PM',
           end: '11:35 PM',
         },
         {
           title: 'Beginner GitHub Workshop by VT GitHub Organization',
-          description: '',
+          description: 'Room 118C',
           date: 'Friday',
           start: '11:40 PM',
           end: '12:10 PM',
@@ -154,7 +154,7 @@ export default {
         },
         {
           title: 'Smash Bros Tournament by MicroStrategy',
-          description: '',
+          description: 'Room 118C',
           date: 'Saturday',
           start: '4:00 PM',
           end: '5:30 PM',
@@ -321,6 +321,7 @@ export default {
   }
 
   .nowrap {
+    display: inline-block;
     white-space: nowrap;
     padding-left: 10px;
   }
