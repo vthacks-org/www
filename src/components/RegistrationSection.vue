@@ -50,7 +50,7 @@ export default {
     font-family: $font-2P;
     text-align: center;
     line-height: 35px;
-    font-size: 24px;
+    font-size: 14px;
   }
 }
 
@@ -60,7 +60,6 @@ export default {
     color: $neon-pink;
     margin: 15px 5px 5px 5px;
     .term{
-      font-size: 18px;
       line-height: 25px;
     }
   }

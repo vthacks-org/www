@@ -5,7 +5,7 @@
       <img id="splash-logo" src="../assets/splash-neon-sign-logo.svg">
       <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
       <div id="splash-apply">
-        <a id="registration-link" href="/register">
+        <a id="registration-link" href="#">
           <div>Hack The Planet</div>
         </a>
       </div>
