@@ -4,12 +4,12 @@
     <div class="seperator pink large"></div>
 
     <div class="schedule-breakdown">
-      <div class="neon-sign-padding"></div>
+      <div style="flex: 1"></div>
       <div class="neon-sign">
           <img id="neon-sign-on" src="../assets/neon_sign.svg"/>
           <img id="neon-sign-off" src="../assets/neon_sign_off.svg">
       </div>
-      <div class="neon-sign-padding"></div>
+      <div style="flex: 1"></div>
       <div class="schedules">
         <ul class="schedule">
           <div class="container">
@@ -36,6 +36,7 @@
                   <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
                 </div>
                 <div class="title"> {{event.title}}</div>
+                <div v-if="event.description" class="description"> {{event.description}}</div>
               </li>
           </div>
         </ul>
@@ -50,6 +51,7 @@
               <span v-if="event.end">- <span class="nowrap">{{event.end}}</span></span>
             </div>
             <div class="title"> {{event.title}}</div>
+            <div v-if="event.description" class="description"> {{event.description}}</div>
           </li>
         </div>
       </ul>
@@ -74,7 +76,7 @@ export default {
         },
         {
           title: 'Dinner',
-          description: '',
+          description: 'Marco & Luca',
           date: 'Friday',
           start: '6:00 PM',
           end: '',
@@ -124,20 +126,20 @@ export default {
         /* Saturday */
         {
           title: 'Midnight Snack',
-          description: '',
+          description: 'Campus Cookies',
           date: 'Saturday',
           start: '12:00 AM',
           end: '',
         },
         {
           title: 'Breakfast',
-          description: '',
+          description: 'Idego Coffee & Carol Lee Donuts',
           date: 'Saturday',
           start: '7:00 AM',
           end: '',
         },
         {
-          title: 'NodeJS workshop by Kenny Worden',
+          title: 'NodeJS Workshop by Kenny Worden',
           description: '',
           date: 'Saturday',
           start: '10:00 AM',
@@ -145,7 +147,7 @@ export default {
         },
         {
           title: 'Lunch',
-          description: '',
+          description: 'Zeppoli\'s',
           date: 'Saturday',
           start: '12:00 PM',
           end: '',
@@ -159,7 +161,7 @@ export default {
         },
         {
           title: 'Dinner',
-          description: '',
+          description: 'Chinese Kitchen',
           date: 'Saturday',
           start: '7:00 PM',
           end: '',
@@ -167,14 +169,14 @@ export default {
         /* Sunday */
         {
           title: 'Midnight Snack',
-          description: '',
+          description: 'Next Door Bakeshop & Gobblecakes',
           date: 'Sunday',
           start: '12:00 AM',
           end: '',
         },
         {
           title: 'Breakfast',
-          description: '',
+          description: 'Idego Coffee & Other',
           date: 'Sunday',
           start: '7:00 AM',
           end: '',
@@ -195,7 +197,7 @@ export default {
         },
         {
           title: 'Lunch (open)',
-          description: '',
+          description: 'Zeppoli\'s',
           date: 'Sunday',
           start: '11:00 AM',
           end: '',
@@ -254,8 +256,9 @@ export default {
     }
 
     .schedules{
-      flex-grow: 1;
+      flex-grow: 4;
       display: flex;
+      justify-content: center;
       margin: 8px;
 
       ul.schedule {
@@ -265,7 +268,11 @@ export default {
         display: flex;
         list-style-type: none;
         max-width: 250px;
+        margin: 0 auto;
 
+        @media only screen and (max-width: 767px) {
+          margin: 10px; // Things get squished on mobile now
+        }
         .container {
           align-items: center;
           margin: 0 auto;
@@ -278,7 +285,10 @@ export default {
           color: $neon-pink;
           /* All Mobile Sizes (devices and browser) */
           @media only screen and (max-width: 767px) {
-            font-size: .7em;
+            font-size: .6em;
+          }
+          @media only screen and (min-width: 1600px) {
+            font-size: 1.0em;
           }
           font-size: 1.1vw;
           line-height: 1.2em;
@@ -288,15 +298,21 @@ export default {
           @media only screen and (max-width: 767px) {
             font-size: .9em;
           }
-          font-size: 1.3vw;
+          @media only screen and (min-width: 1600px) {
+            font-size: 1.25em;
+          }
+          font-size: 1.15em;
           color: grey;
         }
         .description {
           margin-top: -2px;
+          // @media only screen and (max-width: 767px) {
+          //   font-size: .9em;
+          // }
           @media only screen and (max-width: 767px) {
-            font-size: .9em;
+            font-size: .85em;
           }
-          font-size: 1.3vw;
+          font-size: 1.1em;
           color: $neon-blue;
         }
       }
@@ -306,12 +322,13 @@ export default {
 
   .nowrap {
     white-space: nowrap;
+    padding-left: 10px;
   }
 
   .neon-sign {
-    flex-grow: 3;
+    flex-grow: 5;
     position: relative;
-    min-height: 250px;
+    min-width: 250px;
     img {
       width: 100%;
       height: 100%;
