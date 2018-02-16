@@ -52,11 +52,9 @@ export default {
 }
 .actions {
   padding: 20px;
+  text-align: center;
 }
 #slack-button, #devpost-button {
-  @media (max-width: 480px) {
-    padding: 8px;
-  }
   img {
     height: 18px;
     margin-right: 8px;
