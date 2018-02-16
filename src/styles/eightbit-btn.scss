@@ -34,7 +34,12 @@ $shadow-width: 5px;
     $outline-width: 4px;
     $outline-color: white;
     $shadow-width: 5px;
-
+    &.slack {
+      @include technicolor(lighten(#4C3A4A, 10%));
+    }
+    &.devpost {
+      @include technicolor(lighten(#043E53, 10%));
+    }
     &.blue {
       @include technicolor(blue);
     }
