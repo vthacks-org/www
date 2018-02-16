@@ -207,7 +207,7 @@ export default {
           description: '',
           date: 'Sunday',
           start: '1:30 PM',
-          end: '',
+          end: 'MCB 100',
         },
       ],
     };
