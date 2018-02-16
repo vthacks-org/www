@@ -78,13 +78,13 @@ $shadow-width: 5px;
     }
 
     &.medium {
-      font-size: 14px;
+      font-size: 16px;
       padding: 14px;
 
       /* All Mobile Sizes (devices and browser) */
       @media only screen and (max-width: 480px) {
-        font-size: 12px;
-        padding: 12px;
+        font-size: 15px;
+        padding: 14px;
       }
     }
 
