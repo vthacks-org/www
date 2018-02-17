@@ -153,6 +153,13 @@ export default {
           end: '',
         },
         {
+          title: 'AWS/Domain.com Workshop',
+          description: 'VTHacks Team',
+          date: 'Saturday',
+          start: '2:00 PM',
+          end: '3:00 PM',
+        },
+        {
           title: 'Smash Bros Tournament by MicroStrategy',
           description: 'Room 118C',
           date: 'Saturday',
@@ -186,6 +193,13 @@ export default {
           description: '',
           date: 'Sunday',
           start: '9:00 AM',
+          end: '',
+        },
+        {
+          title: 'Expo Setup',
+          description: '',
+          date: 'Sunday',
+          start: '10:00 AM',
           end: '',
         },
         {
