@@ -153,7 +153,7 @@ export default {
           end: '',
         },
         {
-          title: 'AWS/Domain.com Workshop',
+          title: 'AWS/Domain.com/GitHub Help Session',
           description: 'Room 118C',
           date: 'Saturday',
           start: '2:00 PM',
