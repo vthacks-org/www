@@ -154,7 +154,7 @@ export default {
         },
         {
           title: 'AWS/Domain.com Workshop',
-          description: 'VTHacks Team',
+          description: 'Room 118C',
           date: 'Saturday',
           start: '2:00 PM',
           end: '3:00 PM',
@@ -171,6 +171,13 @@ export default {
           description: 'Chinese Kitchen',
           date: 'Saturday',
           start: '7:00 PM',
+          end: '',
+        },
+        {
+          title: 'Cup Stacking by MLH',
+          description: 'Room 118C',
+          date: 'Saturday',
+          start: '9:00 PM',
           end: '',
         },
         /* Sunday */
