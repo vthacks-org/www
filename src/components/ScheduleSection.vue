@@ -180,6 +180,13 @@ export default {
           start: '9:00 PM',
           end: '',
         },
+        {
+          title: 'Web Development Workshop',
+          description: 'Room 118C',
+          date: 'Saturday',
+          start: '10:00 PM',
+          end: '',
+        },
         /* Sunday */
         {
           title: 'Midnight Snack',
