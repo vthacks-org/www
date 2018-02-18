@@ -184,7 +184,14 @@ export default {
           title: 'Web Development Workshop',
           description: 'Room 118C',
           date: 'Saturday',
-          start: '10:00 PM',
+          start: '10:30 PM',
+          end: '',
+        },
+        {
+          title: 'Break Dancing',
+          description: 'Room 118C',
+          date: 'Saturday',
+          start: '11:45 PM',
           end: '',
         },
         /* Sunday */
