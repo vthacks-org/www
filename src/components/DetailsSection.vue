@@ -5,20 +5,18 @@
     </div>
     <h1 class="futuristic yellow center">location &amp; details</h1>
     <div class="seperator yellow large"></div>
+    <div class="thanks">
+      <div>Thanks for coming to VTHacks V! </div>
+      <div>We are currently setting up for next year.</div>
+    </div>
     <div class="where">
       <div class="where-title futuristic small center">@ Virginia Tech</div>
       <div class="where-location">Surge Space Building</div>
       <div class="where-location">435 Turner St NW,<br>Blacksburg, VA 24060</div>
     </div>
-    <div class="start-and-end">
-      <div class="start">
-        <div class="se-title futuristic small center">Start</div>
-        <div class="se-date">Feb 16 @ 6PM</div>
-      </div>
-      <div class="end">
-        <div class="se-title futuristic small center">End</div>
-        <div class="se-date">Feb 18 @ 3PM</div>
-      </div>
+    <div class="when">
+      <div class="where-title futuristic small center">Spring 2019</div>
+      <div class="where-location">Date TBD</div>
     </div>
   </div>
 </template>
@@ -36,6 +34,21 @@ export default {
 @import '../styles/vars';
 
 $splash-min-width: 600px;
+
+.thanks {
+  font-family: $font-2P;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 60vw;
+  font-size: 20px;
+  padding-bottom: 20px; 
+  color: white;
+  & > div {
+    align-self: center;
+    padding: 5px;
+  }
+}
 
 #details-section {
   background-color: #000;
@@ -71,31 +84,7 @@ $splash-min-width: 600px;
   }
 }
 
-.start-and-end {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: white;
-  flex-wrap: wrap;
-  padding-bottom: 16px;
-  .start, .end {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 275px;
-    .se-title {
-      color: $neon-blue;
-      -webkit-text-stroke-color: darken($neon-blue, 30%);
-    }
-    .se-date {
-      font-family: $font-2P;
-      color: $neon-pink;
-    }
-  }
-}
-
-.where {
+.where, .when {
   position: relative;
   display: flex;
   flex-direction: column;

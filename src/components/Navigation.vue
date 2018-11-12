@@ -25,18 +25,18 @@ export default {
           name: 'Home',
           id: 'splash-section',
         },
-        {
-          name: 'Getting_Started',
-          id: 'links-section',
-        },
+        // {
+        //   name: 'Getting_Started',
+        //   id: 'links-section',
+        // },
         {
           name: 'About',
           id: 'about-section',
         },
-        {
-          name: 'Schedule',
-          id: 'schedule-section',
-        },
+        // {
+        //   name: 'Schedule',
+        //   id: 'schedule-section',
+        // },
         {
           name: 'Sponsors',
           id: 'sponsors-section',

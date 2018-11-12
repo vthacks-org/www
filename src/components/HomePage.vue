@@ -4,10 +4,7 @@
     <MLHTrustBadge></MLHTrustBadge>
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
-    <LinksSection></LinksSection>
     <AboutSection></AboutSection>
-    <ScheduleSection></ScheduleSection>
-    <MapSection></MapSection>
     <SponsorsSection></SponsorsSection>
     <FooterSection></FooterSection>
   </div>
