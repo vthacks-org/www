@@ -3,7 +3,7 @@
     <div id="splash-container">
       <img id="splash-combined" src="../assets/composite_splash.png">
       <img id="splash-logo" src="../assets/base-logo.png">
-      <div id="splash-date">FEB 16-18. VIRGINIA TECH</div>
+      <div id="splash-date">FEB 15-17. VIRGINIA TECH</div>
       <div id="splash-apply">
         <a id="registration-link" href="#">
           <div>Planet Hacked</div>
