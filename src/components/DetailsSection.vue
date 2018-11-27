@@ -15,8 +15,7 @@
       <div class="where-location">435 Turner St NW,<br>Blacksburg, VA 24060</div>
     </div>
     <div class="when">
-      <div class="where-title futuristic small center">Spring 2019</div>
-      <div class="where-location">Date TBD</div>
+      <div class="where-title futuristic small center">Feb 15-17, 2019</div>
     </div>
   </div>
 </template>
