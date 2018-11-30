@@ -6,7 +6,7 @@
       <div id="splash-date">FEB 15-17. VIRGINIA TECH</div>
       <div id="splash-apply">
         <a id="registration-link" href="#">
-          <div>Planet Hacked</div>
+          <div>Hack the Planet</div>
         </a>
       </div>
     </div>

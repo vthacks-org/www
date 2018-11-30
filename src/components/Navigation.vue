@@ -30,6 +30,10 @@ export default {
         //   id: 'links-section',
         // },
         {
+          name: 'Register',
+          id: 'registration-section',
+        },
+        {
           name: 'About',
           id: 'about-section',
         },
