@@ -8,11 +8,12 @@
     <div class="seperator large blue"></div>
 
     <div class="sponsor-logos">
-      <div class="sponsor-tier big center" >
+      <!-- <div class="sponsor-tier big center" >
           <img v-for="image in sponsors.big" v-lazy="image"/>
-      </div>
+      </div> -->
 
       <div class="sponsor-tier medium center">
+          <img v-for="image in sponsors.big" v-lazy="image" />
           <img v-for="image in sponsors.medium" v-lazy="image"/>
           <img class="wolfram" v-lazy="sponsors.wolfram"/>
       </div>
@@ -48,11 +49,13 @@ export default {
       sponsors: {
         big: [
           '/static/sponsors/MicroStrategy.png',
+          '/static/sponsors/CapitalOneWhite.png',
         ],
         medium: [
+          '/static/sponsors/Microsoft.svg',
+          '/static/sponsors/CarMax.svg',
           '/static/sponsors/JBHunt.svg',
-          '/static/sponsors/WillowTree.svg',
-          '/static/sponsors/CapitalOneWhite.png',
+          '/static/sponsors/Nielsen.svg',
           '/static/sponsors/Eastman.png',
           '/static/sponsors/CyberRange.svg',
         ],
