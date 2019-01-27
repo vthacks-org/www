@@ -5,10 +5,10 @@
     </div>
     <h1 class="futuristic yellow center">location &amp; details</h1>
     <div class="seperator yellow large"></div>
-    <div class="thanks">
+    <!-- <div class="thanks">
       <div>Thanks for coming to VTHacks V! </div>
       <div>We are currently setting up for next year.</div>
-    </div>
+    </div> -->
     <div class="where">
       <div class="where-title futuristic small center">@ Virginia Tech</div>
       <div class="where-location">Surge Space Building</div>
