@@ -5,10 +5,11 @@
     </div>
     <h1 class="futuristic yellow center">location &amp; details</h1>
     <div class="seperator yellow large"></div>
-    <!-- <div class="thanks">
-      <div>Thanks for coming to VTHacks V! </div>
-      <div>We are currently setting up for next year.</div>
-    </div> -->
+    <div class="status">
+      <div>
+        {{ statusMessage }}
+      </div>
+    </div>
     <div class="where">
       <div class="where-title futuristic small center">@ Virginia Tech</div>
       <div class="where-location">Surge Space Building</div>
@@ -33,7 +34,11 @@
 
 <script>
 export default {
-  name: 'DetailsSection',
+  data() {
+    return {
+      statusMessage: 'VTHacks is only 16 days away!',
+    };
+  },
 };
 </script>
 
@@ -45,7 +50,7 @@ export default {
 
 $splash-min-width: 600px;
 
-.thanks {
+.status {
   font-family: $font-2P;
   position: relative;
   display: flex;
