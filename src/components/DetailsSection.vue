@@ -37,7 +37,7 @@ export default {
   name: 'DetailsSection',
   data() {
     return {
-      statusMessage: 'VTHacks is defaultDays only away!',
+      statusMessage: 'VTHacks is only defaultDays days away!',
     };
   },
   methods: {
