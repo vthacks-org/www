@@ -34,10 +34,30 @@
 
 <script>
 export default {
+  name: 'DetailsSection',
   data() {
     return {
-      statusMessage: 'VTHacks is only 16 days away!',
+      statusMessage: 'VTHacks is defaultDays only away!',
     };
+  },
+  methods: {
+    updateDaysLeft() {
+      /* month is 0-11 for some reason where date is 1-31 */
+      const endDate = new Date(2019, 1, 15);
+      const currentDate = new Date();
+      const timeRemaining = endDate - currentDate;
+      if (timeRemaining < 0) {
+        this.statusMessage = `Thanks for coming! 
+        Stay up to date by following us on social media!.`;
+        return;
+      }
+      /* +1 because it the current day is't inculded */
+      const daysLeft = Math.floor(timeRemaining / 86400000) + 1;
+      this.statusMessage = this.statusMessage.replace('defaultDays', daysLeft);
+    },
+  },
+  created() {
+    this.updateDaysLeft();
   },
 };
 </script>
