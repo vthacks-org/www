@@ -64,12 +64,13 @@ export default {
       food: {
         rectangular: [
           '/static/sponsors/Campus Cookies.png',
+          '/static/sponsors/soulvaki.png',
         ],
         square: [
           '/static/sponsors/Carol Lee.jpg',
           '/static/sponsors/Chinese Kitchen.png',
-          '/static/sponsors/Marco and Lucas.png',
-          '/static/sponsors/NDBS.png',
+          '/static/sponsors/moes.png',
+          '/static/sponsors/bennys.png',
           '/static/sponsors/Zeppoli_s.jpg',
           '/static/sponsors/IdegoCoffee.svg',
         ],
