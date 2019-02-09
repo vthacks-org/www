@@ -19,6 +19,7 @@
         </p>
       </div> -->
     </div>
+    <div class="gradient-seperator bottom reversed"></div>
   </div>
 </template>
 

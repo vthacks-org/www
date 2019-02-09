@@ -5,6 +5,7 @@
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
     <RegistrationSection></RegistrationSection>
+    <ScheduleSection></ScheduleSection>
     <AboutSection></AboutSection>
     <SponsorsSection></SponsorsSection>
     <FooterSection></FooterSection>

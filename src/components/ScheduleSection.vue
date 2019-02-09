@@ -4,12 +4,12 @@
     <div class="seperator pink large"></div>
 
     <div class="schedule-breakdown">
-      <div style="flex: 1"></div>
+      <!-- <div style="flex: 1"></div>
       <div class="neon-sign">
           <img id="neon-sign-on" src="../assets/neon_sign.svg"/>
           <img id="neon-sign-off" src="../assets/neon_sign_off.svg">
       </div>
-      <div style="flex: 1"></div>
+      <div style="flex: 1"></div> -->
       <div class="schedules">
         <ul class="schedule">
           <div class="container">
@@ -71,171 +71,150 @@ export default {
           title: 'Check-in Opens',
           description: '',
           date: 'Friday',
-          start: '6:00 PM',
+          start: '5:00 PM',
           end: '',
         },
         {
           title: 'Dinner',
-          description: 'Marco & Luca',
+          description: '',
           date: 'Friday',
-          start: '6:30 PM',
-          end: '',
+          start: '5:30 PM',
+          end: '7:00 PM',
         },
         {
           title: 'Opening Ceremony',
           description: 'MCB 100',
           date: 'Friday',
-          start: '8:00 PM',
+          start: '7:00 PM',
           end: '',
         },
         {
           title: 'Team Formation',
           description: '',
           date: 'Friday',
-          start: '8:45 PM',
+          start: '7:45 PM',
           end: '',
         },
         {
           title: 'Hacking Begins',
           description: '',
           date: 'Friday',
-          start: '9:00 PM',
+          start: '8:00 PM',
           end: '',
         },
         {
-          title: '"Intro to Data Analytics" by J. B. Hunt',
+          title: '"HyperIntelligence" with MicroStrategy',
+          description: 'Room 118C',
+          date: 'Friday',
+          start: '8:15 PM',
+          end: '9:15 PM',
+        },
+        {
+          title: '"Unleashing GitHub" with Capital One',
           description: 'Room 118C',
           date: 'Friday',
           start: '9:30 PM',
           end: '10:30 PM',
         },
-        {
-          title: '"Future of Data Analytics" by MicroStrategy',
-          description: 'Room 118C',
-          date: 'Friday',
-          start: '10:35 PM',
-          end: '11:35 PM',
-        },
-        {
-          title: 'Beginner GitHub Workshop by VT GitHub Organization',
-          description: 'Room 118C',
-          date: 'Friday',
-          start: '11:40 PM',
-          end: '12:10 PM',
-        },
         /* Saturday */
         {
           title: 'Midnight Snack',
-          description: 'Campus Cookies',
+          description: '',
           date: 'Saturday',
           start: '12:00 AM',
-          end: '',
+          end: '1:00 AM',
         },
         {
           title: 'Breakfast',
-          description: 'Idego Coffee & Carol Lee Donuts',
+          description: '',
           date: 'Saturday',
           start: '7:00 AM',
-          end: '',
+          end: '9:30 AM',
         },
         {
-          title: 'NodeJS Workshop by Kenny Worden',
-          description: '',
+          title: 'VT Helping PAWS (Therapy Dogs)',
+          description: 'Room 103A',
           date: 'Saturday',
           start: '10:00 AM',
           end: '11:00 AM',
         },
         {
           title: 'Lunch',
-          description: 'Zeppoli\'s',
+          description: '',
           date: 'Saturday',
           start: '12:00 PM',
-          end: '',
+          end: '1:30 PM',
         },
         {
-          title: 'AWS/Domain.com/GitHub Help Session',
-          description: 'Room 118C',
+          title: 'Pong Tournament',
+          description: 'Room 103A',
           date: 'Saturday',
           start: '2:00 PM',
           end: '3:00 PM',
         },
         {
-          title: 'Smash Bros Tournament by MicroStrategy',
+          title: 'Trivia Night',
           description: 'Room 118C',
           date: 'Saturday',
-          start: '4:00 PM',
-          end: '5:30 PM',
+          start: '5:15 PM',
+          end: '6:15 PM',
         },
         {
           title: 'Dinner',
-          description: 'Chinese Kitchen',
+          description: '',
           date: 'Saturday',
           start: '7:00 PM',
-          end: '',
+          end: '8:00 PM',
         },
         {
-          title: 'Cup Stacking by MLH',
-          description: 'Room 118C',
+          title: 'Devpost Initial Submission',
+          description: '',
           date: 'Saturday',
           start: '9:00 PM',
-          end: '',
-        },
-        {
-          title: 'Web Development Workshop',
-          description: 'Room 118C',
-          date: 'Saturday',
-          start: '10:30 PM',
-          end: '',
-        },
-        {
-          title: 'Break Dancing',
-          description: 'Room 118C',
-          date: 'Saturday',
-          start: '11:45 PM',
           end: '',
         },
         /* Sunday */
         {
           title: 'Midnight Snack',
-          description: 'Next Door Bakeshop & Gobblecakes',
+          description: '',
           date: 'Sunday',
           start: '12:00 AM',
-          end: '',
+          end: '1:00 AM',
+        },
+        {
+          title: 'Morning Yoga',
+          description: 'Room 103A',
+          date: 'Sunday',
+          start: '7:00 AM',
+          end: '8:00 AM',
         },
         {
           title: 'Breakfast',
-          description: 'Idego Coffee & Other',
+          description: '',
           date: 'Sunday',
           start: '7:00 AM',
-          end: '',
+          end: '9:00 AM',
         },
         {
           title: 'Hacking Ends',
           description: '',
           date: 'Sunday',
-          start: '9:00 AM',
-          end: '',
-        },
-        {
-          title: 'Expo Setup',
-          description: '',
-          date: 'Sunday',
-          start: '10:00 AM',
+          start: '8:00 AM',
           end: '',
         },
         {
           title: 'Expo',
           description: '',
           date: 'Sunday',
-          start: '11:00 AM',
-          end: '',
+          start: '10:30 AM',
+          end: '12:30 PM',
         },
         {
           title: 'Lunch (open)',
-          description: 'Zeppoli\'s',
+          description: '',
           date: 'Sunday',
           start: '11:00 AM',
-          end: '',
+          end: '1:30 PM',
         },
         {
           title: 'Closing Ceremony',
@@ -296,21 +275,31 @@ export default {
       justify-content: center;
       margin: 8px;
 
+      @media only screen and (max-width: 767px) {
+        padding: 20px;
+        flex-direction: column;
+      }
+
       ul.schedule {
         font-family: $font-VT232;
         padding: 0;
         flex-grow: 1;
         display: flex;
         list-style-type: none;
-        max-width: 250px;
+        max-width: 25%;
         margin: 0 auto;
 
         @media only screen and (max-width: 767px) {
           margin: 10px; // Things get squished on mobile now
+          max-width: 100%;
         }
         .container {
           align-items: center;
           margin: 0 auto;
+
+          @media only screen and (max-width: 767px) {
+            margin: 0;
+          }
         }
         .schedule-item {
           padding-bottom: 20px;
