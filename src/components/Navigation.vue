@@ -34,13 +34,13 @@ export default {
           id: 'registration-section',
         },
         {
+          name: 'Schedule',
+          id: 'schedule-section',
+        },
+        {
           name: 'About',
           id: 'about-section',
         },
-        // {
-        //   name: 'Schedule',
-        //   id: 'schedule-section',
-        // },
         {
           name: 'Sponsors',
           id: 'sponsors-section',
