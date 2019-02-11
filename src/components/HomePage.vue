@@ -5,6 +5,7 @@
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
     <RegistrationSection></RegistrationSection>
+    <VolunteerSection></VolunteerSection>
     <ScheduleSection></ScheduleSection>
     <AboutSection></AboutSection>
     <SponsorsSection></SponsorsSection>
@@ -20,6 +21,7 @@ import DetailsSection from './DetailsSection.vue';
 import RegistrationSection from './RegistrationSection.vue';
 import LinksSection from './LinksSection.vue';
 import AboutSection from './AboutSection.vue';
+import VolunteerSection from './VolunteerSection.vue';
 import ScheduleSection from './ScheduleSection.vue';
 import MapSection from './MapSection.vue';
 import SponsorsSection from './SponsorsSection.vue';
@@ -39,6 +41,7 @@ export default {
     MapSection,
     SponsorsSection,
     FooterSection,
+    VolunteerSection,
   },
 };
 </script>

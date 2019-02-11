@@ -80,6 +80,7 @@ $splash-min-width: 600px;
   padding-bottom: 20px; 
   color: white;
   & > div {
+    text-align: center;
     align-self: center;
     padding: 5px;
   }
