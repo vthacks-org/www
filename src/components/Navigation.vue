@@ -34,6 +34,10 @@ export default {
           id: 'registration-section',
         },
         {
+          name: 'Volunteer',
+          id: 'volunteer-section',
+        },
+        {
           name: 'Schedule',
           id: 'schedule-section',
         },
