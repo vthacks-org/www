@@ -57,7 +57,7 @@ export default {
         },
         {
           q: 'Any more questions?',
-          a: 'Send us an email at <a href="mailto:hackers@vthacks.com">hackers@vthacks.com</a> and we\'ll get back to you!',
+          a: 'Send us an email at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> and we\'ll get back to you!',
         },
       ],
     };
