@@ -13,9 +13,13 @@
       </div> -->
 
       <div class="sponsor-tier medium center">
-          <img v-for="image in sponsors.big" v-lazy="image" />
-          <img v-for="image in sponsors.medium" v-lazy="image"/>
-          <img class="wolfram" v-lazy="sponsors.wolfram"/>
+          <div v-for="sponsor in sponsors.big">
+            <a :href="sponsor.url" target="_blank"><img class="big" v-lazy="sponsor.img" /></a>
+          </div>
+          <div v-for="sponsor in sponsors.medium">
+            <a :href="sponsor.url" target="_blank"><img class="medium" v-lazy="sponsor.img" /></a>
+          </div>
+          <a :href="sponsors.wolfram.url" target="_blank"><img class="medium wolfram" v-lazy="sponsors.wolfram.img"/></a>
       </div>
 
       <div class="sponsor-tier small center">
@@ -31,10 +35,13 @@
       </div>
       <div class="seperator large pink"></div>
 
-
       <div class="sponsor-tier catering center">
-          <img v-for="image in food.square" class="square" v-lazy="image"/>
-          <img v-for="image in food.rectangular" class="rectangular" v-lazy="image"/>
+        <div v-for="sponsor in food.square">
+          <a :href="sponsor.url" target="_blank"><img class="square" v-lazy="sponsor.img" /></a>
+        </div>
+        <div v-for="sponsor in food.rectangular">
+          <a :href="sponsor.url" target="_blank"><img class="rectangular" v-lazy="sponsor.img" /></a>
+        </div>
       </div>
     </div>
     <div class="gradient-seperator bottom"></div>
@@ -48,31 +55,31 @@ export default {
     return {
       sponsors: {
         big: [
-          '/static/sponsors/MicroStrategy.png',
-          '/static/sponsors/CapitalOneWhite.png',
+          { img: '/static/sponsors/MicroStrategy.png', url: 'https://www.microstrategy.com/us/company/careers' },
+          { img: '/static/sponsors/CapitalOneWhite.png', url: 'https://www.capitalonecareers.com/' },
         ],
         medium: [
-          '/static/sponsors/Microsoft.svg',
-          '/static/sponsors/CarMax.svg',
-          '/static/sponsors/JBHunt.svg',
-          '/static/sponsors/Nielsen.svg',
-          '/static/sponsors/Eastman.png',
-          '/static/sponsors/CyberRange.svg',
+          { img: '/static/sponsors/Microsoft.svg', url: 'https://careers.microsoft.com/us/en' },
+          { img: '/static/sponsors/CarMax.svg', url: 'https://jobs.carmax.com/' },
+          { img: '/static/sponsors/JBHunt.svg', url: 'https://www.jbhunt.com/opportunities/' },
+          { img: '/static/sponsors/Nielsen.svg', url: 'https://careers.nielsen.com/en-us/' },
+          { img: '/static/sponsors/Eastman.png', url: 'https://jobs.eastman.com/' },
+          { img: '/static/sponsors/CyberRange.svg', url: 'https://virginiacyberrange.org/jobs' },
         ],
-        wolfram: '/static/sponsors/WolframLanguageLogo.png',
+        wolfram: { img: '/static/sponsors/WolframLanguageLogo.png', url: 'http://www.wolfram.com/company/careers/?source=nav' },
       },
       food: {
         rectangular: [
-          '/static/sponsors/Campus Cookies.png',
-          '/static/sponsors/soulvaki.png',
+          { img: '/static/sponsors/Campus Cookies.png', url: 'https://www.campuscookie.com/' },
+          { img: '/static/sponsors/soulvaki.png', url: 'https://eatsouvlaki.com/' },
         ],
         square: [
-          '/static/sponsors/Carol Lee.jpg',
-          '/static/sponsors/Chinese Kitchen.png',
-          '/static/sponsors/moes.png',
-          '/static/sponsors/bennys.png',
-          '/static/sponsors/Zeppoli_s.jpg',
-          '/static/sponsors/IdegoCoffee.svg',
+          { img: '/static/sponsors/Carol Lee.jpg', url: 'https://www.carolleedonuts.com/' },
+          { img: '/static/sponsors/Chinese Kitchen.png', url: 'http://www.chinesekitchenblacksburg.com/' },
+          { img: '/static/sponsors/moes.png', url: 'https://www.moes.com/' },
+          { img: '/static/sponsors/bennys.png', url: 'https://www.bennysva.com/' },
+          { img: '/static/sponsors/Zeppoli_s.jpg', url: 'http://zeppolis.com/' },
+          { img: '/static/sponsors/IdegoCoffee.svg', url: 'https://www.idegocoffee.com/' },
         ],
       },
     };
@@ -109,6 +116,10 @@ export default {
   display: flex;
   max-width: 1200px;
 
+  a {
+    background: none;
+  }
+
   img {
       max-width: 80%;
       margin: 20px;
@@ -117,32 +128,32 @@ export default {
 
   &.catering {
 
-    & > .square {
+    img.square {
       max-height: 15vh;
     }
-    & > .rectangular {
+    img.rectangular {
       max-height: 10vh;
       height: auto;
     }
   }
 
-  &.big > img {
+  img.big {
       max-height: 13vh;
       min-width: 350px;
   }
-  &.medium > img {
+  img.medium {
       max-height: 10vh;
       min-width: 250px;
       max-width: 300px;
       object-fit: contain;
   }
-  &.medium > .wolfram {
+  .wolfram {
     background-color: #ECEFF1;
     padding: 5px;
     min-width: 150px;
     max-width: 200px;
   }
-  &.small > img {
+  img.small {
       max-height: 8vh;
       min-width: 125px;
   }
@@ -153,18 +164,18 @@ export default {
       margin: 15px;
     }
 
-    &.medium > img {
+    img.medium {
         max-height: 6vh;
         min-width: 130px;
     }
-    &.small > img {
+    img.small {
         max-height: 6vh;
         max-width: 70px;
         margin: 5px;
     }
   }
 
-  &.center{
+  &.center {
     justify-content: center;
     align-items: center;
   }
