@@ -26,8 +26,7 @@
           </div>
         </ul>
 
-        <ul class="schedule">
-          <div class="container">
+        <ul class="schedule">          <div class="container">
             <div class="date"> Sat  </div>
             <div class="seperator blue small"></div>
               <li v-for="event in events" v-if="event.date == 'Saturday'" class="schedule-item">
@@ -116,6 +115,13 @@ export default {
           start: '9:30 PM',
           end: '10:30 PM',
         },
+        {
+          title: '"Intro to APIs, Docker, and AWS" with Virginia Cyber Range',
+          description: 'Room 118C',
+          date: 'Friday',
+          start: '10:45 PM',
+          end: '11:15 PM',
+        },
         /* Saturday */
         {
           title: 'Midnight Snack',
@@ -164,24 +170,17 @@ export default {
           description: 'Room 103A',
           date: 'Saturday',
           start: '3:00 PM',
-          end: '3:30 PM',
+          end: '4:00 PM',
         },
         {
           title: 'Tech Talk hosted by J.B. Hunt',
           description: 'Room 118C',
           date: 'Saturday',
-          start: '3:40 PM',
-          end: '4:10 PM',
+          start: '4:15 PM',
+          end: '4:45 PM',
         },
         {
-          title: 'Tech Talk hosted by Cyber Range',
-          description: 'Room 118C',
-          date: 'Saturday',
-          start: '4:20 PM',
-          end: '4:50 PM',
-        },
-        {
-          title: '"Intro To React" with VT Web Dev Club',
+          title: '"Intro To Brain.js" with VT Web Dev Club',
           description: 'Room 118C',
           date: 'Saturday',
           start: '5:00 PM',
