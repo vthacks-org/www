@@ -204,8 +204,8 @@ export default {
           title: 'Smash Tournament',
           description: 'Room 118C',
           date: 'Saturday',
-          start: '7:30 PM';
-          end: '10:30 PM';
+          start: '7:30 PM',
+          end: '10:30 PM',
         },
         {
           title: 'Devpost Initial Submission',
