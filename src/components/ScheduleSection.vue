@@ -89,7 +89,7 @@ export default {
         },
         {
           title: 'Team Formation',
-          description: '',
+          description: 'MCB 100',
           date: 'Friday',
           start: '7:40 PM',
           end: '',
