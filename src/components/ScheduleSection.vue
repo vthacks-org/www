@@ -173,7 +173,7 @@ export default {
           end: '4:00 PM',
         },
         {
-          title: 'Tech Talk hosted by J.B. Hunt',
+          title: '"Kubernetes Horizontal Pod Autoscaling" with J.B. Hunt',
           description: 'Room 118C',
           date: 'Saturday',
           start: '4:15 PM',
@@ -199,6 +199,13 @@ export default {
           date: 'Saturday',
           start: '7:00 PM',
           end: '8:00 PM',
+        },
+        {
+          title: 'Smash Tournament',
+          description: 'Room 118C',
+          date: 'Saturday',
+          start: '7:30 PM';
+          end: '10:30 PM';
         },
         {
           title: 'Devpost Initial Submission',
