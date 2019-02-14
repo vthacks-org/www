@@ -56,7 +56,7 @@ export default {
       sponsors: {
         big: [
           { img: '/static/sponsors/MicroStrategy.png', url: 'https://www.microstrategy.com/us/company/careers' },
-          { img: '/static/sponsors/CapitalOneWhite.png', url: 'https://www.capitalonecareers.com/' },
+          { img: '/static/sponsors/CapitalOneWhite.png', url: 'https://campus.capitalone.com/' },
         ],
         medium: [
           { img: '/static/sponsors/Microsoft.svg', url: 'https://careers.microsoft.com/us/en' },
