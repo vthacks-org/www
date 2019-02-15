@@ -60,8 +60,7 @@ export default {
         Stay up to date by following us on social media!.`;
         return;
       } else if ((endDate - currentDate) > 0 && (startHour - currentDate) < 0) {
-        this.statusMessage = `VTHacks VI is going on right now! 
-        Stay up to date by following us on social media!.`;
+        this.statusMessage = 'Welcome to VTHacks VI!';
         return;
       }
 
@@ -73,7 +72,7 @@ export default {
         this.statusMessage = this.statusMessage.replace('days', 'day');
       }
       if (daysLeft === 0) {
-        this.statusMessage = 'VTHacks VI starts today, cya there!';
+        this.statusMessage = 'VTHacks VI starts today!';
       }
     },
   },
@@ -102,7 +101,7 @@ $splash-min-width: 600px;
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 60vw;
+  width: 100%;
   font-size: 20px;
   padding-bottom: 20px; 
   color: white;
