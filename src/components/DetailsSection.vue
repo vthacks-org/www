@@ -43,19 +43,29 @@ export default {
   methods: {
     updateDaysLeft() {
       /* month is 0-11 for some reason where date is 1-31 */
-      const endDate = new Date(2019, 1, 15, 5);
+      const startDate = new Date(2019, 1, 15, 5);
+      const endDate = new Date(2019, 1, 17, 3);
       const currentDate = new Date();
-      const timeRemaining = endDate - currentDate;
-      if (timeRemaining < 0) {
+
+      /* if vthacks is happening or past: */
+      if ((endDate - currentDate) < 0) {
         this.statusMessage = `Thanks for coming! 
         Stay up to date by following us on social media!.`;
         return;
+      } else if ((endDate - currentDate) > 0 && (startDate - currentDate) < 0) {
+        this.statusMessage = `VTHacks VI is going on right now! 
+        Stay up to date by following us on social media!.`;
+        return;
       }
-      /* +1 because it the current day is't inculded */
+
+      /* +1 because it the current day isn't included */
       const daysLeft = Math.floor(timeRemaining / 86400000) + 1;
       this.statusMessage = this.statusMessage.replace('defaultDays', daysLeft);
       if (daysLeft === 1) {
         this.statusMessage = this.statusMessage.replace('days', 'day');
+      }
+      if (daysLeft === 0) {
+        this.statusMessage = "VTHacks VI starts today, cya there!";
       }
     },
   },
