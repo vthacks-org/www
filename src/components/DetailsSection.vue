@@ -54,6 +54,9 @@ export default {
       /* +1 because it the current day is't inculded */
       const daysLeft = Math.floor(timeRemaining / 86400000) + 1;
       this.statusMessage = this.statusMessage.replace('defaultDays', daysLeft);
+      if (daysLeft === 1) {
+        this.statusMessage = this.statusMessage.replace('days', 'day');
+      }
     },
   },
   created() {
