@@ -13,7 +13,7 @@
       <div class="schedules">
         <ul class="schedule">
           <div class="container">
-            <div class="date"> Fri </div>
+            <div class="date"> Friday </div>
             <div class="seperator blue small"></div>
             <li v-for="event in events" v-if="event.date == 'Friday'" class="schedule-item">
               <div class="time">
@@ -27,7 +27,7 @@
         </ul>
 
         <ul class="schedule">          <div class="container">
-            <div class="date"> Sat  </div>
+            <div class="date"> Saturday  </div>
             <div class="seperator blue small"></div>
               <li v-for="event in events" v-if="event.date == 'Saturday'" class="schedule-item">
                 <div class="time">
@@ -42,7 +42,7 @@
 
         <ul class="schedule">
         <div class="container">
-          <div class="date"> Sun   </div>
+          <div class="date"> Sunday   </div>
           <div class="seperator blue small"></div>
           <li v-for="event in events" v-if="event.date == 'Sunday'" class="schedule-item">
             <div class="time">
@@ -283,6 +283,7 @@ export default {
     background-color: #000;
     display: flex;
     flex-direction: column;
+    font-family: 'Inconsolata', monospace;
   }
 
   a {
@@ -307,7 +308,7 @@ export default {
         font-size: 1.5em;
       }
       font-size: 2vw;
-      font-family: 'Titillium Web', sans-serif;
+      font-family: 'Inconsolata', monospace;
     }
 
     .schedules{
@@ -322,7 +323,7 @@ export default {
       }
 
       ul.schedule {
-        font-family: $font-VT232;
+        font-family: 'Inconsolata', monospace;
         padding: 0;
         flex-grow: 1;
         display: flex;
@@ -346,38 +347,19 @@ export default {
           padding-bottom: 20px;
         }
         .time {
-          font-family: $font-2P;
+          font-family: 'Inconsolata', monospace;
           color: $neon-pink;
-          /* All Mobile Sizes (devices and browser) */
-          @media only screen and (max-width: 767px) {
-            font-size: .6em;
-          }
-          @media only screen and (min-width: 1600px) {
-            font-size: 1.0em;
-          }
-          font-size: 1.1vw;
+          font-size: 1.2em;
           line-height: 1.2em;
         }
         .title {
           margin-top: -2px;
-          @media only screen and (max-width: 767px) {
-            font-size: .9em;
-          }
-          @media only screen and (min-width: 1600px) {
-            font-size: 1.25em;
-          }
-          font-size: 1.15em;
+          font-size: 1.2em;
           color: grey;
         }
         .description {
           margin-top: -2px;
-          // @media only screen and (max-width: 767px) {
-          //   font-size: .9em;
-          // }
-          @media only screen and (max-width: 767px) {
-            font-size: .85em;
-          }
-          font-size: 1.1em;
+          font-size: 1.2em;
           color: $neon-blue;
         }
       }
