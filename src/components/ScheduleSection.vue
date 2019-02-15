@@ -305,9 +305,9 @@ export default {
       display: inline-block;
       color: $neon-blue;
       @media only screen and (max-width: 767px) {
-        font-size: 1.5em;
+        font-size: 2em;
       }
-      font-size: 2vw;
+      font-size: 1.75em;
       font-family: 'Inconsolata', monospace;
     }
 
