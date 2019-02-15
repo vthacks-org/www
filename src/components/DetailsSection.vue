@@ -49,9 +49,9 @@ export default {
   methods: {
     updateDaysLeft() {
       /* month is 0-11 for some reason where date is 1-31 */
-      const startHour = new Date(2019, 1, 15, 5);
+      const startHour = new Date(2019, 1, 15, 17);
       const sameDay = new Date(2019, 1, 15);
-      const endDate = new Date(2019, 1, 17, 3);
+      const endDate = new Date(2019, 1, 17, 15);
       const currentDate = new Date();
 
       /* if vthacks is happening or past: */
@@ -90,6 +90,12 @@ export default {
 @import '../styles/vars';
 
 $splash-min-width: 600px;
+
+@media only screen and (max-width: 767px) {
+  .status {
+    font-size: .5em;
+  }
+}
 
 .status {
   font-family: $font-2P;
