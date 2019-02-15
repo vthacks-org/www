@@ -88,8 +88,8 @@ export default {
           end: '',
         },
         {
-          title: 'Team Formation',
-          description: 'MCB 100',
+          title: 'Team Formation & How to Survive Your First Hackathon',
+          description: 'Room 118C',
           date: 'Friday',
           start: '7:40 PM',
           end: '',
