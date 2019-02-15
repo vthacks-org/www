@@ -334,6 +334,12 @@ export default {
         @media only screen and (max-width: 767px) {
           margin: 10px; // Things get squished on mobile now
           max-width: 100%;
+
+          .schedule-item {
+            .time, .title, .description {
+              font-size: 1em;
+            }
+          }
         }
         .container {
           align-items: center;
