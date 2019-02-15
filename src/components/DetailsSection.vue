@@ -58,14 +58,15 @@ export default {
         return;
       }
 
+
       /* +1 because it the current day isn't included */
-      const daysLeft = Math.floor(timeRemaining / 86400000) + 1;
+      const daysLeft = Math.floor((startDate - currentDate) / 86400000) + 1;
       this.statusMessage = this.statusMessage.replace('defaultDays', daysLeft);
       if (daysLeft === 1) {
         this.statusMessage = this.statusMessage.replace('days', 'day');
       }
       if (daysLeft === 0) {
-        this.statusMessage = "VTHacks VI starts today, cya there!";
+        this.statusMessage = 'VTHacks VI starts today, cya there!';
       }
     },
   },
