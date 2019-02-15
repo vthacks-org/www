@@ -10,13 +10,19 @@
         {{ statusMessage }}
       </div>
     </div>
-    <div class="where">
+    <!-- <div class="where">
       <div class="where-title futuristic small center">@ Virginia Tech</div>
       <div class="where-location">Surge Space Building</div>
       <div class="where-location">435 Turner St NW,<br>Blacksburg, VA 24060</div>
     </div>
     <div class="when">
       <div class="where-title futuristic small center">Feb 15-17, 2019</div>
+    </div> -->
+    <div class="where">
+      <div class="where-title">Virginia Tech</div>
+      <div class="where-location">Surge Space Building</div>
+      <div class="where-location">435 Turner St NW,<br>Blacksburg VA 24060</div>
+      <div class="where-title">Feb 15-17, 2019</div>
     </div>
     <div class="socials">
       <a href="https://www.facebook.com/vthacks" target="_blank">
@@ -124,14 +130,18 @@ $splash-min-width: 600px;
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   align-items: center;
   .where-title {
+    font-family: $font-VT232;
+    text-align: center;
+    font-size: 150%;
+    text-transform: uppercase;
     color: $neon-blue;
-    -webkit-text-stroke-color: darken($neon-blue, 30%);
+    -webkit-text-stroke-color: transparent;
   }
   .where-location {
-    font-family: $font-2P;
+    font-family: $font-VT232;
     color: $neon-pink;
     text-align: center;
     line-height: 24px;
@@ -155,23 +165,6 @@ $splash-min-width: 600px;
 @media (max-width: 480px) {
   #details-section{
     padding: 16px;
-  }
-  .se-title, .where-title {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  .start-and-end, .where {
-    .se-title, .where-title {
-      font-size: 1.25em;
-    }
-    .se-date, .where-location {
-      font-size: .8em;
-    }
-  }
-
-  .start-and-end, .where {
-    padding-bottom: 0px;
   }
 }
 </style>
