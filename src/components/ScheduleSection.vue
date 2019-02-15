@@ -75,7 +75,7 @@ export default {
         },
         {
           title: 'Dinner',
-          description: '',
+          description: 'Chinese Kitchen',
           date: 'Friday',
           start: '5:30 PM',
           end: '7:00 PM',
@@ -125,14 +125,14 @@ export default {
         /* Saturday */
         {
           title: 'Midnight Snack',
-          description: '',
+          description: 'Campus Cookies',
           date: 'Saturday',
           start: '12:00 AM',
           end: '1:00 AM',
         },
         {
           title: 'Breakfast',
-          description: '',
+          description: 'Idego Coffee & Carol Lee Donuts',
           date: 'Saturday',
           start: '7:00 AM',
           end: '9:30 AM',
@@ -145,7 +145,7 @@ export default {
           end: '11:00 AM',
         },
         {
-          title: 'Powering the Digital Transformation with Mixed Reality at Microsoft',
+          title: '"Powering the Digital Transformation with Mixed Reality" with Microsoft',
           description: 'Room 118C',
           date: 'Saturday',
           start: '11:00 AM',
@@ -153,7 +153,7 @@ export default {
         },
         {
           title: 'Lunch',
-          description: '',
+          description: 'Souvlaki',
           date: 'Saturday',
           start: '12:00 PM',
           end: '1:30 PM',
@@ -195,7 +195,7 @@ export default {
         },
         {
           title: 'Dinner',
-          description: '',
+          description: "Moe's",
           date: 'Saturday',
           start: '7:00 PM',
           end: '8:00 PM',
@@ -217,7 +217,7 @@ export default {
         /* Sunday */
         {
           title: 'Midnight Snack',
-          description: '',
+          description: "Benny's",
           date: 'Sunday',
           start: '12:00 AM',
           end: '1:00 AM',
@@ -231,7 +231,7 @@ export default {
         },
         {
           title: 'Breakfast',
-          description: '',
+          description: 'Idego Coffee',
           date: 'Sunday',
           start: '7:00 AM',
           end: '9:00 AM',
@@ -252,7 +252,7 @@ export default {
         },
         {
           title: 'Lunch (open)',
-          description: '',
+          description: "Zeppoli's",
           date: 'Sunday',
           start: '11:00 AM',
           end: '1:30 PM',
