@@ -43,7 +43,7 @@ export default {
   methods: {
     updateDaysLeft() {
       /* month is 0-11 for some reason where date is 1-31 */
-      const endDate = new Date(2019, 1, 15);
+      const endDate = new Date(2019, 1, 15, 5);
       const currentDate = new Date();
       const timeRemaining = endDate - currentDate;
       if (timeRemaining < 0) {
