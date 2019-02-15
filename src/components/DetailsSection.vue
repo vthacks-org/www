@@ -53,8 +53,7 @@ export default {
       const currentDate = new Date();
       const timeRemaining = endDate - currentDate;
       if (timeRemaining < 0) {
-        this.statusMessage = `Thanks for coming! 
-        Stay up to date by following us on social media!.`;
+        this.statusMessage = `Welcome to VTHacks VI!`;
         return;
       }
       /* +1 because it the current day is't inculded */
