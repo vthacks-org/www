@@ -148,5 +148,9 @@ export default {
     width: 110px;
     top: 40px;
   }
+
+  #splash-apply #registration-link .eightbit-btn {
+    font-size: 12px;
+  }
 }
 </style>
