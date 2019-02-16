@@ -73,6 +73,7 @@ export default {
   width: 100%;
   text-align: center;
   font-size: 58px;
+  margin-bottom: 16px;
   #registration-link {
     background-color: transparent;
   }
