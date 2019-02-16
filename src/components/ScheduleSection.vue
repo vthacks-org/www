@@ -201,10 +201,17 @@ export default {
           end: '8:00 PM',
         },
         {
+          title: 'MLH Cup Stacking',
+          description: 'Room 103A',
+          date: 'Saturday',
+          start: '7:30 PM',
+          end: '8:30 PM',
+        },
+        {
           title: 'Smash Tournament',
           description: 'Room 118C',
           date: 'Saturday',
-          start: '7:30 PM',
+          start: '8:30 PM',
           end: '10:30 PM',
         },
         {
