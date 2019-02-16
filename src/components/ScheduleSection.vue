@@ -180,13 +180,6 @@ export default {
           end: '4:45 PM',
         },
         {
-          title: '"Intro To Brain.js" with VT Web Dev Club',
-          description: 'Room 118C',
-          date: 'Saturday',
-          start: '5:00 PM',
-          end: '5:45 PM',
-        },
-        {
           title: 'Trivia Night',
           description: 'Room 118C',
           date: 'Saturday',
