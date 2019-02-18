@@ -8,7 +8,7 @@
         <a id="registration-link" href="#">
           <!-- <div>Hack the Planet</div> -->
           <a href="https://vthacksvi.devpost.com/" target="_blank" class="register-link big neon-pink eightbit-btn">Devpost &gt;</a>
-          <a href="http://tinyurl.com/vthacks-slack/" target="_blank" class="register-link big neon-pink eightbit-btn">Slack &gt;</a>
+          <!-- <a href="http://tinyurl.com/vthacks-slack/" target="_blank" class="register-link big neon-pink eightbit-btn">Slack &gt;</a> -->
         </a>
       </div>
     </div>
