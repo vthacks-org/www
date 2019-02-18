@@ -18,11 +18,11 @@ import Navigation from './Navigation.vue';
 import MLHTrustBadge from './MLHTrustBadge.vue';
 import SplashSection from './SplashSection.vue';
 import DetailsSection from './DetailsSection.vue';
-import RegistrationSection from './RegistrationSection.vue';
+// import RegistrationSection from './RegistrationSection.vue';
 import LinksSection from './LinksSection.vue';
 import AboutSection from './AboutSection.vue';
-import VolunteerSection from './VolunteerSection.vue';
-import ScheduleSection from './ScheduleSection.vue';
+// import VolunteerSection from './VolunteerSection.vue';
+// import ScheduleSection from './ScheduleSection.vue';
 import MapSection from './MapSection.vue';
 import SponsorsSection from './SponsorsSection.vue';
 import FooterSection from './FooterSection.vue';
@@ -34,14 +34,14 @@ export default {
     MLHTrustBadge,
     SplashSection,
     DetailsSection,
-    RegistrationSection,
+    // RegistrationSection,
     LinksSection,
     AboutSection,
-    ScheduleSection,
+    // ScheduleSection,
     MapSection,
     SponsorsSection,
     FooterSection,
-    VolunteerSection,
+    // VolunteerSection,
   },
 };
 </script>

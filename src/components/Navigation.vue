@@ -29,18 +29,18 @@ export default {
         //   name: 'Getting_Started',
         //   id: 'links-section',
         // },
-        {
-          name: 'Register',
-          id: 'registration-section',
-        },
-        {
-          name: 'Volunteer',
-          id: 'volunteer-section',
-        },
-        {
-          name: 'Schedule',
-          id: 'schedule-section',
-        },
+        // {
+        //   name: 'Register',
+        //   id: 'registration-section',
+        // },
+        // {
+        //   name: 'Volunteer',
+        //   id: 'volunteer-section',
+        // },
+        // {
+        //   name: 'Schedule',
+        //   id: 'schedule-section',
+        // },
         {
           name: 'About',
           id: 'about-section',

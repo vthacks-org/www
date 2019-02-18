@@ -10,14 +10,6 @@
         {{ statusMessage }}
       </div>
     </div>
-    <!-- <div class="where">
-      <div class="where-title futuristic small center">@ Virginia Tech</div>
-      <div class="where-location">Surge Space Building</div>
-      <div class="where-location">435 Turner St NW,<br>Blacksburg, VA 24060</div>
-    </div>
-    <div class="when">
-      <div class="where-title futuristic small center">Feb 15-17, 2019</div>
-    </div> -->
     <div class="where">
       <div class="where-title">Virginia Tech</div>
       <div class="where-location">Surge Space Building</div>
@@ -70,6 +62,7 @@ export default {
       this.statusMessage = this.statusMessage.replace('defaultDays', daysLeft);
       if (daysLeft === 1) {
         this.statusMessage = this.statusMessage.replace('days', 'day');
+        return;
       }
       if (daysLeft === 0) {
         this.statusMessage = 'VTHacks VI starts today!';
