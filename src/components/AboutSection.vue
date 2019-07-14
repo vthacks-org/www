@@ -6,7 +6,7 @@
         <img src="../assets/vthacks-logo.png">
         <div class="specs">
           <div><span>OS:</span> VTHacks x86_64</div>
-          <div><span>Model:</span> 6TH EDITION</div>
+          <div><span>Model:</span> 7TH EDITION</div>
         </div>
       </div>
       <div>

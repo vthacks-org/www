@@ -39,13 +39,13 @@ export default {
           scaledSize: new google.maps.Size(30, 30),
           anchor: new google.maps.Point(10, 10),
         },
-        title: 'VTHacks V',
+        title: 'VTHacks VII',
         map,
       });
       const markerWindow = new google.maps.InfoWindow({
         content: `
           <div>
-            <strong>VTHacks V</strong><br>
+            <strong>VTHacks VII</strong><br>
             435 Turner St NW,<br>
             Blacksburg, VA 24060<br>
             <a href="#" style="background-color: initial; color: #427fed;">View on Google Maps</a>
