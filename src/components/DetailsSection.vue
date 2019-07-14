@@ -14,7 +14,7 @@
       <div class="where-title">Virginia Tech</div>
       <div class="where-location">Surge Space Building</div>
       <div class="where-location">435 Turner St NW,<br>Blacksburg VA 24060</div>
-      <div class="where-title">Feb 15-17, 2019</div>
+      <!-- <div class="where-title">Feb 15-17, 2019</div> -->
     </div>
     <div class="socials">
       <a href="https://www.facebook.com/vthacks" target="_blank">
@@ -52,7 +52,7 @@ export default {
         Stay up to date by following us on social media!`;
         return;
       } else if ((endDate - currentDate) > 0 && (startHour - currentDate) < 0) {
-        this.statusMessage = 'Welcome to VTHacks VI!';
+        this.statusMessage = 'Welcome to VTHacks VII!';
         return;
       }
 
@@ -65,7 +65,7 @@ export default {
         return;
       }
       if (daysLeft === 0) {
-        this.statusMessage = 'VTHacks VI starts today!';
+        this.statusMessage = 'VTHacks VII starts today!';
       }
     },
   },

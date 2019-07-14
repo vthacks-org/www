@@ -4,11 +4,11 @@
     <MLHTrustBadge></MLHTrustBadge>
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
-    <RegistrationSection></RegistrationSection>
-    <VolunteerSection></VolunteerSection>
-    <ScheduleSection></ScheduleSection>
+    <!-- <RegistrationSection></RegistrationSection> -->
+    <!-- <VolunteerSection></VolunteerSection> -->
+    <!-- <ScheduleSection></ScheduleSection> -->
     <AboutSection></AboutSection>
-    <SponsorsSection></SponsorsSection>
+    <!-- <SponsorsSection></SponsorsSection> -->
     <FooterSection></FooterSection>
   </div>
 </template>
@@ -24,7 +24,7 @@ import AboutSection from './AboutSection.vue';
 // import VolunteerSection from './VolunteerSection.vue';
 // import ScheduleSection from './ScheduleSection.vue';
 import MapSection from './MapSection.vue';
-import SponsorsSection from './SponsorsSection.vue';
+// import SponsorsSection from './SponsorsSection.vue';
 import FooterSection from './FooterSection.vue';
 
 export default {
@@ -39,7 +39,7 @@ export default {
     AboutSection,
     // ScheduleSection,
     MapSection,
-    SponsorsSection,
+    // SponsorsSection,
     FooterSection,
     // VolunteerSection,
   },

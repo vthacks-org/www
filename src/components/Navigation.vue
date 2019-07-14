@@ -45,10 +45,10 @@ export default {
           name: 'About',
           id: 'about-section',
         },
-        {
-          name: 'Sponsors',
-          id: 'sponsors-section',
-        },
+        // {
+        //   name: 'Sponsors',
+        //   id: 'sponsors-section',
+        // },
       ],
     };
   },

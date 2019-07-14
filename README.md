@@ -1,4 +1,4 @@
-# VTHacks 2018 Website
+# VTHacks 2020 Website
 
 ## Build Setup
 

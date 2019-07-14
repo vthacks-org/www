@@ -3,11 +3,11 @@
     <div id="splash-container">
       <img id="splash-combined" src="../assets/composite_splash.png">
       <img id="splash-logo" src="../assets/base-logo.png">
-      <div id="splash-date">FEB 15-17. VIRGINIA TECH</div>
+      <!-- <div id="splash-date">FEB 15-17. VIRGINIA TECH</div> -->
       <div id="splash-apply">
         <a id="registration-link" href="#">
-          <!-- <div>Hack the Planet</div> -->
-          <a href="https://vthacksvi.devpost.com/" target="_blank" class="register-link big neon-pink eightbit-btn">Devpost &gt;</a>
+          <div>Hack the Planet</div>
+          <!-- <a href="https://vthacksvi.devpost.com/" target="_blank" class="register-link big neon-pink eightbit-btn">Devpost &gt;</a> -->
           <!-- <a href="http://tinyurl.com/vthacks-slack/" target="_blank" class="register-link big neon-pink eightbit-btn">Slack &gt;</a> -->
         </a>
       </div>
