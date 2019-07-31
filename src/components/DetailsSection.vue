@@ -14,7 +14,7 @@
       <div class="where-title">Virginia Tech</div>
       <div class="where-location">Surge Space Building</div>
       <div class="where-location">435 Turner St NW,<br>Blacksburg VA 24060</div>
-      <!-- <div class="where-title">Feb 15-17, 2019</div> -->
+      <!-- <div class="where-title">Feb 14-16, 2020</div> -->
     </div>
     <div class="socials">
       <a href="https://www.facebook.com/vthacks" target="_blank">
@@ -35,15 +35,15 @@ export default {
   name: 'DetailsSection',
   data() {
     return {
-      statusMessage: 'VTHacks is only defaultDays days away!',
+      statusMessage: 'VTHacks 7 is only defaultDays days away!',
     };
   },
   methods: {
     updateDaysLeft() {
       /* month is 0-11 for some reason where date is 1-31 */
-      const startHour = new Date(2019, 1, 15, 17);
-      const sameDay = new Date(2019, 1, 15);
-      const endDate = new Date(2019, 1, 17, 15);
+      const startHour = new Date(2020, 1, 14, 16);
+      const sameDay = new Date(2020, 1, 14);
+      const endDate = new Date(2020, 1, 16, 14);
       const currentDate = new Date();
 
       /* if vthacks is happening or past: */
@@ -52,7 +52,7 @@ export default {
         Stay up to date by following us on social media!`;
         return;
       } else if ((endDate - currentDate) > 0 && (startHour - currentDate) < 0) {
-        this.statusMessage = 'Welcome to VTHacks VII!';
+        this.statusMessage = 'Welcome to VTHacks 7!';
         return;
       }
 
@@ -65,7 +65,7 @@ export default {
         return;
       }
       if (daysLeft === 0) {
-        this.statusMessage = 'VTHacks VII starts today!';
+        this.statusMessage = 'VTHacks 7 starts today!';
       }
     },
   },
@@ -90,12 +90,13 @@ $splash-min-width: 600px;
 }
 
 .status {
-  font-family: $font-2P;
+  font-family: $font-mono;
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   font-size: 20px;
+  letter-spacing: 4px;
   padding-bottom: 20px; 
   color: white;
   & > div {
@@ -148,13 +149,13 @@ $splash-min-width: 600px;
   .where-title {
     font-family: $font-VT232;
     text-align: center;
-    font-size: 150%;
-    text-transform: uppercase;
+    font-size: 200%;
+    letter-spacing: 5px;
     color: $neon-blue;
     -webkit-text-stroke-color: transparent;
   }
   .where-location {
-    font-family: $font-VT232;
+    font-family: $font-mono;
     color: $neon-pink;
     text-align: center;
     line-height: 24px;

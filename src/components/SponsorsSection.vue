@@ -19,7 +19,7 @@
           <div v-for="sponsor in sponsors.medium">
             <a :href="sponsor.url" target="_blank"><img class="medium" v-lazy="sponsor.img" /></a>
           </div>
-          <a :href="sponsors.wolfram.url" target="_blank"><img class="medium wolfram" v-lazy="sponsors.wolfram.img"/></a>
+          <!-- <a :href="sponsors.wolfram.url" target="_blank"><img class="medium wolfram" v-lazy="sponsors.wolfram.img"/></a> -->
       </div>
 
       <div class="sponsor-tier small center">
@@ -28,7 +28,7 @@
 
     <div class="gradient-seperator bottom reversed"></div>
 
-    <div class="sponsor-logos">
+    <!-- <div class="sponsor-logos">
       <div style="margin: 0 auto; justify-content:center">
         <h6 class="supertitle pink"> and Our awesome </h6>
         <h3 class="futuristic pink"> Caterers </h3>
@@ -43,7 +43,7 @@
           <a :href="sponsor.url" target="_blank"><img class="rectangular" v-lazy="sponsor.img" /></a>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="gradient-seperator bottom"></div>
   </div>
 </template>
@@ -66,7 +66,6 @@ export default {
           { img: '/static/sponsors/Eastman.png', url: 'https://jobs.eastman.com/' },
           { img: '/static/sponsors/CyberRange.svg', url: 'https://virginiacyberrange.org/jobs' },
         ],
-        wolfram: { img: '/static/sponsors/WolframLanguageLogo.png', url: 'http://www.wolfram.com/company/careers/?source=nav' },
       },
       food: {
         rectangular: [

@@ -4,7 +4,7 @@
       <div class="error text">
         Sorry, nothing here.
       </div>
-      <img id="dead" src="../assets/neon_sign_dead.svg"/>
+      <img id="dead" src="../assets/base-logo.png"/>
     </div>
   </div>
 </template>

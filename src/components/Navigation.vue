@@ -45,10 +45,10 @@ export default {
           name: 'About',
           id: 'about-section',
         },
-        // {
-        //   name: 'Sponsors',
-        //   id: 'sponsors-section',
-        // },
+        {
+          name: 'Sponsors',
+          id: 'sponsors-section',
+        },
       ],
     };
   },
@@ -68,6 +68,7 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../styles/colors';
+@import '../styles/vars';
 
 .navigation {
   position: fixed;
@@ -91,8 +92,10 @@ export default {
 .navigation-link {
   padding: 8px;
   color: $neon-blue;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 14px;
+  font-family: $font-VT232;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
   line-height: 28px;
   text-decoration: none;
   cursor: pointer;

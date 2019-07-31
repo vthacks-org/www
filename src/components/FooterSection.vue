@@ -30,7 +30,7 @@ export default {
   .code-of-conduct {
     color: white;
     padding: 20px;
-    font-family: $font-VT232;
+    font-family: $font-mono;
   }
 
 </style>

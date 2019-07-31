@@ -3,10 +3,11 @@
     <div id="splash-container">
       <img id="splash-combined" src="../assets/composite_splash.png">
       <img id="splash-logo" src="../assets/base-logo.png">
-      <!-- <div id="splash-date">FEB 15-17. VIRGINIA TECH</div> -->
+      <!-- <div id="splash-date">FEB 14-1. VIRGINIA TECH</div> -->
       <div id="splash-apply">
         <a id="registration-link" href="#">
-          <div>Hack the Planet</div>
+          <!-- <div>Hack the Planet</div> -->
+          <div>Feb 14-16, 2020<br>Virginia Tech</div>
           <!-- <a href="https://vthacksvi.devpost.com/" target="_blank" class="register-link big neon-pink eightbit-btn">Devpost &gt;</a> -->
           <!-- <a href="http://tinyurl.com/vthacks-slack/" target="_blank" class="register-link big neon-pink eightbit-btn">Slack &gt;</a> -->
         </a>
@@ -27,11 +28,6 @@ export default {
 @import '../styles/colors';
 @import '../styles/vars';
 @import '../styles/eightbit-btn';
-
-@font-face {
-    font-family: EndlessBummer;
-    src: url("../assets/ENDLESSBUMMER-Regular.otf") format("opentype");
-}
 
 #splash-combined {
   position: absolute;
@@ -68,11 +64,12 @@ export default {
 #splash-apply {
   position: absolute;
   color: white;
-  font-family: EndlessBummer, monospace;
-  top: 64%;
+  font-family: $font-VT232;
+  letter-spacing: 8px;
+  top: 66%;
   width: 100%;
   text-align: center;
-  font-size: 58px;
+  font-size: 2em;
   margin-bottom: 16px;
   #registration-link {
     background-color: transparent;
@@ -129,7 +126,6 @@ export default {
   }
 
   #splash-apply {
-    font-size: 48px;
     #apply-image {
       width: 230px;
     }
