@@ -104,7 +104,9 @@ container
   text-align: left;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-family: $font-2P;
+  font-family: $font-mono;
+  letter-spacing: 2px;
+  font-size: 14px;
   color: $neon-blue;
 
   &.pink {

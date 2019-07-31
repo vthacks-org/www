@@ -45,7 +45,7 @@ export default {
         },
         {
           q: 'How big can each team be?',
-          a: 'We like to keep teams at 4 or less participants, so that the competition is fair between teams',
+          a: 'We like to keep teams at 4 or less participants so that the competition is fair between teams.',
         },
         {
           q: 'Will there be hardware?',
