@@ -8,6 +8,7 @@
     <!-- <VolunteerSection></VolunteerSection> -->
     <!-- <ScheduleSection></ScheduleSection> -->
     <AboutSection></AboutSection>
+    <PreRegistrationSection></PreRegistrationSection>
     <SponsorsSection></SponsorsSection>
     <FooterSection></FooterSection>
   </div>
@@ -18,6 +19,7 @@ import Navigation from './Navigation.vue';
 import MLHTrustBadge from './MLHTrustBadge.vue';
 import SplashSection from './SplashSection.vue';
 import DetailsSection from './DetailsSection.vue';
+import PreRegistrationSection from './PreRegistrationSection.vue';
 import RegistrationSection from './RegistrationSection.vue';
 import LinksSection from './LinksSection.vue';
 import AboutSection from './AboutSection.vue';
@@ -34,6 +36,7 @@ export default {
     MLHTrustBadge,
     SplashSection,
     DetailsSection,
+    PreRegistrationSection,
     RegistrationSection,
     LinksSection,
     AboutSection,
