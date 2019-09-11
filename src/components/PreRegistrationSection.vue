@@ -1,5 +1,5 @@
 <template>
-	<div class="pre-registration">
+	<div id="pre-registration-section">
 		<div class="gradient-seperator"></div>
 		<iframe src="https://cdn.forms-content.sg-form.com/4b4931cd-ceaf-11e9-84e9-1e1be24fe445"/>
 	</div>
