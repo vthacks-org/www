@@ -46,6 +46,10 @@ export default {
           id: 'about-section',
         },
         {
+          name: 'Pre-Register',
+          id: 'pre-registration-section',
+        },
+        {
           name: 'Sponsors',
           id: 'sponsors-section',
         },
