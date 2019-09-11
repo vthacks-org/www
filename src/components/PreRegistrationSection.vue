@@ -12,7 +12,7 @@
 
 	iframe {
 		width: 100%;
-		height: 525px;
+		height: 530px;
 		border: none;
 	}
 </style>
