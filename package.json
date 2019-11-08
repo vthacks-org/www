@@ -14,8 +14,8 @@
   "dependencies": {
     "compression-webpack-plugin": "^1.1.3",
     "firebase-tools": "^6.3.1",
-    "jquery": "^3.2.1",
-    "npm": "^6.4.1",
+    "jquery": "^3.4.1",
+    "npm": "^6.13.0",
     "vue": "^2.5.2",
     "vue-analytics": "^5.7.1",
     "vue-lazyload": "^1.1.4",
@@ -67,7 +67,7 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-dev-server": "^2.11.5",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
