@@ -36,6 +36,10 @@ export default {
           a: 'The event is completely free for all registered participants.',
         },
         {
+          q: 'Does VTHacks reimburse travel fees?',
+          a: 'VTHacks offers reimbursments on a case by case basis to anyone traveling more than an hour to the event. Please contact us at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> for inquiries.',
+        },
+        {
           q: 'Will there be food?',
           a: 'Absolutely! We have an entire weekend of catered food waiting for you and your team.',
         },
