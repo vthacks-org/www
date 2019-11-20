@@ -16,6 +16,9 @@
           <div v-for="sponsor in sponsors.big">
             <a :href="sponsor.url" target="_blank"><img class="big" v-lazy="sponsor.img" /></a>
           </div>
+          <div v-for="sponsor in sponsors.whiteBg" class="fix-width">
+            <a :href="sponsor.url" target="_blank"><img class="big white-bg" v-lazy="sponsor.img" /></a>
+          </div>
           <div v-for="sponsor in sponsors.medium">
             <a :href="sponsor.url" target="_blank"><img class="medium" v-lazy="sponsor.img" /></a>
           </div>
@@ -54,17 +57,13 @@ export default {
   data() {
     return {
       sponsors: {
-        big: [
-          { img: '/static/sponsors/MicroStrategy.png', url: 'https://www.microstrategy.com/us/company/careers' },
-          { img: '/static/sponsors/CapitalOneWhite.png', url: 'https://campus.capitalone.com/' },
+        whiteBg: [
+          { img: '/static/sponsors/Costar.png', url: 'https://www.costargroup.com/careers/technology-opportunities' },
         ],
         medium: [
-          { img: '/static/sponsors/Microsoft.svg', url: 'https://careers.microsoft.com/us/en' },
+          { img: '/static/sponsors/MicroStrategy.png', url: 'https://www.microstrategy.com/us/company/careers' },
           { img: '/static/sponsors/CarMax.svg', url: 'https://jobs.carmax.com/' },
-          { img: '/static/sponsors/JBHunt.svg', url: 'https://www.jbhunt.com/opportunities/' },
-          { img: '/static/sponsors/Nielsen.svg', url: 'https://careers.nielsen.com/en-us/' },
-          { img: '/static/sponsors/Eastman.png', url: 'https://jobs.eastman.com/' },
-          { img: '/static/sponsors/CyberRange.svg', url: 'https://virginiacyberrange.org/jobs' },
+          { img: '/static/sponsors/Google.png', url: 'https://careers.google.com/students/' },
         ],
       },
       food: {
@@ -136,6 +135,10 @@ export default {
     }
   }
 
+  .fix-width {
+    width: min-content;
+  }
+
   img.big {
       max-height: 13vh;
       min-width: 350px;
@@ -151,6 +154,9 @@ export default {
     padding: 5px;
     min-width: 150px;
     max-width: 200px;
+  }
+  .white-bg {
+    background-color: #ECEFF1;
   }
   img.small {
       max-height: 8vh;
