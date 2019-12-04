@@ -29,10 +29,10 @@ export default {
         //   name: 'Getting_Started',
         //   id: 'links-section',
         // },
-        // {
-        //   name: 'Register',
-        //   id: 'registration-section',
-        // },
+        {
+          name: 'Register',
+          id: 'registration-section',
+        },
         // {
         //   name: 'Volunteer',
         //   id: 'volunteer-section',
@@ -45,10 +45,10 @@ export default {
           name: 'About',
           id: 'about-section',
         },
-        {
-          name: 'Pre-Register',
-          id: 'pre-registration-section',
-        },
+        // {
+        //   name: 'Pre-Register',
+        //   id: 'pre-registration-section',
+        // },
         {
           name: 'Sponsors',
           id: 'sponsors-section',
