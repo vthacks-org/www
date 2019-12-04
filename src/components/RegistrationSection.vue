@@ -66,6 +66,10 @@ export default {
   }
 }
 
+.info-term {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 480px) {
   .see-ya-there{
     -webkit-text-stroke-color: darken($neon-pink, 30%);

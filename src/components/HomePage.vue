@@ -4,11 +4,11 @@
     <MLHTrustBadge></MLHTrustBadge>
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
-    <!-- <RegistrationSection></RegistrationSection> -->
+    <RegistrationSection></RegistrationSection>
     <!-- <VolunteerSection></VolunteerSection> -->
     <!-- <ScheduleSection></ScheduleSection> -->
     <AboutSection></AboutSection>
-    <PreRegistrationSection></PreRegistrationSection>
+    <!-- <PreRegistrationSection></PreRegistrationSection> -->
     <SponsorsSection></SponsorsSection>
     <FooterSection></FooterSection>
   </div>
