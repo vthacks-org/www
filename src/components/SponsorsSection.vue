@@ -10,23 +10,23 @@
     <div class="sponsor-logos">
       <!-- <div class="sponsor-tier big center" >
           <img v-for="image in sponsors.big" v-lazy="image"/>
-      </div> -->
+      </div>-->
 
       <div class="sponsor-tier medium center">
         <div v-for="sponsor in sponsors.big">
-          <a :href="sponsor.url" target="_blank"
-            ><img class="big" v-lazy="sponsor.img"
-          /></a>
+          <a :href="sponsor.url" target="_blank">
+            <img class="big" v-lazy="sponsor.img" />
+          </a>
         </div>
         <div v-for="sponsor in sponsors.whiteBg" class="fix-width">
-          <a :href="sponsor.url" target="_blank"
-            ><img class="big white-bg" v-lazy="sponsor.img"
-          /></a>
+          <a :href="sponsor.url" target="_blank">
+            <img class="big white-bg" v-lazy="sponsor.img" />
+          </a>
         </div>
         <div v-for="sponsor in sponsors.medium">
-          <a :href="sponsor.url" target="_blank"
-            ><img class="medium" v-lazy="sponsor.img"
-          /></a>
+          <a :href="sponsor.url" target="_blank">
+            <img class="medium" v-lazy="sponsor.img" />
+          </a>
         </div>
         <!-- <a :href="sponsors.wolfram.url" target="_blank"><img class="medium wolfram" v-lazy="sponsors.wolfram.img"/></a> -->
       </div>
@@ -51,7 +51,7 @@
           <a :href="sponsor.url" target="_blank"><img class="rectangular" v-lazy="sponsor.img" /></a>
         </div>
       </div>
-    </div> -->
+    </div>-->
     <div class="gradient-seperator bottom"></div>
   </div>
 </template>
@@ -64,7 +64,7 @@ export default {
       sponsors: {
         medium: [
           {
-            img: '/static/sponsors/Costar.png',
+            img: '/static/sponsors/CoStar.png',
             url: 'https://www.costargroup.com/careers/technology-opportunities',
           },
           {
