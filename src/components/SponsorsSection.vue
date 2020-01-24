@@ -2,8 +2,8 @@
   <div id="sponsors-section">
     <div class="gradient-seperator"></div>
     <div style="margin: 0 auto; justify-content:center">
-      <h6 class="supertitle"> Our amazing </h6>
-      <h1 class="futuristic blue"> Sponsors </h1>
+      <h6 class="supertitle">Our amazing</h6>
+      <h1 class="futuristic blue">Sponsors</h1>
     </div>
     <div class="seperator large blue"></div>
 
@@ -13,20 +13,25 @@
       </div> -->
 
       <div class="sponsor-tier medium center">
-          <div v-for="sponsor in sponsors.big">
-            <a :href="sponsor.url" target="_blank"><img class="big" v-lazy="sponsor.img" /></a>
-          </div>
-          <div v-for="sponsor in sponsors.whiteBg" class="fix-width">
-            <a :href="sponsor.url" target="_blank"><img class="big white-bg" v-lazy="sponsor.img" /></a>
-          </div>
-          <div v-for="sponsor in sponsors.medium">
-            <a :href="sponsor.url" target="_blank"><img class="medium" v-lazy="sponsor.img" /></a>
-          </div>
-          <!-- <a :href="sponsors.wolfram.url" target="_blank"><img class="medium wolfram" v-lazy="sponsors.wolfram.img"/></a> -->
+        <div v-for="sponsor in sponsors.big">
+          <a :href="sponsor.url" target="_blank"
+            ><img class="big" v-lazy="sponsor.img"
+          /></a>
+        </div>
+        <div v-for="sponsor in sponsors.whiteBg" class="fix-width">
+          <a :href="sponsor.url" target="_blank"
+            ><img class="big white-bg" v-lazy="sponsor.img"
+          /></a>
+        </div>
+        <div v-for="sponsor in sponsors.medium">
+          <a :href="sponsor.url" target="_blank"
+            ><img class="medium" v-lazy="sponsor.img"
+          /></a>
+        </div>
+        <!-- <a :href="sponsors.wolfram.url" target="_blank"><img class="medium wolfram" v-lazy="sponsors.wolfram.img"/></a> -->
       </div>
 
-      <div class="sponsor-tier small center">
-      </div>
+      <div class="sponsor-tier small center"></div>
     </div>
 
     <div class="gradient-seperator bottom reversed"></div>
@@ -57,27 +62,78 @@ export default {
   data() {
     return {
       sponsors: {
-        whiteBg: [
-          { img: '/static/sponsors/Costar.png', url: 'https://www.costargroup.com/careers/technology-opportunities' },
-        ],
         medium: [
-          { img: '/static/sponsors/MicroStrategy.png', url: 'https://www.microstrategy.com/us/company/careers' },
-          { img: '/static/sponsors/CarMax.svg', url: 'https://jobs.carmax.com/' },
-          { img: '/static/sponsors/Google.png', url: 'https://careers.google.com/students/' },
+          {
+            img: '/static/sponsors/Costar.png',
+            url: 'https://www.costargroup.com/careers/technology-opportunities',
+          },
+          {
+            img: '/static/sponsors/MicroStrategy.png',
+            url: 'https://www.microstrategy.com/us/company/careers',
+          },
+          {
+            img: '/static/sponsors/CarMax.svg',
+            url: 'https://jobs.carmax.com/',
+          },
+          {
+            img: '/static/sponsors/Google.png',
+            url: 'https://careers.google.com/students/',
+          },
+          {
+            img: '/static/sponsors/StickerMule.svg',
+            url: 'http://hackp.ac/mlh-stickermule-hackathons',
+          },
+          {
+            img: '/static/sponsors/JBHunt.svg',
+            url: 'https://www.jbhunt.com/',
+          },
+          {
+            img: '/static/sponsors/CapitalOneWhite.png',
+            url: 'https://campus.capitalone.com/',
+          },
+          {
+            img: '/static/sponsors/FannieMae.png',
+            url: 'https://www.fanniemae.com/portal/index.html',
+          },
+          {
+            img: '/static/sponsors/GoogleCloud.png',
+            url: 'https://cloud.google.com/',
+          },
         ],
       },
       food: {
         rectangular: [
-          { img: '/static/sponsors/Campus Cookies.png', url: 'https://www.campuscookie.com/' },
-          { img: '/static/sponsors/soulvaki.png', url: 'https://eatsouvlaki.com/' },
+          {
+            img: '/static/sponsors/Campus Cookies.png',
+            url: 'https://www.campuscookie.com/',
+          },
+          {
+            img: '/static/sponsors/soulvaki.png',
+            url: 'https://eatsouvlaki.com/',
+          },
         ],
         square: [
-          { img: '/static/sponsors/Carol Lee.jpg', url: 'https://www.carolleedonuts.com/' },
-          { img: '/static/sponsors/Chinese Kitchen.png', url: 'http://www.chinesekitchenblacksburg.com/' },
+          {
+            img: '/static/sponsors/Carol Lee.jpg',
+            url: 'https://www.carolleedonuts.com/',
+          },
+          {
+            img: '/static/sponsors/Chinese Kitchen.png',
+            url: 'http://www.chinesekitchenblacksburg.com/',
+          },
           { img: '/static/sponsors/moes.png', url: 'https://www.moes.com/' },
-          { img: '/static/sponsors/bennys.png', url: 'https://www.bennysva.com/' },
-          { img: '/static/sponsors/Zeppoli_s.jpg', url: 'http://zeppolis.com/' },
-          { img: '/static/sponsors/IdegoCoffee.svg', url: 'https://www.idegocoffee.com/' },
+          {
+            img: '/static/sponsors/bennys.png',
+            url: 'https://www.bennysva.com/',
+          },
+          {
+            img: '/static/sponsors/Zeppoli_s.jpg',
+            url: 'http://zeppolis.com/',
+          },
+          {
+            img: '/static/sponsors/IdegoCoffee.svg',
+            url: 'https://www.idegocoffee.com/',
+          },
         ],
       },
     };
@@ -88,13 +144,13 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-@import '../styles/headers';
-@import '../styles/vars';
-@import '../styles/colors';
+@import "../styles/headers";
+@import "../styles/vars";
+@import "../styles/colors";
 
 #sponsors-section {
   width: 100%;
-  background-color: #010B13;
+  background-color: #010b13;
   display: flex;
   flex-direction: column;
 }
@@ -105,8 +161,7 @@ export default {
   margin: 20px;
 }
 
-
-.sponsor-tier{
+.sponsor-tier {
   align-self: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -119,13 +174,12 @@ export default {
   }
 
   img {
-      max-width: 80%;
-      margin: 20px;
-      min-height: 7vh;
+    max-width: 80%;
+    margin: 20px;
+    min-height: 7vh;
   }
 
   &.catering {
-
     img.square {
       max-height: 15vh;
     }
@@ -140,27 +194,27 @@ export default {
   }
 
   img.big {
-      max-height: 13vh;
-      min-width: 350px;
+    max-height: 13vh;
+    min-width: 350px;
   }
   img.medium {
-      max-height: 10vh;
-      min-width: 250px;
-      max-width: 300px;
-      object-fit: contain;
+    max-height: 10vh;
+    min-width: 250px;
+    max-width: 300px;
+    object-fit: contain;
   }
   .wolfram {
-    background-color: #ECEFF1;
+    background-color: #eceff1;
     padding: 5px;
     min-width: 150px;
     max-width: 200px;
   }
   .white-bg {
-    background-color: #ECEFF1;
+    background-color: #eceff1;
   }
   img.small {
-      max-height: 8vh;
-      min-width: 125px;
+    max-height: 8vh;
+    min-width: 125px;
   }
 
   /* All Mobile Sizes (devices and browser) */
@@ -170,13 +224,13 @@ export default {
     }
 
     img.medium {
-        max-height: 6vh;
-        min-width: 130px;
+      max-height: 6vh;
+      min-width: 130px;
     }
     img.small {
-        max-height: 6vh;
-        max-width: 70px;
-        margin: 5px;
+      max-height: 6vh;
+      max-width: 70px;
+      margin: 5px;
     }
   }
 
@@ -196,5 +250,4 @@ export default {
   align-self: center;
   padding: 15px;
 }
-
 </style>
