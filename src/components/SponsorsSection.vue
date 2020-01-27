@@ -8,9 +8,9 @@
     <div class="seperator large blue"></div>
 
     <div class="sponsor-logos">
-      <!-- <div class="sponsor-tier big center" >
+     <!-- <div class="sponsor-tier big center" >
           <img v-for="image in sponsors.big" v-lazy="image"/>
-      </div>-->
+      </div> -->
 
       <div class="sponsor-tier medium center">
         <div v-for="sponsor in sponsors.big">
@@ -76,8 +76,8 @@ export default {
             url: 'https://jobs.carmax.com/',
           },
           {
-            img: '/static/sponsors/Google.png',
-            url: 'https://careers.google.com/students/',
+            img: '/static/sponsors/GoogleCloud.png',
+            url: 'https://cloud.google.com/',
           },
           {
             img: '/static/sponsors/StickerMule.svg',
@@ -95,10 +95,7 @@ export default {
             img: '/static/sponsors/FannieMae.png',
             url: 'https://www.fanniemae.com/portal/index.html',
           },
-          {
-            img: '/static/sponsors/GoogleCloud.png',
-            url: 'https://cloud.google.com/',
-          },
+
         ],
       },
       food: {
@@ -121,7 +118,10 @@ export default {
             img: '/static/sponsors/Chinese Kitchen.png',
             url: 'http://www.chinesekitchenblacksburg.com/',
           },
-          { img: '/static/sponsors/moes.png', url: 'https://www.moes.com/' },
+          {
+            img: '/static/sponsors/moes.png',
+            url: 'https://www.moes.com/',
+          },
           {
             img: '/static/sponsors/bennys.png',
             url: 'https://www.bennysva.com/',
