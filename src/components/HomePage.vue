@@ -6,7 +6,7 @@
     <DetailsSection></DetailsSection>
     <RegistrationSection></RegistrationSection>
     <!-- <VolunteerSection></VolunteerSection> -->
-    <!-- <ScheduleSection></ScheduleSection> -->
+    <ScheduleSection></ScheduleSection>
     <AboutSection></AboutSection>
     <!-- <PreRegistrationSection></PreRegistrationSection> -->
     <SponsorsSection></SponsorsSection>
