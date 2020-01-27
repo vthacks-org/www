@@ -64,7 +64,7 @@ export default {
       sponsors: {
         medium: [
           {
-            img: '/static/sponsors/CoStar.png',
+            img: '/static/sponsors/Costar.png',
             url: 'https://www.costargroup.com/careers/technology-opportunities',
           },
           {
