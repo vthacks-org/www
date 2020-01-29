@@ -33,14 +33,14 @@ export default {
           name: 'Register',
           id: 'registration-section',
         },
-        {
-          name: 'Volunteer',
-          id: 'volunteer-section',
-        },
-        {
-          name: 'Schedule',
-          id: 'schedule-section',
-        },
+        // {
+        //   name: 'Volunteer',
+        //   id: 'volunteer-section',
+        // },
+        // {
+        //   name: 'Schedule',
+        //   id: 'schedule-section',
+        // },
         {
           name: 'About',
           id: 'about-section',
