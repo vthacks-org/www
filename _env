@@ -1,0 +1,40 @@
+# 'dev' or 'production'
+NODE_ENV='production'
+
+# Connection string URI for your MongoDB database
+DATABASE='mongodb://admin:S3ndF1u5h0t@ds021895.mlab.com:21895/vthacks19'
+
+SENDGRID_API_KEY='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'
+
+# Port that this app runs on
+PORT='8080'
+
+# Long random string used to verify JWT tokens for user authentication
+JWT_SECRET='W/^MYy2+qlKi93AK!X$:nuH2{,R<sg<ruCSeMxyMx1hOP&KK=N4}If:FZj4HT`jZlOIOFpGmUB^H;gvoT(D][IQ^P)}kd88ED{7qd.WXqW8sh%+w/"H01Td\PDyueD'
+
+# Root URL for this app
+ROOT_URL='https://register.vthacks.com
+
+# Credentials for the admin user created at app initialization
+ADMIN_EMAIL='admin@vthacks.com'
+ADMIN_PASS='R@bb1tF1u$h0t'
+
+# Used to send verification, registration, and confirmation emails
+EMAIL_CONTACT='VTHacks Team <hackathon@vthacks.com>'
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_USER='vthacks@gmail.com'
+EMAIL_PASS='R@bb1tF1u$h0t'
+EMAIL_PORT='465'
+EMAIL_HEADER_IMAGE='/assets/images/email-header-image.png'
+
+# Information linked at the bottom of emails
+EMAIL_ADDRESS='hackathon@vthacks.com'
+HACKATHON_NAME='VTHacks V'
+TWITTER_HANDLE='vt_hacks'
+FACEBOOK_HANDLE='vthacks'
+
+# Limits the number of users that can join a team
+TEAM_MAX_SIZE=4
+
+# Used to send error messages to your Slack team when the API catches an error
+SLACK_HOOK='https://hooks.slack.com/services/yourapikey'
