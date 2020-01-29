@@ -7,17 +7,19 @@
     </div>
     <div class="seperator large blue"></div>
 
-    <div class="sponsor-logos">
-     <!-- <div class="sponsor-tier big center" >
-          <img v-for="image in sponsors.big" v-lazy="image"/>
-      </div> -->
+    <div class="sponsor-logos big center">
+      <div v-for="sponsor in sponsors.big" >
+          <a :href="sponsor.url" target="_blank">
+            <img class="big" style="max-width: 40%; display:block; margin:auto;" v-lazy="sponsor.img" />
+          </a>
+        </div>
 
       <div class="sponsor-tier medium center">
-        <div v-for="sponsor in sponsors.big">
+        <!--<div v-for="sponsor in sponsors.big">
           <a :href="sponsor.url" target="_blank">
             <img class="big" v-lazy="sponsor.img" />
           </a>
-        </div>
+        </div>-->
         <div v-for="sponsor in sponsors.whiteBg" class="fix-width">
           <a :href="sponsor.url" target="_blank">
             <img class="big white-bg" v-lazy="sponsor.img" />
@@ -62,11 +64,13 @@ export default {
   data() {
     return {
       sponsors: {
-        medium: [
+        big: [
           {
             img: '/static/sponsors/Costar.png',
             url: 'https://www.costargroup.com/careers/technology-opportunities',
           },
+        ],
+        medium: [
           {
             img: '/static/sponsors/MicroStrategy.png',
             url: 'https://www.microstrategy.com/us/company/careers',
@@ -194,9 +198,10 @@ export default {
   }
 
   img.big {
-    max-height: 13vh;
-    min-width: 350px;
+    max-height: 13vh !important;
+    min-width: 350px !important;
   }
+
   img.medium {
     max-height: 10vh;
     min-width: 250px;
