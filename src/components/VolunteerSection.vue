@@ -11,7 +11,7 @@
       </div>
 
       <div class="actions">
-        <a href="www.signupgenius.com/go/9040e48afac2babf85-vthacks" target="_blank" class="register-link big neon-pink eightbit-btn">Volunteer &gt;</a>
+        <a href="https://www.signupgenius.com/go/9040e48afac2babf85-vthacks" target="_blank" class="register-link big neon-pink eightbit-btn">Volunteer &gt;</a>
         <!-- <a href="/travel-reimbursement" class="register-link medium vth-red eightbit-btn">Request Bus &gt;</a>
         <a href="/bus-interest" class="register-link medium vth-blue eightbit-btn">Travel Reimbursement &gt;</a> -->
       </div>
