@@ -8,11 +8,13 @@
     <div class="seperator large blue"></div>
 
     <div class="sponsor-logos big center">
-      <div v-for="sponsor in sponsors.big" >
+      <div class="sponsor-tier big center">
+        <div v-for="sponsor in sponsors.big">
           <a :href="sponsor.url" target="_blank">
-            <img class="big" style="max-width: 40%; display:block; margin:auto;" v-lazy="sponsor.img" />
+            <img class="big" style v-lazy="sponsor.img" />
           </a>
         </div>
+      </div>
 
       <div class="sponsor-tier medium center">
         <!--<div v-for="sponsor in sponsors.big">
@@ -99,7 +101,6 @@ export default {
             img: '/static/sponsors/FannieMae.png',
             url: 'https://www.fanniemae.com/portal/index.html',
           },
-
         ],
       },
       food: {
@@ -198,8 +199,9 @@ export default {
   }
 
   img.big {
-    max-height: 13vh !important;
-    min-width: 350px !important;
+    max-width: 40%;
+    display: block;
+    margin: auto;
   }
 
   img.medium {
