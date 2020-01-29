@@ -5,7 +5,7 @@
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
     <RegistrationSection></RegistrationSection>
-    <!-- <VolunteerSection></VolunteerSection> -->
+    <VolunteerSection></VolunteerSection>
     <ScheduleSection></ScheduleSection>
     <AboutSection></AboutSection>
     <!-- <PreRegistrationSection></PreRegistrationSection> -->
