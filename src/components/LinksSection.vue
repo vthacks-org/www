@@ -9,12 +9,12 @@
           <img src="../assets/slack_small.png">
           Slack &gt;
         </a>
-        <a href="https://vthacks-v.devpost.com/" id="devpost-button" target="_blank" class="register-link medium devpost eightbit-btn">
+        <!-- <a href="https://vthacks-v.devpost.com/" id="devpost-button" target="_blank" class="register-link medium devpost eightbit-btn">
           <img src="../assets/devpost_small.png">
           Devpost &gt;
-        </a>
+        </a> -->
       </div>
-      <iframe width="55%" height="500px"src="https://docs.google.com/document/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true"></iframe>
+      <iframe class="mobile" width="920px" height="500px"src="https://docs.google.com/document/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true"></iframe>
     </div>
   </div>
 </template>
@@ -59,6 +59,13 @@ export default {
   img {
     height: 18px;
     margin-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  /* For mobile phones: */
+  [class*="mobile"] {
+    width: 100%;
   }
 }
 
