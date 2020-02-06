@@ -97,11 +97,6 @@ export default {
             img: '/static/sponsors/CapitalOneWhite.png',
             url: 'https://campus.capitalone.com/',
           },
-          {
-            img: '/static/sponsors/FannieMae.png',
-            url: 'https://www.fanniemae.com/portal/index.html',
-          },
-
         ],
       },
       food: {
