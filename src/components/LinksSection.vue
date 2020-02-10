@@ -13,8 +13,11 @@
           <img src="../assets/devpost_small.png">
           Devpost &gt;
         </a> -->
+        <div class="register" id="userGuideBtn">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true" class="register-link medium blue eightbit-btn">User Guide &gt;</a>
       </div>
-      <iframe class="mobile" width="920px" height="500px"src="https://docs.google.com/document/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true"></iframe>
+      </div>
+      <iframe class="mobile" width="920px" height="500px" src="https://docs.google.com/document/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true"></iframe>
     </div>
   </div>
 </template>
@@ -37,6 +40,10 @@ export default {
   min-height: 20vh;
   background-color: $rich-black;
   overflow: hidden;
+}
+
+#userGuideBtn{
+  display: none;
 }
 
 .links-content {
@@ -65,7 +72,11 @@ export default {
 @media only screen and (max-width: 930px) {
   /* For mobile phones: */
   [class*="mobile"] {
-    width: 100%;
+    display: none;
+  }
+
+  #userGuideBtn{
+    display: block;
   }
 }
 
