@@ -97,6 +97,10 @@ export default {
             img: '/static/sponsors/CapitalOneWhite.png',
             url: 'https://campus.capitalone.com/',
           },
+          {
+            img: '/static/sponsors/ripplematch.png',
+            url: 'https://ripplematch.com/',
+          },
         ],
       },
       food: {
