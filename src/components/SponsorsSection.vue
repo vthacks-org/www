@@ -99,7 +99,7 @@ export default {
           },
           {
             img: '/static/sponsors/ripplematch.png',
-            url: 'https://ripplematch.com/',
+            url: 'https://ripplematch.com/index?r=WQ2dGY',
           },
         ],
       },

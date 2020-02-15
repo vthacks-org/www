@@ -165,7 +165,7 @@ export default {
           title: 'Breakfast',
           description: '',
           date: 'Saturday',
-          start: '7:00 AM',
+          start: '8:00 AM',
           end: '9:30 AM',
         },
         {

@@ -9,10 +9,10 @@
           <img src="../assets/slack_small.png">
           Slack &gt;
         </a>
-        <!-- <a href="https://vthacks-v.devpost.com/" id="devpost-button" target="_blank" class="register-link medium devpost eightbit-btn">
+        <a href="https://vthacks7.devpost.com/" id="devpost-button" target="_blank" class="register-link medium devpost eightbit-btn">
           <img src="../assets/devpost_small.png">
           Devpost &gt;
-        </a> -->
+        </a>
         <div class="register" id="userGuideBtn">
         <a href="https://docs.google.com/document/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true" class="register-link medium blue eightbit-btn">User Guide &gt;</a>
       </div>

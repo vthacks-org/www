@@ -5,8 +5,8 @@
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
     <LinksSection></LinksSection>
-    <RegistrationSection></RegistrationSection>
-    <VolunteerSection></VolunteerSection>
+    <!-- <RegistrationSection></RegistrationSection> -->
+    <!-- <VolunteerSection></VolunteerSection> -->
     <ScheduleSection></ScheduleSection>
     <AboutSection></AboutSection>
     <SponsorsSection></SponsorsSection>
