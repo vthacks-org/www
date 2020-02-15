@@ -153,6 +153,13 @@ export default {
           start: '10:45 PM',
           end: '11:15 PM',
         },
+        {
+          title: 'Intro Web Dev with TechHackers',
+          description: 'Room 118C',
+          date: 'Friday',
+          start: '10:45 PM',
+          end: '11:30 PM',
+        },
         /* Saturday */
         {
           title: 'Midnight Snack',
