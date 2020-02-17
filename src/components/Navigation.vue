@@ -25,10 +25,10 @@ export default {
           name: 'Home',
           id: 'splash-section',
         },
-        {
-          name: 'Getting_Started',
-          id: 'links-section',
-        },
+        //{
+        //  name: 'Getting_Started',
+        //  id: 'links-section',
+        //},
         // {
         //  name: 'Register',
         //  id: 'registration-section',
@@ -37,10 +37,10 @@ export default {
         //  name: 'Volunteer',
         //  id: 'volunteer-section',
         // },
-        {
-          name: 'Schedule',
-          id: 'schedule-section',
-        },
+        //{
+        //  name: 'Schedule',
+        //  id: 'schedule-section',
+        //},
         {
           name: 'About',
           id: 'about-section',
