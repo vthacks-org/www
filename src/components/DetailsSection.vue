@@ -9,12 +9,14 @@
       <div>
         {{ statusMessage }}
       </div>
+      <div>
+        Due to COVID-19 this year we are planning to host VTHacks 8 completely online.
+      </div>
     </div>
     <div class="where">
       <div class="where-title">Virginia Tech</div>
       <div class="where-location">Surge Space Building</div>
       <div class="where-location">435 Turner St NW,<br>Blacksburg VA 24060</div>
-      <!-- <div class="where-title">Feb 14-16, 2020</div> -->
     </div>
     <div class="socials">
       <a href="https://www.facebook.com/vthacks" target="_blank">
@@ -35,15 +37,15 @@ export default {
   name: 'DetailsSection',
   data() {
     return {
-      statusMessage: 'VTHacks 7 is only defaultDays days away!',
+      statusMessage: 'VTHacks 8 is defaultDays days away!',
     };
   },
   methods: {
     updateDaysLeft() {
       /* month is 0-11 for some reason where date is 1-31 */
-      const startHour = new Date(2020, 1, 14, 16);
-      const sameDay = new Date(2020, 1, 14);
-      const endDate = new Date(2020, 1, 16, 14);
+      const startHour = new Date(2021, 1, 27, 16);
+      const sameDay = new Date(2021, 1, 27);
+      const endDate = new Date(2021, 1, 29, 14);
       const currentDate = new Date();
 
       /* if vthacks is happening or past: */
@@ -52,7 +54,7 @@ export default {
         Stay up to date by following us on social media!`;
         return;
       } else if ((endDate - currentDate) > 0 && (startHour - currentDate) < 0) {
-        this.statusMessage = 'Welcome to VTHacks 7!';
+        this.statusMessage = 'Welcome to VTHacks 8!';
         return;
       }
 

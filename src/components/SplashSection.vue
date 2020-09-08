@@ -7,7 +7,7 @@
       <div id="splash-apply">
         <a id="registration-link" href="#">
           <!-- <div>Hack the Planet</div> -->
-          <div>Feb 14-16, 2020<br>Virginia Tech</div>
+          <div>Feb 27-29, 2021<br>Virginia Tech</div>
           <!-- <a href="https://vthacksvi.devpost.com/" target="_blank" class="register-link big neon-pink eightbit-btn">Devpost &gt;</a> -->
           <!-- <a href="http://tinyurl.com/vthacks-slack/" target="_blank" class="register-link big neon-pink eightbit-btn">Slack &gt;</a> -->
         </a>

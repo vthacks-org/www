@@ -1,7 +1,7 @@
 {
-  "name": "vthackswww2018",
+  "name": "vthackswww",
   "version": "1.0.0",
-  "description": "VTHacks 2018 Website",
+  "description": "VTHacks Website",
   "author": "jmerizia <jmerizia@vt.edu>",
   "private": true,
   "scripts": {
@@ -12,10 +12,12 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "-": "0.0.1",
     "compression-webpack-plugin": "^1.1.3",
-    "firebase-tools": "^6.3.1",
-    "jquery": "^3.4.1",
-    "npm": "^6.13.0",
+    "firebase-tools": "^6.12.0",
+    "fix": "0.0.6",
+    "jquery": "^3.5.1",
+    "npm": "^6.14.8",
     "vue": "^2.5.2",
     "vue-analytics": "^5.7.1",
     "vue-lazyload": "^1.1.4",
@@ -51,7 +53,7 @@
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
     "node-notifier": "^5.1.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
