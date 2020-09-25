@@ -43,9 +43,9 @@ export default {
   methods: {
     updateDaysLeft() {
       /* month is 0-11 for some reason where date is 1-31 */
-      const startHour = new Date(2021, 1, 27, 16);
-      const sameDay = new Date(2021, 1, 27);
-      const endDate = new Date(2021, 1, 29, 14);
+      const startHour = new Date(2021, 1, 26, 16);
+      const sameDay = new Date(2021, 1, 26);
+      const endDate = new Date(2021, 1, 28, 14);
       const currentDate = new Date();
 
       /* if vthacks is happening or past: */
