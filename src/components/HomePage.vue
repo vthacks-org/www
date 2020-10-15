@@ -4,6 +4,7 @@
     <MLHTrustBadge></MLHTrustBadge>
     <SplashSection></SplashSection>
     <DetailsSection></DetailsSection>
+    <PreRegistrationSection></PreRegistrationSection>
     <!-- <LinksSection></LinksSection>
     <RegistrationSection></RegistrationSection>
     <VolunteerSection></VolunteerSection>
@@ -16,7 +17,7 @@
 
 <script>
 import Navigation from './Navigation.vue';
-import MLHTrustBadge from './MLHTrustBadge.vue';
+// import MLHTrustBadge from './MLHTrustBadge.vue';
 import SplashSection from './SplashSection.vue';
 import DetailsSection from './DetailsSection.vue';
 import PreRegistrationSection from './PreRegistrationSection.vue';
@@ -33,7 +34,7 @@ export default {
   name: 'HomePage',
   components: {
     Navigation,
-    MLHTrustBadge,
+    // MLHTrustBadge,
     SplashSection,
     DetailsSection,
     PreRegistrationSection,
