@@ -9,8 +9,8 @@
     <div class="navigation-content">
       <div
         v-for="section in sections"
-        class="navigation-link"
         :key="section"
+        class="navigation-link"
         @click="scrollToId(section.id)"
       >
         &lt;<span>{{ section.name }}</span
