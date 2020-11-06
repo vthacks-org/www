@@ -1,7 +1,7 @@
 <template>
   <div id="splash-section">
     <div id="splash-container">
-      <img id="splash-logo" src="~assets/VTHACKS.svg" alt="VTHacks" />
+      <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" />
       <div id="splash-date">Feb 26-28, 2021<br />Virginia Tech</div>
       <div id="splash-apply">
         <a id="registration-link" href="#">

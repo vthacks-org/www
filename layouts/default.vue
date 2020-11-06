@@ -7,7 +7,7 @@
     >
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <img src="~assets/VTHACKS.svg" alt="VTHacks" height="28" />
+          <img src="~assets/logo.svg" alt="VTHacks" height="28" />
         </a>
 
         <div class="navbar-burger">
