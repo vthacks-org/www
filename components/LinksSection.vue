@@ -9,21 +9,12 @@
       </div>
       <div class="actions">
         <a
-          id="slack-button"
-          href="https://tinyurl.com/t22v4hp"
-          target="_blank"
-          class="register-link medium slack eightbit-btn"
-        >
-          <img src="../assets/slack_small.png" />
-          Slack &gt;
-        </a>
-        <a
           id="devpost-button"
           href="https://vthacks7.devpost.com/"
           target="_blank"
           class="register-link medium devpost eightbit-btn"
         >
-          <img src="../assets/devpost_small.png" />
+          <img src="~assets/devpost_small.png" alt="Devpost" />
           Devpost &gt;
         </a>
         <div id="userGuideBtn" class="register">
@@ -60,7 +51,6 @@ export default {
 
 #links-section {
   min-height: 20vh;
-  background-color: $rich-black;
   overflow: hidden;
 }
 

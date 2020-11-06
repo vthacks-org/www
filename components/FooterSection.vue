@@ -26,8 +26,6 @@ export default {
 #footer-section {
   width: 100%;
   min-height: 100px;
-  background: url('../assets/splash-background.png');
-  background-color: #111;
   overflow: hidden;
   display: flex;
   flex-direction: column;

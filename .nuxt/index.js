@@ -12,14 +12,13 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_0bc5c6b9 from 'nuxt_plugin_plugin_0bc5c6b9' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_pluginclient_190322ef from 'nuxt_plugin_pluginclient_190322ef' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_7ebc9477 from 'nuxt_plugin_pluginserver_7ebc9477' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_workbox_ab22d310 from 'nuxt_plugin_workbox_ab22d310' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_meta_7963e2b5 from 'nuxt_plugin_meta_7963e2b5' // Source: .\\pwa\\meta.js (mode: 'all')
-import nuxt_plugin_icons_bbd687cc from 'nuxt_plugin_icons_bbd687cc' // Source: .\\pwa\\icons.js (mode: 'all')
-import nuxt_plugin_axios_8da26f48 from 'nuxt_plugin_axios_8da26f48' // Source: .\\axios.js (mode: 'all')
-import nuxt_plugin_buefy_7b0dc7ad from 'nuxt_plugin_buefy_7b0dc7ad' // Source: .\\buefy.js (mode: 'all')
+import nuxt_plugin_plugin_977869f8 from 'nuxt_plugin_plugin_977869f8' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_pluginclient_e1ffec8c from 'nuxt_plugin_pluginclient_e1ffec8c' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_168d097c from 'nuxt_plugin_pluginserver_168d097c' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_workbox_902726fa from 'nuxt_plugin_workbox_902726fa' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_meta_1ba0ce0a from 'nuxt_plugin_meta_1ba0ce0a' // Source: .\\pwa\\meta.js (mode: 'all')
+import nuxt_plugin_icons_47753b65 from 'nuxt_plugin_icons_47753b65' // Source: .\\pwa\\icons.js (mode: 'all')
+import nuxt_plugin_buefy_218fa478 from 'nuxt_plugin_buefy_218fa478' // Source: .\\buefy.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -179,36 +178,32 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_0bc5c6b9 === 'function') {
-    await nuxt_plugin_plugin_0bc5c6b9(app.context, inject)
+  if (typeof nuxt_plugin_plugin_977869f8 === 'function') {
+    await nuxt_plugin_plugin_977869f8(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_190322ef === 'function') {
-    await nuxt_plugin_pluginclient_190322ef(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_e1ffec8c === 'function') {
+    await nuxt_plugin_pluginclient_e1ffec8c(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_7ebc9477 === 'function') {
-    await nuxt_plugin_pluginserver_7ebc9477(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_168d097c === 'function') {
+    await nuxt_plugin_pluginserver_168d097c(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_ab22d310 === 'function') {
-    await nuxt_plugin_workbox_ab22d310(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_902726fa === 'function') {
+    await nuxt_plugin_workbox_902726fa(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_meta_7963e2b5 === 'function') {
-    await nuxt_plugin_meta_7963e2b5(app.context, inject)
+  if (typeof nuxt_plugin_meta_1ba0ce0a === 'function') {
+    await nuxt_plugin_meta_1ba0ce0a(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_icons_bbd687cc === 'function') {
-    await nuxt_plugin_icons_bbd687cc(app.context, inject)
+  if (typeof nuxt_plugin_icons_47753b65 === 'function') {
+    await nuxt_plugin_icons_47753b65(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_8da26f48 === 'function') {
-    await nuxt_plugin_axios_8da26f48(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_buefy_7b0dc7ad === 'function') {
-    await nuxt_plugin_buefy_7b0dc7ad(app.context, inject)
+  if (typeof nuxt_plugin_buefy_218fa478 === 'function') {
+    await nuxt_plugin_buefy_218fa478(app.context, inject)
   }
 
   // Lock enablePreview in context

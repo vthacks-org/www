@@ -1,8 +1,6 @@
 <template>
   <div id="details-section">
-    <div id="details-background">
-      <img src="../assets/splash-details.png" />
-    </div>
+    <div id="details-background"></div>
     <h1 class="futuristic yellow center">location &amp; details</h1>
     <div class="seperator yellow large"></div>
     <div class="status">
@@ -22,15 +20,9 @@
       </div>
     </div>
     <div class="socials">
-      <a href="https://www.facebook.com/vthacks" target="_blank">
-        <img src="../assets/8bit_facebook.png" />
-      </a>
-      <a href="https://twitter.com/vt_hacks" target="_blank">
-        <img src="../assets/8bit_twitter.png" />
-      </a>
-      <a href="https://www.instagram.com/vthacks/" target="_blank">
-        <img src="../assets/8bit_instagram.png" />
-      </a>
+      <a href="https://www.facebook.com/vthacks" target="_blank"> </a>
+      <a href="https://twitter.com/vt_hacks" target="_blank"> </a>
+      <a href="https://www.instagram.com/vthacks/" target="_blank"> </a>
     </div>
   </div>
 </template>
@@ -111,7 +103,6 @@ $splash-min-width: 600px;
 }
 
 #details-section {
-  background-color: #000;
   overflow: hidden;
   position: relative;
   display: flex;

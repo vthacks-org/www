@@ -43,7 +43,6 @@ export default {
 
 #volunteer-section {
   min-height: 30vh;
-  background-color: $rich-black;
   overflow: hidden;
 }
 

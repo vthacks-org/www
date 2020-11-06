@@ -3,7 +3,7 @@
     <div class="gradient-seperator"></div>
     <div class="about-info">
       <div class="vth-logo-term">
-        <img src="../assets/vthacks-logo.png" />
+        <img src="~assets/VTHACKS.svg" alt="VTHacks" />
         <div class="specs">
           <div><span>OS:</span> VTHacks x86_64</div>
           <div><span>Model:</span> 8TH EDITION</div>
@@ -22,7 +22,6 @@
           </div>
         </div>
       </div>
-      <div class="scanlines"></div>
     </div>
   </div>
 </template>
@@ -87,7 +86,6 @@ export default {
 
 .about-info {
   position: relative;
-  background-color: $vth-term-background;
   padding: 40px;
   font-family: 'VT323', monospace;
   color: $vth-term-color;
@@ -99,23 +97,6 @@ export default {
     background-color: $vth-blue;
     color: white;
   }
-}
-
-.scanlines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0) 50%,
-    rgba(0, 0, 0, 0.2) 70%,
-    rgba(0, 0, 0, 0.6)
-  );
-  background-size: 100% 0.3rem;
-  pointer-events: none;
 }
 
 .about-content {

@@ -1,16 +1,18 @@
 <template>
   <div id="homepage">
-    <Navigation></Navigation>
-    <!-- <MLHTrustBadge></MLHTrustBadge> -->
-    <SplashSection></SplashSection>
-    <DetailsSection></DetailsSection>
-    <PreRegistrationSection></PreRegistrationSection>
-    <LinksSection></LinksSection>
-    <RegistrationSection></RegistrationSection>
-    <VolunteerSection></VolunteerSection>
-    <AboutSection></AboutSection>
-    <SponsorsSection></SponsorsSection>
-    <FooterSection></FooterSection>
+    <span>
+      <Navigation></Navigation>
+      <!-- <MLHTrustBadge></MLHTrustBadge> -->
+      <SplashSection></SplashSection>
+      <DetailsSection></DetailsSection>
+      <PreRegistrationSection></PreRegistrationSection>
+      <LinksSection></LinksSection>
+      <RegistrationSection></RegistrationSection>
+      <VolunteerSection></VolunteerSection>
+      <AboutSection></AboutSection>
+      <SponsorsSection></SponsorsSection>
+      <FooterSection></FooterSection>
+    </span>
   </div>
 </template>
 
@@ -56,18 +58,16 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 #homepage {
-  background-color: black;
+  background: url('~assets/mount.svg') no-repeat,
+    linear-gradient(
+      0deg,
+      rgba(28, 21, 87, 1) 0%,
+      rgba(208, 124, 106, 1) 33%,
+      rgba(226, 134, 107, 1) 61%,
+      rgba(0, 174, 239, 1) 100%
+    );
   position: absolute;
   top: 0;
-  width: 100%; /* to fix scroll bar offset */
-}
-</style>
-
-<!-- This is a global, unscoped, change -->
-<style lang="scss">
-a {
-  background-color: rgba(13, 12, 216, 0.7); // blue highlight
-  text-decoration: none;
-  color: white;
+  width: 100%;
 }
 </style>

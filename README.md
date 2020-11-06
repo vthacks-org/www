@@ -1,22 +1,19 @@
-# VTHacks landing site
+# VTHacks 2020 Website
 
 ## Build Setup
 
-```bash
+``` bash
 # install dependencies
-$ npm install
+npm install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# serve with hot reload at localhost:8080
+npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+# build for production with minification
+npm run build
 
-# generate static project
-$ npm run generate
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fe411e08-ef55-4696-98ae-a10d75f36f37/deploy-status)](https://app.netlify.com/sites/vt-hacks-www/deploys)
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

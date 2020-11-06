@@ -1,25 +1,3 @@
-.DS_Store
-node_modules/
-/dist/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-**/build/*
-.sass-cache/*
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.css*
-.firebaserc
-firebase.json
-.vs
-*env
-.firebase
-
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs

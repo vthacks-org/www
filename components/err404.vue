@@ -1,18 +1,16 @@
 <template>
   <div id="err404">
     <div class="centered">
-      <div class="error text">
-        Sorry, nothing here.
-      </div>
-      <img id="dead" src="../assets/base-logo.png"/>
+      <div class="error text">Sorry, nothing here.</div>
+      <img id="dead" src="~assets/VTHACKS.svg" alt="VTHacks" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'err404',
-};
+  name: 'Err404',
+}
 </script>
 
 <style lang="scss" scoped>
@@ -25,7 +23,7 @@ export default {
   background: $rich-black;
 }
 
-.centered{
+.centered {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,14 +41,21 @@ img {
   height: 80vh;
 }
 
-
 @keyframes fadeIn {
-  0% { opacity: 0 }
-  100% { opacity: 1 }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-  0% { opacity: 1 }
-  100% { opacity: 0 }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 </style>

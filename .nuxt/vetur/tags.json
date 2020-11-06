@@ -5,6 +5,12 @@
   "LazyAboutSection": {
     "description": "Auto imported from components/AboutSection.vue"
   },
+  "Card": {
+    "description": "Auto imported from components/Card.vue"
+  },
+  "LazyCard": {
+    "description": "Auto imported from components/Card.vue"
+  },
   "DetailsSection": {
     "description": "Auto imported from components/DetailsSection.vue"
   },
@@ -29,11 +35,11 @@
   "LazyLinksSection": {
     "description": "Auto imported from components/LinksSection.vue"
   },
-  "MapSection": {
-    "description": "Auto imported from components/MapSection.vue"
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
   },
-  "LazyMapSection": {
-    "description": "Auto imported from components/MapSection.vue"
+  "LazyLogo": {
+    "description": "Auto imported from components/Logo.vue"
   },
   "MlhTrustBadge": {
     "description": "Auto imported from components/MLHTrustBadge.vue"

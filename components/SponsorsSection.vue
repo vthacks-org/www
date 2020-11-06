@@ -72,78 +72,15 @@ export default {
       sponsors: {
         big: [
           {
-            img: '/static/sponsors/Costar.png',
-            url: 'https://www.costargroup.com/careers/technology-opportunities',
+            img: '',
+            url: '',
           },
         ],
-        medium: [
-          {
-            img: '/static/sponsors/MicroStrategy.png',
-            url: 'https://www.microstrategy.com/us/company/careers',
-          },
-          {
-            img: '/static/sponsors/CarMax.svg',
-            url: 'https://jobs.carmax.com/',
-          },
-          {
-            img: '/static/sponsors/GoogleCloud.png',
-            url: 'https://cloud.google.com/',
-          },
-          {
-            img: '/static/sponsors/StickerMule.svg',
-            url: 'http://hackp.ac/mlh-stickermule-hackathons',
-          },
-          {
-            img: '/static/sponsors/JBHunt.svg',
-            url: 'https://www.jbhunt.com/',
-          },
-          {
-            img: '/static/sponsors/CapitalOneWhite.png',
-            url: 'https://campus.capitalone.com/',
-          },
-          {
-            img: '/static/sponsors/ripplematch.png',
-            url: 'https://ripplematch.com/index?r=WQ2dGY',
-          },
-        ],
+        medium: [],
       },
       food: {
-        rectangular: [
-          {
-            img: '/static/sponsors/Campus Cookies.png',
-            url: 'https://www.campuscookie.com/',
-          },
-          {
-            img: '/static/sponsors/soulvaki.png',
-            url: 'https://eatsouvlaki.com/',
-          },
-        ],
-        square: [
-          {
-            img: '/static/sponsors/Carol Lee.jpg',
-            url: 'https://www.carolleedonuts.com/',
-          },
-          {
-            img: '/static/sponsors/Chinese Kitchen.png',
-            url: 'http://www.chinesekitchenblacksburg.com/',
-          },
-          {
-            img: '/static/sponsors/moes.png',
-            url: 'https://www.moes.com/',
-          },
-          {
-            img: '/static/sponsors/bennys.png',
-            url: 'https://www.bennysva.com/',
-          },
-          {
-            img: '/static/sponsors/Zeppoli_s.jpg',
-            url: 'http://zeppolis.com/',
-          },
-          {
-            img: '/static/sponsors/IdegoCoffee.svg',
-            url: 'https://www.idegocoffee.com/',
-          },
-        ],
+        rectangular: [],
+        square: [],
       },
     }
   },
@@ -159,7 +96,6 @@ export default {
 
 #sponsors-section {
   width: 100%;
-  background-color: #010b13;
   display: flex;
   flex-direction: column;
 }

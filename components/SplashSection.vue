@@ -1,13 +1,11 @@
 <template>
   <div id="splash-section">
     <div id="splash-container">
-      <img id="splash-combined" src="../assets/composite_splash.png" />
-      <img id="splash-logo" src="../assets/base-logo.png" />
-      <!-- <div id="splash-date">FEB 14-1. VIRGINIA TECH</div> -->
+      <img id="splash-logo" src="~assets/VTHACKS.svg" alt="VTHacks" />
+      <div id="splash-date">Feb 26-28, 2021<br />Virginia Tech</div>
       <div id="splash-apply">
         <a id="registration-link" href="#">
           <!-- <div>Hack the Planet</div> -->
-          <div>Feb 26-28, 2021<br />Virginia Tech</div>
           <!-- <a href="https://vthacksvi.devpost.com/" target="_blank" class="register-link big neon-pink eightbit-btn">Devpost &gt;</a> -->
           <!-- <a href="http://tinyurl.com/vthacks-slack/" target="_blank" class="register-link big neon-pink eightbit-btn">Slack &gt;</a> -->
         </a>
@@ -27,16 +25,6 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/colors';
 @import '../styles/vars';
-@import '../styles/eightbit-btn';
-
-#splash-combined {
-  position: absolute;
-  width: 100%;
-  min-width: $splash-min-width;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 #splash-logo {
   position: absolute;
@@ -44,21 +32,6 @@ export default {
   left: 50%;
   top: 6%;
   transform: translateX(-50%);
-}
-
-#splash-date {
-  position: absolute;
-  color: white;
-  top: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: monospace;
-  border-left: 2px solid white;
-  padding: 0 8px;
-  border-right: 2px solid white;
-  text-align: center;
-  font-size: 18px;
-  line-height: 18px;
 }
 
 #splash-apply {
@@ -86,7 +59,6 @@ export default {
 #splash-section {
   position: relative;
   overflow: hidden;
-  background-color: $background-splash;
   margin-top: 44px;
   @media (min-width: 1200px) {
     max-height: calc(100vw * 2 / 3 * 0.62 + 200px);
@@ -148,7 +120,7 @@ export default {
     top: 40px;
   }
 
-  #splash-apply #registration-link .eightbit-btn {
+  #splash-apply #registration-link {
     font-size: 12px;
   }
 }
