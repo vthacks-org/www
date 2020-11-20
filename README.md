@@ -1,19 +1,23 @@
-# VTHacks 2020 Website
+<p align="center">
+  <a href="https://vt-hacks-www.netlify.app/" target="_blank" >
+    <img alt="VTHacks" src="./assets/logo.svg" width="120" />
+  </a>
+</p>
+<h1 align="center">
+  VTHacks 2020 Website
+</h1>
 
-## Build Setup
+## Local Setup
 
 ``` bash
 # install dependencies
-npm install
+npm i
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:3000
 npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+# will correct anything prettier and eslint deem neccesary 
+npm run lint:fix
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

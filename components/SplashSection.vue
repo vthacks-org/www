@@ -2,7 +2,6 @@
   <div id="splash-section">
     <div id="splash-container">
       <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" />
-      <div id="splash-date">Feb 26-28, 2021<br />Virginia Tech</div>
       <div id="splash-apply">
         <a id="registration-link" href="#">
           <!-- <div>Hack the Planet</div> -->
@@ -95,10 +94,6 @@ export default {
     top: 30px;
   }
 
-  #splash-date {
-    font-size: 10px;
-  }
-
   #splash-apply {
     #apply-image {
       width: 230px;
@@ -109,10 +104,6 @@ export default {
 @media (max-width: 480px) {
   #splash-section {
     margin-top: 0;
-  }
-
-  #splash-date {
-    top: 12px;
   }
 
   #splash-logo {

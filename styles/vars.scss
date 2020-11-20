@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=VT323');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@font-face {
+    font-family: 'BNRoute22';
+    src: url('~static/BNRoute22.otf') format('opentype');
+}
 
+
+$bnr22: 'BNRoute22', font-VT232;
 $font-2P: 'Press Start 2P', monospace;
 $font-VT232: 'VT323', monospace;
 $font-mono: 'Inconsolata', monospace;

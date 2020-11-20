@@ -1,38 +1,45 @@
 <template>
   <div>
-    <nav
-      class="navbar header has-shadow is-primary"
+    <div
+      id="navbar"
+      centered="true"
+      class="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img src="~assets/logo.svg" alt="VTHacks" height="28" />
-        </a>
+        <span class="navbar-item">
+          <img id="brand-logo" src="~assets/logo.svg" />
+        </span>
 
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <div
+            v-for="section in sections"
+            :key="section"
+            class="navbar-item"
+            @click="scrollToId(section.id)"
+          >
+            <span>{{ section.name }}</span>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <section class="main-content columns">
-      <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">General</p>
-        <ul class="menu-list">
-          <li v-for="(item, key) of items" :key="key">
-            <nuxt-link :to="item.to" exact-active-class="is-active">
-              <b-icon :icon="item.icon" /> {{ item.title }}
-            </nuxt-link>
-          </li>
-        </ul>
-      </aside>
-
-      <div class="container column is-10">
-        <nuxt />
-      </div>
+    <section class="main-content">
+      <nuxt />
     </section>
   </div>
 </template>
@@ -41,19 +48,104 @@
 export default {
   data() {
     return {
-      items: [
+      prevScrollpos: window.pageYOffset,
+      sections: [
         {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' },
+          name: 'Home',
+          id: 'splash-section',
         },
+        // {
+        //  name: 'Getting_Started',
+        //  id: 'links-section',
+        // },
+        // {
+        //  name: 'Register',
+        //  id: 'registration-section',
+        // },
+        // {
+        //  name: 'Volunteer',
+        //  id: 'volunteer-section',
+        // },
+        // {
+        //  name: 'Schedule',
+        //  id: 'schedule-section',
+        // },
         {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' },
+          name: 'About',
+          id: 'about-section',
+        },
+        // {
+        //   name: 'Pre-Register',
+        //   id: 'pre-registration-section',
+        // },
+        {
+          name: 'Sponsors',
+          id: 'sponsors-section',
         },
       ],
     }
   },
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroyed() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    scrollToId(id) {
+      const el = document.getElementById(id)
+      el.scrollIntoView({ behavior: 'smooth' })
+      this.opened = false
+    },
+    handleScroll() {
+      const currentScrollPos = window.pageYOffset
+      const el = document.getElementById('navbar')
+      if (this.prevScrollpos > currentScrollPos || currentScrollPos <= 0) {
+        el.style.top = '0'
+      } else {
+        el.style.top = `-${el.offsetHeight.toString()}px`
+      }
+      this.prevScrollpos = currentScrollPos
+    },
+  },
 }
 </script>
+
+<style lang="scss">
+@import '../styles/colors';
+@import '../styles/vars';
+$navHeight: 70px;
+
+#brand-logo {
+  max-height: unset;
+  width: $navHeight * 1.5;
+  height: $navHeight / 1.5;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: top 0.3s;
+  height: $navHeight;
+}
+
+.navbar-burger {
+  color: $text-primary;
+}
+
+.navbar-end {
+  .navbar-item {
+    cursor: pointer;
+    padding: 5px 15px;
+    span {
+      font-family: $bnr22;
+      font-size: $navHeight / 3;
+      color: $text-primary;
+    }
+    &:hover {
+      border-bottom: 2px solid;
+      border-bottom-style: outset;
+      border-color: $neon-blue;
+    }
+  }
+}
+</style>

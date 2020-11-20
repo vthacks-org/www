@@ -14,6 +14,7 @@
     </div>
     <div class="where">
       <div class="where-title">Virginia Tech</div>
+      <div class="where-location">February 26-28, 2021</div>
       <div class="where-location">Surge Space Building</div>
       <div class="where-location">
         435 Turner St NW,<br />Blacksburg VA 24060

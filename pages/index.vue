@@ -1,7 +1,6 @@
 <template>
   <div id="homepage">
     <span>
-      <Navigation></Navigation>
       <!-- <MLHTrustBadge></MLHTrustBadge> -->
       <SplashSection></SplashSection>
       <DetailsSection></DetailsSection>
@@ -17,7 +16,6 @@
 </template>
 
 <script>
-import Navigation from '../components/Navigation.vue'
 // import MLHTrustBadge from './MLHTrustBadge.vue';
 import SplashSection from '../components/SplashSection.vue'
 import DetailsSection from '../components/DetailsSection.vue'
@@ -32,7 +30,6 @@ import FooterSection from '../components/FooterSection.vue'
 export default {
   name: 'HomePage',
   components: {
-    Navigation,
     // MLHTrustBadge,
     SplashSection,
     DetailsSection,
@@ -66,6 +63,7 @@ export default {
       rgba(226, 134, 107, 1) 61%,
       rgba(0, 174, 239, 1) 100%
     );
+  background-size: cover;
   position: absolute;
   top: 0;
   width: 100%;

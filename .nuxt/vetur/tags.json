@@ -17,12 +17,6 @@
   "LazyDetailsSection": {
     "description": "Auto imported from components/DetailsSection.vue"
   },
-  "Err404": {
-    "description": "Auto imported from components/err404.vue"
-  },
-  "LazyErr404": {
-    "description": "Auto imported from components/err404.vue"
-  },
   "FooterSection": {
     "description": "Auto imported from components/FooterSection.vue"
   },
@@ -46,12 +40,6 @@
   },
   "LazyMlhTrustBadge": {
     "description": "Auto imported from components/MLHTrustBadge.vue"
-  },
-  "Navigation": {
-    "description": "Auto imported from components/Navigation.vue"
-  },
-  "LazyNavigation": {
-    "description": "Auto imported from components/Navigation.vue"
   },
   "PreRegistrationSection": {
     "description": "Auto imported from components/PreRegistrationSection.vue"

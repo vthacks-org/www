@@ -23,7 +23,7 @@
     {
       "hid": "description",
       "name": "description",
-      "content": "## Build Setup"
+      "content": "<p align=\"center\">   <a href=\"https://vt-hacks-www.netlify.app/\" target=\"_blank\" >     <img alt=\"VTHacks\" src=\"./assets/logo.svg\" width=\"120\" />   </a> </p> <h1 align=\"center\">   VTHacks 2020 Website </h1>"
     },
     {
       "hid": "og:type",
@@ -47,7 +47,7 @@
       "hid": "og:description",
       "name": "og:description",
       "property": "og:description",
-      "content": "## Build Setup"
+      "content": "<p align=\"center\">   <a href=\"https://vt-hacks-www.netlify.app/\" target=\"_blank\" >     <img alt=\"VTHacks\" src=\"./assets/logo.svg\" width=\"120\" />   </a> </p> <h1 align=\"center\">   VTHacks 2020 Website </h1>"
     }
   ],
   "link": [
@@ -62,7 +62,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.fd1c7d32.json",
+      "href": "/_nuxt/manifest.74f89c3c.json",
       "hid": "manifest"
     }
   ],
