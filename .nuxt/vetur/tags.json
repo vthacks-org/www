@@ -5,12 +5,6 @@
   "LazyAboutSection": {
     "description": "Auto imported from components/AboutSection.vue"
   },
-  "Card": {
-    "description": "Auto imported from components/Card.vue"
-  },
-  "LazyCard": {
-    "description": "Auto imported from components/Card.vue"
-  },
   "DetailsSection": {
     "description": "Auto imported from components/DetailsSection.vue"
   },
@@ -70,11 +64,5 @@
   },
   "LazyTravelSection": {
     "description": "Auto imported from components/TravelSection.vue"
-  },
-  "VolunteerSection": {
-    "description": "Auto imported from components/VolunteerSection.vue"
-  },
-  "LazyVolunteerSection": {
-    "description": "Auto imported from components/VolunteerSection.vue"
   }
 }

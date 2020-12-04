@@ -1,12 +1,12 @@
 <template>
   <a
     id="mlh-trust-badge"
-    href="https://mlh.io/seasons/na-2020/events?utm_source=na-2020&utm_medium=TrustBadge&utm_campaign=na-2020&utm_content=black"
+    href="https://mlh.io/seasons/2021/events"
     target="_blank"
   >
     <img
-      src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-black.svg"
-      alt="Major League Hacking 2020 Hackathon Season"
+      src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
+      alt="Major League Hacking 2021 Hackathon Season"
       style="width: 100%"
     />
   </a>

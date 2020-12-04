@@ -29,23 +29,33 @@
           <div
             v-for="section in sections"
             :key="section.name"
-            class="navbar-item"
+            class="navbar-item page-ref"
             @click="scrollToId(section.id)"
           >
             <span>{{ section.name }}</span>
+          </div>
+          <div class="navbar-item">
+            <button class="button is-info is-outlined" @click="clickMe">
+              Register
+            </button>
           </div>
         </div>
       </div>
     </div>
 
     <section class="main-content">
+      <MLHTrustBadge />
       <nuxt />
     </section>
   </div>
 </template>
 
 <script>
+import MLHTrustBadge from '~/components/MLHTrustBadge.vue'
 export default {
+  components: {
+    MLHTrustBadge,
+  },
   data() {
     return {
       prevScrollpos: window.pageYOffset,
@@ -54,22 +64,10 @@ export default {
           name: 'Home',
           id: 'splash-section',
         },
-        // {
-        //  name: 'Getting_Started',
-        //  id: 'links-section',
-        // },
         {
-          name: 'Register',
-          id: 'registration-section',
+          name: 'Getting Started',
+          id: 'links-section',
         },
-        // {
-        //  name: 'Volunteer',
-        //  id: 'volunteer-section',
-        // },
-        // {
-        //  name: 'Schedule',
-        //  id: 'schedule-section',
-        // },
         {
           name: 'About',
           id: 'about-section',
@@ -122,6 +120,7 @@ $navHeight: 70px;
   background-color: rgba(0, 0, 0, 0.8);
   transition: top 0.3s;
   height: $navHeight;
+  padding: 0 10em 0 5em;
 }
 
 .navbar-burger {
@@ -137,10 +136,12 @@ $navHeight: 70px;
       font-size: $navHeight / 3;
       color: $text-primary;
     }
-    &:hover {
-      border-bottom: 2px solid;
-      border-bottom-style: outset;
-      border-color: $neon-blue;
+    &.page-ref {
+      &:hover {
+        border-bottom: 2px solid;
+        border-bottom-style: outset;
+        border-color: $neon-blue;
+      }
     }
   }
 }

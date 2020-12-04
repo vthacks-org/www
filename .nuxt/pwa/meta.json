@@ -23,7 +23,7 @@
     {
       "hid": "description",
       "name": "description",
-      "content": "<p align=\"center\">   <a href=\"https://vt-hacks-www.netlify.app/\" target=\"_blank\" >     <img alt=\"VTHacks\" src=\"./assets/logo.svg\" width=\"120\" />   </a> </p> <h1 align=\"center\">   VTHacks 2020 Website </h1>"
+      "content": "<p align=\"center\">\r   <a href=\"https://vt-hacks-www.netlify.app/\" target=\"_blank\" >\r     <img alt=\"VTHacks\" src=\"./assets/logo.svg\" width=\"120\" />\r   </a>\r </p>\r <h1 align=\"center\">\r   VTHacks 2020 Website\r </h1>"
     },
     {
       "hid": "og:type",
@@ -47,13 +47,13 @@
       "hid": "og:description",
       "name": "og:description",
       "property": "og:description",
-      "content": "<p align=\"center\">   <a href=\"https://vt-hacks-www.netlify.app/\" target=\"_blank\" >     <img alt=\"VTHacks\" src=\"./assets/logo.svg\" width=\"120\" />   </a> </p> <h1 align=\"center\">   VTHacks 2020 Website </h1>"
+      "content": "<p align=\"center\">\r   <a href=\"https://vt-hacks-www.netlify.app/\" target=\"_blank\" >\r     <img alt=\"VTHacks\" src=\"./assets/logo.svg\" width=\"120\" />\r   </a>\r </p>\r <h1 align=\"center\">\r   VTHacks 2020 Website\r </h1>"
     }
   ],
   "link": [
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.28d6b81f.json",
+      "href": "/_nuxt/manifest.767d7598.json",
       "hid": "manifest"
     }
   ],

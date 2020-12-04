@@ -3,13 +3,11 @@
     <div id="svgMountain" class="zBox" v-html="SVG" />
     <div id="gradient" class="zBox"></div>
     <span id="content" class="zBox">
-      <!-- <MLHTrustBadge></MLHTrustBadge> -->
       <SplashSection />
       <DetailsSection />
       <PreRegistrationSection />
       <LinksSection />
       <RegistrationSection />
-      <VolunteerSection />
       <AboutSection />
       <SponsorsSection />
       <FooterSection />
@@ -18,14 +16,12 @@
 </template>
 
 <script>
-// import MLHTrustBadge from './MLHTrustBadge.vue';
 import SplashSection from '~/components/SplashSection.vue'
 import DetailsSection from '~/components/DetailsSection.vue'
 import PreRegistrationSection from '~/components/PreRegistrationSection.vue'
 import RegistrationSection from '~/components/RegistrationSection.vue'
 import LinksSection from '~/components/LinksSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
-import VolunteerSection from '~/components/VolunteerSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
 import SVG from '~/assets/mount.svg?raw'
@@ -33,7 +29,6 @@ import SVG from '~/assets/mount.svg?raw'
 export default {
   name: 'HomePage',
   components: {
-    // MLHTrustBadge,
     SplashSection,
     DetailsSection,
     PreRegistrationSection,
@@ -42,7 +37,6 @@ export default {
     AboutSection,
     SponsorsSection,
     FooterSection,
-    VolunteerSection,
   },
   data() {
     return {
@@ -73,10 +67,14 @@ export default {
     },
     handleScroll() {
       const mount = document.getElementById('svgMountain').firstChild
-      const cls1 = mount.getElementsByClassName('cls-1')[0]
-      const cls2 = mount.getElementsByClassName('cls-2')[0]
-      cls1.setAttribute('fill', '#fff')
-      cls2.setAttribute('fill', '#fff')
+      const backBottom = mount.getElementById('Rectangle_2')
+      const backTop = mount.getElementById('Path_1')
+      const frontLarge = mount.getElementById('Path_2')
+      const frontSmall = mount.getElementById('Path_4')
+      backBottom.style.fill = '#340f47'
+      backTop.style.fill = '#340f47'
+      frontLarge.style.fill = '#5e2d8f'
+      frontSmall.style.fill = '#5e2d8f'
     },
   },
   head() {
