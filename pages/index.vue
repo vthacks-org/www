@@ -5,9 +5,7 @@
     <span id="content" class="zBox">
       <SplashSection />
       <DetailsSection />
-      <PreRegistrationSection />
       <LinksSection />
-      <RegistrationSection />
       <AboutSection />
       <SponsorsSection />
       <FooterSection />
@@ -18,8 +16,6 @@
 <script>
 import SplashSection from '~/components/SplashSection.vue'
 import DetailsSection from '~/components/DetailsSection.vue'
-import PreRegistrationSection from '~/components/PreRegistrationSection.vue'
-import RegistrationSection from '~/components/RegistrationSection.vue'
 import LinksSection from '~/components/LinksSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
@@ -31,8 +27,6 @@ export default {
   components: {
     SplashSection,
     DetailsSection,
-    PreRegistrationSection,
-    RegistrationSection,
     LinksSection,
     AboutSection,
     SponsorsSection,

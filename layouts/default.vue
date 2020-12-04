@@ -35,7 +35,11 @@
             <span>{{ section.name }}</span>
           </div>
           <div class="navbar-item">
-            <button class="button is-info is-outlined" @click="clickMe">
+            <button
+              id="registerButton"
+              class="button is-info is-outlined"
+              @click="clickMe"
+            >
               Register
             </button>
           </div>
@@ -114,6 +118,11 @@ $navHeight: 70px;
   max-height: unset;
   width: $navHeight * 1.5;
   height: $navHeight / 1.5;
+}
+
+#registerButton {
+  font-family: $bnr22;
+  font-size: $navHeight / 4;
 }
 
 .navbar {
