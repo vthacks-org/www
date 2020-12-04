@@ -95,6 +95,7 @@ export default {
 @import '../styles/colors';
 
 #sponsors-section {
+  background: rgba(28, 21, 87, 1);
   width: 100%;
   display: flex;
   flex-direction: column;
