@@ -35,6 +35,10 @@ export default {
   data() {
     return {
       SVG,
+      day: [0, 174, 239, 1],
+      sunsetI: [226, 134, 107, 1],
+      sunsetF: [208, 124, 106, 1],
+      night: [28, 21, 87, 1],
     }
   },
   beforeMount() {
@@ -48,16 +52,16 @@ export default {
       const content = document.getElementById('content')
       const mount = document.getElementById('svgMountain')
       const spons = document.getElementById('sponsors-section')
+      const height = `${Math.floor(
+        content.offsetHeight - spons.offsetHeight
+      ).toString()}px`
+      const width = `${content.offsetWidth.toString()}px`
+      mount.style.height = height
+      mount.style.width = width
+      mount.firstChild.setAttribute('height', height)
+      mount.firstChild.setAttribute('width', width)
       const gradient = document.getElementById('gradient')
-      mount.firstChild.setAttribute(
-        'height',
-        `${(content.offsetHeight - spons.offsetHeight).toString()}px`
-      )
-      mount.firstChild.setAttribute(
-        'width',
-        `${content.offsetWidth.toString()}px`
-      )
-      gradient.style.height = `${content.offsetHeight.toString()}px`
+      gradient.style.height = `${content.offsetHeight}px`
     },
     handleScroll() {
       const mount = document.getElementById('svgMountain').firstChild
@@ -65,10 +69,31 @@ export default {
       const backTop = mount.getElementById('Path_1')
       const frontLarge = mount.getElementById('Path_2')
       const frontSmall = mount.getElementById('Path_4')
-      backBottom.style.fill = '#340f47'
-      backTop.style.fill = '#340f47'
-      frontLarge.style.fill = '#5e2d8f'
-      frontSmall.style.fill = '#5e2d8f'
+      const scrollPercent = (window.scrollY / window.scrollMaxY) * 3
+      let frontColor, backColor
+      if (scrollPercent < 1) {
+        frontColor = '#fff'
+        backColor = this.LerpRGB(this.day, this.sunsetI, scrollPercent)
+      } else if (scrollPercent < 2) {
+        frontColor = '#fff'
+        backColor = this.LerpRGB(this.sunsetI, this.sunsetF, scrollPercent - 1)
+      } else {
+        frontColor = '#fff'
+        backColor = this.LerpRGB(this.sunsetF, this.night, scrollPercent - 2)
+      }
+
+      backBottom.style.fill = backColor
+      backTop.style.fill = backColor
+      frontLarge.style.fill = frontColor
+      frontSmall.style.fill = frontColor
+    },
+    LerpRGB(a, b, t) {
+      return `rgba(
+      ${Math.floor(a[0] + (b[0] - a[0]) * t)},
+      ${Math.floor(a[1] + (b[1] - a[1]) * t)},
+      ${Math.floor(a[2] + (b[2] - a[2]) * t)},
+      ${Math.floor(a[3] + (b[3] - a[3]) * t)}
+      )`
     },
   },
   head() {
@@ -96,7 +121,7 @@ export default {
     0deg,
     rgba(28, 21, 87, 1) 0%,
     rgba(208, 124, 106, 1) 33%,
-    rgba(226, 134, 107, 1) 61%,
+    rgba(226, 134, 107, 1) 66%,
     rgba(0, 174, 239, 1) 100%
   );
   z-index: 1;

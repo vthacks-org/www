@@ -96,7 +96,7 @@ export default {
       this.opened = false
     },
     handleScroll() {
-      const currentScrollPos = window.pageYOffset
+      const currentScrollPos = window.scrollY
       const el = document.getElementById('navbar')
       if (this.prevScrollpos > currentScrollPos || currentScrollPos <= 0) {
         el.style.top = '0'
