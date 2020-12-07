@@ -120,8 +120,8 @@ export default {
   background: linear-gradient(
     0deg,
     rgba(28, 21, 87, 1) 0%,
-    rgba(208, 124, 106, 1) 33%,
-    rgba(226, 134, 107, 1) 66%,
+    rgba(208, 124, 106, 1) 27%,
+    rgba(226, 134, 107, 1) 33%,
     rgba(0, 174, 239, 1) 100%
   );
   z-index: 1;
