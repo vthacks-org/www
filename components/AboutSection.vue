@@ -13,7 +13,7 @@
         <div class="about-title">$> cat about.faq</div>
         <div
           v-for="question in questions"
-          :key="question"
+          :key="question.a"
           class="about-content"
         >
           <div class="question">{{ question.q }}</div>

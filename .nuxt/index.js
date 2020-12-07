@@ -12,12 +12,12 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_977869f8 from 'nuxt_plugin_plugin_977869f8' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_pluginclient_e1ffec8c from 'nuxt_plugin_pluginclient_e1ffec8c' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_168d097c from 'nuxt_plugin_pluginserver_168d097c' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_workbox_902726fa from 'nuxt_plugin_workbox_902726fa' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_meta_1ba0ce0a from 'nuxt_plugin_meta_1ba0ce0a' // Source: .\\pwa\\meta.js (mode: 'all')
-import nuxt_plugin_buefy_218fa478 from 'nuxt_plugin_buefy_218fa478' // Source: .\\buefy.js (mode: 'all')
+import nuxt_plugin_plugin_5a90db24 from 'nuxt_plugin_plugin_5a90db24' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_pluginclient_2a0809da from 'nuxt_plugin_pluginclient_2a0809da' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_e07d093c from 'nuxt_plugin_pluginserver_e07d093c' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_workbox_7c2924a3 from 'nuxt_plugin_workbox_7c2924a3' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_meta_4209cc2c from 'nuxt_plugin_meta_4209cc2c' // Source: .\\pwa\\meta.js (mode: 'all')
+import nuxt_plugin_buefy_47dbe498 from 'nuxt_plugin_buefy_47dbe498' // Source: .\\buefy.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -177,28 +177,28 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_977869f8 === 'function') {
-    await nuxt_plugin_plugin_977869f8(app.context, inject)
+  if (typeof nuxt_plugin_plugin_5a90db24 === 'function') {
+    await nuxt_plugin_plugin_5a90db24(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_e1ffec8c === 'function') {
-    await nuxt_plugin_pluginclient_e1ffec8c(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_2a0809da === 'function') {
+    await nuxt_plugin_pluginclient_2a0809da(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_168d097c === 'function') {
-    await nuxt_plugin_pluginserver_168d097c(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_e07d093c === 'function') {
+    await nuxt_plugin_pluginserver_e07d093c(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_902726fa === 'function') {
-    await nuxt_plugin_workbox_902726fa(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_7c2924a3 === 'function') {
+    await nuxt_plugin_workbox_7c2924a3(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_meta_1ba0ce0a === 'function') {
-    await nuxt_plugin_meta_1ba0ce0a(app.context, inject)
+  if (typeof nuxt_plugin_meta_4209cc2c === 'function') {
+    await nuxt_plugin_meta_4209cc2c(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_buefy_218fa478 === 'function') {
-    await nuxt_plugin_buefy_218fa478(app.context, inject)
+  if (typeof nuxt_plugin_buefy_47dbe498 === 'function') {
+    await nuxt_plugin_buefy_47dbe498(app.context, inject)
   }
 
   // Lock enablePreview in context

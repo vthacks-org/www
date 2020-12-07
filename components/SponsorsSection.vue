@@ -5,42 +5,15 @@
       <h6 class="supertitle">Our amazing</h6>
       <h1 class="futuristic blue">Sponsors</h1>
     </div>
-    <div class="seperator large blue"></div>
 
-    <div class="sponsor-logos">
+    <!-- <div class="sponsor-logos">
       <div class="sponsor-tier big center">
         <div v-for="sponsor in sponsors.big" :key="sponsor">
           <a :href="sponsor.url" target="_blank">
             <img v-lazy="sponsor.img" class="big" style />
           </a>
         </div>
-      </div>
-
-      <div class="sponsor-tier medium center">
-        <!--<div v-for="sponsor in sponsors.big">
-          <a :href="sponsor.url" target="_blank">
-            <img class="big" v-lazy="sponsor.img" />
-          </a>
-        </div>-->
-        <div
-          v-for="sponsor in sponsors.whiteBg"
-          :key="sponsor"
-          class="fix-width"
-        >
-          <a :href="sponsor.url" target="_blank">
-            <img v-lazy="sponsor.img" class="big white-bg" />
-          </a>
-        </div>
-        <div v-for="sponsor in sponsors.medium" :key="sponsor">
-          <a :href="sponsor.url" target="_blank">
-            <img v-lazy="sponsor.img" class="medium" />
-          </a>
-        </div>
-        <!-- <a :href="sponsors.wolfram.url" target="_blank"><img class="medium wolfram" v-lazy="sponsors.wolfram.img"/></a> -->
-      </div>
-
-      <div class="sponsor-tier small center"></div>
-    </div>
+      </div> -->
 
     <div class="gradient-seperator bottom reversed"></div>
 

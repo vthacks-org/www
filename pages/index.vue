@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-    <div id="svgMountain" class="zBox" v-html="SVG" />
+    <MountSVG id="svgMountain" class="zBox" />
     <div id="gradient" class="zBox"></div>
     <span id="content" class="zBox">
       <SplashSection />
@@ -20,7 +20,7 @@ import LinksSection from '~/components/LinksSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
-import SVG from '~/assets/mount.svg?raw'
+import MountSVG from '~/assets/mount.svg?inline'
 
 export default {
   name: 'HomePage',
@@ -31,10 +31,10 @@ export default {
     AboutSection,
     SponsorsSection,
     FooterSection,
+    MountSVG,
   },
   data() {
     return {
-      SVG,
       day: [0, 174, 239, 1],
       sunsetI: [226, 134, 107, 1],
       sunsetF: [208, 124, 106, 1],
@@ -51,24 +51,24 @@ export default {
     calculateSVGHeight() {
       const content = document.getElementById('content')
       const mount = document.getElementById('svgMountain')
-      const spons = document.getElementById('sponsors-section')
-      const height = `${Math.floor(
-        content.offsetHeight - spons.offsetHeight
-      ).toString()}px`
-      const width = `${content.offsetWidth.toString()}px`
-      mount.style.height = height
-      mount.style.width = width
-      mount.firstChild.setAttribute('height', height)
-      mount.firstChild.setAttribute('width', width)
-      const gradient = document.getElementById('gradient')
-      gradient.style.height = `${content.offsetHeight}px`
+      document.getElementById(
+        'gradient'
+      ).style.height = `${content.offsetHeight}px`
+      const height =
+        content.offsetHeight -
+        document.getElementById('footer-section').offsetHeight
+      mount.setAttribute('height', height)
+      if (content.offsetWidth < 1920) {
+        mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
+      } else {
+        mount.setAttribute('viewBox', `0 0 1920 ${height}`)
+      }
     },
     handleScroll() {
-      const mount = document.getElementById('svgMountain').firstChild
-      const backBottom = mount.getElementById('Rectangle_2')
-      const backTop = mount.getElementById('Path_1')
-      const frontLarge = mount.getElementById('Path_2')
-      const frontSmall = mount.getElementById('Path_4')
+      const backBottom = document.getElementById('Rectangle_2')
+      const backTop = document.getElementById('Path_1')
+      const frontLarge = document.getElementById('Path_2')
+      const frontSmall = document.getElementById('Path_4')
       const scrollPercent = (window.scrollY / window.scrollMaxY) * 3
       let frontColor, backColor
       if (scrollPercent < 1) {

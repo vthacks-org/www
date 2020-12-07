@@ -38,7 +38,7 @@
             <button
               id="registerButton"
               class="button is-info is-outlined"
-              @click="clickMe"
+              @click="register"
             >
               Register
             </button>
@@ -104,6 +104,9 @@ export default {
         el.style.top = `-${el.offsetHeight.toString()}px`
       }
       this.prevScrollpos = currentScrollPos
+    },
+    register() {
+      window.open('https://www.google.com')
     },
   },
 }
