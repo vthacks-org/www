@@ -35,10 +35,10 @@ export default {
   },
   data() {
     return {
-      day: [0, 174, 239, 1],
-      sunsetI: [226, 134, 107, 1],
-      sunsetF: [208, 124, 106, 1],
-      night: [28, 21, 87, 1],
+      day: [86, 52, 38, 1],
+      sunsetI: [83, 40, 43, 1],
+      sunsetF: [66, 13, 48, 1],
+      night: [34, 13, 51, 1],
     }
   },
   beforeMount() {
@@ -67,25 +67,18 @@ export default {
     handleScroll() {
       const backBottom = document.getElementById('Rectangle_2')
       const backTop = document.getElementById('Path_1')
-      const frontLarge = document.getElementById('Path_2')
-      const frontSmall = document.getElementById('Path_4')
       const scrollPercent = (window.scrollY / window.scrollMaxY) * 3
-      let frontColor, backColor
+      let backColor
       if (scrollPercent < 1) {
-        frontColor = '#fff'
         backColor = this.LerpRGB(this.day, this.sunsetI, scrollPercent)
       } else if (scrollPercent < 2) {
-        frontColor = '#fff'
         backColor = this.LerpRGB(this.sunsetI, this.sunsetF, scrollPercent - 1)
       } else {
-        frontColor = '#fff'
         backColor = this.LerpRGB(this.sunsetF, this.night, scrollPercent - 2)
       }
 
       backBottom.style.fill = backColor
       backTop.style.fill = backColor
-      frontLarge.style.fill = frontColor
-      frontSmall.style.fill = frontColor
     },
     LerpRGB(a, b, t) {
       return `rgba(
@@ -119,10 +112,10 @@ export default {
 #gradient {
   background: linear-gradient(
     0deg,
-    rgba(28, 21, 87, 1) 0%,
-    rgba(208, 124, 106, 1) 27%,
-    rgba(226, 134, 107, 1) 33%,
-    rgba(0, 174, 239, 1) 100%
+    rgba(47, 20, 55, 1) 10%,
+    rgba(170, 108, 120, 1) 42%,
+    rgba(188, 143, 119, 1) 59%,
+    rgba(50, 157, 216, 1) 100%
   );
   z-index: 1;
   height: fit-content;
