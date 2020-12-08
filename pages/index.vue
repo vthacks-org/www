@@ -65,8 +65,7 @@ export default {
       }
     },
     handleScroll() {
-      const backBottom = document.getElementById('Rectangle_2')
-      const backTop = document.getElementById('Path_1')
+      const mBack = document.getElementById('MountainBack')
       const scrollPercent = (window.scrollY / window.scrollMaxY) * 3
       let backColor
       if (scrollPercent < 1) {
@@ -77,8 +76,7 @@ export default {
         backColor = this.LerpRGB(this.sunsetF, this.night, scrollPercent - 2)
       }
 
-      backBottom.style.fill = backColor
-      backTop.style.fill = backColor
+      mBack.style.fill = backColor
     },
     LerpRGB(a, b, t) {
       return `rgba(
