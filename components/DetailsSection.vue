@@ -75,7 +75,7 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-@import '../styles/headers';
+@import '../styles/colors';
 @import '../styles/vars';
 
 $splash-min-width: 600px;
@@ -161,12 +161,12 @@ $splash-min-width: 600px;
     text-align: center;
     font-size: 200%;
     letter-spacing: 5px;
-    color: $neon-blue;
+    color: $blue;
     -webkit-text-stroke-color: transparent;
   }
   .where-location {
     font-family: $font-mono;
-    color: $neon-pink;
+    color: $peach;
     text-align: center;
     line-height: 24px;
   }

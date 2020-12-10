@@ -152,7 +152,7 @@ $navHeight: 70px;
       &:hover {
         border-bottom: 2px solid;
         border-bottom-style: outset;
-        border-color: $neon-blue;
+        border-color: $day;
       }
     }
   }

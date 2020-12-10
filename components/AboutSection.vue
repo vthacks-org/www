@@ -78,7 +78,6 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../styles/colors';
-@import '../styles/headers';
 
 .about-title {
   padding-bottom: 10px;
@@ -88,13 +87,13 @@ export default {
   position: relative;
   padding: 40px;
   font-family: 'VT323', monospace;
-  color: $vth-term-color;
+  color: $light-gray;
   font-size: 2em;
   .about-title {
     font-size: 1.5em;
   }
   ::selection {
-    background-color: $vth-blue;
+    background-color: $blue;
     color: white;
   }
 }
@@ -102,7 +101,7 @@ export default {
 .about-content {
   .question {
     font-size: 1.2em;
-    color: $vth-red;
+    color: $peach;
   }
   .answer {
     font-size: 1em;
@@ -125,7 +124,7 @@ export default {
     font-size: 0.6em;
     color: white;
     span {
-      color: $vth-term-color;
+      color: $light-gray;
     }
   }
   @media (max-width: 720px) {
