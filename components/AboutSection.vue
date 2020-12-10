@@ -1,5 +1,5 @@
 <template>
-  <div id="about-section">
+  <section id="about-section">
     <div class="gradient-seperator"></div>
     <div class="about-info">
       <div class="vth-logo-term">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

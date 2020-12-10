@@ -1,5 +1,5 @@
 <template>
-  <div id="sponsors-section">
+  <section id="sponsors-section">
     <div class="gradient-seperator"></div>
     <div style="margin: 0 auto; justify-content: center">
       <h6 class="supertitle">Our amazing</h6>
@@ -34,7 +34,7 @@
       </div>
     </div>-->
     <div class="gradient-seperator bottom"></div>
-  </div>
+  </section>
 </template>
 
 <script>

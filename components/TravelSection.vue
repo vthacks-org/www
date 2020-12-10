@@ -1,5 +1,5 @@
 <template>
-  <div id="travel-section">
+  <section id="travel-section">
     <div class="travel-content">
       <div class="register-deadline futuristic small yellow center">Travel</div>
       <div id="register-separator" class="seperator yellow large"></div>
@@ -23,7 +23,7 @@
       </div>
       <div class="gradient-seperator bottom reversed"></div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -33,11 +33,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/headers';
 @import '../styles/vars';
 @import '../styles/colors';
-@import '../styles/eightbit-btn';
-@import '../styles/info-term';
 
 #travel-section {
   min-height: 30vh;

@@ -1,5 +1,5 @@
 <template>
-  <div id="splash-section">
+  <section id="splash-section">
     <div id="splash-container">
       <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" />
       <div id="splash-apply">
@@ -10,7 +10,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

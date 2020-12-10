@@ -1,5 +1,5 @@
 <template>
-  <div id="details-section">
+  <section id="details-section">
     <div id="details-background"></div>
     <h1 class="futuristic yellow center">location &amp; details</h1>
     <div class="seperator yellow large"></div>
@@ -25,7 +25,7 @@
       <a href="https://twitter.com/vt_hacks" target="_blank"> </a>
       <a href="https://www.instagram.com/vthacks/" target="_blank"> </a>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

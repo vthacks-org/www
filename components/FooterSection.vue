@@ -1,5 +1,5 @@
 <template>
-  <nav id="footer-section" class="level">
+  <footer id="footer-section" class="level">
     <div class="level-left">
       <div class="level-item">
         <div id="icons">
@@ -58,7 +58,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </footer>
 </template>
 
 <script>
