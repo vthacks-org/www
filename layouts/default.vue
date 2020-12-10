@@ -137,6 +137,9 @@ $navHeight: 70px;
 
 .navbar-burger {
   color: $text-primary;
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: $navHeight;
 }
 
 .navbar-end {

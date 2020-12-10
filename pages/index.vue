@@ -91,6 +91,7 @@ export default {
     return {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
+        { src: 'https://use.fontawesome.com/releases/v5.14.0/js/all.js' },
       ],
     }
   },
@@ -103,6 +104,8 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
+@import '../styles/colors';
+
 #container {
   position: relative;
 }
@@ -110,10 +113,10 @@ export default {
 #gradient {
   background: linear-gradient(
     0deg,
-    rgba(47, 20, 55, 1) 10%,
-    rgba(170, 108, 120, 1) 42%,
-    rgba(188, 143, 119, 1) 59%,
-    rgba(50, 157, 216, 1) 100%
+    $night 10%,
+    $twilight 42%,
+    $sunset 59%,
+    $day 100%
   );
   z-index: 1;
   height: fit-content;

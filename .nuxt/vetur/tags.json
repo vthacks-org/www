@@ -23,12 +23,6 @@
   "LazyLinksSection": {
     "description": "Auto imported from components/LinksSection.vue"
   },
-  "Logo": {
-    "description": "Auto imported from components/Logo.vue"
-  },
-  "LazyLogo": {
-    "description": "Auto imported from components/Logo.vue"
-  },
   "MlhTrustBadge": {
     "description": "Auto imported from components/MLHTrustBadge.vue"
   },
