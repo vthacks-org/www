@@ -33,8 +33,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/vars';
-@import '../styles/colors';
+@import '../sass/theme';
 
 #travel-section {
   min-height: 30vh;

@@ -17,7 +17,9 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: [
+    '~sass/buefy-overwrite.scss'
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -43,6 +45,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://github.com/nuxt-community/style-resources-module#readme
+    '@nuxtjs/style-resources'
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)

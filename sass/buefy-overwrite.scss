@@ -1,0 +1,12 @@
+@import "./theme.scss";
+
+/* Buefy */
+$primary: $day;
+$link: $twilight;
+$info: $sunset;
+
+$black: $midnight;
+$dark: $night;
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

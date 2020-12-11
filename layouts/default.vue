@@ -37,7 +37,7 @@
           <div class="navbar-item">
             <button
               id="registerButton"
-              class="button is-info is-outlined"
+              class="button is-primary is-outlined"
               @click="register"
             >
               Register
@@ -113,8 +113,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/colors';
-@import '../styles/vars';
+@import '../sass/theme';
 $navHeight: 70px;
 
 #brand-logo {
@@ -155,7 +154,7 @@ $navHeight: 70px;
       &:hover {
         border-bottom: 2px solid;
         border-bottom-style: outset;
-        border-color: $day;
+        border-color: $sunset;
       }
     }
   }

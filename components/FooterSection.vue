@@ -36,7 +36,7 @@
               aria-haspopup="true"
               aria-controls="archive"
             >
-              <span>Archieve</span>
+              <span>Archive</span>
               <span class="icon is-small">
                 <i class="fas fa-angle-up" aria-hidden="true"></i>
               </span>
@@ -68,8 +68,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/vars';
-@import '../styles/colors';
+@import '../sass/theme';
 
 #footer-section {
   width: 100%;

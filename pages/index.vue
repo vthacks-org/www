@@ -104,7 +104,7 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-@import '../styles/colors';
+@import '../sass/theme';
 
 #container {
   position: relative;
