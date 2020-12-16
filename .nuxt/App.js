@@ -7,6 +7,8 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '..\\node_modules\\buefy\\dist\\buefy.css'
 
+import '..\\sass\\buefy-overwrite.scss'
+
 import '..\\node_modules\\prismjs\\themes\\prism.css'
 
 import _6f6c098b from '..\\layouts\\default.vue'

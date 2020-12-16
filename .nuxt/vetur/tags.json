@@ -23,29 +23,11 @@
   "LazyLinksSection": {
     "description": "Auto imported from components/LinksSection.vue"
   },
-  "Logo": {
-    "description": "Auto imported from components/Logo.vue"
-  },
-  "LazyLogo": {
-    "description": "Auto imported from components/Logo.vue"
-  },
   "MlhTrustBadge": {
     "description": "Auto imported from components/MLHTrustBadge.vue"
   },
   "LazyMlhTrustBadge": {
     "description": "Auto imported from components/MLHTrustBadge.vue"
-  },
-  "PreRegistrationSection": {
-    "description": "Auto imported from components/PreRegistrationSection.vue"
-  },
-  "LazyPreRegistrationSection": {
-    "description": "Auto imported from components/PreRegistrationSection.vue"
-  },
-  "RegistrationSection": {
-    "description": "Auto imported from components/RegistrationSection.vue"
-  },
-  "LazyRegistrationSection": {
-    "description": "Auto imported from components/RegistrationSection.vue"
   },
   "SplashSection": {
     "description": "Auto imported from components/SplashSection.vue"
