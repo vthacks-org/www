@@ -1,13 +1,11 @@
 <template>
   <div id="container">
-    <div id="svgMountain" class="zBox" v-html="SVG" />
+    <MountSVG id="svgMountain" class="zBox" />
     <div id="gradient" class="zBox"></div>
     <span id="content" class="zBox">
       <SplashSection />
       <DetailsSection />
-      <PreRegistrationSection />
       <LinksSection />
-      <RegistrationSection />
       <AboutSection />
       <SponsorsSection />
       <FooterSection />
@@ -18,29 +16,29 @@
 <script>
 import SplashSection from '~/components/SplashSection.vue'
 import DetailsSection from '~/components/DetailsSection.vue'
-import PreRegistrationSection from '~/components/PreRegistrationSection.vue'
-import RegistrationSection from '~/components/RegistrationSection.vue'
 import LinksSection from '~/components/LinksSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
-import SVG from '~/assets/mount.svg?raw'
+import MountSVG from '~/assets/mount.svg?inline'
 
 export default {
   name: 'HomePage',
   components: {
     SplashSection,
     DetailsSection,
-    PreRegistrationSection,
-    RegistrationSection,
     LinksSection,
     AboutSection,
     SponsorsSection,
     FooterSection,
+    MountSVG,
   },
   data() {
     return {
-      SVG,
+      day: [86, 52, 38, 1],
+      sunsetI: [83, 40, 43, 1],
+      sunsetF: [66, 13, 48, 1],
+      night: [34, 13, 51, 1],
     }
   },
   beforeMount() {
@@ -53,34 +51,47 @@ export default {
     calculateSVGHeight() {
       const content = document.getElementById('content')
       const mount = document.getElementById('svgMountain')
-      const spons = document.getElementById('sponsors-section')
-      const gradient = document.getElementById('gradient')
-      mount.firstChild.setAttribute(
-        'height',
-        `${(content.offsetHeight - spons.offsetHeight).toString()}px`
-      )
-      mount.firstChild.setAttribute(
-        'width',
-        `${content.offsetWidth.toString()}px`
-      )
-      gradient.style.height = `${content.offsetHeight.toString()}px`
+      document.getElementById(
+        'gradient'
+      ).style.height = `${content.offsetHeight}px`
+      const height =
+        content.offsetHeight -
+        document.getElementById('footer-section').offsetHeight
+      mount.setAttribute('height', height)
+      if (content.offsetWidth < 1920) {
+        mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
+      } else {
+        mount.setAttribute('viewBox', `0 0 1920 ${height}`)
+      }
     },
     handleScroll() {
-      const mount = document.getElementById('svgMountain').firstChild
-      const backBottom = mount.getElementById('Rectangle_2')
-      const backTop = mount.getElementById('Path_1')
-      const frontLarge = mount.getElementById('Path_2')
-      const frontSmall = mount.getElementById('Path_4')
-      backBottom.style.fill = '#340f47'
-      backTop.style.fill = '#340f47'
-      frontLarge.style.fill = '#5e2d8f'
-      frontSmall.style.fill = '#5e2d8f'
+      const mBack = document.getElementById('MountainBack')
+      const scrollPercent = (window.scrollY / window.scrollMaxY) * 3
+      let backColor
+      if (scrollPercent < 1) {
+        backColor = this.LerpRGB(this.day, this.sunsetI, scrollPercent)
+      } else if (scrollPercent < 2) {
+        backColor = this.LerpRGB(this.sunsetI, this.sunsetF, scrollPercent - 1)
+      } else {
+        backColor = this.LerpRGB(this.sunsetF, this.night, scrollPercent - 2)
+      }
+
+      mBack.style.fill = backColor
+    },
+    LerpRGB(a, b, t) {
+      return `rgba(
+      ${Math.floor(a[0] + (b[0] - a[0]) * t)},
+      ${Math.floor(a[1] + (b[1] - a[1]) * t)},
+      ${Math.floor(a[2] + (b[2] - a[2]) * t)},
+      ${Math.floor(a[3] + (b[3] - a[3]) * t)}
+      )`
     },
   },
   head() {
     return {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
+        { src: 'https://use.fontawesome.com/releases/v5.14.0/js/all.js' },
       ],
     }
   },
@@ -93,6 +104,8 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
+@import '../sass/theme';
+
 #container {
   position: relative;
 }
@@ -100,10 +113,10 @@ export default {
 #gradient {
   background: linear-gradient(
     0deg,
-    rgba(28, 21, 87, 1) 0%,
-    rgba(208, 124, 106, 1) 33%,
-    rgba(226, 134, 107, 1) 61%,
-    rgba(0, 174, 239, 1) 100%
+    $night 10%,
+    $twilight 42%,
+    $sunset 59%,
+    $day 100%
   );
   z-index: 1;
   height: fit-content;

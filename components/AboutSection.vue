@@ -1,5 +1,5 @@
 <template>
-  <div id="about-section">
+  <section id="about-section">
     <div class="gradient-seperator"></div>
     <div class="about-info">
       <div class="vth-logo-term">
@@ -13,7 +13,7 @@
         <div class="about-title">$> cat about.faq</div>
         <div
           v-for="question in questions"
-          :key="question"
+          :key="question.a"
           class="about-content"
         >
           <div class="question">{{ question.q }}</div>
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -77,8 +77,7 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-@import '../styles/colors';
-@import '../styles/headers';
+@import '../sass/theme';
 
 .about-title {
   padding-bottom: 10px;
@@ -88,13 +87,13 @@ export default {
   position: relative;
   padding: 40px;
   font-family: 'VT323', monospace;
-  color: $vth-term-color;
+  color: $light-gray;
   font-size: 2em;
   .about-title {
     font-size: 1.5em;
   }
   ::selection {
-    background-color: $vth-blue;
+    background-color: $blue;
     color: white;
   }
 }
@@ -102,7 +101,7 @@ export default {
 .about-content {
   .question {
     font-size: 1.2em;
-    color: $vth-red;
+    color: $peach;
   }
   .answer {
     font-size: 1em;
@@ -125,7 +124,7 @@ export default {
     font-size: 0.6em;
     color: white;
     span {
-      color: $vth-term-color;
+      color: $light-gray;
     }
   }
   @media (max-width: 720px) {

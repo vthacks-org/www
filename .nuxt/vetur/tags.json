@@ -1,0 +1,68 @@
+{
+  "AboutSection": {
+    "description": "Auto imported from components/AboutSection.vue"
+  },
+  "LazyAboutSection": {
+    "description": "Auto imported from components/AboutSection.vue"
+  },
+  "DetailsSection": {
+    "description": "Auto imported from components/DetailsSection.vue"
+  },
+  "LazyDetailsSection": {
+    "description": "Auto imported from components/DetailsSection.vue"
+  },
+  "FooterSection": {
+    "description": "Auto imported from components/FooterSection.vue"
+  },
+  "LazyFooterSection": {
+    "description": "Auto imported from components/FooterSection.vue"
+  },
+  "LinksSection": {
+    "description": "Auto imported from components/LinksSection.vue"
+  },
+  "LazyLinksSection": {
+    "description": "Auto imported from components/LinksSection.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "LazyLogo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "MlhTrustBadge": {
+    "description": "Auto imported from components/MLHTrustBadge.vue"
+  },
+  "LazyMlhTrustBadge": {
+    "description": "Auto imported from components/MLHTrustBadge.vue"
+  },
+  "PreRegistrationSection": {
+    "description": "Auto imported from components/PreRegistrationSection.vue"
+  },
+  "LazyPreRegistrationSection": {
+    "description": "Auto imported from components/PreRegistrationSection.vue"
+  },
+  "RegistrationSection": {
+    "description": "Auto imported from components/RegistrationSection.vue"
+  },
+  "LazyRegistrationSection": {
+    "description": "Auto imported from components/RegistrationSection.vue"
+  },
+  "SplashSection": {
+    "description": "Auto imported from components/SplashSection.vue"
+  },
+  "LazySplashSection": {
+    "description": "Auto imported from components/SplashSection.vue"
+  },
+  "SponsorsSection": {
+    "description": "Auto imported from components/SponsorsSection.vue"
+  },
+  "LazySponsorsSection": {
+    "description": "Auto imported from components/SponsorsSection.vue"
+  },
+  "TravelSection": {
+    "description": "Auto imported from components/TravelSection.vue"
+  },
+  "LazyTravelSection": {
+    "description": "Auto imported from components/TravelSection.vue"
+  }
+}

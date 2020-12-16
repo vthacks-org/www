@@ -1,5 +1,5 @@
 <template>
-  <div id="details-section">
+  <section id="details-section">
     <div id="details-background"></div>
     <h1 class="futuristic yellow center">location &amp; details</h1>
     <div class="seperator yellow large"></div>
@@ -25,7 +25,7 @@
       <a href="https://twitter.com/vt_hacks" target="_blank"> </a>
       <a href="https://www.instagram.com/vthacks/" target="_blank"> </a>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -75,8 +75,7 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-@import '../styles/headers';
-@import '../styles/vars';
+@import '../sass/theme';
 
 $splash-min-width: 600px;
 
@@ -157,16 +156,16 @@ $splash-min-width: 600px;
   padding-bottom: 20px;
   align-items: center;
   .where-title {
-    font-family: $font-VT232;
+    font-family: $font-vt232;
     text-align: center;
     font-size: 200%;
     letter-spacing: 5px;
-    color: $neon-blue;
+    color: $blue;
     -webkit-text-stroke-color: transparent;
   }
   .where-location {
     font-family: $font-mono;
-    color: $neon-pink;
+    color: $peach;
     text-align: center;
     line-height: 24px;
   }

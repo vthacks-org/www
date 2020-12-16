@@ -35,7 +35,11 @@
             <span>{{ section.name }}</span>
           </div>
           <div class="navbar-item">
-            <button class="button is-info is-outlined" @click="clickMe">
+            <button
+              id="registerButton"
+              class="button is-primary is-outlined"
+              @click="register"
+            >
               Register
             </button>
           </div>
@@ -92,7 +96,7 @@ export default {
       this.opened = false
     },
     handleScroll() {
-      const currentScrollPos = window.pageYOffset
+      const currentScrollPos = window.scrollY
       const el = document.getElementById('navbar')
       if (this.prevScrollpos > currentScrollPos || currentScrollPos <= 0) {
         el.style.top = '0'
@@ -101,19 +105,26 @@ export default {
       }
       this.prevScrollpos = currentScrollPos
     },
+    register() {
+      window.open('https://www.google.com')
+    },
   },
 }
 </script>
 
 <style lang="scss">
-@import '../styles/colors';
-@import '../styles/vars';
+@import '../sass/theme';
 $navHeight: 70px;
 
 #brand-logo {
   max-height: unset;
   width: $navHeight * 1.5;
   height: $navHeight / 1.5;
+}
+
+#registerButton {
+  font-family: $bnr22;
+  font-size: $navHeight / 4;
 }
 
 .navbar {
@@ -125,6 +136,9 @@ $navHeight: 70px;
 
 .navbar-burger {
   color: $text-primary;
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: $navHeight;
 }
 
 .navbar-end {
@@ -140,7 +154,7 @@ $navHeight: 70px;
       &:hover {
         border-bottom: 2px solid;
         border-bottom-style: outset;
-        border-color: $neon-blue;
+        border-color: $sunset;
       }
     }
   }

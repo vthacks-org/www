@@ -1,5 +1,5 @@
 <template>
-  <div id="splash-section">
+  <section id="splash-section">
     <div id="splash-container">
       <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" />
       <div id="splash-apply">
@@ -10,7 +10,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -22,8 +22,7 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-@import '../styles/colors';
-@import '../styles/vars';
+@import '../sass/theme';
 
 #splash-logo {
   position: absolute;
@@ -36,7 +35,7 @@ export default {
 #splash-apply {
   position: absolute;
   color: white;
-  font-family: $font-VT232;
+  font-family: $font-vt232;
   letter-spacing: 8px;
   top: 66%;
   width: 100%;
