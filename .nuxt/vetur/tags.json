@@ -29,6 +29,18 @@
   "LazyMlhTrustBadge": {
     "description": "Auto imported from components/MLHTrustBadge.vue"
   },
+  "PreRegistrationSection": {
+    "description": "Auto imported from components/PreRegistrationSection.vue"
+  },
+  "LazyPreRegistrationSection": {
+    "description": "Auto imported from components/PreRegistrationSection.vue"
+  },
+  "RegistrationSection": {
+    "description": "Auto imported from components/RegistrationSection.vue"
+  },
+  "LazyRegistrationSection": {
+    "description": "Auto imported from components/RegistrationSection.vue"
+  },
   "SplashSection": {
     "description": "Auto imported from components/SplashSection.vue"
   },

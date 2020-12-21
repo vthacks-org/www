@@ -1,6 +1,6 @@
 <template>
-  <section id="links-section">
-    <div class="links-content">
+  <div id="links-section">
+    <!-- <div class="links-content">
       <h1 class="futuristic blue">Getting Started</h1>
       <div class="seperator blue large"></div>
       <div class="info-term">
@@ -31,8 +31,8 @@
         height="500px"
         src="https://docs.google.com/document/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true"
       ></iframe>
-    </div>
-  </section>
+    </div> -->
+  </div>
 </template>
 
 <script>
