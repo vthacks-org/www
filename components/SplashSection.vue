@@ -1,7 +1,11 @@
 <template>
   <section id="splash-section">
     <div id="splash-container">
+      <div>
+        <p>VTHacks 8</p>
+      </div>
       <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" />
+      <img id="sun-image" src="~/assets/sun.svg" alt="Sun" />
       <div id="splash-apply">
         <a id="registration-link" href="#">
           <!-- <div>Hack the Planet</div> -->
@@ -10,12 +14,19 @@
         </a>
       </div>
     </div>
+    <a> </a>
+    <DetailsSection />
   </section>
 </template>
 
 <script>
+import DetailsSection from '~/components/DetailsSection.vue'
+
 export default {
   name: 'SplashSection',
+  components: {
+    DetailsSection,
+  },
 }
 </script>
 
@@ -27,9 +38,16 @@ export default {
 #splash-logo {
   position: absolute;
   width: 21%;
-  left: 50%;
-  top: 6%;
-  transform: translateX(-50%);
+  right: 50px;
+  top: 50px;
+}
+
+#sun-image {
+  position: fixed;
+  width: 21%;
+  right: 50px;
+  top: 94px;
+  z-index: -1;
 }
 
 #splash-apply {

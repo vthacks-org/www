@@ -1,11 +1,10 @@
 <template>
   <div id="container">
     <MountSVG id="svgMountain" class="zBox" />
-    <SunSVG id="svgSun" class="zBox" />
+    <!--    <SunSVG id="svgSun" class="zBox" />-->
     <div id="gradient" class="zBox"></div>
     <span id="content" class="zBox">
       <SplashSection />
-      <DetailsSection />
       <LinksSection />
       <AboutSection />
       <SponsorsSection />
@@ -16,25 +15,23 @@
 
 <script>
 import SplashSection from '~/components/SplashSection.vue'
-import DetailsSection from '~/components/DetailsSection.vue'
 import LinksSection from '~/components/LinksSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
 import MountSVG from '~/assets/mount.svg?inline'
-import SunSVG from '~/assets/sun.svg?inline'
+// import SunSVG from '~/assets/sun.svg?inline'
 
 export default {
   name: 'HomePage',
   components: {
     SplashSection,
-    DetailsSection,
     LinksSection,
     AboutSection,
     SponsorsSection,
     FooterSection,
     MountSVG,
-    SunSVG,
+    // SunSVG,
   },
   data() {
     return {

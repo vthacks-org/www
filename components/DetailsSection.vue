@@ -49,7 +49,7 @@ export default {
 
       /* if vthacks is happening or past: */
       if (endDate - currentDate < 0) {
-        this.statusMessage = `Thanks for coming! 
+        this.statusMessage = `Thanks for coming!
         Stay up to date by following us on social media!`
         return
       } else if (endDate - currentDate > 0 && startHour - currentDate < 0) {
@@ -65,7 +65,7 @@ export default {
         return
       }
       if (daysLeft === 0) {
-        this.statusMessage = 'VTHacks 7 starts today!'
+        this.statusMessage = 'VTHacks 8 starts today!'
       }
     },
   },
