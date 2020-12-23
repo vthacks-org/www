@@ -1,25 +1,25 @@
 <template>
   <section id="details-section">
     <div id="details-background"></div>
-    <h1 class="futuristic yellow center">location &amp; details</h1>
+    <h1 class="header">VTHacks 8</h1>
     <div class="seperator yellow large"></div>
     <div class="status">
+      <div>Feb 26-28,2021</div>
       <div>
         {{ statusMessage }}
       </div>
       <div>
-        Due to COVID-19 this year we are planning to host VTHacks 8 completely
-        online.
+        Due to COVID-19 this year we are hosting VTHacks 8 completely online.
       </div>
     </div>
-    <div class="where">
-      <div class="where-title">Virginia Tech</div>
-      <div class="where-location">February 26-28, 2021</div>
-      <div class="where-location">Surge Space Building</div>
-      <div class="where-location">
-        435 Turner St NW,<br />Blacksburg VA 24060
-      </div>
-    </div>
+    <!--    <div class="where">-->
+    <!--      <div class="where-title">Virginia Tech</div>-->
+    <!--      <div class="where-location">February 26-28, 2021</div>-->
+    <!--      <div class="where-location">Surge Space Building</div>-->
+    <!--      <div class="where-location">-->
+    <!--        435 Turner St NW,<br />Blacksburg VA 24060-->
+    <!--      </div>-->
+    <!--    </div>-->
     <div class="socials">
       <a href="https://www.facebook.com/vthacks" target="_blank"> </a>
       <a href="https://twitter.com/vt_hacks" target="_blank"> </a>
@@ -85,6 +85,12 @@ $splash-min-width: 600px;
   }
 }
 
+.header {
+  font-family: $bnr22;
+  color: #121212;
+  font-size: 3rem;
+}
+
 .status {
   font-family: $font-mono;
   position: relative;
@@ -95,6 +101,7 @@ $splash-min-width: 600px;
   letter-spacing: 4px;
   padding-bottom: 20px;
   color: white;
+  max-width: 700px;
   & > div {
     text-align: center;
     align-self: center;
@@ -109,6 +116,8 @@ $splash-min-width: 600px;
   flex-direction: column;
   padding: 16px;
   align-items: center;
+  width: 70%;
+  margin-top: 70px;
 }
 
 .socials {

@@ -1,9 +1,6 @@
 <template>
   <section id="splash-section">
     <div id="splash-container">
-      <div>
-        <p>VTHacks 8</p>
-      </div>
       <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" />
       <img id="sun-image" src="~/assets/sun.svg" alt="Sun" />
       <div id="splash-apply">
