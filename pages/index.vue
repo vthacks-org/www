@@ -1,7 +1,6 @@
 <template>
   <div id="container">
     <MountSVG id="svgMountain" class="zBox" />
-    <!--    <SunSVG id="svgSun" class="zBox" />-->
     <div id="gradient" class="zBox"></div>
     <span id="content" class="zBox">
       <SplashSection />
@@ -20,7 +19,6 @@ import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
 import MountSVG from '~/assets/mount.svg?inline'
-// import SunSVG from '~/assets/sun.svg?inline'
 
 export default {
   name: 'HomePage',
@@ -31,7 +29,6 @@ export default {
     SponsorsSection,
     FooterSection,
     MountSVG,
-    // SunSVG,
   },
   data() {
     return {
@@ -120,15 +117,6 @@ export default {
   );
   z-index: 1;
   height: fit-content;
-}
-
-#svgSun {
-  position: fixed;
-  top: 120px;
-  left: 50%;
-  margin-left: -150px;
-  width: 300px;
-  z-index: 2;
 }
 
 #svgMountain {
