@@ -1,51 +1,42 @@
+@@ -1,162 +1,173 @@
 <template>
   <div>
-    <div
+    <b-navbar
       id="navbar"
       centered="true"
       class="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="navbar-brand">
-        <span class="navbar-item">
-          <img id="brand-logo" src="~assets/logo.svg" />
-        </span>
+      <template slot="brand">
+        <b-navbar-item>
+          <span class="navbar-item">
+            <img id="brand-logo" src="~assets/logo.svg" />
+          </span>
+        </b-navbar-item>
+      </template>
 
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
+      <template slot="end">
+        <b-navbar-item
+          v-for="section in sections"
+          :key="section.name"
+          tag="div"
+          class="navbar-item page-ref"
+          @click="scrollToId(section.id)"
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div class="navbar-menu">
-        <div class="navbar-end">
-          <div
-            v-for="section in sections"
-            :key="section.name"
-            class="navbar-item page-ref"
-            @click="scrollToId(section.id)"
+          <span>{{ section.name }}</span>
+        </b-navbar-item>
+        <b-navbar-item tag="div" class="navbar-item">
+          <button
+            id="registerButton"
+            class="button is-primary is-outlined"
+            @click="register"
           >
-            <span>{{ section.name }}</span>
-          </div>
-          <div class="navbar-item">
-            <button
-              id="registerButton"
-              class="button is-primary is-outlined"
-              @click="register"
-            >
-              Register
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+            Register
+          </button>
+        </b-navbar-item>
+      </template>
+    </b-navbar>
 
     <section class="main-content">
       <MLHTrustBadge />
@@ -91,9 +82,15 @@ export default {
   },
   methods: {
     scrollToId(id) {
+      const menu = document.getElementsByClassName('navbar-menu')[0]
+      const burger = document.getElementsByClassName('navbar-burger')[0]
       const el = document.getElementById(id)
       el.scrollIntoView({ behavior: 'smooth' })
-      this.opened = false
+      if (menu.getAttribute('class').includes('is-active')) {
+        burger.setAttribute('class', 'navbar-burger burger')
+        burger.removeAttribute('aria-expanded')
+        menu.setAttribute('class', 'navbar-menu')
+      }
     },
     handleScroll() {
       const currentScrollPos = window.scrollY
@@ -114,23 +111,31 @@ export default {
 
 <style lang="scss">
 @import '../sass/theme';
-$navHeight: 70px;
+$navcolor: rgba(0, 0, 0, 0.8);
+:root {
+  --navHeight: 70px;
+}
+@media (max-width: 720px) {
+  :root {
+    --navHeight: 40px;
+  }
+}
 
 #brand-logo {
   max-height: unset;
-  width: $navHeight * 1.5;
-  height: $navHeight / 1.5;
+  width: calc(var(--navHeight) * 1.5);
+  height: calc(var(--navHeight) / 1.5);
 }
 
 #registerButton {
   font-family: $bnr22;
-  font-size: $navHeight / 4;
+  font-size: calc(var(--navHeight) / 4);
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: $navcolor;
   transition: top 0.3s;
-  height: $navHeight;
+  height: var(--navHeight);
   padding: 0 10em 0 5em;
 }
 
@@ -138,7 +143,7 @@ $navHeight: 70px;
   color: $text-primary;
   cursor: pointer;
   padding: 5px 15px;
-  font-size: $navHeight;
+  font-size: var(--navHeight);
 }
 
 .navbar-end {
@@ -147,7 +152,7 @@ $navHeight: 70px;
     padding: 5px 15px;
     span {
       font-family: $bnr22;
-      font-size: $navHeight / 3;
+      font-size: calc(var(--navHeight) / 3);
       color: $text-primary;
     }
     &.page-ref {
@@ -157,6 +162,13 @@ $navHeight: 70px;
         border-color: $sunset;
       }
     }
+  }
+}
+
+.navbar-menu {
+  &.is-active {
+    background-color: $navcolor;
+    border-radius: 5%;
   }
 }
 </style>
