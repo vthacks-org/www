@@ -4,7 +4,8 @@
     <div id="gradient" class="zBox"></div>
     <span id="content" class="zBox">
       <SplashSection />
-      <LinksSection />
+      <RegistrationSection />
+      <!-- <LinksSection /> -->
       <AboutSection />
       <SponsorsSection />
       <FooterSection />
@@ -14,7 +15,8 @@
 
 <script>
 import SplashSection from '~/components/SplashSection.vue'
-import LinksSection from '~/components/LinksSection.vue'
+import RegistrationSection from '~/components/RegistrationSection.vue'
+// import LinksSection from '~/components/LinksSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
@@ -24,7 +26,8 @@ export default {
   name: 'HomePage',
   components: {
     SplashSection,
-    LinksSection,
+    RegistrationSection,
+    // LinksSection,
     AboutSection,
     SponsorsSection,
     FooterSection,

@@ -22,13 +22,13 @@
         </p>
       </div>
       <div class="register header center">
-        <!-- Opens a modal and  -->
-        <a
+        <!-- <a
           href="https://register.vthacks.com/"
           target="_blank"
           class="register-link big blue eightbit-btn"
-          >Sign Up &gt;</a
-        >
+          >Sign Up
+        </a> -->
+        <p id="register-button" class="" @click="register">Register</p>
       </div>
       <div class="header center">I've Registered, What's Next?</div>
       <div id="register-separator" class="seperator blue large"></div>
@@ -63,18 +63,10 @@
             <a target="_blank" href="https://www.facebook.com/vthacks/"
               >Facebook</a
             >
-            to receive updates and giveaways
+            to receive hackathon updates and access to giveaways
           </li>
         </ol>
       </div>
-
-      <!-- <div class="info-term">
-        <p>
-          $> <span style="color: rgba(233, 233, 0, 1);">NOTE: </span>
-          Applicants who are under the age of 18 are required to fill out the
-          <a href="/files/minors-form.pdf">VTHacks Minors Form</a>. You will need to print out the form and bring it with you to the event.
-        </p>
-      </div> -->
     </div>
     <div class="gradient-seperator bottom reversed"></div>
   </div>
@@ -83,6 +75,11 @@
 <script>
 export default {
   name: 'RegistrationSection',
+  methods: {
+    register() {
+      window.open('https://register.vthacks.com')
+    },
+  },
 }
 </script>
 
@@ -103,6 +100,11 @@ export default {
   margin-bottom: 1px;
 }
 
+#register-button {
+  color: #fbe32f;
+  cursor: pointer;
+}
+
 .register-content {
   display: flex;
   flex-direction: column;
@@ -112,7 +114,7 @@ export default {
 
 .header {
   font-family: $bnr22;
-  color: whitesmoke;
+  color: #121212;
   font-size: 3rem;
 }
 
@@ -131,6 +133,13 @@ export default {
 .info-term {
   font-family: $font-mono;
   font-size: 1.5rem;
+  color: #fff;
+}
+
+.info-term a {
+  font-family: $font-mono;
+  font-size: 1.5rem;
+  color: #fbe32f;
 }
 
 @media (max-width: 480px) {
