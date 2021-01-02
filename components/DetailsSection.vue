@@ -2,11 +2,11 @@
   <section id="details-section" class="section">
     <div id="detail-content" class="is-flex has-text-centered">
       <h1 class="title is-1">VTHacks 8</h1>
-      <p>Feb 26-28, 2021</p>
-      <p>
+      <p class="is-size-5">Feb 26-28, 2021</p>
+      <p class="is-size-5">
         {{ statusMessage }}
       </p>
-      <p>
+      <p class="is-size-5">
         Due to COVID-19 this year we are hosting VTHacks 8 completely online.
       </p>
     </div>
