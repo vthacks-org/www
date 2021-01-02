@@ -1,11 +1,11 @@
 <template>
   <div id="container">
-    <MountSVG id="svgMountain" class="zBox" />
     <div id="gradient" class="zBox"></div>
     <span id="content" class="zBox">
+      <MountSVG id="svgMountain" class="zBox" />
       <SplashSection />
+      <DetailsSection id="details" />
       <RegistrationSection />
-      <!-- <LinksSection /> -->
       <AboutSection />
       <SponsorsSection />
       <FooterSection />
@@ -15,8 +15,8 @@
 
 <script>
 import SplashSection from '~/components/SplashSection.vue'
+import DetailsSection from '~/components/DetailsSection.vue'
 import RegistrationSection from '~/components/RegistrationSection.vue'
-// import LinksSection from '~/components/LinksSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
@@ -26,8 +26,8 @@ export default {
   name: 'HomePage',
   components: {
     SplashSection,
+    DetailsSection,
     RegistrationSection,
-    // LinksSection,
     AboutSection,
     SponsorsSection,
     FooterSection,
@@ -110,6 +110,13 @@ export default {
   position: relative;
 }
 
+#details {
+  display: none;
+  @media (max-width: $splash-min-width) {
+    display: block;
+  }
+}
+
 #gradient {
   background: linear-gradient(
     0deg,
@@ -123,11 +130,12 @@ export default {
 }
 
 #svgMountain {
-  z-index: 3;
+  position: absolute;
+  z-index: -1;
 }
 
 #content {
-  z-index: 4;
+  z-index: 2;
 }
 
 .zBox {

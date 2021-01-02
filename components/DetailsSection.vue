@@ -1,16 +1,14 @@
 <template>
-  <section id="details-section">
-    <div id="details-background"></div>
-    <h1 class="header">VTHacks 8</h1>
-    <div class="seperator yellow large"></div>
-    <div class="status">
-      <div>Feb 26-28,2021</div>
-      <div>
+  <section id="details-section" class="section">
+    <div id="detail-content" class="is-flex has-text-centered">
+      <h1 class="title is-1">VTHacks 8</h1>
+      <p>Feb 26-28, 2021</p>
+      <p>
         {{ statusMessage }}
-      </div>
-      <div>
+      </p>
+      <p>
         Due to COVID-19 this year we are hosting VTHacks 8 completely online.
-      </div>
+      </p>
     </div>
     <!--    <div class="where">-->
     <!--      <div class="where-title">Virginia Tech</div>-->
@@ -20,11 +18,6 @@
     <!--        435 Turner St NW,<br />Blacksburg VA 24060-->
     <!--      </div>-->
     <!--    </div>-->
-    <div class="socials">
-      <a href="https://www.facebook.com/vthacks" target="_blank"> </a>
-      <a href="https://twitter.com/vt_hacks" target="_blank"> </a>
-      <a href="https://www.instagram.com/vthacks/" target="_blank"> </a>
-    </div>
   </section>
 </template>
 
@@ -72,117 +65,11 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit SCSS to this component only -->
-<!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../sass/theme';
 
-$splash-min-width: 600px;
-
-@media only screen and (max-width: 767px) {
-  .status {
-    font-size: 1em;
-  }
-}
-
-.header {
-  font-family: $bnr22;
-  color: #121212;
-  font-size: 3rem;
-}
-
-.status {
-  font-family: $font-mono;
-  position: relative;
-  display: flex;
+#detail-content {
+  justify-content: center;
   flex-direction: column;
-  width: 100%;
-  font-size: 20px;
-  letter-spacing: 4px;
-  padding-bottom: 20px;
-  color: white;
-  max-width: 700px;
-  & > div {
-    text-align: center;
-    align-self: center;
-    padding: 5px;
-  }
-}
-
-#details-section {
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  align-items: center;
-  width: 70%;
-  margin-top: 70px;
-}
-
-.socials {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  a {
-    text-decoration: none;
-    background-color: transparent;
-  }
-  img {
-    margin: 5px 15px 20px 15px;
-  }
-}
-
-#details-background {
-  position: absolute;
-  width: 100%;
-  min-width: $splash-min-width;
-  top: calc(-100vw * 2 / 3 + 65vw);
-  left: 50%;
-  transform: translateX(-50%) scaleY(-1);
-  img {
-    width: 100%;
-    display: block;
-    @media (max-width: $splash-min-width) {
-      height: calc(600px * 2 / 3);
-    }
-  }
-  @media (min-width: 1200px) {
-    top: 0;
-    max-height: calc(100vw * 2 / 3 * 0.62 + 200px);
-  }
-  @media (max-width: $splash-min-width) {
-    top: 0;
-  }
-}
-
-.where,
-.when {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  align-items: center;
-  .where-title {
-    font-family: $font-vt232;
-    text-align: center;
-    font-size: 200%;
-    letter-spacing: 5px;
-    color: $blue;
-    -webkit-text-stroke-color: transparent;
-  }
-  .where-location {
-    font-family: $font-mono;
-    color: $peach;
-    text-align: center;
-    line-height: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  #details-section {
-    padding: 16px;
-  }
 }
 </style>

@@ -3,7 +3,6 @@
   <div>
     <b-navbar
       id="navbar"
-      centered="true"
       class="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"

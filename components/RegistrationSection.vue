@@ -1,9 +1,7 @@
 <template>
-  <div id="registration-section">
-    <div class="gradient-seperator"></div>
+  <div id="registration-section" class="section">
     <div class="register-content">
-      <div class="header center">Register Now</div>
-      <div id="register-separator" class="seperator blue large"></div>
+      <h1 class="title is-1">Register Now</h1>
       <div class="info-term">
         <p>
           VTHacks accepts applicants on a first-come, first-serve basis.
@@ -21,7 +19,7 @@
           channel in the VTHacks discord before the day of the event.
         </p>
       </div>
-      <div class="register header center">
+      <div class="register title is-1">
         <!-- <a
           href="https://register.vthacks.com/"
           target="_blank"
@@ -30,7 +28,7 @@
         </a> -->
         <p id="register-button" class="" @click="register">Register</p>
       </div>
-      <div class="header center">I've Registered, What's Next?</div>
+      <div class="title is-1">I've Registered, What's Next?</div>
       <div id="register-separator" class="seperator blue large"></div>
 
       <div class="info-term">
@@ -86,18 +84,11 @@ export default {
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
-// @import '../styles/headers';
-@import '../styles/vars';
-// @import '../styles/eightbit-btn';
-@import '../styles/info-term';
+@import '../sass/theme';
 
 #registration-section {
   min-height: 30vh;
   overflow: hidden;
-}
-
-#register-separator {
-  margin-bottom: 1px;
 }
 
 #register-button {
@@ -112,18 +103,11 @@ export default {
   margin: 5vh 25px;
 }
 
-.header {
-  font-family: $bnr22;
-  color: #121212;
-  font-size: 3rem;
-}
-
 .see-ya-there {
   // -webkit-text-stroke-color: darken($neon-pink, 30%);
   // color: $neon-pink;
   margin: 20px 55px 5px 55px;
   .term {
-    font-family: $font-2P;
     text-align: center;
     line-height: 35px;
     font-size: 14px;
@@ -131,9 +115,18 @@ export default {
 }
 
 .info-term {
-  font-family: $font-mono;
-  font-size: 1.5rem;
-  color: #fff;
+  word-wrap: normal;
+  align-self: center;
+  max-width: 80%;
+  .tag {
+    color: #48d247;
+  }
+  .neon-pink.tag {
+    color: #fd00d5;
+  }
+  .vthacks-red.tag {
+    color: #ec4150;
+  }
 }
 
 .info-term a {
@@ -150,6 +143,10 @@ export default {
     .term {
       line-height: 25px;
     }
+  }
+
+  .info-term {
+    font-size: 12px;
   }
 }
 </style>

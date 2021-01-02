@@ -1,12 +1,23 @@
 @import "./theme.scss";
 
-/* Buefy */
+// colors
 $primary: $day;
 $link: $twilight;
 $info: $sunset;
-
 $black: $midnight;
 $dark: $night;
+
+// fonts
+$title-family: $bnr22;
+$family-sans-serif: $font-round;
+$family-monospace: $font-mono;
+$text: #fff;
+$size-small: 1rem;
+$size-normal: 1.25rem;
+$size-medium: 1.5rem;
+$size-large: 1.75rem;
+
+
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";

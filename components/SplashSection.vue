@@ -1,18 +1,12 @@
 <template>
-  <section id="splash-section">
-    <div id="splash-container">
-      <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" />
-      <img id="sun-image" src="~/assets/sun.svg" alt="Sun" />
-      <div id="splash-apply">
-        <a id="registration-link" href="#">
-          <!-- <div>Hack the Planet</div> -->
-          <!-- <a href="https://vthacksvi.devpost.com/" target="_blank" class="register-link big neon-pink eightbit-btn">Devpost &gt;</a> -->
-          <!-- <a href="http://tinyurl.com/vthacks-slack/" target="_blank" class="register-link big neon-pink eightbit-btn">Slack &gt;</a> -->
-        </a>
+  <section id="splash-section" class="hero is-fullheight-with-navbar">
+    <div class="hero-body level is-flex">
+      <DetailsSection id="details" class="level-item" />
+      <div id="splash-container" class="level-item">
+        <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" />
+        <img id="sun-image" src="~/assets/sun.svg" alt="Sun" />
       </div>
     </div>
-    <a> </a>
-    <DetailsSection />
   </section>
 </template>
 
@@ -32,101 +26,41 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
+#details {
+  width: 50%;
+}
+
 #splash-logo {
-  position: absolute;
-  width: 21%;
-  right: 50px;
-  top: 50px;
+  width: 70%;
 }
 
 #sun-image {
   position: fixed;
-  width: 21%;
-  right: 50px;
-  top: 94px;
-  z-index: -1;
+  width: 20%;
+  z-index: -2;
 }
 
-#splash-apply {
-  position: absolute;
-  color: white;
-  font-family: $font-vt232;
-  letter-spacing: 8px;
-  top: 66%;
-  width: 100%;
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 16px;
-  #registration-link {
-    background-color: transparent;
-  }
-  #apply-image {
-    width: 300px;
-
-    &:hover {
-      width: 310px;
-    }
-  }
+.level-item {
+  padding: 1vw;
 }
 
-#splash-section {
-  position: relative;
-  overflow: hidden;
-  margin-top: 44px;
-  @media (min-width: 1200px) {
-    max-height: calc(100vw * 2 / 3 * 0.62 + 200px);
-  }
-}
-
-#splash-section,
-#splash-container {
-  width: 100%;
-  height: 65vw;
-}
-
-#splash-container {
-  position: absolute;
-}
-
-.centered-content {
-  text-align: center;
-  padding: 120px 20px;
-  font-family: 'Press Start 2P', monospace;
-  color: $text-primary;
-  font-size: 2em;
-  line-height: 1.5em;
+.hero-body {
+  margin: 3vw 1.5vw 1px;
+  justify-content: center;
 }
 
 @media (max-width: $splash-min-width) {
-  #splash-section,
-  #splash-container {
-    height: calc(600px * 2 / 3);
-  }
-
   #splash-logo {
-    width: 130px;
-    top: 30px;
+    width: 65%;
   }
 
-  #splash-apply {
-    #apply-image {
-      width: 230px;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  #splash-section {
-    margin-top: 0;
+  #sun-image {
+    width: 30%;
+    z-index: -13;
   }
 
-  #splash-logo {
-    width: 110px;
-    top: 40px;
-  }
-
-  #splash-apply #registration-link {
-    font-size: 12px;
+  #details {
+    display: none;
   }
 }
 </style>

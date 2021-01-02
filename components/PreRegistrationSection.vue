@@ -1,7 +1,6 @@
 <template>
   <div id="pre-registration-section">
-    <!-- <div class="gradient-seperator"></div>
-    <h2 class="futuristic center pink top-padding">
+    <!-- <h2 class="futuristic center pink top-padding">
       VTHACKS 8 Pre-Registration
     </h2>
     <div class="status">
