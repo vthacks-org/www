@@ -5,6 +5,7 @@
       <MountSVG id="svgMountain" class="zBox" />
       <SplashSection />
       <DetailsSection id="details" />
+      <LinksSection />
       <RegistrationSection />
       <AboutSection />
       <SponsorsSection />
@@ -16,6 +17,7 @@
 <script>
 import SplashSection from '~/components/SplashSection.vue'
 import DetailsSection from '~/components/DetailsSection.vue'
+import LinksSection from '~/components/LinksSection.vue'
 import RegistrationSection from '~/components/RegistrationSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
@@ -27,6 +29,7 @@ export default {
   components: {
     SplashSection,
     DetailsSection,
+    LinksSection,
     RegistrationSection,
     AboutSection,
     SponsorsSection,
