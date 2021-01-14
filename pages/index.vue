@@ -6,7 +6,7 @@
       <SplashSection />
       <DetailsSection id="details" />
       <LinksSection />
-      <RegistrationSection />
+      <!-- <RegistrationSection /> -->
       <AboutSection />
       <SponsorsSection />
       <FooterSection />
@@ -18,7 +18,7 @@
 import SplashSection from '~/components/SplashSection.vue'
 import DetailsSection from '~/components/DetailsSection.vue'
 import LinksSection from '~/components/LinksSection.vue'
-import RegistrationSection from '~/components/RegistrationSection.vue'
+// import RegistrationSection from '~/components/RegistrationSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
@@ -30,7 +30,7 @@ export default {
     SplashSection,
     DetailsSection,
     LinksSection,
-    RegistrationSection,
+    // RegistrationSection,
     AboutSection,
     SponsorsSection,
     FooterSection,

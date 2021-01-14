@@ -1,5 +1,44 @@
 <template>
   <div id="links-section">
+    <div class="link-content">
+      <div class="actions">
+        <div>
+          <a
+            id="devpost-button"
+            href="https://vthacks7.devpost.com/"
+            target="_blank"
+            >Devpost</a
+          >
+        </div>
+        <div>
+          <a
+            id="livesite-button"
+            href="https://vt-hacks-live-site.netlify.app/"
+            target="_blank"
+            >Live Site</a
+          >
+        </div>
+        <div>
+          <b-button
+            label="More Info"
+            type="is-primary"
+            size="is-medium"
+            @click="isMapModalActive = true"
+          />
+        </div>
+        <div class="map-modal-container">
+          <b-modal v-model="isMapModalActive">
+            <img src="https://buefy.org/static/img/placeholder-1280x960.png" />
+            <div class="overlay">
+              <iframe
+                id="information"
+                src="https://docs.google.com/document/u/1/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true"
+              />
+            </div>
+          </b-modal>
+        </div>
+      </div>
+    </div>
     <!-- <div class="links-content">
       <h1 class="futuristic blue">Getting Started</h1>
       <div class="seperator blue large"></div>
@@ -38,6 +77,11 @@
 <script>
 export default {
   name: 'LinksSection',
+  data() {
+    return {
+      isMapModalActive: false,
+    }
+  },
 }
 </script>
 
@@ -69,16 +113,39 @@ export default {
 }
 .actions {
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
-#slack-button,
+
 #devpost-button {
+  color: $peach;
   img {
     height: 18px;
     margin-right: 8px;
   }
 }
 
+#livesite-button {
+  color: $peach;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 90%;
+  max-height: 90%;
+  width: inherit;
+  height: 100%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#information {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
 @media only screen and (max-width: 930px) {
   /* For mobile phones: */
   [class*='mobile'] {
