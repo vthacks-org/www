@@ -1,16 +1,8 @@
 <template>
   <section id="about-section">
-    <div class="gradient-seperator"></div>
     <div class="about-info">
-      <div class="vth-logo-term">
-        <img src="~assets/logo.svg" alt="VTHacks logo" />
-        <div class="specs">
-          <div><span>OS:</span> VTHacks x86_64</div>
-          <div><span>Model:</span> 8TH EDITION</div>
-        </div>
-      </div>
       <div>
-        <div class="about-title">$> cat about.faq</div>
+        <div class="about-title">F.A.Q.</div>
         <div
           v-for="question in questions"
           :key="question.a"
