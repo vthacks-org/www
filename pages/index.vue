@@ -7,9 +7,13 @@
       <DetailsSection id="details" />
       <LinksSection />
       <div id="blankSpace"></div>
-      <div id="treesTop" class="trees" alt="Forest"></div>
+      <div id="treesTop" class="trees" alt="Forest">
+        <div class="treesBetween"></div>
+      </div>
       <AboutSection />
-      <div id="treesBottom" class="trees" alt="Forest"></div>
+      <div id="treesBottom" class="trees" alt="Forest">
+        <div class="treesBetween"></div>
+      </div>
       <SponsorsSection />
       <FooterSection />
     </span>
@@ -59,16 +63,15 @@ export default {
       // set trees
       let height =
         content.offsetHeight -
-        document.getElementById('footer-section').offsetHeight
+        document.getElementById('footer-section').offsetHeight -
+        600
       const dist = height - links.offsetTop + links.offsetHeight
       document.getElementById('blankSpace').style.paddingTop = `${dist}px`
 
       // set mountain
       height =
-        content.offsetHeight +
-        links.offsetHeight / 2 - // mid point-ish
-        links.offsetTop +
-        height / 20 // extra space between mountain and section
+        content.offsetHeight - // mid point-ish
+        links.offsetTop
       mount.setAttribute('height', height)
       if (content.offsetWidth < 1920) {
         mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
@@ -165,6 +168,15 @@ export default {
   width: 100%;
   background-image: url('~assets/mount_trees.svg');
   background-repeat: repeat-x;
+}
+
+.treesBetween {
+  z-index: 2;
+  height: 600px;
+  width: 100%;
+  background-image: url('~assets/mount_trees.svg');
+  background-repeat: repeat-x;
+  background-position: -11% 0%;
 }
 
 .zBox {
