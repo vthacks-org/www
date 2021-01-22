@@ -6,6 +6,7 @@
       <SplashSection />
       <DetailsSection id="details" />
       <LinksSection />
+      <RegistrationSection />
       <AboutSection />
       <SponsorsSection />
       <FooterSection />
@@ -17,6 +18,7 @@
 import SplashSection from '~/components/SplashSection.vue'
 import DetailsSection from '~/components/DetailsSection.vue'
 import LinksSection from '~/components/LinksSection.vue'
+import RegistrationSection from '~/components/RegistrationSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
@@ -28,6 +30,7 @@ export default {
     SplashSection,
     DetailsSection,
     LinksSection,
+    RegistrationSection,
     AboutSection,
     SponsorsSection,
     FooterSection,
@@ -35,7 +38,7 @@ export default {
   },
   data() {
     return {
-      day: [86, 52, 38, 1],
+      RegistrationSectionday: [86, 52, 38, 1],
       sunsetI: [83, 40, 43, 1],
       sunsetF: [66, 13, 48, 1],
       night: [34, 13, 51, 1],

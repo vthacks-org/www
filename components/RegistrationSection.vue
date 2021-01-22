@@ -1,56 +1,48 @@
 <template>
   <div id="registration-section" class="section">
-    <div class="register-content">
-      <h1 class="title is-1">Register Now</h1>
-      <div class="info-term">
+    <div class="register-info">
+      <h1 class="register-title">Register Now And Get Ready for VTHacks 8</h1>
+      <div class="info-term register-content">
         <p>
-          VTHacks accepts applicants on a first-come, first-serve basis.
-          Applicants from all backgrounds are encouraged to apply.
-        </p>
-        <p>
-          <span style="color: rgba(233, 233, 0, 1)">NOTE: </span>
-          Applicants who are under the age of 18 are required to fill out the
-          <a target="_blank" href="/files/minors-form.pdf"
-            >VTHacks Minors Form</a
-          >. This form must be submitted to the
-          <a target="_blank" href="https://discord.gg/qRGP9RmPCc"
-            >#minor-forms</a
-          >
-          channel in the VTHacks discord before the day of the event.
+          VTHacks swag will be given out on a first come, first serve basis, so
+          make sure to register early.
         </p>
       </div>
-      <div class="register title is-1">
-        <!-- <a
-          href="https://register.vthacks.com/"
-          target="_blank"
-          class="register-link big blue eightbit-btn"
-          >Sign Up
-        </a> -->
-        <p id="register-button" class="" @click="register">Register</p>
-      </div>
-      <div class="title is-1">I've Registered, What's Next?</div>
-      <div id="register-separator" class="seperator blue large"></div>
-
-      <div class="info-term">
-        <ol>
+      <div class="info-term register-content">
+        <ol class="registration-list">
+          <li>
+            Register as an individual
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/1A_J-99egPZl8tFF_r00v1Y81zZYgAbvoOdlz7a2Y3aA/edit"
+              rel="noreferrer"
+              >here</a
+            >
+          </li>
+          <li>
+            Register your team
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/1A_J-99egPZl8tFF_r00v1Y81zZYgAbvoOdlz7a2Y3aA/edit"
+              rel="noreferrer"
+              >here</a
+            >
+            (if you don't have one yet check the
+            <a target="_blank" href="https://discord.gg/qRGP9RmPCc"
+              >#team-formation</a
+            >
+            channel in the VTHacks Discord Server)
+          </li>
           <li>
             Join the VTHacks
-            <a target="_blank" href="https://discord.gg/qRGP9RmPCc"
+            <a
+              target="_blank"
+              href="https://discord.gg/qRGP9RmPCc"
+              rel="noreferrer"
               >Discord Server</a
             >
             for real-time updates from our organizers and to virtually navigate
             on the day of the event
-          </li>
-          <li>
-            If you are under 18, complete and submit the
-            <a target="_blank" href="/files/minors-form.pdf"
-              >VTHacks Minors Form</a
-            >
-            to the
-            <a target="_blank" href="https://discord.gg/qRGP9RmPCc"
-              >#minor-forms</a
-            >
-            channel in the VTHacks Discord Server
           </li>
           <li>
             Follow us on
@@ -89,6 +81,8 @@ export default {
 #registration-section {
   min-height: 30vh;
   overflow: hidden;
+  font-family: 'VT323', monospace;
+  padding: 40px;
 }
 
 #register-button {
@@ -96,11 +90,33 @@ export default {
   cursor: pointer;
 }
 
+.register-title {
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+
+.register-info {
+  position: relative;
+  font-family: 'VT323', monospace;
+  color: #f89b6a;
+  font-size: 2em;
+  .register-title {
+    font-size: 1.5em;
+  }
+  ::selection {
+    background-color: $blue;
+    color: white;
+  }
+}
+
 .register-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5vh 25px;
+  font-size: 0.75em;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.registration-list {
+  padding-left: 30px;
 }
 
 .see-ya-there {
@@ -117,7 +133,7 @@ export default {
 .info-term {
   word-wrap: normal;
   align-self: center;
-  max-width: 80%;
+  max-width: 50%;
   .tag {
     color: #48d247;
   }
@@ -132,7 +148,7 @@ export default {
 .info-term a {
   font-family: $font-mono;
   font-size: 1.5rem;
-  color: #fbe32f;
+  color: #329dd8;
 }
 
 @media (max-width: 480px) {
