@@ -102,7 +102,9 @@ export default {
       this.prevScrollpos = currentScrollPos
     },
     register() {
-      window.open('https://www.google.com')
+      window.open(
+        'https://docs.google.com/forms/d/1A_J-99egPZl8tFF_r00v1Y81zZYgAbvoOdlz7a2Y3aA'
+      )
     },
   },
 }

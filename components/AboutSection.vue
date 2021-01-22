@@ -3,20 +3,30 @@
     <div class="content has-text-centered">
       <h1 class="title is-1">F.A.Q.</h1>
       <div id="content">
-        <div class="tile is-ancestor">
-          <div class="tile is-child">
-            <b-button @click="isMessageModalActive = true"> </b-button>
+        <b-collapse
+          v-for="(collapse, index) of collapses"
+          :key="index"
+          class="card"
+          animation="slide"
+          :open="isOpen == index"
+          @open="isOpen = index"
+        >
+          <template #trigger="props">
+            <div class="card-header" role="button">
+              <p class="card-header-title">
+                {{ collapse.title }}
+              </p>
+              <a class="card-header-icon">
+                <b-icon :icon="props.open ? 'menu-down' : 'menu-up'"> </b-icon>
+              </a>
+            </div>
+          </template>
+          <div class="card-content">
+            <div class="content">
+              {{ collapse.text }}
+            </div>
           </div>
-        </div>
-
-        <b-modal v-model="isMessageModalActive" :width="640" scroll="keep">
-          <b-message :closable="false">
-            <template #header>
-              {{ question }}
-            </template>
-            {{ answer }}
-          </b-message>
-        </b-modal>
+        </b-collapse>
       </div>
     </div>
   </section>
@@ -27,64 +37,46 @@ export default {
   name: 'AboutSection',
   data() {
     return {
-      isMessageModalActive: false,
-      questions: [
+      isOpen: 0,
+      collapses: [
         {
-          q: `What is VTHacks?`,
-          a: `It's an annual event where students of local schools come together at Virginia Tech and spend 36 hours working on teams of up to four people to create and build a project they are passionate about.`,
+          title: `What is VTHacks?`,
+          text: `It's an annual event where students of local schools come together at Virginia Tech and spend 36 hours working on teams of up to four people to create and build a project they are passionate about.`,
         },
         {
-          q: `How much does it cost?`,
-          a: `The event is completely free for all registered participants.`,
+          title: `How much does it cost?`,
+          text: `The event is completely free for all registered participants.`,
         },
         {
-          q: `Does VTHacks reimburse travel fees?`,
-          a: `VTHacks offers reimbursments on a case by case basis to anyone traveling more than an hour to the event. Please contact us at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> for inquiries.`,
+          title: `Does VTHacks reimburse travel fees?`,
+          text: `VTHacks offers reimbursments on a case by case basis to anyone traveling more than an hour to the event. Please contact us at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> for inquiries.`,
         },
         {
-          q: `Will there be food?`,
-          a: `Absolutely! We have an entire weekend of catered food waiting for you and your team.`,
+          title: `Will there be food?`,
+          text: `Absolutely! We have an entire weekend of catered food waiting for you and your team.`,
         },
         {
-          q: `What should I bring?`,
-          a: `All you need is your computer, a toothbrush, toothpaste, possibly a sleeping bag, and lots of excitement!`,
+          title: `What should I bring?`,
+          text: `All you need is your computer, a toothbrush, toothpaste, possibly a sleeping bag, and lots of excitement!`,
         },
         {
-          q: `How big can each team be?`,
-          a: `We like to keep teams at 4 or less participants so that the competition is fair between teams.`,
+          title: `How big can each team be?`,
+          text: `We like to keep teams at 4 or less participants so that the competition is fair between teams.`,
         },
         {
-          q: `Will there be hardware?`,
-          a: `Yes, we'll have lots of cool hardware you can build with!`,
+          title: `Will there be hardware?`,
+          text: `Yes, we'll have lots of cool hardware you can build with!`,
         },
         {
-          q: `Do I have to have fun?`,
-          a: `Yes. We'll make sure that you do.`,
+          title: `Do I have to have fun?`,
+          text: `Yes. We'll make sure that you do.`,
         },
         {
-          q: `Any more questions?`,
-          a: `Send us an email at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> and we'll get back to you!`,
+          title: `Any more questions?`,
+          text: `Send us an email at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> and we'll get back to you!`,
         },
       ],
     }
-  },
-  methods: {
-    loadcontent() {
-      const BreakPoint = 720 // pixels
-      let type = 'pc'
-      if (window.innerWidth < BreakPoint) {
-        type = 'phone'
-      }
-
-      document
-        .getElementById('content')
-        .append(
-          document.importNode(document.getElementById(type).content, true)
-        )
-    },
-    mounted() {
-      // this.loadcontent()
-    },
   },
 }
 </script>
