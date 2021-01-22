@@ -1,18 +1,32 @@
 <template>
-  <section id="about-section">
-    <div class="about-info">
-      <div>
-        <div class="about-title">F.A.Q.</div>
-        <div
-          v-for="question in questions"
-          :key="question.a"
-          class="about-content"
+  <section id="about-section" class="section">
+    <div class="content has-text-centered">
+      <h1 class="title is-1">F.A.Q.</h1>
+      <div id="content">
+        <b-collapse
+          v-for="(collapse, index) of collapses"
+          :key="index"
+          class="card"
+          animation="slide"
+          :open="isOpen == index"
+          @open="isOpen = index"
         >
-          <div class="question">{{ question.q }}</div>
-          <div class="answer">
-            <span>{{ question.a }}</span>
+          <template #trigger="props">
+            <div class="card-header" role="button">
+              <p class="card-header-title">
+                {{ collapse.title }}
+              </p>
+              <a class="card-header-icon">
+                <b-icon :icon="props.open ? 'menu-down' : 'menu-up'"> </b-icon>
+              </a>
+            </div>
+          </template>
+          <div class="card-content">
+            <div class="content">
+              {{ collapse.text }}
+            </div>
           </div>
-        </div>
+        </b-collapse>
       </div>
     </div>
   </section>
@@ -23,42 +37,43 @@ export default {
   name: 'AboutSection',
   data() {
     return {
-      questions: [
+      isOpen: 0,
+      collapses: [
         {
-          q: `What is VTHacks?`,
-          a: `It's an annual event where students of local schools come together at Virginia Tech and spend 36 hours working on teams of up to four people to create and build a project they are passionate about.`,
+          title: `What is VTHacks?`,
+          text: `It's an annual event where students of local schools come together at Virginia Tech and spend 36 hours working on teams of up to four people to create and build a project they are passionate about.`,
         },
         {
-          q: `How much does it cost?`,
-          a: `The event is completely free for all registered participants.`,
+          title: `How much does it cost?`,
+          text: `The event is completely free for all registered participants.`,
         },
         {
-          q: `Does VTHacks reimburse travel fees?`,
-          a: `VTHacks offers reimbursments on a case by case basis to anyone traveling more than an hour to the event. Please contact us at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> for inquiries.`,
+          title: `Does VTHacks reimburse travel fees?`,
+          text: `VTHacks offers reimbursments on a case by case basis to anyone traveling more than an hour to the event. Please contact us at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> for inquiries.`,
         },
         {
-          q: `Will there be food?`,
-          a: `Absolutely! We have an entire weekend of catered food waiting for you and your team.`,
+          title: `Will there be food?`,
+          text: `Absolutely! We have an entire weekend of catered food waiting for you and your team.`,
         },
         {
-          q: `What should I bring?`,
-          a: `All you need is your computer, a toothbrush, toothpaste, possibly a sleeping bag, and lots of excitement!`,
+          title: `What should I bring?`,
+          text: `All you need is your computer, a toothbrush, toothpaste, possibly a sleeping bag, and lots of excitement!`,
         },
         {
-          q: `How big can each team be?`,
-          a: `We like to keep teams at 4 or less participants so that the competition is fair between teams.`,
+          title: `How big can each team be?`,
+          text: `We like to keep teams at 4 or less participants so that the competition is fair between teams.`,
         },
         {
-          q: `Will there be hardware?`,
-          a: `Yes, we'll have lots of cool hardware you can build with!`,
+          title: `Will there be hardware?`,
+          text: `Yes, we'll have lots of cool hardware you can build with!`,
         },
         {
-          q: `Do I have to have fun?`,
-          a: `Yes. We'll make sure that you do.`,
+          title: `Do I have to have fun?`,
+          text: `Yes. We'll make sure that you do.`,
         },
         {
-          q: `Any more questions?`,
-          a: `Send us an email at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> and we'll get back to you!`,
+          title: `Any more questions?`,
+          text: `Send us an email at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> and we'll get back to you!`,
         },
       ],
     }
@@ -71,65 +86,14 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
-.about-title {
-  padding-bottom: 10px;
-}
-
-.about-info {
-  position: relative;
-  padding: 40px;
-  font-family: 'VT323', monospace;
-  color: $light-gray;
-  font-size: 2em;
-  .about-title {
-    font-size: 1.5em;
-  }
-  ::selection {
-    background-color: $blue;
-    color: white;
-  }
-}
-
-.about-content {
-  .question {
-    font-size: 1.2em;
-    color: $peach;
-  }
-  .answer {
-    font-size: 1em;
-    color: white;
-    padding-bottom: 15px;
-  }
-}
-
-.vth-logo-term {
-  float: right;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  img {
-    width: 80px;
-    height: 80px;
-  }
-  .specs {
-    margin-left: 8px;
-    font-size: 0.6em;
-    color: white;
-    span {
-      color: $light-gray;
+#about-section {
+  background: $midnight;
+  width: 100%;
+  div {
+    h1 {
+      color: $peach;
+      font-family: $bnr22;
     }
-  }
-  @media (max-width: 720px) {
-    float: none;
-    width: fit-content;
-    width: intrinsic;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-info {
-    font-size: 1.5em;
   }
 }
 </style>
