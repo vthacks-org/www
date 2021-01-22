@@ -10,13 +10,13 @@
         Due to COVID-19 this year we are hosting VTHacks 8 completely online.
       </p>
     </div>
-    <!--    <div class="where">-->
-    <!--      <div class="where-title">Virginia Tech</div>-->
-    <!--      <div class="where-location">February 26-28, 2021</div>-->
-    <!--      <div class="where-location">Surge Space Building</div>-->
-    <!--      <div class="where-location">-->
+    <!--    <div class="content">-->
+    <!--      <h3 class="title is-3">Virginia Tech</h3>-->
+    <!--      <h4 class="title is-4">February 26-28, 2021</h4>-->
+    <!--      <h4 class="title is-4">Surge Space Building</h4>-->
+    <!--      <h4 class="title is-4">-->
     <!--        435 Turner St NW,<br />Blacksburg VA 24060-->
-    <!--      </div>-->
+    <!--      </h4>-->
     <!--    </div>-->
   </section>
 </template>

@@ -44,12 +44,12 @@ export default {
   padding: 1vw;
 }
 
-.hero-body {
+.level {
   margin: 3vw 1.5vw 1px;
   justify-content: center;
 }
 
-@media (max-width: $splash-min-width) {
+@media (max-width: $min-width) {
   #splash-logo {
     width: 65%;
   }

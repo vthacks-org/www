@@ -5,15 +5,15 @@
       <MountSVG id="svgMountain" class="zBox" />
       <SplashSection />
       <DetailsSection id="details" />
-      <LinksSection />
+      <div id="blankSpace1"></div>
       <RegistrationSection />
-      <div id="blankSpace"></div>
+      <div id="blankSpace2"></div>
       <div id="treesTop" class="trees" alt="Forest">
-        <div class="treesBetween"></div>
+        <div><div></div></div>
       </div>
       <AboutSection />
       <div id="treesBottom" class="trees" alt="Forest">
-        <div class="treesBetween"></div>
+        <div><div></div></div>
       </div>
       <SponsorsSection />
       <FooterSection />
@@ -24,7 +24,6 @@
 <script>
 import SplashSection from '~/components/SplashSection.vue'
 import DetailsSection from '~/components/DetailsSection.vue'
-import LinksSection from '~/components/LinksSection.vue'
 import RegistrationSection from '~/components/RegistrationSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
@@ -36,7 +35,6 @@ export default {
   components: {
     SplashSection,
     DetailsSection,
-    LinksSection,
     RegistrationSection,
     AboutSection,
     SponsorsSection,
@@ -45,7 +43,7 @@ export default {
   },
   data() {
     return {
-      RegistrationSectionday: [86, 52, 38, 1],
+      day: [86, 52, 38, 1],
       sunsetI: [83, 40, 43, 1],
       sunsetF: [66, 13, 48, 1],
       night: [34, 13, 51, 1],
@@ -61,20 +59,21 @@ export default {
     calculateSVGHeight() {
       const content = document.getElementById('content')
       const mount = document.getElementById('svgMountain')
-      const links = document.getElementById('links-section')
+      const registration = document.getElementById('registration-section')
 
       // set trees
       let height =
         content.offsetHeight -
         document.getElementById('footer-section').offsetHeight -
         600
-      const dist = height - links.offsetTop + links.offsetHeight
-      document.getElementById('blankSpace').style.paddingTop = `${dist}px`
+      const dist = (height - registration.offsetTop) / 4
+      document.getElementById('blankSpace1').style.paddingTop = `${dist}px`
+      document.getElementById('blankSpace2').style.paddingTop = `${dist}px`
 
       // set mountain
       height =
         content.offsetHeight - // mid point-ish
-        links.offsetTop
+        registration.offsetTop
       mount.setAttribute('height', height)
       if (content.offsetWidth < 1920) {
         mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
@@ -135,7 +134,7 @@ export default {
 
 #details {
   display: none;
-  @media (max-width: $splash-min-width) {
+  @media (max-width: $min-width) {
     display: block;
   }
 }
@@ -166,24 +165,35 @@ export default {
 }
 
 .trees {
-  z-index: 3;
   height: 600px;
   width: 100%;
   background-image: url('~assets/mount_trees.svg');
   background-repeat: repeat-x;
-}
-
-.treesBetween {
-  z-index: 2;
-  height: 600px;
-  width: 100%;
-  background-image: url('~assets/mount_trees.svg');
-  background-repeat: repeat-x;
-  background-position: -11% 0%;
+  div {
+    height: 650px;
+    background-image: url('~assets/mount_trees.svg');
+    background-repeat: repeat-x;
+    background-position: -33% 0%;
+    div {
+      height: 680px;
+      background-image: url('~assets/mount_trees.svg');
+      background-repeat: repeat-x;
+      background-position: -13% 0%;
+    }
+  }
 }
 
 .zBox {
   position: absolute;
   width: 100%;
+}
+
+@media (max-width: $min-width) {
+  .trees {
+    z-index: 3;
+    height: 300px;
+    width: 100%;
+    background-image: url('~assets/mount_trees.svg');
+  }
 }
 </style>
