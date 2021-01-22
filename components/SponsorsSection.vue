@@ -53,7 +53,7 @@ export default {
   align-items: center;
 }
 
-.is-ancestor {
+.is-child {
   padding: 30px;
 }
 </style>

@@ -6,7 +6,10 @@
       <SplashSection />
       <DetailsSection id="details" />
       <LinksSection />
+      <div id="blankSpace"></div>
+      <div id="treesTop" class="trees" alt="Forest"></div>
       <AboutSection />
+      <div id="treesBottom" class="trees" alt="Forest"></div>
       <SponsorsSection />
       <FooterSection />
     </span>
@@ -51,18 +54,32 @@ export default {
     calculateSVGHeight() {
       const content = document.getElementById('content')
       const mount = document.getElementById('svgMountain')
-      document.getElementById(
-        'gradient'
-      ).style.height = `${content.offsetHeight}px`
-      const height =
+      const links = document.getElementById('links-section')
+
+      // set trees
+      let height =
         content.offsetHeight -
         document.getElementById('footer-section').offsetHeight
+      const dist = height - links.offsetTop + links.offsetHeight
+      document.getElementById('blankSpace').style.paddingTop = `${dist}px`
+
+      // set mountain
+      height =
+        content.offsetHeight +
+        links.offsetHeight / 2 - // mid point-ish
+        links.offsetTop +
+        height / 20 // extra space between mountain and section
       mount.setAttribute('height', height)
       if (content.offsetWidth < 1920) {
         mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
       } else {
         mount.setAttribute('viewBox', `0 0 1920 ${height}`)
       }
+
+      // set gradient
+      document.getElementById(
+        'gradient'
+      ).style.height = `${content.offsetHeight}px`
     },
     handleScroll() {
       const mBack = document.getElementById('MountainBack')
@@ -136,6 +153,18 @@ export default {
 
 #content {
   z-index: 2;
+}
+
+#treesBottom {
+  background: url('~assets/mount_trees.svg') $midnight;
+}
+
+.trees {
+  z-index: 3;
+  height: 600px;
+  width: 100%;
+  background-image: url('~assets/mount_trees.svg');
+  background-repeat: repeat-x;
 }
 
 .zBox {

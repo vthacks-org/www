@@ -1,18 +1,22 @@
 <template>
-  <section id="about-section">
-    <div class="about-info">
-      <div>
-        <div class="about-title">F.A.Q.</div>
-        <div
-          v-for="question in questions"
-          :key="question.a"
-          class="about-content"
-        >
-          <div class="question">{{ question.q }}</div>
-          <div class="answer">
-            <span>{{ question.a }}</span>
+  <section id="about-section" class="section">
+    <div class="content has-text-centered">
+      <h1 class="title is-1">F.A.Q.</h1>
+      <div id="content">
+        <div class="tile is-ancestor">
+          <div class="tile is-child">
+            <b-button @click="isMessageModalActive = true"> </b-button>
           </div>
         </div>
+
+        <b-modal v-model="isMessageModalActive" :width="640" scroll="keep">
+          <b-message :closable="false">
+            <template #header>
+              {{ question }}
+            </template>
+            {{ answer }}
+          </b-message>
+        </b-modal>
       </div>
     </div>
   </section>
@@ -23,6 +27,7 @@ export default {
   name: 'AboutSection',
   data() {
     return {
+      isMessageModalActive: false,
       questions: [
         {
           q: `What is VTHacks?`,
@@ -63,6 +68,24 @@ export default {
       ],
     }
   },
+  methods: {
+    loadcontent() {
+      const BreakPoint = 720 // pixels
+      let type = 'pc'
+      if (window.innerWidth < BreakPoint) {
+        type = 'phone'
+      }
+
+      document
+        .getElementById('content')
+        .append(
+          document.importNode(document.getElementById(type).content, true)
+        )
+    },
+    mounted() {
+      // this.loadcontent()
+    },
+  },
 }
 </script>
 
@@ -71,65 +94,14 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
-.about-title {
-  padding-bottom: 10px;
-}
-
-.about-info {
-  position: relative;
-  padding: 40px;
-  font-family: 'VT323', monospace;
-  color: $light-gray;
-  font-size: 2em;
-  .about-title {
-    font-size: 1.5em;
-  }
-  ::selection {
-    background-color: $blue;
-    color: white;
-  }
-}
-
-.about-content {
-  .question {
-    font-size: 1.2em;
-    color: $peach;
-  }
-  .answer {
-    font-size: 1em;
-    color: white;
-    padding-bottom: 15px;
-  }
-}
-
-.vth-logo-term {
-  float: right;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  img {
-    width: 80px;
-    height: 80px;
-  }
-  .specs {
-    margin-left: 8px;
-    font-size: 0.6em;
-    color: white;
-    span {
-      color: $light-gray;
+#about-section {
+  background: $midnight;
+  width: 100%;
+  div {
+    h1 {
+      color: $peach;
+      font-family: $bnr22;
     }
-  }
-  @media (max-width: 720px) {
-    float: none;
-    width: fit-content;
-    width: intrinsic;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-info {
-    font-size: 1.5em;
   }
 }
 </style>
