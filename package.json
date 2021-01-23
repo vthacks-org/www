@@ -16,7 +16,7 @@
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/pwa": "^3.0.2",
     "@nuxtjs/style-resources": "^1.0.0",
-    "core-js": "^3.6.5",
+    "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
     "nuxt-buefy": "^0.4.3"
   },
