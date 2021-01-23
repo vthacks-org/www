@@ -45,18 +45,13 @@
           <div id="archive" class="dropdown-menu" role="menu">
             <div class="dropdown-content">
               <div class="dropdown-item">
-                <a href="https://vthacks4.vthacks.com" class="link"
+                <a href="https://archive4.vthacks.com" class="link"
                   >VTHacks IV</a
                 >
               </div>
               <div class="dropdown-item">
-                <a href="https://vthacks5.vthacks.com" class="link"
+                <a href="https://archive5.vthacks.com" class="link"
                   >VTHacks V</a
-                >
-              </div>
-              <div class="dropdown-item">
-                <a href="https://vthacks7.vthacks.com" class="link"
-                  >VTHacks 7</a
                 >
               </div>
             </div>
