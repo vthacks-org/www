@@ -3,6 +3,9 @@
     <div class="link-content">
       <div class="actions">
         <div>
+          <figure class="image is-1by1">
+            <img src="../assets/yak.png" />
+          </figure>
           <a
             id="devpost-button"
             href="https://vthacks7.devpost.com/"

@@ -25,6 +25,7 @@
             </template>
             <div class="card-content">
               <div class="content">
+                <!-- eslint-disable-next-line -->
                 <span v-html="collapse.text"></span>
               </div>
             </div>
