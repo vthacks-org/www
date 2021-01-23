@@ -1,64 +1,69 @@
 <template>
-  <div id="registration-section" class="section is-flex">
-    <div id="registration-content" class="is-flex">
-      <h1 class="title is-1 is-spaced">
-        Register Now And Get Ready for VTHacks 8
-      </h1>
-      <h1 class="subtitle is-4">
-        VTHacks swag will be given out on a first come, first serve basis, so
-        make sure to register early.
-      </h1>
-      <div class="content">
-        <ol type="1">
-          <li class="is-size-4">
-            Register as an individual
-            <a
-              target="_blank"
-              href="https://docs.google.com/forms/d/1A_J-99egPZl8tFF_r00v1Y81zZYgAbvoOdlz7a2Y3aA/edit"
-              rel="noreferrer"
-              >here</a
-            >
-          </li>
-          <li class="is-size-4">
-            Register your team
-            <a
-              target="_blank"
-              href="https://docs.google.com/forms/d/1A_J-99egPZl8tFF_r00v1Y81zZYgAbvoOdlz7a2Y3aA/edit"
-              rel="noreferrer"
-              >here</a
-            >
-            (if you don't have one yet check the
-            <a target="_blank" href="https://discord.gg/qRGP9RmPCc"
-              >#team-formation</a
-            >
-            channel in the VTHacks Discord Server)
-          </li>
-          <li class="is-size-4">
-            Join the VTHacks
-            <a
-              target="_blank"
-              href="https://discord.gg/qRGP9RmPCc"
-              rel="noreferrer"
-              >Discord Server</a
-            >
-            for real-time updates from our organizers and to virtually navigate
-            on the day of the event
-          </li>
-          <li class="is-size-4">
-            Follow us on
-            <a target="_blank" href="https://twitter.com/VT_Hacks">Twitter</a>,
-            <a target="_blank" href="https://www.instagram.com/vthacks"
-              >Instagram</a
-            >, and
-            <a target="_blank" href="https://www.facebook.com/vthacks/"
-              >Facebook</a
-            >
-            to receive hackathon updates and access to giveaways
-          </li>
-        </ol>
+  <div>
+    <div id="links-section" class="section is-flex">
+      <LinksSection id="links" />
+    </div>
+    <div id="registration-section" class="section is-flex">
+      <div id="registration-content" class="is-flex">
+        <h1 class="title is-1 is-spaced">
+          Register Now And Get Ready for VTHacks 8
+        </h1>
+        <h1 class="subtitle is-4">
+          VTHacks swag will be given out on a first come, first serve basis, so
+          make sure to register early.
+        </h1>
+        <div class="content">
+          <ol type="1">
+            <li class="is-size-4">
+              Register as an individual
+              <a
+                target="_blank"
+                href="https://docs.google.com/forms/d/1A_J-99egPZl8tFF_r00v1Y81zZYgAbvoOdlz7a2Y3aA/edit"
+                rel="noreferrer"
+                >here</a
+              >
+            </li>
+            <li class="is-size-4">
+              Register your team
+              <a
+                target="_blank"
+                href="https://docs.google.com/forms/d/1A_J-99egPZl8tFF_r00v1Y81zZYgAbvoOdlz7a2Y3aA/edit"
+                rel="noreferrer"
+                >here</a
+              >
+              (if you don't have one yet check the
+              <a target="_blank" href="https://discord.gg/qRGP9RmPCc"
+                >#team-formation</a
+              >
+              channel in the VTHacks Discord Server)
+            </li>
+            <li class="is-size-4">
+              Join the VTHacks
+              <a
+                target="_blank"
+                href="https://discord.gg/qRGP9RmPCc"
+                rel="noreferrer"
+                >Discord Server</a
+              >
+              for real-time updates from our organizers and to virtually
+              navigate on the day of the event
+            </li>
+            <li class="is-size-4">
+              Follow us on
+              <a target="_blank" href="https://twitter.com/VT_Hacks">Twitter</a
+              >,
+              <a target="_blank" href="https://www.instagram.com/vthacks"
+                >Instagram</a
+              >, and
+              <a target="_blank" href="https://www.facebook.com/vthacks/"
+                >Facebook</a
+              >
+              to receive hackathon updates and access to giveaways
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
-    <LinksSection id="links" class="level-item" />
   </div>
 </template>
 
@@ -93,6 +98,12 @@ export default {
 #registration-section {
   div {
     padding: 1vw;
+  }
+}
+
+#links-section {
+  div {
+    padding: 50vw;
   }
 }
 

@@ -2,35 +2,30 @@
   <div id="links-section">
     <div class="link-content">
       <div class="actions">
-        <div>
-          <figure class="image is-1by1">
-            <img src="../assets/yak.png" />
-          </figure>
-          <a
-            id="devpost-button"
-            href="https://vthacks7.devpost.com/"
-            target="_blank"
-            >Devpost</a
-          >
+        <div class="devpost yak">
+          <a href="https://vthacks7.devpost.com/" target="_blank">
+            <figure class="image is-1by1">
+              <img src="../assets/yak.png" />
+            </figure>
+          </a>
         </div>
-        <div>
-          <a
-            id="livesite-button"
-            href="https://vt-hacks-live-site.netlify.app/"
-            target="_blank"
-            >Live Site</a
-          >
+        <div class="livesite yak">
+          <a href="https://vt-hacks-live-site.netlify.app/" target="_blank">
+            <figure class="image is-1by1">
+              <img src="../assets/yak.png" />
+            </figure>
+          </a>
         </div>
-        <div>
+        <!-- <div>
           <b-button
             label="More Info"
             type="is-primary"
             size="is-medium"
             @click="isMapModalActive = true"
           />
-        </div>
+        </div> -->
         <div class="map-modal-container">
-          <b-modal v-model="isMapModalActive">
+          <!-- <b-modal v-model="isMapModalActive">
             <img src="https://buefy.org/static/img/placeholder-1280x960.png" />
             <div class="overlay">
               <iframe
@@ -38,7 +33,7 @@
                 src="https://docs.google.com/document/u/1/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true"
               />
             </div>
-          </b-modal>
+          </b-modal> -->
         </div>
       </div>
     </div>
@@ -117,6 +112,8 @@ export default {
 .actions {
   padding: 20px;
   text-align: left;
+  width: 200px;
+  height: 200px;
 }
 
 #devpost-button {
@@ -127,22 +124,34 @@ export default {
   }
 }
 
+.yak {
+  margin: 20px;
+}
+.devpost.yak {
+  transform: translate3d(60px, -70px, 0);
+  transform: rotate(20deg);
+}
+.livesite.yak {
+  transform: translate3d(150px, 0, 0);
+  transform: rotate(20deg);
+}
+
 #livesite-button {
   color: $peach;
 }
 
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 90%;
-  max-height: 90%;
-  width: inherit;
-  height: 100%;
-  font-size: 50px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
+// .overlay {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   max-width: 90%;
+//   max-height: 90%;
+//   width: inherit;
+//   height: 100%;
+//   font-size: 50px;
+//   transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+// }
 
 #information {
   padding: 15px;
