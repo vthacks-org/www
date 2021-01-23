@@ -7,10 +7,10 @@
           <b-collapse
             v-for="(collapse, index) of general"
             :key="index"
-            class="card"
+            class="card b-collapse"
             animation="slide"
-            :open="isOpen == index"
-            @open="isOpen = index"
+            :open="isOpenG == index"
+            @open="isOpenG = index"
           >
             <template #trigger="props">
               <div class="card-header" role="button">
@@ -25,20 +25,20 @@
             </template>
             <div class="card-content">
               <div class="content">
-                {{ collapse.text }}
+                <span v-html="collapse.text"></span>
               </div>
             </div>
           </b-collapse>
         </div>
 
-        <div id="virtual" class="is-flex">
+        <div id="virtual">
           <b-collapse
             v-for="(collapse, index) of virtual"
             :key="index"
-            class="card"
+            class="card b-collapse"
             animation="slide"
-            :open="isOpen == index"
-            @open="isOpen = index"
+            :open="isOpenV == index"
+            @open="isOpenV = index"
           >
             <template #trigger="props">
               <div class="card-header" role="button">
@@ -68,7 +68,8 @@ export default {
   name: 'AboutSection',
   data() {
     return {
-      isOpen: 0,
+      isOpenG: 0,
+      isOpenV: 0,
       general: [
         {
           title: `What is VTHacks?`,
@@ -84,7 +85,7 @@ export default {
         },
         {
           title: `Where is the schedule?`,
-          text: `You can find our schedule on our livesite, along with other great bits of information.`,
+          text: `You can find our schedule on our <a target="_blank" href="live.vthacks.com">livesite</a>, along with other great bits of information.`,
         },
         {
           title: `Do I need to know how to program?`,
@@ -133,11 +134,17 @@ export default {
   }
 }
 
+.card-header-title {
+  font-size: 1.2em;
+  font-weight: initial;
+}
+
+.content {
+  color: $midnight;
+}
+
 .is-flex {
-  margin: 3vw 1.5vw 1px;
-  justify-content: center;
-  div {
-    width: 50%;
-  }
+  margin: 3vw;
+  justify-content: space-evenly;
 }
 </style>
