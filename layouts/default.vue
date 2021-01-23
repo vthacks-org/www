@@ -10,7 +10,7 @@
       <template slot="brand">
         <b-navbar-item>
           <span class="navbar-item">
-            <img id="brand-logo" src="~static/icon.svg" />
+            <img id="brand-logo" src="~assets/alt_logo.svg" />
           </span>
         </b-navbar-item>
       </template>
@@ -60,7 +60,7 @@ export default {
         },
         {
           name: 'Getting Started',
-          id: 'links-section',
+          id: 'registration-section',
         },
         {
           name: 'About',
@@ -116,11 +116,6 @@ $navcolor: rgba(0, 0, 0, 0.8);
 :root {
   --navHeight: 70px;
 }
-@media (max-width: 720px) {
-  :root {
-    --navHeight: 40px;
-  }
-}
 
 #brand-logo {
   max-height: unset;
@@ -143,14 +138,12 @@ $navcolor: rgba(0, 0, 0, 0.8);
 .navbar-burger {
   color: $text-primary;
   cursor: pointer;
-  padding: 5px 15px;
   font-size: var(--navHeight);
 }
 
 .navbar-end {
   .navbar-item {
     cursor: pointer;
-    padding: 5px 15px;
     span {
       font-family: $bnr22;
       font-size: calc(var(--navHeight) / 3);
@@ -170,6 +163,40 @@ $navcolor: rgba(0, 0, 0, 0.8);
   &.is-active {
     background-color: $navcolor;
     border-radius: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --navHeight: 40px;
+  }
+
+  .navbar {
+    height: var(--navHeight);
+    padding: 0 20vw 0 0;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    right: 6em;
+    width: auto;
+  }
+
+  .navbar-item {
+    cursor: pointer;
+    span {
+      padding: 0 5em;
+      font-family: $bnr22;
+      font-size: calc(var(--navHeight) / 6);
+      color: $text-primary;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    height: var(--navHeight);
+    padding: 0 5em 0 0;
   }
 }
 </style>

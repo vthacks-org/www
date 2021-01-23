@@ -108,8 +108,8 @@ export default {
 }
 
 @media (max-width: $min-width) {
-  div {
-    background: center;
+  .level {
+    flex-direction: column;
   }
 }
 </style>

@@ -8,9 +8,6 @@
       <div id="blankSpace1"></div>
       <RegistrationSection />
       <div id="blankSpace2"></div>
-      <div id="treesTop" class="trees" alt="Forest">
-        <div><div></div></div>
-      </div>
       <AboutSection />
       <div id="treesBottom" class="trees" alt="Forest">
         <div><div></div></div>
@@ -60,6 +57,7 @@ export default {
       const content = document.getElementById('content')
       const mount = document.getElementById('svgMountain')
       const registration = document.getElementById('registration-section')
+      const sponsor = document.getElementById('sponsors-section')
 
       // set trees
       let height =
@@ -71,9 +69,7 @@ export default {
       document.getElementById('blankSpace2').style.paddingTop = `${dist}px`
 
       // set mountain
-      height =
-        content.offsetHeight - // mid point-ish
-        registration.offsetTop
+      height = content.offsetHeight - sponsor.offsetHeight
       mount.setAttribute('height', height)
       if (content.offsetWidth < 1920) {
         mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
@@ -160,10 +156,6 @@ export default {
   z-index: 2;
 }
 
-#treesBottom {
-  background: url('~assets/mount_trees.svg') $midnight;
-}
-
 .trees {
   height: 600px;
   width: 100%;
@@ -178,7 +170,7 @@ export default {
       height: 680px;
       background-image: url('~assets/mount_trees.svg');
       background-repeat: repeat-x;
-      background-position: -13% 0%;
+      background-position: -300px 0%;
     }
   }
 }

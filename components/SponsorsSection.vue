@@ -1,5 +1,5 @@
 <template>
-  <section id="sponsors-section">
+  <section id="sponsors-section" class="section">
     <div class="content has-text-centered">
       <h1 class="title is-1">Sponsors</h1>
     </div>

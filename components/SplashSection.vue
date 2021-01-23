@@ -55,8 +55,7 @@ export default {
   }
 
   #sun-image {
-    width: 30%;
-    z-index: -13;
+    display: none;
   }
 
   #details {
