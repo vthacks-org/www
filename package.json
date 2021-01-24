@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "fix": "eslint --ext .js,.vue --fix src",
-    "build": "node build/build.js"
+    "generate": "node dist/build.js"
   },
   "dependencies": {
     "compression-webpack-plugin": "^1.1.3",
