@@ -7,7 +7,7 @@
     <LinksSection></LinksSection>
     <AboutSection></AboutSection>
     <ScheduleSection></ScheduleSection>
-    <MapSection></MapSection>
+    <!-- <MapSection></MapSection> -->
     <SponsorsSection></SponsorsSection>
     <FooterSection></FooterSection>
   </div>
@@ -21,7 +21,7 @@ import DetailsSection from './DetailsSection.vue';
 import LinksSection from './LinksSection.vue';
 import AboutSection from './AboutSection.vue';
 import ScheduleSection from './ScheduleSection.vue';
-import MapSection from './MapSection.vue';
+// import MapSection from './MapSection.vue';
 import SponsorsSection from './SponsorsSection.vue';
 import FooterSection from './FooterSection.vue';
 
@@ -35,7 +35,7 @@ export default {
     LinksSection,
     AboutSection,
     ScheduleSection,
-    MapSection,
+    // MapSection,
     SponsorsSection,
     FooterSection,
   },
