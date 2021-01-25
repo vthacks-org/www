@@ -103,7 +103,7 @@ export default {
     },
     register() {
       window.open(
-        'https://docs.google.com/forms/d/1A_J-99egPZl8tFF_r00v1Y81zZYgAbvoOdlz7a2Y3aA'
+        'https://docs.google.com/forms/d/e/1FAIpQLSdf8x1PAa2lbNJt68gEBBkZGEEO_26y1prH46RvYN2CCLsfwg/viewform?usp=sf_link'
       )
     },
   },
