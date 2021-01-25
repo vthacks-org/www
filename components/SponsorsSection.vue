@@ -33,6 +33,8 @@ export default {
 @import '../sass/theme';
 
 #sponsors-section {
+  z-index: -1;
+  margin-top: 4vw;
   background: $midnight;
   width: 100%;
   div {
