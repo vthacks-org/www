@@ -90,3 +90,6 @@ sw.*
 *.swp
 
 static/sw.js
+
+package-lock.json
+/.vscode
