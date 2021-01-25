@@ -19,6 +19,13 @@
           </figure>
         </a>
       </div>
+      <div class="tile is-child is-flex flex-center">
+        <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank">
+          <figure class="image">
+            <img class="sponsor-img" alt="stickermule logo" src="~assets/sponsors/sticker-mule-logo-dark.png" />
+          </figure>
+        </a>
+      </div>
     </div>
   </section>
 </template>
