@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div id="links-section" class="section is-flex">
-      <LinksSection id="links" />
-    </div>
     <div id="registration-section" class="section is-flex">
+      <LinksSection id="links" />
       <div id="registration-content" class="is-flex">
         <h1 class="title is-1 is-spaced">
           Register Now And Get Ready for VTHacks 8

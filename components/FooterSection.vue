@@ -54,6 +54,11 @@
                   >VTHacks V</a
                 >
               </div>
+              <div class="dropdown-item">
+                <a href="https://archive7.vthacks.com" class="link"
+                  >VTHacks 7</a
+                >
+              </div>
             </div>
           </div>
         </div>
