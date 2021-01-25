@@ -1,9 +1,13 @@
 <template>
-  <section id="about-section" class="section">
+  <section id="about-section">
+    <div id="treesBottom" class="trees" alt="Forest">
+      <div><div></div></div>
+    </div>
     <div id="about-content" class="content has-text-centered">
       <h1 class="title is-1">F.A.Q.</h1>
-      <div class="is-flex">
-        <div id="general">
+      <div class="is-flex section">
+        <div id="general" class="dropdown">
+          <h3 class="subtitle is-3">General</h3>
           <b-collapse
             v-for="(collapse, index) of general"
             :key="index"
@@ -25,13 +29,15 @@
             </template>
             <div class="card-content">
               <div class="content">
+                <!-- eslint-disable-next-line -->
                 <span v-html="collapse.text"></span>
               </div>
             </div>
           </b-collapse>
         </div>
 
-        <div id="virtual">
+        <div id="virtual" class="dropdown">
+          <h3 class="subtitle is-3">Virtual</h3>
           <b-collapse
             v-for="(collapse, index) of virtual"
             :key="index"
@@ -59,6 +65,9 @@
           </b-collapse>
         </div>
       </div>
+      <div id="treesBottom" class="trees" alt="Forest">
+        <div><div></div></div>
+      </div>
     </div>
   </section>
 </template>
@@ -68,8 +77,8 @@ export default {
   name: 'AboutSection',
   data() {
     return {
-      isOpenG: 0,
-      isOpenV: 0,
+      isOpenG: -1,
+      isOpenV: -1,
       general: [
         {
           title: `What is VTHacks?`,
@@ -129,9 +138,22 @@ export default {
 @import '../sass/theme';
 
 #about-content {
-  .title {
-    color: $peach;
-  }
+  background-color: #19112a;
+}
+
+.title {
+  color: $peach;
+}
+
+.subtitle {
+  color: $day;
+}
+
+.dropdown {
+  margin: 3vw;
+  width: 25%;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .card-header-title {
@@ -145,6 +167,66 @@ export default {
 
 .is-flex {
   margin: 3vw;
+}
+
+.section {
   justify-content: space-evenly;
+}
+
+.trees {
+  height: 600px;
+  width: 100%;
+  background: url('~assets/mount_trees.svg'),
+    linear-gradient(0deg, rgba(25, 17, 42, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: repeat-x;
+  div {
+    height: 650px;
+    background-image: url('~assets/mount_trees.svg');
+    background-repeat: repeat-x;
+    background-position: -33% 0%;
+    div {
+      height: 680px;
+      background-image: url('~assets/mount_trees.svg');
+      background-repeat: repeat-x;
+      background-position: -300px 0%;
+    }
+  }
+}
+
+@media (max-width: $min-width) {
+  .dropdown {
+    width: 93%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .trees {
+    height: 300px;
+    width: 100%;
+    background: url('~assets/mount_trees.svg'),
+      linear-gradient(
+        0deg,
+        rgba(25, 17, 42, 1) 0%,
+        rgba(26, 19, 62, 1) 50%,
+        rgba(28, 21, 87, 0) 70%
+      );
+    background-repeat: repeat-x;
+    div {
+      height: 320px;
+      background-image: url('~assets/mount_trees.svg');
+      background-repeat: repeat-x;
+      background-position: -33% 0%;
+      div {
+        height: 380px;
+        background-image: url('~assets/mount_trees.svg');
+        background-repeat: repeat-x;
+        background-position: -300px 0%;
+      }
+    }
+  }
 }
 </style>

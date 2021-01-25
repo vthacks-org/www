@@ -3,10 +3,10 @@
     <div id="registration-section" class="section is-flex">
       <LinksSection id="links" />
       <div id="registration-content" class="is-flex">
-        <h1 class="title is-1 is-spaced">
+        <h1 class="title is-1 is-spaced has-text-centered">
           Register Now And Get Ready for VTHacks 8
         </h1>
-        <h1 class="subtitle is-4">
+        <h1 class="subtitle is-4 has-text-centered">
           VTHacks swag will be given out on a first come, first serve basis, so
           make sure to register early.
         </h1>
@@ -84,8 +84,12 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
+#links {
+  width: 30%;
+}
+
 #registration-content {
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
 
   .title {
@@ -96,12 +100,6 @@ export default {
 #registration-section {
   div {
     padding: 1vw;
-  }
-}
-
-#links-section {
-  div {
-    padding: 50vw;
   }
 }
 

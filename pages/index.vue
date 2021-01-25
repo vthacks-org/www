@@ -9,9 +9,6 @@
       <RegistrationSection />
       <div id="blankSpace2"></div>
       <AboutSection />
-      <div id="treesBottom" class="trees" alt="Forest">
-        <div><div></div></div>
-      </div>
       <SponsorsSection />
       <FooterSection />
     </span>
@@ -44,6 +41,14 @@ export default {
       sunsetI: [83, 40, 43, 1],
       sunsetF: [66, 13, 48, 1],
       night: [34, 13, 51, 1],
+    }
+  },
+  head() {
+    return {
+      script: [
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
+        { src: 'https://use.fontawesome.com/releases/v5.14.0/js/all.js' },
+      ],
     }
   },
   beforeMount() {
@@ -105,14 +110,6 @@ export default {
       )`
     },
   },
-  head() {
-    return {
-      script: [
-        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
-        { src: 'https://use.fontawesome.com/releases/v5.14.0/js/all.js' },
-      ],
-    }
-  },
   beforeDestroyed() {
     window.removeEventListener('scroll', this.handleScroll)
   },
@@ -156,36 +153,8 @@ export default {
   z-index: 2;
 }
 
-.trees {
-  height: 600px;
-  width: 100%;
-  background-image: url('~assets/mount_trees.svg');
-  background-repeat: repeat-x;
-  div {
-    height: 650px;
-    background-image: url('~assets/mount_trees.svg');
-    background-repeat: repeat-x;
-    background-position: -33% 0%;
-    div {
-      height: 680px;
-      background-image: url('~assets/mount_trees.svg');
-      background-repeat: repeat-x;
-      background-position: -300px 0%;
-    }
-  }
-}
-
 .zBox {
   position: absolute;
   width: 100%;
-}
-
-@media (max-width: $min-width) {
-  .trees {
-    z-index: 3;
-    height: 300px;
-    width: 100%;
-    background-image: url('~assets/mount_trees.svg');
-  }
 }
 </style>

@@ -23,9 +23,9 @@
             size="is-medium"
             @click="isMapModalActive = true"
           />
-        </div> -->
+        </div>
         <div class="map-modal-container">
-          <!-- <b-modal v-model="isMapModalActive">
+          <b-modal v-model="isMapModalActive">
             <img src="https://buefy.org/static/img/placeholder-1280x960.png" />
             <div class="overlay">
               <iframe
@@ -33,8 +33,8 @@
                 src="https://docs.google.com/document/u/1/d/e/2PACX-1vSQ-pK5Bgki80dO3etQ11GLUt_6cv4oSJSt8iBN8YUxqrQkLyHHCOTg8k_iJ1NvPoq76WuC2-kQQNO8/pub?embedded=true"
               />
             </div>
-          </b-modal> -->
-        </div>
+          </b-modal>
+        </div> -->
       </div>
     </div>
     <!-- <div class="links-content">
