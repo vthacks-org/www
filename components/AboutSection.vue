@@ -94,7 +94,7 @@ export default {
         },
         {
           title: `Where is the schedule?`,
-          text: `You can find our schedule on our <a target="_blank" href="live.vthacks.com">livesite</a>, along with other great bits of information.`,
+          text: `You can find our schedule on our <a target="_blank" href="https://live.vthacks.com">livesite</a>, along with other great bits of information.`,
         },
         {
           title: `Do I need to know how to program?`,
@@ -186,7 +186,13 @@ export default {
     background-position: -33% 0%;
     div {
       height: 680px;
-      background-image: url('~assets/mount_trees.svg');
+      background-image: url('~assets/mount_trees.svg'),
+        linear-gradient(
+          0deg,
+          rgba(25, 17, 42, 1) 0%,
+          rgba(26, 17, 42, 1) 30%,
+          rgba(28, 21, 87, 0) 60%
+        );
       background-repeat: repeat-x;
       background-position: -300px 0%;
     }
@@ -211,8 +217,8 @@ export default {
       linear-gradient(
         0deg,
         rgba(25, 17, 42, 1) 0%,
-        rgba(26, 19, 62, 1) 50%,
-        rgba(28, 21, 87, 0) 70%
+        rgba(26, 17, 42, 1) 30%,
+        rgba(28, 21, 87, 0) 60%
       );
     background-repeat: repeat-x;
     div {

@@ -8,21 +8,33 @@
       <div class="tile is-child is-flex flex-center">
         <a href="https://www.echoar.xyz/" target="_blank">
           <figure class="image">
-            <img class="sponsor-img" src="~assets/sponsors/echoAR.png" />
+            <img
+              class="sponsor-img"
+              alt="echoAR logo"
+              src="~assets/sponsors/echoAR.png"
+            />
           </figure>
         </a>
       </div>
       <div class="tile is-child is-flex flex-center">
         <a href="https://balsamiq.com/index.html" target="_blank">
           <figure class="image">
-            <img class="sponsor-img" src="~assets/sponsors/balsamiq.svg" />
+            <img
+              class="sponsor-img"
+              alt="balsamiq logo"
+              src="~assets/sponsors/balsamiq.svg"
+            />
           </figure>
         </a>
       </div>
       <div class="tile is-child is-flex flex-center">
         <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank">
           <figure class="image">
-            <img class="sponsor-img" alt="stickermule logo" src="~assets/sponsors/sticker-mule-logo-dark.png" />
+            <img
+              class="sponsor-img"
+              alt="stickermule logo"
+              src="~assets/sponsors/sticker-mule-logo-dark.png"
+            />
           </figure>
         </a>
       </div>
@@ -41,7 +53,7 @@ export default {
 
 #sponsors-section {
   z-index: -1;
-  margin-top: 4vw;
+  margin-top: 3vw;
   background: $midnight;
   width: 100%;
   div {
@@ -64,5 +76,20 @@ export default {
 
 .is-child {
   padding: 30px;
+}
+
+@media (max-width: $min-width) {
+  #sponsors-section {
+    z-index: -1;
+    margin-top: 0%;
+    background: $midnight;
+    width: 100%;
+    div {
+      h1 {
+        color: $peach;
+        font-family: $bnr22;
+      }
+    }
+  }
 }
 </style>
