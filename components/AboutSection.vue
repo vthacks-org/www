@@ -108,7 +108,7 @@ export default {
       virtual: [
         {
           title: `How does a virtual hackathon work?`,
-          text: `You should it expect the same setup of a normal hackthon: collaborations with teammates, exciting events, gaming tournaments. The only change is it's from the comfort of your home!`,
+          text: `You should it expect the same setup of a normal hackathon: collaborations with teammates, exciting events, gaming tournaments. The only change is it's from the comfort of your home!`,
         },
         {
           title: `Can I use my personal hardware?`,
@@ -116,11 +116,11 @@ export default {
         },
         {
           title: `What if my internet connection is slow?`,
-          text: `We suggest you download any SDKs or developer tools prior to the event. But, besides that, if you can stream a video you can stream a hacathon. ;)`,
+          text: `We suggest you download any SDKs or developer tools prior to the event. But, besides that, if you can stream a video you can stream a hackathon. ;)`,
         },
         {
           title: `Will there be swag and prizes?`,
-          text: `Absolutely! We have developed a system specifically to award involment and particiapation in VTHacks. If you make something fun and post it, we promise we will make something fun then ship it.`,
+          text: `Absolutely! We have developed a system specifically to award involvement and particiapation in VTHacks. If you make something fun and post it, we promise we will make something fun then ship it.`,
         },
         {
           title: `Can I use _____ to connect with my teammates instead of discord?`,
