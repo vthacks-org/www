@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div id="registration-section" class="section is-flex">
+  <div id="registration-section">
+    <div class="section is-flex">
       <LinksSection id="links" />
       <div id="registration-content" class="is-flex">
         <h1 class="title is-1 is-spaced has-text-centered">
@@ -98,6 +98,9 @@ export default {
 }
 
 #registration-section {
+  background-image: url('~assets/cloud_desktop.svg');
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
   div {
     padding: 1vw;
   }
@@ -105,6 +108,12 @@ export default {
 
 @media (max-width: $min-width) {
   #registration-section {
+    background-image: url('~assets/cloud_mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+  }
+
+  .section {
     flex-direction: column;
   }
 }

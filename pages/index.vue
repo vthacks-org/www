@@ -74,7 +74,8 @@ export default {
       document.getElementById('blankSpace2').style.paddingTop = `${dist}px`
 
       // set mountain
-      height = content.offsetHeight - sponsor.offsetHeight
+      height =
+        content.offsetHeight - sponsor.offsetHeight - content.offsetHeight * 0.2
       mount.setAttribute('height', height)
       if (content.offsetWidth < 1920) {
         mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
