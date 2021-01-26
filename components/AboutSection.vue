@@ -59,7 +59,8 @@
             </template>
             <div class="card-content">
               <div class="content">
-                {{ collapse.text }}
+                <!-- eslint-disable-next-line -->
+                <span v-html="collapse.text"></span>
               </div>
             </div>
           </b-collapse>
@@ -82,11 +83,11 @@ export default {
       general: [
         {
           title: `What is VTHacks?`,
-          text: `It's an annual event where students of local schools come together at Virginia Tech and spend 36 hours working on teams of up to four people to create and build a project they are passionate about.`,
+          text: `It's an annual event where participants from around the globe come together and spend 36 hours working on teams of up to four people to create a project they are passionate about.`,
         },
         {
           title: `How much does it cost?`,
-          text: `The event is completely free for all registered participants. Additionally we will be awarding prizes and swag to participants`,
+          text: `The event is completely free for all registered participants. Additionally, we will be awarding prizes and swag to eligible participants on a first come first served basis pending international shipping constraints.`,
         },
         {
           title: `How big can each team be?`,
@@ -112,7 +113,7 @@ export default {
         },
         {
           title: `Can I use my personal hardware?`,
-          text: `Of course! This year we unfortunately cannot supply participants with rented gear, but we encourage hackers to use anything they find valuable.`,
+          text: `Of course! This year we unfortunately cannot supply participants with rented gear, but we encourage hackers to use anything they find valuable. If you don't have any breadboards lying around you are welcome to make use of hardware emulators as well!`,
         },
         {
           title: `What if my internet connection is slow?`,
@@ -120,11 +121,11 @@ export default {
         },
         {
           title: `Will there be swag and prizes?`,
-          text: `Absolutely! We have developed a system specifically to award involvement and particiapation in VTHacks. If you make something fun and post it, we promise we will make something fun then ship it.`,
+          text: `Absolutely! We have developed a system specifically to award involvement and participation in VTHacks. If you make something fun and submit it to Devpost, we will make something fun and ship it on a first come first served basis, pending international shipping constraints.`,
         },
         {
           title: `Can I use _____ to connect with my teammates instead of discord?`,
-          text: `You are welcome to use any platform you are familar with, however if hackers want to engage with mentors and sponsors we recommend using the discord voice channels we supply.`,
+          text: `You are welcome to use any platform you are familar with, however if hackers want to engage with mentors and sponsors we recommend using the <a target"_blank" href="https://discord.gg/qRGP9RmPCc">discord</a> voice channels we supply.`,
         },
       ],
     }
