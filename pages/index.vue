@@ -145,6 +145,7 @@ export default {
 }
 
 #svgMountain {
+  margin-top: 20%;
   position: absolute;
   z-index: -1;
 }
