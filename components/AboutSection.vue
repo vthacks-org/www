@@ -178,7 +178,7 @@ export default {
   height: 600px;
   width: 100%;
   background: url('~assets/mount_trees.svg'),
-    linear-gradient(0deg, rgba(25, 17, 42, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    linear-gradient(0deg, rgba(25, 17, 42, 1) 0%, rgba(255, 255, 255, 0) 85%);
   background-repeat: repeat-x;
   div {
     height: 650px;
@@ -195,7 +195,7 @@ export default {
           rgba(255, 255, 255, 0) 60%
         );
       background-repeat: repeat-x;
-      background-position: -300px 0%;
+      background-position: -66% 0%;
     }
   }
 }

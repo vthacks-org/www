@@ -1,7 +1,7 @@
 <template>
   <section id="details-section" class="section">
     <div id="detail-content" class="is-flex has-text-centered">
-      <h1 class="title is-1">VTHacks 8</h1>
+      <h1 class="title is-1">Create for the Community</h1>
       <p class="is-size-5">Feb 26-28, 2021</p>
       <p class="is-size-5">
         {{ statusMessage }}

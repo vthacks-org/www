@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <div id="gradient" class="zBox"></div>
-    <span id="content" class="zBox">
+    <span id="nuxt-content" class="zBox">
       <MountSVG id="svgMountain" class="zBox" />
       <SplashSection />
       <DetailsSection id="details" />
@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     calculateSVGHeight() {
-      const content = document.getElementById('content')
+      const content = document.getElementById('nuxt-content')
       const mount = document.getElementById('svgMountain')
       const registration = document.getElementById('registration-section')
       const sponsor = document.getElementById('sponsors-section')
@@ -89,8 +89,9 @@ export default {
       ).style.height = `${content.offsetHeight}px`
     },
     handleScroll() {
+      const content = document.getElementById('nuxt-content')
       const mBack = document.getElementById('MountainBack')
-      const scrollPercent = (window.scrollY / window.scrollMaxY) * 3
+      const scrollPercent = (window.scrollY / content.offsetHeight) * 3
       let backColor
       if (scrollPercent < 1) {
         backColor = this.LerpRGB(this.day, this.sunsetI, scrollPercent)
@@ -151,7 +152,7 @@ export default {
   z-index: -1;
 }
 
-#content {
+#nuxt-content {
   z-index: 2;
 }
 
