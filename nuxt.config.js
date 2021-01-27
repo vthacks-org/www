@@ -41,6 +41,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://github.com/nuxt-community/svg-module#nuxtjssvg
     '@nuxtjs/svg',
+    // https://google-analytics.nuxtjs.org/
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -60,6 +62,16 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  // buefy options
+  buefy: {
+    materialDesignIcons: false,
+  },
+
+  // g-analytics options
+  googleAnalytics: {
+    id: 'process.env.GANALYTICS_ID',
+  },
 
   // pwa icon options
   pwa: {
