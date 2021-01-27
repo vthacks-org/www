@@ -12,7 +12,12 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'title', name: 'title', content: 'VTHacks 8' },
-      { hid: 'description', name: 'description', content: 'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
+      },
       { hid: 'image', name: 'image', content: '~static/sitemeta.svg' },
       { hid: 'url', name: 'url', content: 'https://vthacks.com' },
     ],
@@ -60,8 +65,9 @@ export default {
   pwa: {
     manifest: {
       name: 'VTHacks 8',
-      description: 'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
-      background_color:  '#F89B6A'
-    }
-  }
+      description:
+        'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
+      background_color: '#F89B6A',
+    },
+  },
 }
