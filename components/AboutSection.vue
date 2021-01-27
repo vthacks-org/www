@@ -1,6 +1,6 @@
 <template>
   <section id="about-section">
-    <div id="treesBottom" class="trees" alt="Forest">
+    <div class="trees" alt="Forest">
       <div><div></div></div>
     </div>
     <div id="about-content" class="content has-text-centered">
@@ -66,8 +66,8 @@
           </b-collapse>
         </div>
       </div>
-      <div id="treesBottom" class="trees" alt="Forest">
-        <div><div></div></div>
+      <div class="trees" alt="Forest">
+        <div><div id="treesBottom"></div></div>
       </div>
     </div>
   </section>
@@ -178,7 +178,7 @@ export default {
   height: 600px;
   width: 100%;
   background: url('~assets/mount_trees.svg'),
-    linear-gradient(0deg, rgba(25, 17, 42, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    linear-gradient(0deg, rgba(25, 17, 42, 1) 0%, rgba(255, 255, 255, 0) 85%);
   background-repeat: repeat-x;
   div {
     height: 650px;
@@ -187,17 +187,27 @@ export default {
     background-position: -33% 0%;
     div {
       height: 680px;
-      background-image: url('~assets/mount_trees.svg'),
+      background: url('~assets/mount_trees.svg'),
         linear-gradient(
           0deg,
           rgba(25, 17, 42, 1) 0%,
-          rgba(26, 17, 42, 1) 30%,
-          rgba(28, 21, 87, 0) 60%
+          rgba(25, 17, 42, 1) 30%,
+          rgba(255, 255, 255, 0) 60%
         );
       background-repeat: repeat-x;
-      background-position: -300px 0%;
+      background-position: -66% 0%;
     }
   }
+}
+
+#treesBottom {
+  background: url('~assets/mount_trees.svg'),
+    linear-gradient(
+      0deg,
+      rgba(34, 13, 51, 1) 0%,
+      rgba(34, 13, 51, 1) 13%,
+      rgba(28, 21, 87, 0) 25%
+    );
 }
 
 @media (max-width: $min-width) {
@@ -234,6 +244,16 @@ export default {
         background-position: -300px 0%;
       }
     }
+  }
+
+  #treesBottom {
+    background: url('~assets/mount_trees.svg'),
+      linear-gradient(
+        0deg,
+        rgba(34, 13, 51, 1) 0%,
+        rgba(34, 13, 51, 1) 13%,
+        rgba(28, 21, 87, 0) 25%
+      );
   }
 }
 </style>

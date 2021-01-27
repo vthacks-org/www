@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <div id="registration-section" class="section is-flex">
-      <LinksSection id="links" />
+  <div id="registration-section">
+    <div class="extra-space"></div>
+    <div class="section is-flex">
+      <div id="padded-space" />
       <div id="registration-content" class="is-flex">
         <h1 class="title is-1 is-spaced has-text-centered">
           Register Now And Get Ready for VTHacks 8
@@ -47,6 +48,15 @@
               navigate on the day of the event
             </li>
             <li class="is-size-4">
+              Create an account on
+              <a target="_blank" href="https://vthacks7.devpost.com/"
+                >devpost</a
+              >
+              (where you will submit [new devpost to be announced]) and check
+              out the
+              <a href="https://live.vthacks.com/">livesite</a> for the schedule
+            </li>
+            <li class="is-size-4">
               Follow us on
               <a target="_blank" href="https://twitter.com/VT_Hacks">Twitter</a
               >,
@@ -62,18 +72,29 @@
         </div>
       </div>
     </div>
+    <div class="extra-space"></div>
   </div>
 </template>
 
 <script>
-import LinksSection from '~/components/LinksSection.vue'
-
 export default {
   name: 'RegistrationSection',
-  components: [LinksSection],
   methods: {
     register() {
       window.open('https://register.vthacks.com')
+    },
+    mounted() {
+      this.calcCloud()
+    },
+    calcCloud() {
+      height =
+        content.offsetHeight - sponsor.offsetHeight - content.offsetHeight * 0.2
+      mount.setAttribute('height', height)
+      if (content.offsetWidth < 1920) {
+        mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
+      } else {
+        mount.setAttribute('viewBox', `0 0 1920 ${height}`)
+      }
     },
   },
 }
@@ -84,7 +105,11 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
-#links {
+li {
+  color: $night;
+}
+
+#padded-space {
   width: 30%;
 }
 
@@ -93,19 +118,65 @@ export default {
   flex-direction: column;
 
   .title {
-    color: $peach;
+    color: $midnight;
   }
 }
 
 #registration-section {
+  background-image: url('~assets/cloud_desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 0%;
+  padding: 2vw;
   div {
     padding: 1vw;
   }
 }
 
+.subtitle {
+  color: $night;
+}
+
+.extra-space {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+@media (max-width: 1920px) {
+  #registration-section {
+    background-image: url('~assets/cloud_desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65% 0%;
+    padding: 2vw;
+    div {
+      padding: 1vw;
+    }
+
+    .section {
+      flex-direction: column;
+    }
+  }
+}
+
 @media (max-width: $min-width) {
   #registration-section {
+    background-image: url('~assets/cloud_mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    padding: 12vw 2vw;
+  }
+
+  #links {
+    display: none;
+  }
+
+  .section {
     flex-direction: column;
+  }
+
+  .extra-space {
+    margin-top: 20vh;
   }
 }
 </style>
