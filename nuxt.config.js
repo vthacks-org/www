@@ -58,6 +58,10 @@ export default {
 
   // pwa icon options
   pwa: {
-    icon: {},
-  },
+    manifest: {
+      name: 'VTHacks 8',
+      description: 'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
+      background_color:  '#F89B6A'
+    }
+  }
 }
