@@ -28,10 +28,19 @@
               </div>
             </template>
             <div class="card-content">
-              <div class="content">
-                <!-- eslint-disable-next-line -->
-                <span v-html="collapse.text"></span>
-              </div>
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <div class="content">
+                      <!-- eslint-disable-next-line -->
+                      <span v-html="collapse.text"></span>
+                    </div>
+                  </div>
+                </div>
+                <figure v-if="collapse.img" class="media-right">
+                  <img class="card-img" :src="collapse.img" />
+                </figure>
+              </article>
             </div>
           </b-collapse>
         </div>
@@ -58,10 +67,19 @@
               </div>
             </template>
             <div class="card-content">
-              <div class="content">
-                <!-- eslint-disable-next-line -->
-                <span v-html="collapse.text"></span>
-              </div>
+              <article class="media">
+                <figure v-if="collapse.img" class="media-left">
+                  <img class="card-img" :src="collapse.img" />
+                </figure>
+                <div class="media-content">
+                  <div class="content">
+                    <div class="content">
+                      <!-- eslint-disable-next-line -->
+                      <span v-html="collapse.text"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
             </div>
           </b-collapse>
         </div>
@@ -74,6 +92,11 @@
 </template>
 
 <script>
+import wallet from '~/assets/wallet.svg'
+import climbinggear from '~/assets/climbinggear.svg'
+import bottle from '~/assets/bottle.svg'
+import trailmix from '~/assets/trailmix.svg'
+import rope from '~/assets/rope.svg'
 export default {
   name: 'AboutSection',
   data() {
@@ -88,6 +111,7 @@ export default {
         {
           title: `How much does it cost?`,
           text: `The event is completely free for all registered participants. Additionally, we will be awarding prizes and swag to eligible participants on a first come first served basis pending international shipping constraints.`,
+          img: wallet,
         },
         {
           title: `How big can each team be?`,
@@ -99,7 +123,8 @@ export default {
         },
         {
           title: `Do I need to know how to program?`,
-          text: `No! We will have workshops specifically designed to teach beginners how to program. Additionally promote hacks that are purely ideoligical. If you can sell us a product or an idea, do that instead.`,
+          text: `No! We will have workshops designed show you the ropes on how to program. Additionally we promote hacks that are purely ideoligical. If you can sell us a product or an idea, do that instead.`,
+          img: rope,
         },
         {
           title: `Any more questions?`,
@@ -109,19 +134,22 @@ export default {
       virtual: [
         {
           title: `How does a virtual hackathon work?`,
-          text: `You should it expect the same setup of a normal hackathon: collaborations with teammates, exciting events, gaming tournaments. The only change is it's from the comfort of your home!`,
+          text: `You should it expect the same setup of a normal hackathon: collaborations with teammates, exciting events, gaming tournaments. The only change is it's from the comfort of your home!\nStock up on snacks!!`,
+          img: trailmix,
         },
         {
           title: `Can I use my personal hardware?`,
           text: `Of course! This year we unfortunately cannot supply participants with rented gear, but we encourage hackers to use anything they find valuable. If you don't have any breadboards lying around you are welcome to make use of hardware emulators as well!`,
+          img: climbinggear,
         },
         {
           title: `What if my internet connection is slow?`,
-          text: `We suggest you download any SDKs or developer tools prior to the event. But, besides that, if you can stream a video you can stream a hackathon. ;)`,
+          text: `We suggest you download any SDKs or developer tools prior to the event. But, besides that, if you can stream a video you can stream a hackathon. &#128521;`,
         },
         {
           title: `Will there be swag and prizes?`,
           text: `Absolutely! We have developed a system specifically to award involvement and participation in VTHacks. If you make something fun and submit it to Devpost, we will make something fun and ship it on a first come first served basis, pending international shipping constraints.`,
+          img: bottle,
         },
         {
           title: `Can I use _____ to connect with my teammates instead of discord?`,
@@ -142,12 +170,18 @@ export default {
   background-color: #19112a;
 }
 
-.title {
-  color: $peach;
+.card-header-title {
+  font-size: 1.2em;
+  font-weight: initial;
 }
 
-.subtitle {
-  color: $day;
+.card-img {
+  height: auto;
+  width: 64px;
+}
+
+.content {
+  color: $midnight;
 }
 
 .dropdown {
@@ -157,21 +191,20 @@ export default {
   flex-direction: column;
 }
 
-.card-header-title {
-  font-size: 1.2em;
-  font-weight: initial;
-}
-
-.content {
-  color: $midnight;
-}
-
 .is-flex {
   margin: 3vw;
 }
 
+.subtitle {
+  color: $day;
+}
+
 .section {
   justify-content: space-evenly;
+}
+
+.title {
+  color: $peach;
 }
 
 .trees {

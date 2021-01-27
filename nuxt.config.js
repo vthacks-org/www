@@ -12,7 +12,12 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'title', name: 'title', content: 'VTHacks 8' },
-      { hid: 'description', name: 'description', content: 'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
+      },
       { hid: 'image', name: 'image', content: '~static/sitemeta.svg' },
       { hid: 'url', name: 'url', content: 'https://vthacks.com' },
     ],
@@ -36,6 +41,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://github.com/nuxt-community/svg-module#nuxtjssvg
     '@nuxtjs/svg',
+    // https://google-analytics.nuxtjs.org/
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -56,12 +63,23 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
+  // buefy options
+  buefy: {
+    materialDesignIcons: false,
+  },
+
+  // g-analytics options
+  googleAnalytics: {
+    id: 'process.env.GANALYTICS_ID',
+  },
+
   // pwa icon options
   pwa: {
     manifest: {
       name: 'VTHacks 8',
-      description: 'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
-      background_color:  '#F89B6A'
-    }
-  }
+      description:
+        'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
+      background_color: '#F89B6A',
+    },
+  },
 }

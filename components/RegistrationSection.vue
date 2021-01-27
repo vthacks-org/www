@@ -83,19 +83,6 @@ export default {
     register() {
       window.open('https://register.vthacks.com')
     },
-    mounted() {
-      this.calcCloud()
-    },
-    calcCloud() {
-      height =
-        content.offsetHeight - sponsor.offsetHeight - content.offsetHeight * 0.2
-      mount.setAttribute('height', height)
-      if (content.offsetWidth < 1920) {
-        mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
-      } else {
-        mount.setAttribute('viewBox', `0 0 1920 ${height}`)
-      }
-    },
   },
 }
 </script>
