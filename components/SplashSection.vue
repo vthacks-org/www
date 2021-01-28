@@ -50,6 +50,10 @@ export default {
 }
 
 @media (max-width: $min-width) {
+  #splash-container {
+    width: 100%;
+  }
+
   #splash-logo {
     width: 65%;
   }
