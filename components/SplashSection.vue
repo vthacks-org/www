@@ -31,7 +31,7 @@ export default {
 }
 
 #splash-logo {
-  width: 70%;
+  width: 50%;
 }
 
 #sun-image {
