@@ -95,8 +95,8 @@
 import wallet from '~/assets/wallet.svg'
 import climbinggear from '~/assets/climbinggear.svg'
 import bottle from '~/assets/bottle.svg'
-import trailmix from '~/assets/trailmix.svg'
-import rope from '~/assets/rope.svg'
+import trailmix from '~/assets/trailmix.png'
+import rope from '~/assets/rope.png'
 export default {
   name: 'AboutSection',
   data() {
