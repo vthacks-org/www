@@ -1,6 +1,6 @@
 <template>
   <section id="about-section">
-    <div class="trees" alt="Forest">
+    <div v-lazy-load class="trees" alt="Forest">
       <div><div></div></div>
     </div>
     <div id="about-content" class="content has-text-centered">
@@ -84,7 +84,7 @@
           </b-collapse>
         </div>
       </div>
-      <div class="trees" alt="Forest">
+      <div v-lazy-load class="trees" alt="Forest">
         <div><div id="treesBottom"></div></div>
       </div>
     </div>

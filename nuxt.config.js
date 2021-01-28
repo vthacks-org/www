@@ -21,7 +21,11 @@ export default {
       { hid: 'image', name: 'image', content: '~static/sitemeta.svg' },
       { hid: 'url', name: 'url', content: 'https://vthacks.com' },
     ],
-    link: [{ rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' }],
+    link: [
+      { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
+      { rel: 'preconnect', href: 'https://use.fontawesome.com' },
+      { rel: 'preconnect', href: 'https://s3.amazonaws.com' },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

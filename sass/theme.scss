@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
 @font-face {
   font-family: 'BNRoute22';
   src: url('~static/BNRoute22.otf') format('opentype');
+  font-display: swap;
 }
 
-$bnr22: 'BNRoute22', font-VT232;
-$font-mono: 'Inconsolata', monospace;
-$font-round: 'Comfortaa', sans-serif;
+$bnr22: 'BNRoute22',
+font-VT232;
+$font-mono: 'Inconsolata',
+monospace;
+$font-round: 'Comfortaa',
+sans-serif;
 $min-width: 780px;
 
 
