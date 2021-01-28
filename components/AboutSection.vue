@@ -267,12 +267,10 @@ export default {
     background-repeat: repeat-x;
     div {
       height: 320px;
-      background-image: url('~assets/mount_trees.svg');
       background-repeat: repeat-x;
       background-position: -33% 0%;
       div {
         height: 380px;
-        background-image: url('~assets/mount_trees.svg');
         background-repeat: repeat-x;
         background-position: -300px 0%;
       }

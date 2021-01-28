@@ -125,7 +125,7 @@ $navcolor: rgba(0, 0, 0, 0.8);
 
 #registerButton {
   font-family: $bnr22;
-  font-size: calc(var(--navHeight) / 4);
+  font-size: 1rem;
 }
 
 .navbar {
@@ -146,7 +146,7 @@ $navcolor: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     span {
       font-family: $bnr22;
-      font-size: calc(var(--navHeight) / 3);
+      font-size: 1.1rem;
       color: $text-primary;
     }
     &.page-ref {
@@ -180,16 +180,6 @@ $navcolor: rgba(0, 0, 0, 0.8);
     position: absolute;
     right: 6em;
     width: auto;
-  }
-
-  .navbar-item {
-    cursor: pointer;
-    span {
-      padding: 0 5em;
-      font-family: $bnr22;
-      font-size: calc(var(--navHeight) / 6);
-      color: $text-primary;
-    }
   }
 }
 

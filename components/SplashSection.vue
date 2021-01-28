@@ -26,12 +26,8 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
-#details {
-  width: 50%;
-}
-
 #splash-logo {
-  width: 50%;
+  width: 25vw;
 }
 
 #sun-image {
@@ -50,12 +46,8 @@ export default {
 }
 
 @media (max-width: $min-width) {
-  #splash-container {
-    width: 100%;
-  }
-
   #splash-logo {
-    width: 65%;
+    width: 50vw;
   }
 
   #sun-image {

@@ -72,4 +72,10 @@ export default {
   justify-content: center;
   flex-direction: column;
 }
+
+@media (max-width: $min-width) {
+  .title {
+    color: $peach;
+  }
+}
 </style>
