@@ -26,7 +26,7 @@
               Register your team
               <a
                 target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdf8x1PAa2lbNJt68gEBBkZGEEO_26y1prH46RvYN2CCLsfwg/viewform?usp=sf_link"
+                href="https://docs.google.com/forms/d/1gXMv4G6nvOxvxMfGIN8smEB1ei1SVuzgBasZCfq2QIo/viewform?usp=sf_link"
                 rel="noreferrer"
                 >here</a
               >

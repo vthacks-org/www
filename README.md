@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://vt-hacks-www.netlify.app/" target="_blank" >
-    <img alt="VTHacks" src="./assets/logo.webp" width="120" />
+  <a href="https://vthacks.com/" target="_blank" >
+    <img alt="VTHacks" src="./assets/logo.png" width="120" />
   </a>
 </p>
 <h1 align="center">
