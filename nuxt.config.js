@@ -76,7 +76,7 @@ export default {
     googleAnalytics: {
       id: process.env.GANALYTICS_ID
     }
-  }
+  },
 
   // pwa icon options
   pwa: {
