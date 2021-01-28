@@ -55,6 +55,8 @@ export default {
     '@nuxt/content',
     // https://github.com/nuxt-community/style-resources-module#readme
     '@nuxtjs/style-resources',
+    // https://www.npmjs.com/package/nuxt-lazy-load
+    'nuxt-lazy-load'
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -63,6 +65,13 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
+  // cache policy
+  render: {
+    static: {
+      maxAge: 60 * 60 * 24 * 30 * 3 * 1000, // ~3 months
+    },
+  },
+
   // buefy options
   buefy: {
     materialDesignIcons: false,
@@ -70,21 +79,18 @@ export default {
 
   // g-analytics options
   googleAnalytics: {
-    id: process.env.GANALYTICS_ID,
-  },
-  publicRuntimeConfig: {
-    googleAnalytics: {
-      id: process.env.GANALYTICS_ID
-    }
+    id: 'UA-188278229-1',
   },
 
   // pwa icon options
   pwa: {
     manifest: {
       name: 'VTHacks 8',
+      short_name: 'VTHacks',
       description:
         'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
       background_color: '#F89B6A',
+      theme_color: '#F89B6A'
     },
   },
 }
