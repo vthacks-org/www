@@ -56,7 +56,7 @@ export default {
     // https://github.com/nuxt-community/style-resources-module#readme
     '@nuxtjs/style-resources',
     // https://www.npmjs.com/package/nuxt-lazy-load
-    'nuxt-lazy-load'
+    'nuxt-lazy-load',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -90,7 +90,7 @@ export default {
       description:
         'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
       background_color: '#F89B6A',
-      theme_color: '#F89B6A'
+      theme_color: '#F89B6A',
     },
   },
 }
