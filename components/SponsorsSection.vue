@@ -6,6 +6,20 @@
 
     <div class="tile is-ancestor">
       <div class="tile is-child is-flex flex-center">
+        <a href="https://www.capitalone.com//" target="_blank">
+          <figure class="image">
+            <img
+              class="sponsor-img big"
+              alt="Capital One logo"
+              src="~assets/sponsors/capitalone.svg"
+            />
+          </figure>
+        </a>
+      </div>
+    </div>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-child is-flex flex-center">
         <a href="https://www.echoar.xyz/" target="_blank">
           <figure class="image">
             <img
@@ -67,6 +81,10 @@ export default {
 .sponsor-img {
   height: auto;
   max-width: 300px;
+  &.big {
+    max-width: 600px;
+    min-width: 400px;
+  }
 }
 
 .flex-center {

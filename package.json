@@ -12,13 +12,13 @@
     "lint:fix": "eslint --fix --ext .js,.vue ."
   },
   "dependencies": {
-    "@nuxt/content": "^1.11.1",
-    "@nuxtjs/pwa": "^3.3.4",
+    "@nuxt/content": "^1.13.1",
+    "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.0.0",
-    "core-js": "^3.8.3",
-    "nuxt": "^2.14.12",
-    "nuxt-buefy": "^0.4.3",
-    "nuxt-lazy-load": "^1.2.4"
+    "core-js": "^3.9.0",
+    "nuxt": "^2.15.1",
+    "nuxt-buefy": "^0.4.4",
+    "nuxt-lazy-load": "^1.2.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
@@ -27,14 +27,14 @@
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/svg": "^0.1.12",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.18.0",
+    "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "node-sass": "^5.0.0",
-    "prettier": "^2.1.2",
+    "prettier": "^2.2.1",
     "sass-loader": "^10.1.1",
-    "stylelint": "^13.9.0",
+    "stylelint": "^13.10.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"
   }
