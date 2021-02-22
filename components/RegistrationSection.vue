@@ -49,10 +49,10 @@
             </li>
             <li class="is-size-4">
               Create an account on
-              <a target="_blank" href="https://vthacks7.devpost.com/"
+              <a target="_blank" href="https://vthacks-8.devpost.com/"
                 >devpost</a
               >
-              (where you will submit [new devpost to be announced]) and check
+              (where you will submit) and check
               out the
               <a href="https://live.vthacks.com/">livesite</a> for the schedule
             </li>
