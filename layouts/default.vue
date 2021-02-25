@@ -82,6 +82,9 @@ export default {
       const menu = document.getElementsByClassName('navbar-menu')[0]
       const burger = document.getElementsByClassName('navbar-burger')[0]
       const el = document.getElementById(id)
+      if (el === null) {
+        window.open(`/#${id}`, '_self')
+      }
       el.scrollIntoView({ behavior: 'smooth' })
       if (menu.getAttribute('class').includes('is-active')) {
         burger.setAttribute('class', 'navbar-burger burger')
