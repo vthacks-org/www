@@ -52,8 +52,7 @@
               <a target="_blank" href="https://vthacks-8.devpost.com/"
                 >devpost</a
               >
-              (where you will submit) and check
-              out the
+              (where you will submit) and check out the
               <a href="https://live.vthacks.com/">livesite</a> for the schedule
             </li>
             <li class="is-size-4">

@@ -9,6 +9,9 @@
       <p class="is-size-5">
         Due to COVID-19 this year we are hosting VTHacks 8 completely online.
       </p>
+      <a id="plane-button" href="https://live.vthacks.com/" target="_blank"
+        ><img src="~/assets/plane.svg" alt="Plane button"
+      /></a>
     </div>
     <!--    <div class="content">-->
     <!--      <h3 class="title is-3">Virginia Tech</h3>-->
@@ -71,6 +74,10 @@ export default {
 #detail-content {
   justify-content: center;
   flex-direction: column;
+}
+
+#plane-button {
+  padding: 6vh 1vw;
 }
 
 @media (max-width: $min-width) {

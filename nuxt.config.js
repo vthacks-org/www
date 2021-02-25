@@ -1,6 +1,6 @@
 export default {
-  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
+  // // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
+  ssr: true,
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -21,11 +21,7 @@ export default {
       { hid: 'image', name: 'image', content: '~static/sitemeta.svg' },
       { hid: 'url', name: 'url', content: 'https://vthacks.com' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
-      { rel: 'preconnect', href: 'https://use.fontawesome.com' },
-      { rel: 'preconnect', href: 'https://s3.amazonaws.com' },
-    ],
+    link: [{ rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -74,6 +70,11 @@ export default {
     static: {
       maxAge: 60 * 60 * 24 * 30 * 3 * 1000, // ~3 months
     },
+  },
+
+  // https://nuxtjs.org/docs/2.x/deployment/netlify-deployment
+  generate: {
+    fallback: true,
   },
 
   // buefy options

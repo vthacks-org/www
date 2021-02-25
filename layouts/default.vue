@@ -7,25 +7,23 @@
       role="navigation"
       aria-label="main navigation"
     >
-      <template slot="brand">
-        <b-navbar-item>
-          <span class="navbar-item">
-            <img id="brand-logo" alt="brand logo" src="~assets/alt_logo.svg" />
-          </span>
+      <template #brand>
+        <b-navbar-item tag="div">
+          <img id="brand-logo" alt="brand logo" src="~assets/alt_logo.svg" />
         </b-navbar-item>
       </template>
 
-      <template slot="end">
+      <template #end>
         <b-navbar-item
           v-for="section in sections"
           :key="section.name"
           tag="div"
-          class="navbar-item page-ref"
+          class="page-ref"
           @click="scrollToId(section.id)"
         >
-          <span>{{ section.name }}</span>
+          {{ section.name }}
         </b-navbar-item>
-        <b-navbar-item tag="div" class="navbar-item">
+        <b-navbar-item tag="div">
           <button
             id="registerButton"
             class="button is-primary is-outlined"
@@ -52,7 +50,7 @@ export default {
   },
   data() {
     return {
-      prevScrollpos: window.pageYOffset,
+      prevScrollpos: 0,
       sections: [
         {
           name: 'Home',
@@ -144,11 +142,9 @@ $navcolor: rgba(0, 0, 0, 0.8);
 .navbar-end {
   .navbar-item {
     cursor: pointer;
-    span {
-      font-family: $bnr22;
-      font-size: 1.1rem;
-      color: $text-primary;
-    }
+    font-family: $bnr22;
+    font-size: 1.1rem;
+    color: $text-primary;
     &.page-ref {
       &:hover {
         border-bottom: 2px solid;
