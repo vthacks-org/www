@@ -7,11 +7,13 @@
         {{ statusMessage }}
       </p>
       <p class="is-size-5">
-        Due to COVID-19 this year we are hosting VTHacks 8 completely online.
+        And please, fill out the
+        <a href="https://forms.gle/tqupoHgR78YLwUra6" target="_blank">
+          post event survey</a
+        >
+        for your feedback on the event!
       </p>
-      <a id="plane-button" href="https://live.vthacks.com/" target="_blank"
-        ><img src="~/assets/plane.svg" alt="Plane button"
-      /></a>
+      <a id="plane-button" href="https://live.vthacks.com/" target="_blank"></a>
     </div>
     <!--    <div class="content">-->
     <!--      <h3 class="title is-3">Virginia Tech</h3>-->
