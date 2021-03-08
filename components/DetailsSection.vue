@@ -13,7 +13,7 @@
         >
         for your feedback on the event!
       </p>
-      <a id="plane-button" href="https://live.vthacks.com/" target="_blank"></a>
+      <!-- <a id="plane-button" href="https://live.vthacks.com/" target="_blank"></a> -->
     </div>
     <!--    <div class="content">-->
     <!--      <h3 class="title is-3">Virginia Tech</h3>-->
@@ -72,6 +72,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '../sass/theme';
+
+a {
+  color: $peach;
+}
 
 #detail-content {
   justify-content: center;
