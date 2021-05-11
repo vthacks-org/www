@@ -6,51 +6,51 @@
 
     <div class="tile is-ancestor">
       <div class="tile is-child is-flex flex-center">
-        <a href="https://www.capitalone.com//" target="_blank">
-          <figure class="image">
-            <img
-              class="sponsor-img big"
-              alt="Capital One logo"
-              src="~assets/sponsors/capitalone.svg"
-            />
-          </figure>
-        </a>
+        <figure class="image">
+          <img
+            class="sponsor-img big"
+            alt="Capital One logo"
+            src="~assets/sponsors/capitalone.svg"
+          />
+        </figure>
+        <!-- <a href="" target="_blank">
+        </a> -->
       </div>
     </div>
 
     <div class="tile is-ancestor">
       <div class="tile is-child is-flex flex-center">
-        <a href="https://www.echoar.xyz/" target="_blank">
-          <figure class="image">
-            <img
-              class="sponsor-img"
-              alt="echoAR logo"
-              src="~assets/sponsors/echoAR.png"
-            />
-          </figure>
-        </a>
+        <figure class="image">
+          <img
+            class="sponsor-img"
+            alt="echoAR logo"
+            src="~assets/sponsors/echoAR.png"
+          />
+        </figure>
+        <!-- <a href="" target="_blank">
+        </a> -->
       </div>
       <div class="tile is-child is-flex flex-center">
-        <a href="https://balsamiq.com/index.html" target="_blank">
-          <figure class="image">
-            <img
-              class="sponsor-img"
-              alt="balsamiq logo"
-              src="~assets/sponsors/balsamiq.svg"
-            />
-          </figure>
-        </a>
+        <figure class="image">
+          <img
+            class="sponsor-img"
+            alt="balsamiq logo"
+            src="~assets/sponsors/balsamiq.svg"
+          />
+        </figure>
+        <!-- <a href="" target="_blank">
+        </a> -->
       </div>
       <div class="tile is-child is-flex flex-center">
-        <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank">
-          <figure class="image">
-            <img
-              class="sponsor-img"
-              alt="stickermule logo"
-              src="~assets/sponsors/sticker-mule-logo-dark.png"
-            />
-          </figure>
-        </a>
+        <figure class="image">
+          <img
+            class="sponsor-img"
+            alt="stickermule logo"
+            src="~assets/sponsors/sticker-mule-logo-dark.png"
+          />
+        </figure>
+        <!-- <a href="" target="_blank">
+        </a> -->
       </div>
     </div>
   </section>
@@ -72,7 +72,7 @@ export default {
   width: 100%;
   div {
     h1 {
-      display: none; // Remove to show sponsor text
+      // display: none; // Remove to show sponsor text
       color: $peach;
       font-family: $bnr22;
     }
@@ -80,7 +80,7 @@ export default {
 }
 
 .sponsor-img {
-  display: none; // Remove to show sponsor images
+  // display: none; // Remove to show sponsor images
   height: auto;
   max-width: 300px;
   &.big {
