@@ -72,6 +72,7 @@ export default {
   width: 100%;
   div {
     h1 {
+      display: none; // Remove to show sponsor text
       color: $peach;
       font-family: $bnr22;
     }
@@ -79,6 +80,7 @@ export default {
 }
 
 .sponsor-img {
+  display: none; // Remove to show sponsor images
   height: auto;
   max-width: 300px;
   &.big {
