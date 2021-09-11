@@ -2,16 +2,14 @@
   <section id="details-section" class="section">
     <div id="detail-content" class="is-flex has-text-centered">
       <h1 class="title is-1">Create for the Community</h1>
-      <p class="is-size-5">Feb 26-28, 2021</p>
+      <!--<p class="is-size-5">Feb 26-28, 2021</p>
       <p class="is-size-5">
         {{ statusMessage }}
       </p>
+      -->
       <p class="is-size-5">
-        And please, fill out the
-        <a href="https://forms.gle/tqupoHgR78YLwUra6" target="_blank">
-          post event survey</a
-        >
-        for your feedback on the event!
+        Pre-register for VTHacks 9
+        <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a>
       </p>
       <!-- <a id="plane-button" href="https://live.vthacks.com/" target="_blank"></a> -->
     </div>
