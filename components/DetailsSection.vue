@@ -8,9 +8,10 @@
       </p>
       -->
       <p class="is-size-5">
-        Pre-register for VTHacks 9
+        Pre-register for VTHacks IX
         <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a>
       </p>
+      <p>Tenatively scheduled for the weekend of February 26th</p>
       <!-- <a id="plane-button" href="https://live.vthacks.com/" target="_blank"></a> -->
     </div>
     <!--    <div class="content">-->
@@ -29,7 +30,7 @@ export default {
   name: 'DetailsSection',
   data() {
     return {
-      statusMessage: 'VTHacks 8 is defaultDays days away!',
+      statusMessage: 'VTHacks 9 is defaultDays days away!',
     }
   },
   created() {
@@ -49,7 +50,7 @@ export default {
         Stay up to date by following us on social media!`
         return
       } else if (endDate - currentDate > 0 && startHour - currentDate < 0) {
-        this.statusMessage = 'Welcome to VTHacks 8!'
+        this.statusMessage = 'Welcome to VTHacks IX!'
         return
       }
 
@@ -61,7 +62,7 @@ export default {
         return
       }
       if (daysLeft === 0) {
-        this.statusMessage = 'VTHacks 8 starts today!'
+        this.statusMessage = 'VTHacks IX starts today!'
       }
     },
   },

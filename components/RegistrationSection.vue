@@ -5,7 +5,7 @@
       <div id="padded-space" />
       <div id="registration-content" class="is-flex">
         <h1 class="title is-1 is-spaced has-text-centered">
-          Register Now And Get Ready for VTHacks 8
+          Register Now And Get Ready for VTHacks IX
         </h1>
         <h1 class="subtitle is-4 has-text-centered">
           VTHacks swag will be given out on a first come, first serve basis, so

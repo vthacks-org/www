@@ -23,7 +23,7 @@
         >
           {{ section.name }}
         </b-navbar-item>
-        <b-navbar-item tag="div">
+        <!-- <b-navbar-item tag="div">
           <button
             id="registerButton"
             class="button is-primary is-outlined"
@@ -31,22 +31,22 @@
           >
             Register
           </button>
-        </b-navbar-item>
+        </b-navbar-item> -->
       </template>
     </b-navbar>
 
     <section class="main-content">
-      <MLHTrustBadge />
+      <!-- <MLHTrustBadge /> -->
       <nuxt />
     </section>
   </div>
 </template>
 
 <script>
-import MLHTrustBadge from '~/components/MLHTrustBadge.vue'
+// import MLHTrustBadge from '~/components/MLHTrustBadge.vue'
 export default {
   components: {
-    MLHTrustBadge,
+    // MLHTrustBadge,
   },
   data() {
     return {
@@ -65,7 +65,7 @@ export default {
           id: 'about-content',
         },
         {
-          name: 'Sponsors',
+          name: 'Past Sponsors',
           id: 'sponsors-section',
         },
       ],

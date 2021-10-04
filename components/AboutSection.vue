@@ -44,45 +44,6 @@
             </div>
           </b-collapse>
         </div>
-
-        <div id="virtual" class="dropdown">
-          <h3 class="subtitle is-3">Virtual</h3>
-          <b-collapse
-            v-for="(collapse, index) of virtual"
-            :key="index"
-            class="card b-collapse"
-            animation="slide"
-            :open="isOpenV == index"
-            @open="isOpenV = index"
-          >
-            <template #trigger="props">
-              <div class="card-header" role="button">
-                <p class="card-header-title">
-                  {{ collapse.title }}
-                </p>
-                <a class="card-header-icon">
-                  <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
-                  </b-icon>
-                </a>
-              </div>
-            </template>
-            <div class="card-content">
-              <article class="media">
-                <figure v-if="collapse.img" class="media-left">
-                  <img class="card-img" :src="collapse.img" />
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <div class="content">
-                      <!-- eslint-disable-next-line -->
-                      <span v-html="collapse.text"></span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </b-collapse>
-        </div>
       </div>
       <div v-lazy-load class="trees" alt="Forest">
         <div><div id="treesBottom"></div></div>
