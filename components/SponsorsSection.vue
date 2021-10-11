@@ -4,21 +4,19 @@
       <h1 class="title is-1">Past Sponsors</h1>
     </div>
 
-    <div class="tile is-ancestor">
-      <div class="tile is-child is-flex flex-center">
-        <figure class="image">
-          <img
-            class="sponsor-img big"
-            alt="Capital One logo"
-            src="~assets/sponsors/capitalone.svg"
-          />
-        </figure>
-        <!-- <a href="" target="_blank">
-        </a> -->
+    <div id="sponsor-container" class="tile">
+      <div v-for="sponsor of sponsors" :key="sponsor.alt">
+        <div class="tile is-child is-flex flex-center">
+          <figure class="image">
+            <img class="sponsor-img" :src="sponsor.src" :alt="sponsor.alt" />
+          </figure>
+          <!-- <a href="" target="_blank">
+            </a> -->
+        </div>
       </div>
     </div>
 
-    <div class="tile is-ancestor">
+    <!-- <div class="tile is-ancestor">
       <div class="tile is-child is-flex flex-center">
         <figure class="image">
           <img
@@ -27,8 +25,7 @@
             src="~assets/sponsors/echoAR.png"
           />
         </figure>
-        <!-- <a href="" target="_blank">
-        </a> -->
+        <a href="" target="_blank"> </a>
       </div>
       <div class="tile is-child is-flex flex-center">
         <figure class="image">
@@ -38,8 +35,7 @@
             src="~assets/sponsors/balsamiq.svg"
           />
         </figure>
-        <!-- <a href="" target="_blank">
-        </a> -->
+        <a href="" target="_blank"> </a>
       </div>
       <div class="tile is-child is-flex flex-center">
         <figure class="image">
@@ -49,16 +45,89 @@
             src="~assets/sponsors/sticker-mule-logo-dark.png"
           />
         </figure>
-        <!-- <a href="" target="_blank">
-        </a> -->
+        <a href="" target="_blank"> </a>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 
 <script>
 export default {
   name: 'SponsorsSection',
+  props: {
+    sponsors: {
+      type: Array,
+      default() {
+        return [
+          {
+            id: 0,
+            src: '/sponsors/capitalone.svg',
+            alt: 'Capital One Logo',
+          },
+          {
+            id: 1,
+            alt: 'echoAR logo',
+            src: '/sponsors/echoAR.png',
+          },
+          {
+            id: 2,
+            alt: 'balsamiq logo',
+            src: '/sponsors/balsamiq.svg',
+          },
+          {
+            id: 3,
+            alt: 'stickermule logo',
+            src: '/sponsors/sticker-mule-logo-dark.png',
+          },
+          {
+            id: 5,
+            alt: 'MicroStrategy logo',
+            src: '/sponsors/MicroStrategy.png',
+          },
+          {
+            id: 6,
+            alt: 'Carmax logo',
+            src: '/sponsors/CarMax.svg',
+          },
+          {
+            id: 7,
+            alt: 'Google Cloud logo',
+            src: '/sponsors/GoogleCloud.png',
+          },
+          {
+            id: 8,
+            alt: 'JB Hunt logo',
+            src: '/sponsors/JBHunt.svg',
+          },
+          {
+            id: 9,
+            alt: 'RippleMatch logo',
+            src: '/sponsors/ripplematch.png',
+          },
+          {
+            id: 10,
+            alt: 'WillowTree logo',
+            src: '/sponsors/WillowTree.svg',
+          },
+          {
+            id: 11,
+            alt: 'Eastman logo',
+            src: '/sponsors/Eastman.png',
+          },
+          {
+            id: 12,
+            alt: 'Virginia Cyber Range logo',
+            src: '/sponsors/CyberRange.svg',
+          },
+          {
+            id: 13,
+            alt: 'Wolfram logo',
+            src: '/sponsors/WolframLanguageLogo.png',
+          },
+        ]
+      },
+    },
+  },
 }
 </script>
 
@@ -77,6 +146,11 @@ export default {
       font-family: $bnr22;
     }
   }
+}
+#sponsor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sponsor-img {
