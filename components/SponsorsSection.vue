@@ -5,7 +5,11 @@
     </div>
 
     <div id="sponsor-container" class="tile">
-      <div v-for="sponsor of sponsors" :key="sponsor.alt">
+      <div
+        v-for="sponsor of sponsors"
+        :key="sponsor.alt"
+        class="flex-container centered"
+      >
         <div class="tile is-child is-flex flex-center">
           <figure class="image">
             <img class="sponsor-img" :src="sponsor.src" :alt="sponsor.alt" />
@@ -151,6 +155,14 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.centered {
+  align-self: center;
 }
 
 .sponsor-img {
