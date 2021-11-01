@@ -70,6 +70,10 @@ export default {
           text: `It's an annual event where participants from around the globe come together and spend 36 hours working on teams of up to four people to create a project they are passionate about.`,
         },
         {
+          title: `Will the event be in-person or virtual?`,
+          text: `We’re planning to be a mainly in-person event, and will provide a virtual option for those not able to attend physically. This is subject to change based on university Covid-19 guidelines.`,
+        },
+        {
           title: `How much does it cost?`,
           text: `The event is completely free for all registered participants. Additionally, we will be awarding prizes and swag to eligible participants on a first come first served basis pending international shipping constraints.`,
           img: wallet,
