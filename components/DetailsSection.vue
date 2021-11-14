@@ -138,8 +138,8 @@ a {
 // }
 
 @media (max-width: $min-width) {
-  .title {
-    color: $peach;
-  }
+  // .title {
+  //   color: $peach;
+  // }
 }
 </style>
