@@ -19,7 +19,7 @@
           aria-haspopup="false"
           aria-controls="pre-register"
         >
-          <span class="is-size-5">Pre-Register now!</span>
+          <span>Pre-Register now!</span>
         </button>
         <!-- <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a> -->
       </p>
