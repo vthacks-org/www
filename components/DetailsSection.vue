@@ -11,7 +11,7 @@
       </p>
       -->
       <p class="is-size-5">
-        Tentatively Scheduled for Feb 26-28, 2021
+        Tentatively Scheduled for the weekend of February 26th
         <!-- <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a> -->
       </p>
       <p class="is-flex centered" style="justify-content: center">
