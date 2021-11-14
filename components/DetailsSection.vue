@@ -1,17 +1,30 @@
 <template>
   <section id="details-section" class="section">
     <div id="detail-content" class="is-flex has-text-centered">
-      <h1 class="title is-1">Create for the Community</h1>
+      <h1 class="title is-1">Pre-Registration for VTHacks IX is open!</h1>
+
       <!--<p class="is-size-5">Feb 26-28, 2021</p>
       <p class="is-size-5">
         {{ statusMessage }}
       </p>
       -->
       <p class="is-size-5">
-        Pre-register for VTHacks IX
-        <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a>
+        Tentatively Scheduled for Feb 26-28, 2021
+        <!-- <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a> -->
       </p>
-      <p>Tenatively scheduled for the weekend of February 26th</p>
+      <p class="is-flex centered" style="justify-content: center">
+        <button
+          id="register-button"
+          class="is-flex button is-link is-outlined"
+          aria-haspopup="false"
+          aria-controls="pre-register"
+        >
+          <span class="is-size-5">Pre-Register now!</span>
+        </button>
+        <!-- <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a> -->
+      </p>
+
+      <!-- <p>Tenatively scheduled for the weekend of February 26th</p> -->
       <!-- <a id="plane-button" href="https://live.vthacks.com/" target="_blank"></a> -->
     </div>
     <!--    <div class="content">-->
@@ -84,6 +97,22 @@ a {
 #plane-button {
   padding: 6vh 1vw;
 }
+
+#register-button {
+  margin-top: 0.5vh;
+  color: white;
+  background-color: $peach;
+  width: fit-content;
+}
+
+// .btn-content {
+//   // font-size: 1.5rem;
+//   display: flex;
+//   justify-content: center;
+//   justify-self: center;
+//   align-self: center;
+//   align-content: center;
+// }
 
 @media (max-width: $min-width) {
   .title {
