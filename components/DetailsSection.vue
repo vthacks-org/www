@@ -1,7 +1,9 @@
 <template>
   <section id="details-section" class="section">
     <div id="detail-content" class="is-flex has-text-centered">
-      <h1 class="title is-1">Pre-Registration for VTHacks IX is open!</h1>
+      <h1 class="contrast title is-1">
+        Pre-Registration for VTHacks IX is open!
+      </h1>
 
       <!--<p class="is-size-5">Feb 26-28, 2021</p>
       <p class="is-size-5">
@@ -19,7 +21,13 @@
           aria-haspopup="false"
           aria-controls="pre-register"
         >
-          <span>Pre-Register now!</span>
+          <a
+            id="register-link"
+            href="https://forms.gle/S9vXkJdpDLJuf7ko7"
+            target="_blank"
+          >
+            Pre-Register now!
+          </a>
         </button>
         <!-- <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a> -->
       </p>
@@ -103,6 +111,21 @@ a {
   color: white;
   background-color: $peach;
   width: fit-content;
+  border-color: $peach;
+  border-radius: 0.25rem;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#register-link {
+  color: white;
+  // background-color: $peach;
+  // width: fit-content;
+}
+
+.contrast {
+  text-transform: none;
+  mix-blend-mode: multiply;
 }
 
 // .btn-content {
