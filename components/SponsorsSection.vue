@@ -1,12 +1,26 @@
 <template>
   <section id="sponsors-section" class="section">
     <div class="content has-text-centered">
-      <h1 class="title is-1">Past Sponsors</h1>
+      <h1 class="title is-1">Thanks to our past and current sponsors</h1>
     </div>
-
     <div id="sponsor-container" class="tile">
       <div
         v-for="sponsor of sponsors"
+        :key="sponsor.alt"
+        class="flex-container centered"
+      >
+        <div class="tile is-child is-flex flex-center">
+          <figure class="image">
+            <img class="sponsor-img" :src="sponsor.src" :alt="sponsor.alt" />
+          </figure>
+          <!-- <a href="" target="_blank">
+            </a> -->
+        </div>
+      </div>
+    </div>
+    <div id="sponsor-container" class="tile">
+      <div
+        v-for="sponsor of pastSponsors"
         :key="sponsor.alt"
         class="flex-container centered"
       >
@@ -60,6 +74,23 @@ export default {
   name: 'SponsorsSection',
   props: {
     sponsors: {
+      type: Array,
+      default() {
+        return [
+          {
+            id: 0,
+            src: '/sponsors/Peraton-Full-Color.png',
+            alt: 'Peraton Logo',
+          },
+          {
+            id: 1,
+            src: '/sponsors/vtcs.png',
+            alt: 'Virginia Tech Computer Science Department Logo',
+          },
+        ]
+      },
+    },
+    pastSponsors: {
       type: Array,
       default() {
         return [
