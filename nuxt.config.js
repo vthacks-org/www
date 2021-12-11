@@ -90,7 +90,7 @@ export default {
   // pwa icon options
   pwa: {
     manifest: {
-      name: 'VTHacks 8',
+      name: 'VTHacks IX',
       short_name: 'VTHacks',
       description:
         'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
