@@ -17,7 +17,7 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.9.0",
     "nuxt": "^2.15.1",
-    "nuxt-buefy": "^0.4.4",
+    "nuxt-buefy": "^0.4.14",
     "nuxt-lazy-load": "^1.2.5"
   },
   "devDependencies": {
