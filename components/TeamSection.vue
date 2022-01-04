@@ -110,6 +110,11 @@ export default {
   row-gap: 1rem;
   column-gap: 2rem;
 }
+
+.team-member {
+  background: red;
+}
+
 .team-member > img {
   width: 250px;
   height: 250px;
