@@ -42,18 +42,18 @@ export default {
           pic: 'peter_mtt.jpg',
         },
         {
-          name: 'Jacob Miller',
-          gradYear: 2022,
-          major: 'Computer Science',
-          committees: 'Web Dev Co-Lead',
-          pic: 'jacob_mtt.jpg',
-        },
-        {
           name: 'Brian Wieder',
           gradYear: 2022,
           major: 'Computer Science',
           committees: 'Web Dev Co-Lead',
           pic: 'brian_mtt.jpg',
+        },
+        {
+          name: 'Jacob Miller',
+          gradYear: 2022,
+          major: 'Computer Science',
+          committees: 'Web Dev Co-Lead',
+          pic: 'jacob_mtt.jpg',
         },
         {
           name: 'Parvesh Samayamanthula',
@@ -63,11 +63,11 @@ export default {
           pic: 'parvesh_mtt.jpg',
         },
         {
-          name: 'Shardul Dhongade',
+          name: 'Mehak Kamal',
           gradYear: 2022,
           major: 'Computer Science',
-          committees: 'Logistics, Sponsorship',
-          pic: 'shardul_mtt.jpg',
+          committees: 'Sponsorship',
+          pic: 'mehak_mtt.jpg',
         },
         {
           name: 'Katie Weyrich',
@@ -75,6 +75,13 @@ export default {
           major: 'Computer Science',
           committees: 'Graphics Lead',
           pic: 'katie_mtt.jpg',
+        },
+        {
+          name: 'Shardul Dhongade',
+          gradYear: 2022,
+          major: 'Computer Science',
+          committees: 'Logistics, Sponsorship',
+          pic: 'shardul_mtt.jpg',
         },
         {
           name: 'Krish Ganotra',
@@ -90,13 +97,6 @@ export default {
           major: 'General Engineering',
           committees: 'Sponsorship, UX',
           pic: 'anika_mtt.jpg',
-        },
-        {
-          name: 'Mehak Kamal',
-          gradYear: 2022,
-          major: 'Computer Science',
-          committees: 'Sponsorship',
-          pic: 'mehak_mtt.jpg',
         },
       ],
     }
