@@ -1,22 +1,16 @@
 <template>
   <div id="container">
-    <div id="gradient" class="zBox"></div>
+    <div id="gradient" class="zBox" />
     <span id="nuxt-content" class="zBox">
       <MountSVG id="svgMountain" class="zBox" />
       <SplashSection />
-      <DetailsSection id="details" />
-      <div id="blankSpace1"></div>
-      <!-- <RegistrationSection /> -->
-      <div id="registration-section" />
-      <div id="blankSpace2"></div>
-      <AboutSection />
+
       <div id="meetTeam">
-        <div class="team-member">
-          <img src="/meet-the-team/jacob.jpg" width="250px" height="250px" />
+        <!-- <div class="team-member">
+          <img src="/meet-the-team/jacob.jpg" />
           <p>Jacob Miller</p>
-        </div>
+        </div> -->
       </div>
-      <SponsorsSection />
       <FooterSection />
     </span>
   </div>
@@ -24,21 +18,16 @@
 
 <script>
 import SplashSection from '~/components/SplashSection.vue'
-import DetailsSection from '~/components/DetailsSection.vue'
-// import RegistrationSection from '~/components/RegistrationSection.vue'
-import AboutSection from '~/components/AboutSection.vue'
-import SponsorsSection from '~/components/SponsorsSection.vue'
-import FooterSection from '~/components/FooterSection.vue'
 import MountSVG from '~/assets/mount.svg?inline'
-
+import FooterSection from '~/components/FooterSection.vue'
 export default {
-  name: 'HomePage',
+  name: 'MeetTheTeam',
   components: {
     SplashSection,
-    DetailsSection,
+    // DetailsSection,
     // RegistrationSection,
-    AboutSection,
-    SponsorsSection,
+    // AboutSection,
+    // SponsorsSection,
     FooterSection,
     MountSVG,
   },
@@ -68,21 +57,22 @@ export default {
     calculateSVGHeight() {
       const content = document.getElementById('nuxt-content')
       const mount = document.getElementById('svgMountain')
-      const registration = document.getElementById('registration-section')
-      const sponsor = document.getElementById('sponsors-section')
+      const meetTeam = document.getElementById('meetTeam')
 
-      // set trees
+      //   set trees
       let height =
         content.offsetHeight -
         document.getElementById('footer-section').offsetHeight -
         600
-      const dist = (height - registration.offsetTop) / 4
-      document.getElementById('blankSpace1').style.paddingTop = `${dist}px`
-      document.getElementById('blankSpace2').style.paddingTop = `${dist}px`
+      //   const dist = (height - meetTeam.offsetTop) / 4
+      //   document.getElementById('meetTeam').style.paddingTop = `${dist}px`
+      //   document.getElementById('meetTeam').style.paddingTop = `${dist}px`
 
-      // set mountain
+      //   set mountain
       height =
-        content.offsetHeight - sponsor.offsetHeight - content.offsetHeight * 0.2
+        content.offsetHeight -
+        meetTeam.offsetHeight -
+        content.offsetHeight * 0.3
       mount.setAttribute('height', height)
       if (content.offsetWidth < 1920) {
         mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
@@ -124,9 +114,6 @@ export default {
   },
 }
 </script>
-
-<!-- Add "scoped" attribute to limit SCSS to this component only -->
-<!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../sass/theme';
 
@@ -166,13 +153,5 @@ export default {
 .zBox {
   position: absolute;
   width: 100%;
-}
-
-.team-member > img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  // position: absolute;
-  // clip: rect(0, 60px, 200px, 0);
 }
 </style>
