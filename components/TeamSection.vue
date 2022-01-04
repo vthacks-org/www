@@ -111,10 +111,6 @@ export default {
   column-gap: 2rem;
 }
 
-.team-member {
-  background: red;
-}
-
 .team-member > img {
   width: 250px;
   height: 250px;
@@ -125,9 +121,15 @@ export default {
   margin-bottom: 0;
 }
 .team-member {
-  background-color: red;
+  background-color: $night;
   width: 300px;
   justify-self: center;
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+  border-color: $peach;
+  border-width: 1px;
+  border-style: solid;
+  // border: 1px solid red;
 }
 .committee-tag {
   width: '';
