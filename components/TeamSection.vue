@@ -6,9 +6,11 @@
     <div id="team-content" class="content has-text-centered">
       <div v-for="member of team" :key="member.name" class="team-member">
         <img v-lazy-load :src="'/meet-the-team/' + member.pic" />
-        <p>{{ member.name }}</p>
-        <p>{{ member.major }} {{ member.gradYear }}</p>
+        <p>
+          <strong>{{ member.name }}</strong>
+        </p>
         <p class="committee-tag">Committee(s): {{ member.committees }}</p>
+        <p>{{ member.major }} {{ member.gradYear }}</p>
       </div>
     </div>
   </section>
@@ -25,7 +27,7 @@ export default {
           gradYear: 2023,
           major: 'Computer Science',
           committees: 'Director',
-          pic: 'peter_mtt.jpg',
+          pic: 'patrick_mtt.jpg',
         },
         {
           name: 'Zane Hasnain',
@@ -36,7 +38,7 @@ export default {
         },
         {
           name: 'Peter Murphy',
-          gradYear: 2022,
+          gradYear: 2021,
           major: 'Computer Science',
           committees: 'Public Relations, Executive',
           pic: 'peter_mtt.jpg',
@@ -72,7 +74,7 @@ export default {
         {
           name: 'Katie Weyrich',
           gradYear: 2023,
-          major: 'Computer Science',
+          major: 'Graphic Design',
           committees: 'Graphics Lead',
           pic: 'katie_mtt.jpg',
         },
@@ -120,17 +122,8 @@ export default {
   column-gap: 2rem;
 }
 
-.team-member > img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-}
-
-.team-member > p {
-  margin-bottom: 0;
-}
 .team-member {
-  background-color: $night;
+  background-color: $peach;
   width: 300px;
   justify-self: center;
   padding: 1rem 0.5rem;
@@ -138,8 +131,23 @@ export default {
   border-color: $peach;
   border-width: 1px;
   border-style: solid;
+  color: $dark-blue;
+  font-size: 17px;
   // border: 1px solid red;
 }
+.team-member > img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.team-member > p {
+  margin-bottom: 0;
+  color: $dark-blue;
+}
+.team-member > p > strong {
+  color: $dark-blue;
+}
+
 .committee-tag {
   width: '';
 }
