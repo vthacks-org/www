@@ -108,9 +108,13 @@ export default {
 #team-section {
   padding-top: 3vw;
   background: $midnight;
+  flex-direction: column;
+  align-items: center;
 }
 #team-content {
   display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 1rem;
   column-gap: 2rem;
