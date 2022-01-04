@@ -97,6 +97,9 @@ export default {
 @import '../sass/theme';
 #team-content {
   background: $midnight;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 3vw;
 }
 .team-member > img {
   width: 250px;
