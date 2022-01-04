@@ -18,6 +18,27 @@ export default {
     return {
       team: [
         {
+          name: 'Patrick Riley',
+          gradYear: 2023,
+          major: 'Computer Science',
+          committees: 'Director',
+          pic: 'peter_mtt.jpg',
+        },
+        {
+          name: 'Zane Hasnain',
+          gradYear: 2023,
+          major: 'Computer Science',
+          committees: 'Co-Director',
+          pic: 'zane_mtt.jpg',
+        },
+        {
+          name: 'Peter Murphy',
+          gradYear: 2022,
+          major: 'Computer Science',
+          committees: 'Public Relations, Executive',
+          pic: 'peter_mtt.jpg',
+        },
+        {
           name: 'Jacob Miller',
           gradYear: 2022,
           major: 'Computer Science',
@@ -39,13 +60,6 @@ export default {
           pic: 'parvesh_mtt.jpg',
         },
         {
-          name: 'Peter Murphy',
-          gradYear: 2022,
-          major: 'Computer Science',
-          committees: 'Public Relations, Executive',
-          pic: 'peter_mtt.jpg',
-        },
-        {
           name: 'Shardul Dhongade',
           gradYear: 2022,
           major: 'Computer Science',
@@ -58,13 +72,6 @@ export default {
           major: 'Computer Science',
           committees: 'Graphics Lead',
           pic: 'katie_mtt.jpg',
-        },
-        {
-          name: 'Zane Hasnain',
-          gradYear: 2023,
-          major: 'Computer Science',
-          committees: 'Co-Director',
-          pic: 'zane_mtt.jpg',
         },
         {
           name: 'Krish Ganotra',
