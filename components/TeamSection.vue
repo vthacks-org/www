@@ -1,5 +1,8 @@
 <template>
   <section id="team-section">
+    <div class="content has-text-centered">
+      <h1 class="title is-1">Meet the Team</h1>
+    </div>
     <div id="team-content" class="content has-text-centered">
       <div v-for="member of team" :key="member.name" class="team-member">
         <img v-lazy-load :src="'/meet-the-team/' + member.pic" />
@@ -102,11 +105,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '../sass/theme';
-#team-content {
+#team-section {
+  padding-top: 3vw;
   background: $midnight;
+}
+#team-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding-top: 3vw;
   row-gap: 1rem;
   column-gap: 2rem;
 }
@@ -126,5 +131,10 @@ export default {
 }
 .committee-tag {
   width: '';
+}
+h1 {
+  // display: none; // Remove to show sponsor text
+  color: $peach;
+  font-family: $bnr22;
 }
 </style>
