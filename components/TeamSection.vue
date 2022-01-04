@@ -5,7 +5,7 @@
         <img v-lazy-load :src="'/meet-the-team/' + member.pic" />
         <p>{{ member.name }}</p>
         <p>{{ member.major }} {{ member.gradYear }}</p>
-        <p>Committee(s): {{ member.committees }}</p>
+        <p class="committee-tag">Committee(s): {{ member.committees }}</p>
       </div>
     </div>
   </section>
@@ -101,5 +101,9 @@ export default {
 .team-member > img {
   width: 250px;
   height: 250px;
+  border-radius: 50%;
+}
+.committee-tag {
+  width: '';
 }
 </style>
