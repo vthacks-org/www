@@ -100,11 +100,22 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding-top: 3vw;
+  row-gap: 1rem;
+  column-gap: 2rem;
 }
 .team-member > img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+}
+
+.team-member > p {
+  margin-bottom: 0;
+}
+.team-member {
+  background-color: red;
+  width: 300px;
+  justify-self: center;
 }
 .committee-tag {
   width: '';
