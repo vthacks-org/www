@@ -10,7 +10,6 @@
       <div id="registration-section" />
       <div id="blankSpace2"></div>
       <AboutSection />
-      <TeamSection />
       <SponsorsSection />
       <FooterSection />
     </span>
@@ -25,7 +24,6 @@ import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
 import MountSVG from '~/assets/mount.svg?inline'
-import TeamSection from '~/components/TeamSection.vue'
 
 export default {
   name: 'HomePage',
@@ -35,7 +33,6 @@ export default {
     // RegistrationSection,
     AboutSection,
     SponsorsSection,
-    TeamSection,
     FooterSection,
     MountSVG,
   },
@@ -163,13 +160,5 @@ export default {
 .zBox {
   position: absolute;
   width: 100%;
-}
-
-.team-member > img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  // position: absolute;
-  // clip: rect(0, 60px, 200px, 0);
 }
 </style>

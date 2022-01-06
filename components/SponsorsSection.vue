@@ -171,7 +171,7 @@ export default {
 
 #sponsors-section {
   z-index: -1;
-  padding-top: 3vw;
+  margin-top: 3vw;
   background: $midnight;
   width: 100%;
   div {
