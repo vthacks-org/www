@@ -133,12 +133,14 @@ export default {
   border-style: solid;
   color: $dark-blue;
   font-size: 17px;
+  font-family: $font-mono;
   // border: 1px solid red;
 }
 .team-member > img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  border: 1px $dark-blue solid;
 }
 .team-member > p {
   margin-bottom: 0;
