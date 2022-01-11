@@ -5,6 +5,21 @@
     </div>
     <div id="sponsor-container" class="tile">
       <div
+        v-for="sponsor of platSponsors"
+        :key="sponsor.alt"
+        class="flex-container centered"
+      >
+        <div class="tile is-child is-flex flex-center">
+          <figure class="image">
+            <img class="sponsor-img" :src="sponsor.src" :alt="sponsor.alt" />
+          </figure>
+          <!-- <a href="" target="_blank">
+            </a> -->
+        </div>
+      </div>
+    </div>
+    <div id="sponsor-container" class="tile">
+      <div
         v-for="sponsor of sponsors"
         :key="sponsor.alt"
         class="flex-container centered"
@@ -73,6 +88,18 @@
 export default {
   name: 'SponsorsSection',
   props: {
+    platSponsors: {
+      type: Array,
+      default() {
+        return [
+          {
+            id: 0,
+            src: '/sponsors/mantech-logo.png',
+            alt: 'ManTech',
+          },
+        ]
+      },
+    },
     sponsors: {
       type: Array,
       default() {
