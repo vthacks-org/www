@@ -44,18 +44,18 @@ export default {
           pic: 'peter_mtt.jpg',
         },
         {
-          name: 'Jacob Miller',
-          gradYear: 2022,
-          major: 'Computer Science',
-          committees: 'Web Dev Co-Lead',
-          pic: 'jacob_mtt.jpg',
-        },
-        {
           name: 'Brian Wieder',
           gradYear: 2022,
           major: 'Computer Science',
           committees: 'Web Dev Co-Lead',
           pic: 'brian_mtt.jpg',
+        },
+        {
+          name: 'Jacob Miller',
+          gradYear: 2022,
+          major: 'Computer Science',
+          committees: 'Web Dev Co-Lead',
+          pic: 'jacob_mtt.jpg',
         },
         {
           name: 'Parvesh Samayamanthula',
