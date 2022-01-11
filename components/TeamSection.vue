@@ -72,13 +72,6 @@ export default {
           pic: 'mehak_mtt.jpg',
         },
         {
-          name: 'Mehak Kamal',
-          gradYear: 2022,
-          major: 'Computer Science',
-          committees: 'Sponsorship',
-          pic: 'mehak_mtt.jpg',
-        },
-        {
           name: 'Shardul Dhongade',
           gradYear: 2022,
           major: 'Computer Science',
