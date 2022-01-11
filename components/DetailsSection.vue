@@ -1,9 +1,7 @@
 <template>
   <section id="details-section" class="section">
     <div id="detail-content" class="is-flex has-text-centered">
-      <h1 class="contrast title is-1">
-        Pre-Registration for VTHacks IX is open!
-      </h1>
+      <h1 class="contrast title is-1">Registration for VTHacks IX is open!</h1>
 
       <!--<p class="is-size-5">Feb 26-28, 2021</p>
       <p class="is-size-5">
@@ -11,8 +9,8 @@
       </p>
       -->
       <p class="is-size-5">
-        Tentatively Scheduled for the weekend of February 26th
-        <!-- <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a> -->
+        Register to attend VTHacks IX, February 25 - 27th, 2022
+        <!-- <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a> -->
       </p>
       <p class="is-flex centered" style="justify-content: center">
         <button
@@ -23,13 +21,13 @@
         >
           <a
             id="register-link"
-            href="https://forms.gle/S9vXkJdpDLJuf7ko7"
+            href="https://forms.gle/9nCe4389KENDdNYw7"
             target="_blank"
           >
-            Pre-Register now!
+            Register now!
           </a>
         </button>
-        <!-- <a href="https://forms.gle/S9vXkJdpDLJuf7ko7" target="_blank">here</a> -->
+        <!-- <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a> -->
       </p>
 
       <!-- <p>Tenatively scheduled for the weekend of February 26th</p> -->
