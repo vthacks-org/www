@@ -17,7 +17,7 @@
               Register as an individual
               <a
                 target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdf8x1PAa2lbNJt68gEBBkZGEEO_26y1prH46RvYN2CCLsfwg/viewform?usp=sf_link"
+                href="https://forms.gle/9nCe4389KENDdNYw7"
                 rel="noreferrer"
                 >here</a
               >
@@ -26,12 +26,14 @@
               Register your team
               <a
                 target="_blank"
-                href="https://docs.google.com/forms/d/1gXMv4G6nvOxvxMfGIN8smEB1ei1SVuzgBasZCfq2QIo/viewform?usp=sf_link"
+                href="https://forms.gle/n4N4hpsA7Y5kUW1G9"
                 rel="noreferrer"
                 >here</a
               >
               (if you don't have one yet check the
-              <a target="_blank" href="https://discord.gg/qRGP9RmPCc"
+              <a
+                target="_blank"
+                href="https://discord.com/channels/929966430089252874/930210748884459530"
                 >#team-formation</a
               >
               channel in the VTHacks Discord Server)
@@ -40,21 +42,21 @@
               Join the VTHacks
               <a
                 target="_blank"
-                href="https://discord.gg/qRGP9RmPCc"
+                href="https://discord.gg/3erh2pce5f"
                 rel="noreferrer"
                 >Discord Server</a
               >
               for real-time updates from our organizers and to virtually
               navigate on the day of the event
             </li>
-            <li class="is-size-4">
+            <!-- <li class="is-size-4">
               Create an account on
               <a target="_blank" href="https://vthacks-8.devpost.com/"
                 >devpost</a
               >
               (where you will submit) and check out the
               <a href="https://live.vthacks.com/">livesite</a> for the schedule
-            </li>
+            </li> -->
             <li class="is-size-4">
               Follow us on
               <a target="_blank" href="https://twitter.com/VT_Hacks">Twitter</a

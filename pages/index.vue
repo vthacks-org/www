@@ -6,7 +6,7 @@
       <SplashSection />
       <DetailsSection id="details" />
       <div id="blankSpace1"></div>
-      <!-- <RegistrationSection /> -->
+      <RegistrationSection />
       <div id="registration-section" />
       <div id="blankSpace2"></div>
       <AboutSection />
@@ -20,7 +20,7 @@
 <script>
 import SplashSection from '~/components/SplashSection.vue'
 import DetailsSection from '~/components/DetailsSection.vue'
-// import RegistrationSection from '~/components/RegistrationSection.vue'
+import RegistrationSection from '~/components/RegistrationSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
@@ -32,7 +32,7 @@ export default {
   components: {
     SplashSection,
     DetailsSection,
-    // RegistrationSection,
+    RegistrationSection,
     AboutSection,
     SponsorsSection,
     TeamSection,
