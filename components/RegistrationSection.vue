@@ -31,7 +31,9 @@
                 >here</a
               >
               (if you don't have one yet check the
-              <a target="_blank" href="https://discord.gg/3erh2pce5f"
+              <a
+                target="_blank"
+                href="https://discord.com/channels/929966430089252874/930210748884459530"
                 >#team-formation</a
               >
               channel in the VTHacks Discord Server)
@@ -40,7 +42,7 @@
               Join the VTHacks
               <a
                 target="_blank"
-                href="https://discord.gg/qRGP9RmPCc"
+                href="https://discord.gg/3erh2pce5f"
                 rel="noreferrer"
                 >Discord Server</a
               >
