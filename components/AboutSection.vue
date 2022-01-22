@@ -5,10 +5,18 @@
     </div>
     <div id="about-content" class="content has-text-centered">
       <h1 class="title is-1">F.A.Q.</h1>
-      <div class="is-flex section">
-        <div id="general" class="dropdown">
-          <h3 class="subtitle is-3">General</h3>
-          <b-collapse
+      <div class="section">
+        <b-modal v-model="active.isOpen">
+          <div id="modal-card">
+            <h1>{{ general[active.index].title }}</h1>
+            <p>
+              {{ general[active.index].text }}
+            </p>
+          </div>
+        </b-modal>
+
+        <div class="campers-container">
+          <!-- <b-collapse
             v-for="(collapse, index) of general"
             :key="index"
             class="card b-collapse"
@@ -32,7 +40,7 @@
                 <div class="media-content">
                   <div class="content">
                     <div class="content">
-                      <!-- eslint-disable-next-line -->
+
                       <span v-html="collapse.text"></span>
                     </div>
                   </div>
@@ -42,7 +50,23 @@
                 </figure>
               </article>
             </div>
-          </b-collapse>
+          </b-collapse> -->
+          <!-- <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" /> -->
+          <span
+            v-for="(collapse, index) of general"
+            :key="index"
+            class="camper-wrapper"
+            @click="openModal(index)"
+          >
+            <span>
+              <img
+                class="chat-bubble"
+                src="/faq/chat-bubble.svg"
+                alt="Chat bubble"
+              />
+            </span>
+            <img class="camper" :src="collapse.img" alt="VTHacks logo" />
+          </span>
         </div>
       </div>
       <div v-lazy-load class="trees" alt="Forest">
@@ -53,75 +77,64 @@
 </template>
 
 <script>
-import wallet from '~/assets/wallet.svg'
-import climbinggear from '~/assets/climbinggear.svg'
-import bottle from '~/assets/bottle.svg'
-import trailmix from '~/assets/trailmix.png'
-import rope from '~/assets/rope.png'
+// import wallet from '~/assets/wallet.svg'
+// import climbinggear from '~/assets/climbinggear.svg'
+// import bottle from '~/assets/bottle.svg'
+// import trailmix from '~/assets/trailmix.png'
+// import rope from '~/assets/rope.png'
+
 export default {
   name: 'AboutSection',
   data() {
     return {
-      isOpenG: -1,
-      isOpenV: -1,
+      // isOpen: false,
+      active: {
+        isOpen: false,
+        index: 0,
+      },
       general: [
         {
+          img: '/faq/Camper1.svg',
           title: `What is VTHacks?`,
           text: `It's an annual event where participants from around the globe come together and spend 36 hours working on teams of up to four people to create a project they are passionate about.`,
         },
         {
+          img: '/faq/Camper2.svg',
           title: `Will the event be in-person or virtual?`,
           text: `We’re planning to be a mainly in-person event, and will provide a virtual option for those not able to attend physically. This is subject to change based on university Covid-19 guidelines.`,
         },
         {
+          img: '/faq/Camper3.svg',
           title: `How much does it cost?`,
           text: `The event is completely free for all registered participants. Additionally, we will be awarding prizes and swag to eligible participants on a first come first served basis pending international shipping constraints.`,
-          img: wallet,
         },
         {
+          img: '/faq/Camper4.svg',
           title: `How big can each team be?`,
           text: `We like to keep teams at 4 or less participants so that the competition is fair between teams.`,
         },
         {
+          img: '/faq/Camper5.svg',
           title: `Where is the schedule?`,
           text: `You can find our schedule on our <a target="_blank" href="https://live.vthacks.com">livesite</a>, along with other great bits of information.`,
         },
         {
+          img: '/faq/Campers6-7.svg',
           title: `Do I need to know how to program?`,
           text: `No! We will have workshops designed show you the ropes on how to program. Additionally we promote hacks that are purely ideoligical. If you can sell us a product or an idea, do that instead.`,
-          img: rope,
         },
         {
+          img: '/faq/Campers6-7.svg',
           title: `Any more questions?`,
           text: `Send us an email at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> and we'll get back to you!`,
         },
       ],
-      virtual: [
-        {
-          title: `How does a virtual hackathon work?`,
-          text: `You should it expect the same setup of a normal hackathon: collaborations with teammates, exciting events, gaming tournaments. The only change is it's from the comfort of your home!\nStock up on snacks!!`,
-          img: trailmix,
-        },
-        {
-          title: `Can I use my personal hardware?`,
-          text: `Of course! This year we unfortunately cannot supply participants with rented gear, but we encourage hackers to use anything they find valuable. If you don't have any breadboards lying around you are welcome to make use of hardware emulators as well!`,
-          img: climbinggear,
-        },
-        {
-          title: `What if my internet connection is slow?`,
-          text: `We suggest you download any SDKs or developer tools prior to the event. But, besides that, if you can stream a video you can stream a hackathon. &#128521;`,
-        },
-        {
-          title: `Will there be swag and prizes?`,
-          text: `Absolutely! We have developed a system specifically to award involvement and participation in VTHacks. If you make something fun and submit it to Devpost, we will make something fun and ship it on a first come first served basis, pending international shipping constraints.`,
-          img: bottle,
-        },
-        {
-          title: `Can I use _____ to connect with my teammates instead of discord?`,
-          text: `You are welcome to use any platform you are familar with, however if hackers want to engage with mentors and sponsors we recommend using the <a target"_blank" href="https://discord.gg/qRGP9RmPCc">discord</a> voice channels we supply.`,
-        },
-      ],
     }
+  },
+  methods: {
+    openModal(index) {
+      this.active = { isOpen: true, index }
+    },
   },
 }
 </script>
@@ -154,6 +167,48 @@ export default {
   width: 25%;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+#modal-card {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.campers-container {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 4px;
+  column-gap: 8px;
+}
+
+.camper-wrapper {
+  display: inline;
+  // margin: 2rem;
+}
+
+.chat-bubble {
+  // display: none;
+  visibility: hidden;
+  width: 75px;
+  height: auto;
+  transform: translate3d(25px, -135px, 0);
+}
+
+.camper-wrapper:hover .chat-bubble {
+  display: inline;
+  visibility: visible;
+  // margin: 2rem;
+}
+
+.camper-wrapper:hover {
+  cursor: pointer;
+}
+
+.camper {
+  height: 150px;
+  width: auto;
 }
 
 .is-flex {
