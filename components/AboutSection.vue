@@ -37,14 +37,14 @@
             class="camper-wrapper"
             @click="openModal(index)"
           >
-            <span>
+            <span v-if="!collapse.disabled">
               <img
                 class="chat-bubble"
                 src="/faq/chat-bubble.svg"
                 alt="Chat bubble"
               />
             </span>
-            <img class="camper" :src="collapse.img" alt="VTHacks logo" />
+            <img class="camper" :src="collapse.img" alt="Click for FAQ" />
           </span>
         </div>
       </div>
@@ -93,6 +93,12 @@ export default {
           text: `We like to keep teams at 4 or less participants so that the competition is fair between teams.`,
         },
         {
+          img: '/faq/Fire.svg',
+          title: '',
+          text: '',
+          disabled: true,
+        },
+        {
           img: '/faq/Camper5.svg',
           title: `Where is the schedule?`,
           text: `You can find our schedule on our <a target="_blank" href="https://live.vthacks.com">livesite</a>, along with other great bits of information.`,
@@ -103,7 +109,7 @@ export default {
           text: `No! We will have workshops designed show you the ropes on how to program. Additionally we promote hacks that are purely ideoligical. If you can sell us a product or an idea, do that instead.`,
         },
         {
-          img: '/faq/Campers6-7.svg',
+          img: '/faq/Camper1.svg',
           title: `Any more questions?`,
           text: `Send us an email at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> and we'll get back to you!`,
         },
@@ -112,6 +118,8 @@ export default {
   },
   methods: {
     openModal(index) {
+      if (this.general[index].disabled) return
+
       this.active = { isOpen: true, index }
     },
   },
