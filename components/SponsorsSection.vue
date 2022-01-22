@@ -106,11 +106,16 @@ export default {
         return [
           {
             id: 0,
+            src: '/sponsors/mlh-white.png',
+            alt: 'Major League Hacking Logo',
+          },
+          {
+            id: 1,
             src: '/sponsors/Peraton-Full-Color.png',
             alt: 'Peraton Logo',
           },
           {
-            id: 1,
+            id: 2,
             src: '/sponsors/vtcs.png',
             alt: 'Virginia Tech Computer Science Department Logo',
           },
