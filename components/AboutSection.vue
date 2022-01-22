@@ -5,12 +5,13 @@
     </div>
     <div id="about-content" class="content has-text-centered">
       <h1 class="title is-1">F.A.Q.</h1>
+      <p id="faq-click-text">Click on the campers to learn more!</p>
       <div class="section">
         <b-modal v-model="active.isOpen">
           <div id="modal-card">
             <div class="card">
               <header class="card-header">
-                <p class="card-header-title">
+                <p id="faq-modal-header" class="card-header-title">
                   {{ general[active.index].title }}
                 </p>
                 <button class="card-header-icon" aria-label="Close FAQ modal">
@@ -288,5 +289,13 @@ export default {
 
 .close-faq-modal-button {
   color: gray;
+}
+
+#faq-modal-header {
+  margin: auto;
+}
+#faq-click-text {
+  color: #fff;
+  font-size: 20px;
 }
 </style>
