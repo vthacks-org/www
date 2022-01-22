@@ -8,50 +8,28 @@
       <div class="section">
         <b-modal v-model="active.isOpen">
           <div id="modal-card">
-            <h1>{{ general[active.index].title }}</h1>
-            <p>
-              {{ general[active.index].text }}
-            </p>
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  {{ general[active.index].title }}
+                </p>
+                <button class="card-header-icon" aria-label="Close FAQ modal">
+                  <span class="icon">
+                    <i
+                      class="fas fa-times close-faq-modal-button"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </button>
+              </header>
+              <div class="card-content">
+                <div class="content" v-html="general[active.index].text" />
+              </div>
+            </div>
           </div>
         </b-modal>
 
         <div class="campers-container">
-          <!-- <b-collapse
-            v-for="(collapse, index) of general"
-            :key="index"
-            class="card b-collapse"
-            animation="slide"
-            :open="isOpenG == index"
-            @open="isOpenG = index"
-          >
-            <template #trigger="props">
-              <div class="card-header" role="button">
-                <p class="card-header-title">
-                  {{ collapse.title }}
-                </p>
-                <a class="card-header-icon">
-                  <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
-                  </b-icon>
-                </a>
-              </div>
-            </template>
-            <div class="card-content">
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <div class="content">
-
-                      <span v-html="collapse.text"></span>
-                    </div>
-                  </div>
-                </div>
-                <figure v-if="collapse.img" class="media-right">
-                  <img class="card-img" :src="collapse.img" />
-                </figure>
-              </article>
-            </div>
-          </b-collapse> -->
-          <!-- <img id="splash-logo" src="~assets/logo.svg" alt="VTHacks logo" /> -->
           <span
             v-for="(collapse, index) of general"
             :key="index"
@@ -306,5 +284,9 @@ export default {
         rgba(28, 21, 87, 0) 25%
       );
   }
+}
+
+.close-faq-modal-button {
+  color: gray;
 }
 </style>
