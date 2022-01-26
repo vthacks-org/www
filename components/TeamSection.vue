@@ -73,7 +73,7 @@ export default {
         },
         {
           name: 'Shardul Dhongade',
-          gradYear: 2022,
+          gradYear: 2025,
           major: 'Computer Science',
           committees: 'Logistics, Sponsorship',
           pic: 'shardul_mtt.jpg',
