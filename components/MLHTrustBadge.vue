@@ -24,14 +24,10 @@ export default {
   max-width: 100px;
   min-width: 60px;
   position: absolute;
-  right: 50px;
+  right: 1rem;
   top: 0;
   width: 10%;
   z-index: 10000;
   background-color: transparent;
-
-  @media (max-width: 480px) {
-    right: 8px !important;
-  }
 }
 </style>
