@@ -163,7 +163,7 @@ $navcolor: rgba(0, 0, 0, 0.8);
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   :root {
     --navHeight: 40px;
   }
