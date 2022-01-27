@@ -174,9 +174,8 @@ $navcolor: rgba(0, 0, 0, 0.8);
   }
 
   .navbar-menu {
-    position: absolute;
-    right: 6em;
-    width: auto;
+    float: right;
+    width: max-content;
   }
 }
 
