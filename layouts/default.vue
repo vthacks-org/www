@@ -138,6 +138,9 @@ $navcolor: rgba(0, 0, 0, 0.8);
   color: $text-primary;
   cursor: pointer;
   font-size: var(--navHeight);
+  &:hover {
+    color: #a4a0a0;
+  }
 }
 
 .navbar-end {
