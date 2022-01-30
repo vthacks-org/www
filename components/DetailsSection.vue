@@ -3,15 +3,11 @@
     <div id="detail-content" class="is-flex has-text-centered">
       <h1 class="contrast title is-1">Registration for VTHacks IX is open!</h1>
 
-      <!--<p class="is-size-5">Feb 26-28, 2021</p>
-      <p class="is-size-5">
-        {{ statusMessage }}
-      </p>
-      -->
-      <p class="is-size-5">
+      <p class="is-size-5 countdown">
         Register to attend VTHacks IX, February 25 - 27th, 2022
         <!-- <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a> -->
       </p>
+      <p class="is-size-5">{{ statusMessage }}</p>
       <p class="is-flex centered" style="justify-content: center">
         <button
           id="register-button"
@@ -49,7 +45,10 @@ export default {
   name: 'DetailsSection',
   data() {
     return {
-      statusMessage: 'VTHacks 9 is defaultDays days away!',
+      statusMessage:
+        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks IX!',
+      defaultStatusMessage:
+        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks IX!',
     }
   },
   created() {
@@ -58,9 +57,8 @@ export default {
   methods: {
     updateDaysLeft() {
       /* month is 0-11 for some reason where date is 1-31 */
-      const startHour = new Date(2021, 1, 26, 16)
-      const sameDay = new Date(2021, 1, 26)
-      const endDate = new Date(2021, 1, 28, 14)
+      const startHour = new Date(2022, 1, 25, 17)
+      const endDate = new Date(2022, 1, 27, 14)
       const currentDate = new Date()
 
       /* if vthacks is happening or past: */
@@ -74,8 +72,47 @@ export default {
       }
 
       /* +1 because it the current day isn't included */
-      const daysLeft = Math.floor((sameDay - currentDate) / 86400000) + 1
-      this.statusMessage = this.statusMessage.replace('defaultDays', daysLeft)
+      const daysLeft = Math.floor(
+        (startHour - currentDate) / (1000 * 60 * 60 * 24)
+      )
+      const hoursLeft = Math.floor(
+        ((startHour - currentDate) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      )
+      const minutesLeft = Math.floor(
+        ((startHour - currentDate) % (1000 * 60 * 60)) / (1000 * 60)
+      )
+      const secondsLeft = Math.floor(
+        ((startHour - currentDate) % (1000 * 60)) / 1000
+      )
+      this.statusMessage = this.defaultStatusMessage
+      this.statusMessage = this.statusMessage.replace(
+        'defaultDays',
+        daysLeft.toLocaleString('en-US', {
+          minimumIntegerDigits: 2,
+          useGrouping: false,
+        })
+      )
+      this.statusMessage = this.statusMessage.replace(
+        'defaultHours',
+        hoursLeft.toLocaleString('en-US', {
+          minimumIntegerDigits: 2,
+          useGrouping: false,
+        })
+      )
+      this.statusMessage = this.statusMessage.replace(
+        'defaultMinutes',
+        minutesLeft.toLocaleString('en-US', {
+          minimumIntegerDigits: 2,
+          useGrouping: false,
+        })
+      )
+      this.statusMessage = this.statusMessage.replace(
+        'defaultSeconds',
+        secondsLeft.toLocaleString('en-US', {
+          minimumIntegerDigits: 2,
+          useGrouping: false,
+        })
+      )
       if (daysLeft === 1) {
         this.statusMessage = this.statusMessage.replace('days', 'day')
         return
@@ -83,6 +120,7 @@ export default {
       if (daysLeft === 0) {
         this.statusMessage = 'VTHacks IX starts today!'
       }
+      setTimeout(() => this.updateDaysLeft(), 1000)
     },
   },
 }
@@ -139,5 +177,9 @@ a {
   // .title {
   //   color: $peach;
   // }
+}
+
+.countdown {
+  width: 620px;
 }
 </style>
