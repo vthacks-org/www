@@ -37,12 +37,8 @@
             class="camper-wrapper"
             @click="openModal(index)"
           >
-            <span v-if="!collapse.disabled">
-              <img
-                class="chat-bubble"
-                src="/faq/chat-bubble.svg"
-                alt="Chat bubble"
-              />
+            <span v-if="!collapse.disabled" class="chat-bubble">
+              {{ general[index].title }}
             </span>
             <img class="camper" :src="collapse.img" alt="Click for FAQ" />
           </span>
@@ -171,22 +167,54 @@ export default {
 }
 
 .camper-wrapper {
-  display: inline;
-  // margin: 2rem;
+  display: inline-block;
+  position: relative;
 }
 
 .chat-bubble {
-  // display: none;
   visibility: hidden;
-  width: 75px;
-  height: auto;
-  transform: translate3d(25px, -135px, 0);
+  position: absolute;
+  z-index: 1;
+  width: 10rem;
+  bottom: 90%;
+  left: 20%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1rem 1rem;
+  margin-left: -60px;
+
+  @media (min-width: 650px) {
+    left: 5%;
+  }
+
+  @media (min-width: 780px) {
+    left: 10%;
+  }
+
+  @media (min-width: 920px) {
+    left: 15%;
+  }
+
+  @media (min-width: 970px) {
+    left: 7%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    border-width: 15px;
+    clip-path: polygon(50% 0%, 20% 35%, 85% 60%);
+    border-style: solid;
+    border-color: white;
+  }
 }
 
 .camper-wrapper:hover .chat-bubble {
-  display: inline;
   visibility: visible;
-  // margin: 2rem;
 }
 
 .camper-wrapper:hover {
