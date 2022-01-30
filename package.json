@@ -12,7 +12,7 @@
     "lint:fix": "eslint --fix --ext .js,.vue ."
   },
   "dependencies": {
-    "@nuxt/content": "^1.13.1",
+    "@nuxt/content": "^1.15.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.20.3",
