@@ -138,6 +138,9 @@ $navcolor: rgba(0, 0, 0, 0.8);
   color: $text-primary;
   cursor: pointer;
   font-size: var(--navHeight);
+  &:hover {
+    color: #a4a0a0;
+  }
 }
 
 .navbar-end {
@@ -163,7 +166,7 @@ $navcolor: rgba(0, 0, 0, 0.8);
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   :root {
     --navHeight: 40px;
   }
@@ -174,9 +177,8 @@ $navcolor: rgba(0, 0, 0, 0.8);
   }
 
   .navbar-menu {
-    position: absolute;
-    right: 6em;
-    width: auto;
+    float: right;
+    width: max-content;
   }
 }
 
