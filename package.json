@@ -15,7 +15,7 @@
     "@nuxt/content": "^1.13.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.0.0",
-    "core-js": "^3.9.0",
+    "core-js": "^3.20.3",
     "nuxt": "^2.15.1",
     "nuxt-buefy": "^0.4.4",
     "nuxt-lazy-load": "^1.2.5"
@@ -24,7 +24,7 @@
     "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/google-analytics": "^2.4.0",
-    "@nuxtjs/stylelint-module": "^4.0.0",
+    "@nuxtjs/stylelint-module": "^4.1.0",
     "@nuxtjs/svg": "^0.3.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.20.0",
