@@ -42,6 +42,7 @@ export default {
   transform: translateY(-40%);
   justify-content: center;
   flex-direction: column;
+
   img {
     width: 70%;
     padding: 3vw;
@@ -54,11 +55,13 @@ export default {
   background: url('~assets/mount_trees.svg'),
     linear-gradient(0deg, rgba(25, 17, 42, 1) 0%, rgba(255, 255, 255, 0) 85%);
   background-repeat: repeat-x;
+
   div {
     height: 650px;
     background-image: url('~assets/mount_trees.svg');
     background-repeat: repeat-x;
     background-position: -33% 0%;
+
     div {
       height: 680px;
       background: url('~assets/mount_trees.svg'),
@@ -89,6 +92,7 @@ export default {
     transform: translateY(-40%);
     justify-content: center;
     flex-direction: column;
+
     img {
       display: none;
     }
@@ -105,10 +109,12 @@ export default {
         rgba(28, 21, 87, 0) 60%
       );
     background-repeat: repeat-x;
+
     div {
       height: 320px;
       background-repeat: repeat-x;
       background-position: -33% 0%;
+
       div {
         height: 380px;
         background-repeat: repeat-x;

@@ -112,6 +112,7 @@ export default {
 <style lang="scss">
 @import '../sass/theme';
 $navcolor: rgba(0, 0, 0, 0.8);
+
 :root {
   --navHeight: 70px;
 }
@@ -138,6 +139,7 @@ $navcolor: rgba(0, 0, 0, 0.8);
   color: $text-primary;
   cursor: pointer;
   font-size: var(--navHeight);
+
   &:hover {
     color: #a4a0a0;
   }
@@ -149,6 +151,7 @@ $navcolor: rgba(0, 0, 0, 0.8);
     font-family: $bnr22;
     font-size: 1.1rem;
     color: $text-primary;
+
     &.page-ref {
       &:hover {
         border-bottom: 2px solid;

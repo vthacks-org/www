@@ -106,12 +106,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '../sass/theme';
+
 #team-section {
   padding-top: 3vw;
   background: $midnight;
   flex-direction: column;
   align-items: center;
 }
+
 #team-content {
   display: grid;
   max-width: 1200px;
@@ -135,16 +137,19 @@ export default {
   font-family: $font-mono;
   // border: 1px solid red;
 }
+
 .team-member > img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 1px $dark-blue solid;
 }
+
 .team-member > p {
   margin-bottom: 0;
   color: $dark-blue;
 }
+
 .team-member > p > strong {
   color: $dark-blue;
 }
@@ -152,6 +157,7 @@ export default {
 .committee-tag {
   width: '';
 }
+
 h1 {
   // display: none; // Remove to show sponsor text
   color: $peach;

@@ -49,14 +49,14 @@
               for real-time updates from our organizers and to virtually
               navigate on the day of the event
             </li>
-            <!-- <li class="is-size-4">
+            <li class="is-size-4">
               Create an account on
-              <a target="_blank" href="https://vthacks-8.devpost.com/"
+              <a target="_blank" href="https://vthacks-ix.devpost.com/"
                 >devpost</a
               >
-              (where you will submit) and check out the
-              <a href="https://live.vthacks.com/">livesite</a> for the schedule
-            </li> -->
+              (where you will submit) <!-- and check out the
+              <a href="https://live.vthacks.com/">livesite</a> for the schedule -->
+            </li>
             <li class="is-size-4">
               Follow us on
               <a target="_blank" href="https://twitter.com/VT_Hacks">Twitter</a
@@ -116,6 +116,7 @@ li {
   background-repeat: no-repeat;
   background-position: 30% 0%;
   padding: 2vw;
+
   div {
     padding: 1vw;
   }
@@ -137,6 +138,7 @@ li {
     background-repeat: no-repeat;
     background-position: 65% 0%;
     padding: 2vw;
+
     div {
       padding: 1vw;
     }
