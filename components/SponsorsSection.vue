@@ -206,6 +206,7 @@ export default {
   padding-top: 3vw;
   background: $midnight;
   width: 100%;
+
   div {
     h1 {
       // display: none; // Remove to show sponsor text
@@ -214,6 +215,7 @@ export default {
     }
   }
 }
+
 #sponsor-container {
   display: flex;
   flex-wrap: wrap;
@@ -232,6 +234,7 @@ export default {
   // display: none; // Remove to show sponsor images
   height: auto;
   max-width: 300px;
+
   &.big {
     max-width: 600px;
     min-width: 400px;
@@ -253,6 +256,7 @@ export default {
     margin-top: 0%;
     background: $midnight;
     width: 100%;
+
     div {
       h1 {
         color: $peach;
