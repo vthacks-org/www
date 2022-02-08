@@ -17,7 +17,7 @@
               Register as an individual
               <a
                 target="_blank"
-                href="https://forms.gle/9nCe4389KENDdNYw7"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScMFUw1V9Kk_NhnJpvTcin60yU41dTdB41HKO5q4gonJLI5Ig/viewform?usp=sf_link"
                 rel="noreferrer"
                 >here</a
               >
@@ -26,7 +26,7 @@
               Register your team
               <a
                 target="_blank"
-                href="https://forms.gle/n4N4hpsA7Y5kUW1G9"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeq9LoWCz-jYYpYiL3LYY7Ghh7PlQgU2Gbq1nhxDtINORUghQ/viewform?usp=sf_link"
                 rel="noreferrer"
                 >here</a
               >
