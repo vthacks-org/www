@@ -1,7 +1,7 @@
 <template>
   <section id="sponsors-section" class="section">
     <div class="content has-text-centered">
-      <h1 class="title is-1">Thanks to our past and current sponsors</h1>
+      <h1 class="title is-1">Thanks to our current sponsors</h1>
     </div>
     <div id="sponsor-container" class="tile">
       <div
@@ -126,71 +126,6 @@ export default {
       type: Array,
       default() {
         return [
-          {
-            id: 0,
-            src: '/sponsors/capitalone.svg',
-            alt: 'Capital One Logo',
-          },
-          {
-            id: 1,
-            alt: 'echoAR logo',
-            src: '/sponsors/echoAR.png',
-          },
-          {
-            id: 2,
-            alt: 'balsamiq logo',
-            src: '/sponsors/balsamiq.svg',
-          },
-          {
-            id: 3,
-            alt: 'stickermule logo',
-            src: '/sponsors/sticker-mule-logo-dark.png',
-          },
-          {
-            id: 5,
-            alt: 'MicroStrategy logo',
-            src: '/sponsors/MicroStrategy.png',
-          },
-          {
-            id: 6,
-            alt: 'Carmax logo',
-            src: '/sponsors/CarMax.svg',
-          },
-          {
-            id: 7,
-            alt: 'Google Cloud logo',
-            src: '/sponsors/GoogleCloud.png',
-          },
-          {
-            id: 8,
-            alt: 'JB Hunt logo',
-            src: '/sponsors/JBHunt.svg',
-          },
-          {
-            id: 9,
-            alt: 'RippleMatch logo',
-            src: '/sponsors/ripplematch.png',
-          },
-          {
-            id: 10,
-            alt: 'WillowTree logo',
-            src: '/sponsors/WillowTree.svg',
-          },
-          {
-            id: 11,
-            alt: 'Eastman logo',
-            src: '/sponsors/Eastman.png',
-          },
-          {
-            id: 12,
-            alt: 'Virginia Cyber Range logo',
-            src: '/sponsors/CyberRange.svg',
-          },
-          {
-            id: 13,
-            alt: 'Wolfram logo',
-            src: '/sponsors/WolframLanguageLogo.png',
-          },
         ]
       },
     },
