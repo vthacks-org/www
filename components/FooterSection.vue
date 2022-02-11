@@ -79,7 +79,7 @@ export default {
 #footer-section {
   width: 100%;
   min-height: 70px;
-  background: $midnight;
+  background: #19112a;
 }
 
 .level-item {
