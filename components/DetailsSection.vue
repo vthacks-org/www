@@ -160,8 +160,7 @@ a {
 }
 
 .contrast {
-  text-transform: none;
-  mix-blend-mode: multiply;
+  color: $peach;
 }
 
 // .btn-content {

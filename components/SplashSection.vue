@@ -8,7 +8,7 @@
           src="~assets/VTHacksIX-logo.svg"
           alt="VTHacks logo"
         />
-        <img id="sun-image" src="~/assets/sun.svg" alt="Sun" />
+        <img id="sun-image" src="~/assets/moon2.svg" alt="Sun" />
       </div>
     </div>
   </section>

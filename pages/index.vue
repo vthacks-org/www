@@ -141,10 +141,10 @@ export default {
 #gradient {
   background: linear-gradient(
     0deg,
-    $night 10%,
-    $twilight 42%,
-    $sunset 59%,
-    $day 100%
+    // $night 10%,
+    // $twilight 42%,
+    #8A6E5E 50%,
+   #3C4E55 90%
   );
   z-index: 1;
   height: fit-content;

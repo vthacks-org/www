@@ -204,7 +204,7 @@ export default {
 #sponsors-section {
   z-index: -1;
   padding-top: 3vw;
-  background: $midnight;
+  background: #19112a;
   width: 100%;
 
   div {
@@ -254,7 +254,7 @@ export default {
   #sponsors-section {
     z-index: -1;
     margin-top: 0%;
-    background: $midnight;
+    background: #19112a;
     width: 100%;
 
     div {

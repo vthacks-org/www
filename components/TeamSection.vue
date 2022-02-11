@@ -109,7 +109,7 @@ export default {
 
 #team-section {
   padding-top: 3vw;
-  background: $midnight;
+  background: #19112a;
   flex-direction: column;
   align-items: center;
 }
