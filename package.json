@@ -15,7 +15,7 @@
     "@nuxt/content": "^1.13.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.0.0",
-    "core-js": "^3.20.3",
+    "core-js": "^3.21.0",
     "eslint-plugin-vue": "^8.4.1",
     "nuxt": "^2.15.1",
     "nuxt-buefy": "^0.4.14",
