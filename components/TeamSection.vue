@@ -93,6 +93,13 @@ export default {
           pic: 'anika_mtt.jpg',
         },
         {
+          name: 'Michael Peters',
+          gradYear: 2024,
+          major: 'Computer Science',
+          committees: 'Logistics',
+          pic: 'michael_mtt.jpg'
+        },
+        {
           name: 'Krish Ganotra',
           gradYear: 2025,
           major: 'Computer Science',
