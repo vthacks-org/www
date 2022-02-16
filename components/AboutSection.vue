@@ -8,26 +8,32 @@
       <p id="faq-click-text">Click on the campers to learn more!</p>
       <div class="section">
         <b-modal v-model="active.isOpen">
-          <div id="modal-card">
-            <div class="card">
-              <header class="card-header">
-                <p id="faq-modal-header" class="card-header-title">
-                  {{ general[active.index].title }}
-                </p>
-                <button class="card-header-icon" aria-label="Close FAQ modal">
-                  <span class="icon">
-                    <i
-                      class="fas fa-times close-faq-modal-button"
-                      aria-hidden="true"
-                    />
-                  </span>
-                </button>
-              </header>
-              <div class="card-content">
-                <div class="content" v-html="general[active.index].text" />
+          <template #default="props">
+            <div id="modal-card">
+              <div class="card">
+                <header class="card-header">
+                  <p id="faq-modal-header" class="card-header-title">
+                    {{ general[active.index].title }}
+                  </p>
+                  <button
+                    class="card-header-icon"
+                    aria-label="Close FAQ modal"
+                    @click="props.close"
+                  >
+                    <span class="icon">
+                      <i
+                        class="fas fa-times close-faq-modal-button"
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </button>
+                </header>
+                <div class="card-content">
+                  <div class="content" v-html="general[active.index].text" />
+                </div>
               </div>
             </div>
-          </div>
+          </template>
         </b-modal>
 
         <div class="campers-container">
