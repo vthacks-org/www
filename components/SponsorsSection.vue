@@ -18,24 +18,14 @@
         </div>
       </div>
     </div>
-    <div id="sponsor-container" class="tile">
+    <div
+      v-for="(sponsorList, index) of sponsors"
+      id="sponsor-container"
+      :key="index"
+      class="tile"
+    >
       <div
-        v-for="sponsor of sponsors"
-        :key="sponsor.alt"
-        class="flex-container centered"
-      >
-        <div class="tile is-child is-flex flex-center">
-          <figure class="image">
-            <img class="sponsor-img" :src="sponsor.src" :alt="sponsor.alt" />
-          </figure>
-          <!-- <a href="" target="_blank">
-            </a> -->
-        </div>
-      </div>
-    </div>
-    <div id="sponsor-container" class="tile">
-      <div
-        v-for="sponsor of pastSponsors"
+        v-for="sponsor of sponsorList"
         :key="sponsor.alt"
         class="flex-container centered"
       >
@@ -91,34 +81,59 @@ export default {
     platSponsors: {
       type: Array,
       default() {
-        return [
-          {
-            id: 0,
-            src: '/sponsors/mantech-logo.png',
-            alt: 'ManTech',
-          },
-        ]
+        return []
       },
     },
     sponsors: {
       type: Array,
       default() {
         return [
-          {
-            id: 0,
-            src: '/sponsors/mlh-white.png',
-            alt: 'Major League Hacking Logo',
-          },
-          {
-            id: 1,
-            src: '/sponsors/Peraton-Full-Color.png',
-            alt: 'Peraton Logo',
-          },
-          {
-            id: 2,
-            src: '/sponsors/vtcs.png',
-            alt: 'Virginia Tech Computer Science Department Logo',
-          },
+          [
+            {
+              id: 0,
+              src: '/sponsors/mantech-logo.png',
+              alt: 'ManTech',
+            },
+          ],
+          [
+            {
+              id: 0,
+              src: '/sponsors/Peraton-Full-Color.png',
+              alt: 'Peraton Logo',
+            },
+            {
+              id: 1,
+              src: '/sponsors/vtcs.png',
+              alt: 'Virginia Tech Computer Science Department Logo',
+            },
+            {
+              id: 2,
+              src: '/sponsors/capitalone.svg',
+              alt: 'Captial One Logo',
+            },
+          ],
+          [
+            {
+              id: 0,
+              src: '/sponsors/mlh-white.png',
+              alt: 'Major League Hacking Logo',
+            },
+            {
+              id: 1,
+              src: '/sponsors/GoogleCloud.png',
+              alt: 'Google Cloud Logo',
+            },
+            {
+              id: 2,
+              src: '/sponsors/ultrapress.png',
+              alt: 'UltraPress Logo',
+            },
+            {
+              id: 3,
+              src: '/sponsors/StickerMule.svg',
+              alt: 'stickermule Logo',
+            },
+          ],
         ]
       },
     },
