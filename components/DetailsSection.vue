@@ -88,7 +88,7 @@ export default {
       this.statusMessage = this.statusMessage.replace(
         'defaultDays',
         daysLeft.toLocaleString('en-US', {
-          minimumIntegerDigits: 2,
+          minimumIntegerDigits: 1,
           useGrouping: false,
         })
       )
