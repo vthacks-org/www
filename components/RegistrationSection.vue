@@ -8,7 +8,7 @@
           Register Now And Get Ready for VTHacks IX
         </h1>
         <h1 class="subtitle is-4 has-text-centered">
-          VTHacks swag will be given out on a first come, first serve basis, so
+          VTHacks swag will be given out on a first come, first served basis, so
           make sure to register early.
         </h1>
         <div class="content">
