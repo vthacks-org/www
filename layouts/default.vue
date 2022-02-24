@@ -65,7 +65,7 @@ export default {
           id: 'about-content',
         },
         {
-          name: 'Past Sponsors',
+          name: 'Sponsors',
           id: 'sponsors-section',
         },
       ],
