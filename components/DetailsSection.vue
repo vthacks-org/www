@@ -27,7 +27,9 @@
       </p>
 
       <!-- <p>Tenatively scheduled for the weekend of February 26th</p> -->
-      <!-- <a id="plane-button" href="https://live.vthacks.com/" target="_blank"></a> -->
+      <a id="plane-button" href="https://live.vthacks.com/" target="_blank"
+        ><img src="~/assets/plane.svg" alt="Plane button"
+      /></a>
     </div>
     <!--    <div class="content">-->
     <!--      <h3 class="title is-3">Virginia Tech</h3>-->
@@ -139,7 +141,7 @@ a {
 }
 
 #plane-button {
-  padding: 6vh 1vw;
+  padding: 8vh 1vw;
 }
 
 #register-button {
