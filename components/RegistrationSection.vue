@@ -13,7 +13,7 @@
         </h1>
         <div class="content">
           <ol type="1">
-            <li class="is-size-4">
+            <!-- <li class="is-size-4">
               Register as an individual
               <a
                 target="_blank"
@@ -37,7 +37,7 @@
                 >#team-formation</a
               >
               channel in the VTHacks Discord Server)
-            </li>
+            </li> -->
             <li class="is-size-4">
               Join the VTHacks
               <a
