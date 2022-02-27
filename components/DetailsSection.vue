@@ -8,7 +8,7 @@
         <!-- <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a> -->
       </p>
       <p class="is-size-5">{{ statusMessage }}</p>
-      <p class="is-flex centered" style="justify-content: center">
+      <!-- <p class="is-flex centered" style="justify-content: center">
         <button
           id="register-button"
           class="is-flex button is-link is-outlined"
@@ -23,8 +23,8 @@
             Register now!
           </a>
         </button>
-        <!-- <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a> -->
-      </p>
+        <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a>
+      </p> -->
 
       <!-- <p>Tenatively scheduled for the weekend of February 26th</p> -->
       <a id="plane-button" href="https://live.vthacks.com/" target="_blank"
