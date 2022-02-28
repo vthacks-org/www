@@ -72,13 +72,6 @@ export default {
           pic: 'mehak_mtt.jpg',
         },
         {
-          name: 'Shardul Dhongade',
-          gradYear: 2025,
-          major: 'Computer Science',
-          committees: 'Logistics, Sponsorship',
-          pic: 'shardul_mtt.jpg',
-        },
-        {
           name: 'Katie Weyrich',
           gradYear: 2023,
           major: 'Graphic Design',
@@ -97,7 +90,7 @@ export default {
           gradYear: 2024,
           major: 'Computer Science',
           committees: 'Logistics',
-          pic: 'michael_mtt.jpg'
+          pic: 'michael_mtt.jpg',
         },
         {
           name: 'Krish Ganotra',
@@ -105,6 +98,13 @@ export default {
           major: 'Computer Science',
           committees: 'Logistics, Sponsorship',
           pic: 'krish_mtt.jpg',
+        },
+        {
+          name: 'Shardul Dhongade',
+          gradYear: 2025,
+          major: 'Computer Science',
+          committees: 'Logistics, Sponsorship',
+          pic: 'shardul_mtt.jpg',
         },
       ],
     }
