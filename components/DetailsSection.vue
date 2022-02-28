@@ -1,13 +1,20 @@
 <template>
   <section id="details-section" class="section">
     <div id="detail-content" class="is-flex has-text-centered">
-      <h1 class="contrast title is-1">Registration for VTHacks IX is open!</h1>
+      <h1 class="contrast title is-1">Thank you for an amazing VTHacksIX!</h1>
 
       <p class="is-size-5 countdown">
-        Register to attend VTHacks IX, February 25 - 27th, 2022
-        <!-- <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a> -->
+        If you participated in VTHacksIX, please fill out the
+        <a href="https://tally.so/r/wgVNP3" target="_blank">Post Event Survey</a
+        >!
       </p>
-      <p class="is-size-5">{{ statusMessage }}</p>
+      <!-- <h1 class="contrast title is-1">Registration for VTHacks IX is open!</h1> -->
+
+      <!-- <p class="is-size-5 countdown"> -->
+      <!-- Register to attend VTHacks IX, February 25 - 27th, 2022 -->
+      <!-- <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a> -->
+      <!-- </p> -->
+      <!-- <p class="is-size-5">{{ statusMessage }}</p> -->
       <!-- <p class="is-flex centered" style="justify-content: center">
         <button
           id="register-button"
@@ -27,9 +34,9 @@
       </p> -->
 
       <!-- <p>Tenatively scheduled for the weekend of February 26th</p> -->
-      <a id="plane-button" href="https://live.vthacks.com/" target="_blank"
-        ><img src="~/assets/plane.svg" alt="Plane button"
-      /></a>
+      <!-- <a id="plane-button" href="https://live.vthacks.com/" target="_blank" -->
+      <!-- ><img src="~/assets/plane.svg" alt="Plane button" -->
+      <!-- /></a> -->
     </div>
     <!--    <div class="content">-->
     <!--      <h3 class="title is-3">Virginia Tech</h3>-->
