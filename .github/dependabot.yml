@@ -8,9 +8,7 @@ updates:
     time: '00:00'
   open-pull-requests-limit: 10
   reviewers:
-    - jmc529
   assignees:
-    - jmc529
   commit-message:
     prefix: fix
     prefix-development: chore
