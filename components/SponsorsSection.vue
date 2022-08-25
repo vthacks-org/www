@@ -1,7 +1,12 @@
 <template>
   <section id="sponsors-section" class="section">
     <div class="content has-text-centered">
-      <h1 class="title is-1">Thanks to our current sponsors</h1>
+      <h1 class="title is-1">Thanks to our Spring 2022 sponsors</h1>
+    </div>
+    <div class="content has-text-centered">
+      <p>Interested in sponsoring? Check out our
+        <a href="https://vthacks.com/Prospectus.pdf" target="_blank">sponsorship packet</a>
+        and contact us at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a></p>
     </div>
     <div id="sponsor-container" class="tile">
       <div
