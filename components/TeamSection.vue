@@ -1,7 +1,7 @@
 <template>
   <section id="team-section">
     <div class="content has-text-centered">
-      <h1 class="title is-1">Meet the Team</h1>
+      <h1 class="title is-1">Spring 2022 Team</h1>
     </div>
     <div id="team-content" class="content has-text-centered">
       <div v-for="member of team" :key="member.name" class="team-member">

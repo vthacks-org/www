@@ -1,21 +1,21 @@
 <template>
   <section id="details-section" class="section">
     <div id="detail-content" class="is-flex has-text-centered">
-      <h1 class="contrast title is-1">Thank you for an amazing VTHacksIX!</h1>
+      <!-- <h1 class="contrast title is-1">Thank you for an amazing VTHacks X!</h1>
 
       <p class="is-size-5 countdown">
-        If you participated in VTHacksIX, please fill out the
+        If you participated in VTHacks X, please fill out the
         <a href="https://tally.so/r/wgVNP3" target="_blank">Post Event Survey</a
         >!
-      </p>
-      <!-- <h1 class="contrast title is-1">Registration for VTHacks IX is open!</h1> -->
+      </p> -->
+      <h1 class="contrast title is-1">VTHacks X coming soon!</h1>
 
-      <!-- <p class="is-size-5 countdown"> -->
-      <!-- Register to attend VTHacks IX, February 25 - 27th, 2022 -->
-      <!-- <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a> -->
-      <!-- </p> -->
-      <!-- <p class="is-size-5">{{ statusMessage }}</p> -->
-      <!-- <p class="is-flex centered" style="justify-content: center">
+      <!-- <p class="is-size-5 countdown">
+        Register to attend VTHacks X, February 25 - 27th, 2022
+        <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a>
+      </p> -->
+      <!-- <p class="is-size-5">{{ statusMessage }}</p>
+      <p class="is-flex centered" style="justify-content: center">
         <button
           id="register-button"
           class="is-flex button is-link is-outlined"
@@ -33,19 +33,17 @@
         <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a>
       </p> -->
 
-      <!-- <p>Tenatively scheduled for the weekend of February 26th</p> -->
-      <!-- <a id="plane-button" href="https://live.vthacks.com/" target="_blank" -->
-      <!-- ><img src="~/assets/plane.svg" alt="Plane button" -->
-      <!-- /></a> -->
+      <p>Tenatively scheduled for late Fall 2022</p>
+      <!-- <a id="plane-button" href="https://live.vthacks.com/" target="_blank"
+        ><img src="~/assets/plane.svg" alt="Plane button"
+      /></a> -->
     </div>
-    <!--    <div class="content">-->
-    <!--      <h3 class="title is-3">Virginia Tech</h3>-->
-    <!--      <h4 class="title is-4">February 26-28, 2021</h4>-->
-    <!--      <h4 class="title is-4">Surge Space Building</h4>-->
-    <!--      <h4 class="title is-4">-->
-    <!--        435 Turner St NW,<br />Blacksburg VA 24060-->
-    <!--      </h4>-->
-    <!--    </div>-->
+    <!-- <div class="content">
+      <h3 class="title is-3">Virginia Tech</h3>
+      <h4 class="title is-4">February 26-28, 2021</h4>
+      <h4 class="title is-4">Surge Space Building</h4>
+      <h4 class="title is-4">435 Turner St NW,<br />Blacksburg VA 24060</h4>
+    </div> -->
   </section>
 </template>
 
@@ -55,9 +53,9 @@ export default {
   data() {
     return {
       statusMessage:
-        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks IX!',
+        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks X!',
       defaultStatusMessage:
-        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks IX!',
+        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks X!',
     }
   },
   created() {
@@ -76,7 +74,7 @@ export default {
         Stay up to date by following us on social media!`
         return
       } else if (endDate - currentDate > 0 && startHour - currentDate < 0) {
-        this.statusMessage = 'Welcome to VTHacks IX!'
+        this.statusMessage = 'Welcome to VTHacks X!'
         return
       }
 
@@ -127,7 +125,7 @@ export default {
         return
       }
       if (daysLeft === 0) {
-        this.statusMessage = 'VTHacks IX starts today!'
+        this.statusMessage = 'VTHacks X starts today!'
       }
       setTimeout(() => this.updateDaysLeft(), 1000)
     },

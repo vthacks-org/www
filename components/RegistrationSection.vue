@@ -5,7 +5,7 @@
       <div id="padded-space" />
       <div id="registration-content" class="is-flex">
         <h1 class="title is-1 is-spaced has-text-centered">
-          Register Now And Get Ready for VTHacks IX
+          Get Ready for VTHacks X
         </h1>
         <h1 class="subtitle is-4 has-text-centered">
           VTHacks swag will be given out on a first come, first served basis, so
@@ -54,7 +54,8 @@
               <a target="_blank" href="https://vthacks-ix.devpost.com/"
                 >devpost</a
               >
-              (where you will submit) <!-- and check out the
+              (where you will submit)
+              <!-- and check out the
               <a href="https://live.vthacks.com/">livesite</a> for the schedule -->
             </li>
             <li class="is-size-4">

@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  VTHacks 2020 Website
+  VTHacks 2022 Website
 </h1>
 
 ## Local Setup
@@ -23,4 +23,5 @@ npm run lint:fix
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## Build Status
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fe411e08-ef55-4696-98ae-a10d75f36f37/deploy-status)](https://app.netlify.com/sites/vt-hacks-www/deploys)

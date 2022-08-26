@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 @@ -1,162 +1,173 @@
 <template>
   <div>
@@ -23,7 +24,7 @@
         >
           {{ section.name }}
         </b-navbar-item>
-        <b-navbar-item tag="div">
+        <!-- <b-navbar-item tag="div">
           <button
             id="registerButton"
             class="button is-primary is-outlined"
@@ -31,7 +32,7 @@
           >
             Register
           </button>
-        </b-navbar-item>
+        </b-navbar-item> -->
       </template>
     </b-navbar>
 

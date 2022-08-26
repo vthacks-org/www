@@ -7,11 +7,11 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'VTHacks IX',
+    title: 'VTHacks X',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'title', name: 'title', content: 'VTHacks IX' },
+      { hid: 'title', name: 'title', content: 'VTHacks X' },
       {
         hid: 'description',
         name: 'description',
@@ -90,7 +90,7 @@ export default {
   // pwa icon options
   pwa: {
     manifest: {
-      name: 'VTHacks IX',
+      name: 'VTHacks X',
       short_name: 'VTHacks',
       description:
         'A landing page for VTHacks, a MLH hackathon organized by Virginia Tech students.',
