@@ -8,12 +8,12 @@
         <a href="https://tally.so/r/wgVNP3" target="_blank">Post Event Survey</a
         >!
       </p> -->
-      <h1 class="contrast title is-1">VTHacks X coming soon!</h1>
+      <h1 class="contrast title is-1">VTHacks X Coming Soon!</h1>
 
-      <!-- <p class="is-size-5 countdown">
-        Register to attend VTHacks X, February 25 - 27th, 2022
-        <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a>
-      </p> -->
+      <p class="is-size-5 countdown">
+        Pre-register to attend VTHacks X, November 11 - 13th, 2022
+        <a href="https://forms.gle/6y99NRvbpMdakjXf6" target="_blank">here</a>
+      </p>
       <!-- <p class="is-size-5">{{ statusMessage }}</p>
       <p class="is-flex centered" style="justify-content: center">
         <button
@@ -33,7 +33,7 @@
         <a href="https://forms.gle/9nCe4389KENDdNYw7" target="_blank">here</a>
       </p> -->
 
-      <p>Tenatively scheduled for late Fall 2022</p>
+      <!-- <p>November 11-13, 2022</p> -->
       <!-- <a id="plane-button" href="https://live.vthacks.com/" target="_blank"
         ><img src="~/assets/plane.svg" alt="Plane button"
       /></a> -->
