@@ -3,12 +3,11 @@
     <div class="hero-body level is-flex">
       <DetailsSection id="details" class="level-item" />
       <div id="splash-container" class="level-item">
-        <!-- Replace with VT Hacks X logo -->
-        <!-- <img
+        <img
           id="splash-logo"
-          src="~assets/VTHacksIX-logo.svg"
+          src="~assets/VTHacks-X-logo.png"
           alt="VTHacks logo"
-        /> -->
+        />
         <img id="sun-image" src="~/assets/moon2.svg" alt="Sun" />
       </div>
     </div>
