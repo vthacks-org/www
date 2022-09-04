@@ -1,7 +1,7 @@
 <template>
   <section id="team-section">
     <div class="content has-text-centered">
-      <h1 class="title is-1">Spring 2022 Team</h1>
+      <h1 class="title is-1">Fall 2022 Team</h1>
     </div>
     <div id="team-content" class="content has-text-centered">
       <div v-for="member of team" :key="member.name" class="team-member">
@@ -23,53 +23,46 @@ export default {
     return {
       team: [
         {
-          name: 'Patrick Riley',
-          gradYear: 2023,
+          name: 'Krish Ganotra',
+          gradYear: 2024,
           major: 'Computer Science',
-          committees: 'Director',
-          pic: 'patrick_mtt.jpg',
+          committees: 'Director, Internal Operations',
+          pic: 'krish_mtt.jpg',
         },
         {
           name: 'Zane Hasnain',
           gradYear: 2023,
           major: 'Computer Science',
-          committees: 'Co-Director',
+          committees: 'Director, External Operations',
           pic: 'zane_mtt.jpg',
         },
         {
-          name: 'Peter Murphy',
-          gradYear: 2021,
+          name: 'Patrick Riley',
+          gradYear: 2023,
           major: 'Computer Science',
-          committees: 'Public Relations, Executive',
-          pic: 'peter_mtt.jpg',
+          committees: 'Senior Advisor',
+          pic: 'patrick_mtt.jpg',
         },
         {
-          name: 'Brian Wieder',
-          gradYear: 2022,
+          name: 'Anika Thatavarthy',
+          gradYear: 2024,
           major: 'Computer Science',
-          committees: 'Web Dev Co-Lead',
-          pic: 'brian_mtt.jpg',
+          committees: 'Sponsorship lead',
+          pic: 'anika_mtt.jpg',
         },
         {
-          name: 'Jacob Miller',
-          gradYear: 2022,
+          name: 'Michael Peters',
+          gradYear: 2024,
           major: 'Computer Science',
-          committees: 'Web Dev Co-Lead',
-          pic: 'jacob_mtt.jpg',
+          committees: 'Logistics Lead',
+          pic: 'michael_mtt.jpg',
         },
         {
-          name: 'Parvesh Samayamanthula',
-          gradYear: 2022,
+          name: 'Vinit Anishkumar Masrani',
+          gradYear: 2023,
           major: 'Computer Science',
-          committees: 'Sponsorship',
-          pic: 'parvesh_mtt.jpg',
-        },
-        {
-          name: 'Mehak Kamal',
-          gradYear: 2022,
-          major: 'Computer Science',
-          committees: 'Sponsorship',
-          pic: 'mehak_mtt.jpg',
+          committees: 'Logistics, UX',
+          pic: 'vinit_mtt.jpg',
         },
         {
           name: 'Katie Weyrich',
@@ -79,32 +72,32 @@ export default {
           pic: 'katie_mtt.jpg',
         },
         {
-          name: 'Anika Thatavarthy',
+          name: 'Shardul Dhongade',
           gradYear: 2024,
           major: 'Computer Science',
-          committees: 'Sponsorship, UX',
-          pic: 'anika_mtt.jpg',
+          committees: 'Web Dev, Logistics',
+          pic: 'shardul_mtt.jpg',
         },
         {
-          name: 'Michael Peters',
-          gradYear: 2024,
+          name: 'Jay Katyan',
+          gradYear: 2025,
           major: 'Computer Science',
           committees: 'Logistics',
-          pic: 'michael_mtt.jpg',
+          pic: 'jay_mtt.jpeg',
         },
         {
-          name: 'Krish Ganotra',
+          name: 'Justice Jackson',
           gradYear: 2025,
           major: 'Computer Science',
-          committees: 'Logistics, Sponsorship',
-          pic: 'krish_mtt.jpg',
+          committees: 'Logistics, UX',
+          pic: 'justice_mtt.jpeg',
         },
         {
-          name: 'Shardul Dhongade',
-          gradYear: 2025,
+          name: 'Kuhu Pandit',
+          gradYear: 2026,
           major: 'Computer Science',
-          committees: 'Logistics, Sponsorship',
-          pic: 'shardul_mtt.jpg',
+          committees: 'Sponsorship, PR',
+          pic: 'kuhu_mtt.jpeg',
         },
       ],
     }
