@@ -25,7 +25,7 @@ The framework used to support the React app as well as any additional technologi
 
 ### Starting Nx Application
 
-```shell
+```
 //install packages
 npm ci
 
@@ -47,7 +47,7 @@ Husky is a tool that pre-checks your code prior to committing to GitHub, this en
 
 This project is structured by applications. Applications and Libraries can be generated using the Nx framework by running:
 
-`nx g @nrwl/<generator> <project-name>`
+`nx g @nrwl/<generator>:<function> <project-name>`
 
 The monorepo's file structure is as follows:
 
@@ -88,6 +88,12 @@ libs
 ```
 
 As more libraries and tools are added this will be subject to change
+
+## Helpful Tips
+
+`npx nx` will be used throughout this project create an **alias**
+
+`.nvmrc` is used to switch between Node version using this [script](https://www.richardhuf.com.au/using-node-version-manager-and-nvmrc-to-automatically-switch-node-versions-per-project/)
 
 ## Future Work
 
