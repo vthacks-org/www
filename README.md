@@ -1,94 +1,95 @@
+# VT Hacks
 
+## Prerequisites
 
-# Vthacks
+NodeJS - v16.15.0\*
+**(Please use to avoid Dependency Conflicts)**
 
-This project was generated using [Nx](https://nx.dev).
+## Changes from VueJS
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+_Note: This application is using TypeScript a superset of JavaScript any mention of JavaScript means TypeScript_
 
-🔎 **Smart, Fast and Extensible Build System**
+In VueJS, files were mainly written with plain HTML (templating), JavaScript, and SCSS in Single File Components with a close connection to the DOM.
 
-## Adding capabilities to your workspace
+[ReactJS](https://reactjs.org) uses a similar to HTML syntax called JSX (in this case it is TSX because TypeScript). This ensures that it is only JavaScript being written. Everything operates in the Virutal DOM.
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+Components are also now **functions** and are **rendered** instead of autoloaded
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+There is now a component library called [StoryBook](https://storybook.js.org/) to better customize and test components independently of the app
 
-Below are our core plugins:
+Considering using [Material UI](https://mui.com) or another framework to ease the learning curve of SCSS / CSS
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+## Usage
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+The framework used to support the React app as well as any additional technologies is [Nrwl Nx](https://nx.dev/).
 
-## Generate an application
+### Starting Nx Application
 
-Run `nx g @nrwl/react:app my-app` to generate an application.
+```shell
+//install packages
+npm ci
 
-> You can use any of the plugins above to generate applications as well.
+//start service on localhost
+npx nx serve <project-name>
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
+//start test on service (will be done by husky)
+npx nx test <project-name>
 
-## Generate a library
+//run linter (also will be done by husky)
+npx nx run <project-name>:lint
+```
 
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
+#### What is Husky? 🐶
 
-> You can also use any of the plugins above to generate libraries as well.
+Husky is a tool that pre-checks your code prior to committing to GitHub, this ensures good code coverage and uniformed styling
 
-Libraries are shareable across libraries and applications. They can be imported from `@vthacks/mylib`.
+### File Structure
 
-## Development server
+This project is structured by applications. Applications and Libraries can be generated using the Nx framework by running:
 
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+`nx g @nrwl/<generator> <project-name>`
 
-## Code scaffolding
+The monorepo's file structure is as follows:
 
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
+```
+apps
+|
+|_ frontend
+| |
+| |_ src
+| |  |_ app.tsx <-- where most of the css and styling goes
+| |  |_ app.spec.tsx <-- jest testing
+| |
+| |_ assets
+| |  |_ static images
+| |
+| |_ environment variables <-- any deployment keys and such
+| |
+| |_ favicon <-- icon for the website
+| |
+| |_ index.html <-- basic index.html
+| |
+| |_ main.tsx <-- renders the app
+| |
+| |_ tsconfig <-- shouldnt have to touch but typescript configuration files
+|
+|_ frontend-e2e (cypress end to end testing)
 
-## Build
+libs
+|
+|_ ui
+  |_ .storybook
+  |
+  |_ src
+    |_ lib
+      |_ storybook components <-- each will have their own file
+    |
+    |_ index.ts <-- exports components
+```
 
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+As more libraries and tools are added this will be subject to change
 
-## Running unit tests
+## Future Work
 
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+- [ ] Incorporating Live Site into Monorepo
+- [ ] Adding DevTools to better update Live Site
