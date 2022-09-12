@@ -5,7 +5,7 @@ import NxWelcome from './nx-welcome';
 export function App() {
   return (
     <>
-      <h1>Yo</h1>
+      <h1>VT Hacks X</h1>
     </>
   );
 }
