@@ -1,12 +1,12 @@
 <template>
   <a
     id="mlh-trust-badge"
-    href="https://mlh.io/seasons/2022/events"
+    href="https://mlh.io/seasons/2023/events"
     target="_blank"
   >
     <img
-      src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg"
-      alt="Major League Hacking 2022 Hackathon Season"
+      src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg"
+      alt="Major League Hacking 2023 Hackathon Season"
       style="width: 100%"
     />
   </a>
