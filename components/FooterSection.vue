@@ -59,6 +59,16 @@
                   >VTHacks 7</a
                 >
               </div>
+              <div class="dropdown-item">
+                <a href="https://archive8.vthacks.com" class="link"
+                  >VTHacks 8</a
+                >
+              </div>
+              <div class="dropdown-item">
+                <a href="https://vthacks-9.netlify.app/" class="link"
+                  >VTHacks IX</a
+                >
+              </div>
             </div>
           </div>
         </div>
