@@ -82,12 +82,12 @@ export default {
         {
           img: '/faq/Camper2.svg',
           title: `Will the event be in-person or virtual?`,
-          text: `We’re planning to be a mainly in-person event, and will provide a virtual option for those not able to attend physically. This is subject to change based on university Covid-19 guidelines.`,
+          text: `This year, we are planning to have a completely in-person event! However, This will be subject to change based on university Covid-19 guidelines.`,
         },
         {
           img: '/faq/Camper3.svg',
           title: `How much does it cost?`,
-          text: `The event is completely free for all registered participants. Additionally, we will be awarding prizes and swag to eligible participants on a first come first served basis pending international shipping constraints.`,
+          text: `The event is completely free for all registered participants! Additionally, we will be awarding prizes and swag to eligible participants on a first come first served basis pending international shipping constraints.`,
         },
         {
           img: '/faq/Camper4.svg',
@@ -108,7 +108,7 @@ export default {
         {
           img: '/faq/Campers6-7.svg',
           title: `Do I need to know how to program?`,
-          text: `No! We will have workshops designed show you the ropes on how to program. Additionally we promote hacks that are purely ideoligical. If you can sell us a product or an idea, do that instead.`,
+          text: `No! We will have workshops designed show you the ropes on how to program. Additionally we promote hacks that are purely ideological. If you can sell us a product or an idea, do that instead.`,
         },
         {
           img: '/faq/Camper1.svg',
