@@ -65,7 +65,7 @@
                 >
               </div>
               <div class="dropdown-item">
-                <a href="https://vthacks-9.netlify.app/" class="link"
+                <a href="https://archive9.vthacks.com" class="link"
                   >VTHacks IX</a
                 >
               </div>
