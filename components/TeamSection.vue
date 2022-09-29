@@ -1,5 +1,15 @@
 <template>
   <section id="team-section">
+    <!-- <iframe
+      src="https://tally.so/embed/nrjZ0M?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      width="100%"
+      style="background: white"
+      height="698"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      title="VTHacks X Registration"
+    ></iframe> -->
     <div class="content has-text-centered">
       <h1 class="title is-1">Fall 2022 Team</h1>
     </div>
