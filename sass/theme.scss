@@ -7,30 +7,26 @@
   font-display: swap;
 }
 
-$bnr22: 'BNRoute22',
-font-VT232;
-$font-mono: 'Inconsolata',
-monospace;
-$font-round: 'Comfortaa',
-sans-serif;
+$bnr22: 'BNRoute22', font-VT232;
+$font-mono: 'Inconsolata', monospace;
+$font-round: 'Comfortaa', sans-serif;
 $min-width: 780px;
 
-
 /* Colors */
-$blue: #3D4E55;
-$peach: #F89B6A;
-$dark-gray: #3A3A3A;
-$light-gray: #7E7E7E;
+$blue: #3d4e55;
+$peach: #f89b6a;
+$dark-gray: #3a3a3a;
+$light-gray: #7e7e7e;
 $dark-blue: darkblue;
 
 /* Background Colors */
-$midnight: #3C4E55;
+$midnight: #3c4e55;
 // $night: rgba(47, 20, 55, 1);
-$night: #3C4E55;
+$night: #3c4e55;
 $twilight: #475255;
-$sunset: #6D615A;
+$sunset: #6d615a;
 // $day: rgba(50, 157, 216, 1);
-$day: #92705E;
+$day: #92705e;
 
 /* Text Colors */
 $text-primary: #fff;

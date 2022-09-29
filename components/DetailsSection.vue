@@ -10,9 +10,13 @@
       </p> -->
       <h1 class="contrast title is-1">VTHacks X Coming Soon!</h1>
 
-      <p class="is-size-5 countdown">
+      <p class="is-size-5 btn-content">
         Pre-register to attend VTHacks X, November 11 - 13th, 2022
-        <a href="https://forms.gle/6y99NRvbpMdakjXf6" target="_blank">here</a>
+        <button id="register-button">
+          <a href="https://tally.so#tally-open=nrjZ0M&tally-hide-title=1"
+            >Register Here</a
+          >
+        </button>
       </p>
       <!-- <p class="is-size-5">{{ statusMessage }}</p>
       <p class="is-flex centered" style="justify-content: center">
@@ -56,6 +60,11 @@ export default {
         'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks X!',
       defaultStatusMessage:
         'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks X!',
+    }
+  },
+  head() {
+    return {
+      script: [{ src: 'https://tally.so/widgets/embed.js' }],
     }
   },
   created() {
@@ -150,14 +159,23 @@ a {
 }
 
 #register-button {
-  margin-top: 0.5vh;
-  color: white;
-  background-color: $peach;
-  width: fit-content;
-  border-color: $peach;
+  margin-top: 1vh;
+  background-color: #06bcc1;
+  border-color: #06bcc1;
+  padding: 20px 30px;
   border-radius: 0.25rem;
   box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
   outline: none;
+
+  a {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+#register-button:hover {
+  background-color: adjust-hue($color: #06bcc1, $degrees: 5);
+  border-color: adjust-hue($color: #06bcc1, $degrees: 5);
 }
 
 #register-link {
@@ -170,14 +188,15 @@ a {
   color: $peach;
 }
 
-// .btn-content {
-//   // font-size: 1.5rem;
-//   display: flex;
-//   justify-content: center;
-//   justify-self: center;
-//   align-self: center;
-//   align-content: center;
-// }
+.btn-content {
+  // font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+}
 
 @media (max-width: $min-width) {
   // .title {
