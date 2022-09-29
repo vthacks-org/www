@@ -2,12 +2,13 @@
   "root": "libs/ui",
   "sourceRoot": "libs/ui/src",
   "projectType": "library",
+  "tags": [],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/ui/**/*.ts"]
+        "lintFilePatterns": ["libs/ui/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
@@ -49,6 +50,5 @@
         }
       }
     }
-  },
-  "tags": []
+  }
 }
