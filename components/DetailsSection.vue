@@ -226,8 +226,4 @@ a {
   //   color: $peach;
   // }
 }
-
-.countdown {
-  width: 620px;
-}
 </style>
