@@ -10,7 +10,9 @@
     >
       <template #brand>
         <b-navbar-item tag="div">
-          <img id="brand-logo" alt="brand logo" src="~assets/alt_logo.svg" />
+          <a href="/">
+            <img id="brand-logo" alt="brand logo" src="~assets/alt_logo.svg" />
+          </a>
         </b-navbar-item>
       </template>
 
