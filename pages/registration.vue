@@ -1,5 +1,10 @@
+---
+navigation: false
+---
+
 <template>
   <iframe
+    v-if="showPage === true"
     data-tally-src="https://tally.so/r/nrjZ0M?transparentBackground=1"
     width="100%"
     height="100%"
@@ -13,6 +18,11 @@
 <script>
 export default {
   name: 'RegistrationPage',
+  data() {
+    return {
+      showPage: false,
+    }
+  },
   head() {
     return {
       script: [
@@ -22,6 +32,16 @@ export default {
         },
       ],
     }
+  },
+  created() {
+    this.valid()
+  },
+  methods: {
+    valid() {
+      const deadline = new Date('oct 1, 2022 12:00:00').getTime()
+      const t = deadline - new Date().getTime()
+      this.showPage = t < 0
+    },
   },
 }
 </script>
