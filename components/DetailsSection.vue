@@ -16,6 +16,11 @@
           <a href="/registration">Register Here</a>
         </button>
         <span class="counter">{{ countdownTimer }}</span>
+        <button v-if="showButton === false" id="register-button">
+          <a href="/https://forms.gle/6y99NRvbpMdakjXf6" target="_blank"
+            >Pre-Registration</a
+          >
+        </button>
       </p>
       <!--<p class="is-flex centered" style="justify-content: center">
         <button
