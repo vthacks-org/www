@@ -12,14 +12,12 @@
 
       <p class="is-size-5 btn-content">
         Pre-register to attend VTHacks X, November 11 - 13th, 2022
-        <button id="register-button">
-          <a href="https://tally.so#tally-open=nrjZ0M&tally-hide-title=1"
-            >Register Here</a
-          >
+        <button v-if="showButton === true" id="register-button">
+          <a href="/registration">Register Here</a>
         </button>
+        <span class="counter">{{ countdownTimer }}</span>
       </p>
-      <!-- <p class="is-size-5">{{ statusMessage }}</p>
-      <p class="is-flex centered" style="justify-content: center">
+      <!--<p class="is-flex centered" style="justify-content: center">
         <button
           id="register-button"
           class="is-flex button is-link is-outlined"
@@ -57,42 +55,36 @@ export default {
   data() {
     return {
       statusMessage:
-        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks X!',
+        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until Registration!',
       defaultStatusMessage:
-        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until VTHacks X!',
-    }
-  },
-  head() {
-    return {
-      script: [{ src: 'https://tally.so/widgets/embed.js' }],
+        'defaultDays days, defaultHours hours, defaultMinutes minutes, defaultSeconds seconds until Registration!',
+      countdownTimer: '',
+      showButton: false,
     }
   },
   created() {
     this.updateDaysLeft()
+    this.countdown()
   },
   methods: {
     updateDaysLeft() {
       /* month is 0-11 for some reason where date is 1-31 */
-      const startHour = new Date(2022, 1, 25, 17)
-      const endDate = new Date(2022, 1, 27, 14)
+      const startHour = new Date(2022, 10, 1, 12)
+      const endDate = new Date(2022, 9, 27)
       const currentDate = new Date()
 
       /* if vthacks is happening or past: */
       if (endDate - currentDate < 0) {
-        this.statusMessage = `Thanks for coming!
-        Stay up to date by following us on social media!`
+        this.statusMessage = currentDate
         return
       } else if (endDate - currentDate > 0 && startHour - currentDate < 0) {
         this.statusMessage = 'Welcome to VTHacks X!'
         return
       }
-
       /* +1 because it the current day isn't included */
-      const daysLeft = Math.floor(
-        (startHour - currentDate) / (1000 * 60 * 60 * 24)
-      )
+      const daysLeft = Math.floor(currentDate.getDay() - startHour.getDay())
       const hoursLeft = Math.floor(
-        ((startHour - currentDate) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        currentDate.getHours() - startHour.getHours()
       )
       const minutesLeft = Math.floor(
         ((startHour - currentDate) % (1000 * 60 * 60)) / (1000 * 60)
@@ -134,9 +126,36 @@ export default {
         return
       }
       if (daysLeft === 0) {
-        this.statusMessage = 'VTHacks X starts today!'
+        // this.statusMessage = 'VTHacks X starts today!'
       }
       setTimeout(() => this.updateDaysLeft(), 1000)
+    },
+
+    countdown() {
+      const deadline = new Date('oct 1, 2022 12:00:00').getTime()
+      const t = deadline - new Date().getTime()
+
+      // milliseconds to time conversions
+      const days = Math.floor(t / (1000 * 60 * 60 * 24))
+      const hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      const minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60))
+      const seconds = Math.floor((t % (1000 * 60)) / 1000)
+
+      if (t < 0) {
+        this.showButton = true
+        this.countdownTimer = ''
+      } else {
+        // note there are spaces at the end of lines
+        this.countdownTimer = `
+      ${days} ${days === 1 ? 'day' : 'days'} 
+      ${hours} ${hours === 1 ? 'hour' : 'hours'} 
+      ${minutes} ${minutes === 1 ? 'minute' : 'minutes'} 
+      ${seconds} ${seconds === 1 ? 'second' : 'seconds'} 
+      until Registration
+      `
+      }
+
+      setTimeout(() => this.countdown(), 1000)
     },
   },
 }
@@ -196,6 +215,10 @@ a {
   justify-self: center;
   align-self: center;
   align-items: center;
+
+  .counter {
+    font-weight: 600;
+  }
 }
 
 @media (max-width: $min-width) {
