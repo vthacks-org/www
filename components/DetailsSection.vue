@@ -8,10 +8,10 @@
         <a href="https://tally.so/r/wgVNP3" target="_blank">Post Event Survey</a
         >!
       </p> -->
-      <h1 class="contrast title is-1">VTHacks X Coming Soon!</h1>
+      <h1 class="contrast title is-1">Register for VTHacks X</h1>
 
       <p class="is-size-5 btn-content">
-        Pre-register to attend VTHacks X, November 11 - 13th, 2022
+        VTHacks X, November 11 - 13th, 2022
         <button v-if="showButton === true" id="register-button">
           <a href="/registration">Register Here</a>
         </button>
