@@ -17,15 +17,21 @@
       </template>
 
       <template #end>
-        <b-navbar-item
-          v-for="section in sections"
-          :key="section.name"
-          tag="div"
-          class="page-ref"
-          @click="scrollToId(section.id)"
-        >
-          {{ section.name }}
-        </b-navbar-item>
+        <div class="level">
+          <b-navbar-item
+            v-for="section in sections"
+            :key="section.name"
+            tag="div"
+            class="page-ref"
+            @click="scrollToId(section.id)"
+          >
+            {{ section.name }}
+          </b-navbar-item>
+
+          <b-navbar-item class="regButton" tag="button">
+            Register
+          </b-navbar-item>
+        </div>
         <!-- <b-navbar-item tag="div">
           <button
             id="registerButton"
@@ -64,7 +70,11 @@ export default {
           id: 'registration-section',
         },
         {
-          name: 'About',
+          name: 'About Us',
+          id: 'about-content',
+        },
+        {
+          name: 'FAQ',
           id: 'about-content',
         },
         {
@@ -75,35 +85,32 @@ export default {
     }
   },
   beforeMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    // window.addEventListener('scroll', this.handleScroll)
   },
   beforeDestroyed() {
-    window.removeEventListener('scroll', this.handleScroll)
+    // window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
     scrollToId(id) {
       const menu = document.getElementsByClassName('navbar-menu')[0]
-      const burger = document.getElementsByClassName('navbar-burger')[0]
       const el = document.getElementById(id)
       if (el === null) {
         window.open(`/#${id}`, '_self')
       }
       el.scrollIntoView({ behavior: 'smooth' })
       if (menu.getAttribute('class').includes('is-active')) {
-        burger.setAttribute('class', 'navbar-burger burger')
-        burger.removeAttribute('aria-expanded')
         menu.setAttribute('class', 'navbar-menu')
       }
     },
     handleScroll() {
-      const currentScrollPos = window.scrollY
-      const el = document.getElementById('navbar')
-      if (this.prevScrollpos > currentScrollPos || currentScrollPos <= 0) {
-        el.style.top = '0'
-      } else {
-        el.style.top = `-${el.offsetHeight.toString()}px`
-      }
-      this.prevScrollpos = currentScrollPos
+      // const currentScrollPos = window.scrollY
+      // const el = document.getElementById('navbar')
+      // if (this.prevScrollpos > currentScrollPos || currentScrollPos <= 0) {
+      //   el.style.top = '0'
+      // } else {
+      //   el.style.top = `-${el.offsetHeight.toString()}px`
+      // }
+      // this.prevScrollpos = currentScrollPos
     },
     register() {
       // window.open('https://forms.gle/9nCe4389KENDdNYw7')
@@ -114,7 +121,6 @@ export default {
 
 <style lang="scss">
 @import '../sass/theme';
-$navcolor: rgba(0, 0, 0, 0.8);
 
 :root {
   --navHeight: 70px;
@@ -126,40 +132,31 @@ $navcolor: rgba(0, 0, 0, 0.8);
   height: calc(var(--navHeight) / 1.5);
 }
 
-#registerButton {
-  font-family: $bnr22;
-  font-size: 1rem;
+.regButton {
+  border-radius: 100px;
+  height: 40px;
+  border: none;
+  margin-left: 10px;
+  background-color: #8362d4;
 }
 
 .navbar {
-  background-color: $navcolor;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 84.34%);
   transition: top 0.3s;
   height: var(--navHeight);
   padding: 0 10em 0 5em;
 }
 
-.navbar-burger {
-  color: $text-primary;
-  cursor: pointer;
-  font-size: var(--navHeight);
-
-  &:hover {
-    color: #a4a0a0;
-  }
-}
-
 .navbar-end {
   .navbar-item {
     cursor: pointer;
-    font-family: $bnr22;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 700;
     color: $text-primary;
 
     &.page-ref {
       &:hover {
-        border-bottom: 2px solid;
-        border-bottom-style: outset;
-        border-color: $sunset;
+        text-shadow: 1px 1px 10px #8362d4;
       }
     }
   }
@@ -167,8 +164,9 @@ $navcolor: rgba(0, 0, 0, 0.8);
 
 .navbar-menu {
   &.is-active {
-    background-color: $navcolor;
-    border-radius: 5%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1%;
   }
 }
 

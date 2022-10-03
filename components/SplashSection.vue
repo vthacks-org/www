@@ -1,27 +1,24 @@
 <template>
-  <section id="splash-section" class="hero is-fullheight-with-navbar">
-    <div class="hero-body level is-flex">
-      <DetailsSection id="details" class="level-item" />
-      <div id="splash-container" class="level-item">
-        <img
-          id="splash-logo"
-          src="~assets/VTHacks-X-logo.png"
-          alt="VTHacks logo"
-        />
-        <img id="sun-image" src="~/assets/moon2.svg" alt="Sun" />
+  <section class="splash section">
+    <div class="columns">
+      <div class="column details">
+        <img class="logo" src="../static/splash/logo.svg" />
+        <div class="text">
+          <h1>10<span>th</span> Anniversary</h1>
+          <h4>Blacksburg, VA</h4>
+          <p>Virginia Tech's Biggest Annual Hackathon.</p>
+          <p>Register to attend VTHacks X, <b>November 11 - 13th, 2022</b></p>
+          <button class="shadow-none">Register</button>
+        </div>
       </div>
+      <img class="column astronaut" src="../static/splash/astronaut.svg" />
     </div>
   </section>
 </template>
 
 <script>
-import DetailsSection from '~/components/DetailsSection.vue'
-
 export default {
   name: 'SplashSection',
-  components: {
-    DetailsSection,
-  },
 }
 </script>
 
@@ -30,36 +27,85 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
-#splash-logo {
-  width: 25vw;
-}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Roboto', sans-serif;
 
-#sun-image {
-  position: fixed;
-  width: 20%;
-  z-index: -2;
-}
-
-.level-item {
-  padding: 1vw;
-}
-
-.level {
-  margin: 3vw 1.5vw 1px;
-  justify-content: center;
-}
-
-@media (max-width: $min-width) {
-  #splash-logo {
-    width: 50vw;
+  .text {
+    margin-left: 15px;
   }
 
-  #sun-image {
+  h1 {
+    font-weight: 900;
+    font-size: xx-large;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+
+    span {
+      font-size: x-large;
+    }
+  }
+
+  h4 {
+    font-weight: 900;
+    font-size: large;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: x-large;
+  }
+
+  button {
+    width: 150px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+
+  .logo {
+    max-width: 500px;
+    width: 70%;
+  }
+}
+
+.astronaut {
+  min-width: 500px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.splash {
+  width: 100%;
+  background: url('../static/splash/background.svg') #2d195e no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+  .details {
+    align-items: center;
+
+    .text {
+      text-align: center;
+    }
+  }
+
+  .astronaut {
     display: none;
   }
 
-  #details {
-    display: none;
+  .splash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

@@ -1,4 +1,4 @@
-@import "./theme.scss";
+@import './theme.scss';
 
 // colors
 $primary: $day;
@@ -13,5 +13,7 @@ $family-sans-serif: $font-round;
 $family-monospace: $font-mono;
 $text: #fff;
 
-@import "~bulma";
-@import "~buefy/src/scss/buefy";
+$hero-body-padding: 3rem;
+
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
