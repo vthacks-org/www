@@ -2,47 +2,44 @@
 @@ -1,162 +1,173 @@
 <template>
   <div>
-    <b-navbar
+    <nav
       id="navbar"
       class="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
-      <template #brand>
-        <b-navbar-item tag="div">
-          <a href="/">
-            <img id="brand-logo" alt="brand logo" src="~assets/alt_logo.svg" />
-          </a>
-        </b-navbar-item>
-      </template>
+      <div class="navbar-brand">
+        <a class="ml-0 navbar-burger burger" tag="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <img
+          class="navLogo navbar-item"
+          src="~/static/navLogo.svg"
+          alt="Lightweight UI components for Vue.js based on Bulma"
+        />
+      </div>
 
-      <template #end>
-        <div class="level">
-          <b-navbar-item
+      <div id="navbarItems" class="navbar-menu">
+        <div class="navbar-end">
+          <div
             v-for="section in sections"
             :key="section.name"
-            tag="div"
-            class="page-ref"
+            class="text navbar-item"
             @click="scrollToId(section.id)"
           >
             {{ section.name }}
-          </b-navbar-item>
-
-          <b-navbar-item class="regButton" tag="button">
-            Register
-          </b-navbar-item>
+          </div>
+          <div class="navbar-item">
+            <a class="button regButton">
+              <strong>Register</strong>
+            </a>
+          </div>
         </div>
-        <!-- <b-navbar-item tag="div">
-          <button
-            id="registerButton"
-            class="button is-primary is-outlined"
-            @click="register"
-          >
-            Register
-          </button>
-        </b-navbar-item> -->
-      </template>
-    </b-navbar>
+        <!-- <div class="navbar-end"></div> -->
+      </div>
+    </nav>
 
     <section class="main-content">
       <MLHTrustBadge />
@@ -126,70 +123,33 @@ export default {
   --navHeight: 70px;
 }
 
-#brand-logo {
-  max-height: unset;
-  width: calc(var(--navHeight) * 1.5);
-  height: calc(var(--navHeight) / 1.5);
+.regButton {
+  border: none;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 100px;
+  color: white;
+  background-color: rgba(108, 34, 227, 0.2);
 }
 
-.regButton {
-  border-radius: 100px;
-  height: 40px;
-  border: none;
-  margin-left: 10px;
-  background-color: #8362d4;
+.navLogo {
+  width: 150px;
 }
 
 .navbar {
   background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 84.34%);
   transition: top 0.3s;
   height: var(--navHeight);
-  padding: 0 10em 0 5em;
+  padding: 0 120px 0 0;
 }
 
-.navbar-end {
-  .navbar-item {
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 700;
-    color: $text-primary;
-
-    &.page-ref {
-      &:hover {
-        text-shadow: 1px 1px 10px #8362d4;
-      }
-    }
-  }
+.text {
+  font-weight: 700;
 }
 
-.navbar-menu {
-  &.is-active {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 1%;
-  }
-}
-
-@media (max-width: 1024px) {
-  :root {
-    --navHeight: 40px;
-  }
-
-  .navbar {
-    height: var(--navHeight);
-    padding: 0 20vw 0 0;
-  }
-
-  .navbar-menu {
-    float: right;
-    width: max-content;
-  }
-}
-
-@media (max-width: 450px) {
-  .navbar {
-    height: var(--navHeight);
-    padding: 0 5em 0 0;
+@media screen and (max-width: 479px) {
+  .navLogo {
+    display: none;
   }
 }
 </style>

@@ -22,7 +22,7 @@ export default {
   display: block;
   max-width: 100px;
   min-width: 60px;
-  position: absolute;
+  position: fixed;
   right: 1rem;
   top: 0;
   width: 10%;

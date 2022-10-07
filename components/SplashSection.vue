@@ -2,7 +2,7 @@
   <section class="splash section">
     <div class="columns">
       <div class="column details">
-        <img class="logo" src="../static/splash/logo.svg" />
+        <img class="logo" src="~/static/splash/logo.svg" />
         <div class="text">
           <h1>10<span>th</span> Anniversary</h1>
           <h4>Blacksburg, VA</h4>
@@ -11,7 +11,7 @@
           <button class="shadow-none">Register</button>
         </div>
       </div>
-      <img class="column astronaut" src="../static/splash/astronaut.svg" />
+      <img class="column astronaut" src="~/static/splash/astronaut.svg" />
     </div>
   </section>
 </template>
