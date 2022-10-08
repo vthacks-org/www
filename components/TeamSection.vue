@@ -184,7 +184,7 @@ export default {
 
 .title {
   color: white;
-  font-variant: small-caps;
+  text-transform: uppercase;
   font-weight: 900;
   padding-bottom: 1rem;
 }

@@ -52,7 +52,7 @@
   font-size: 3rem;
   font-weight: 900;
   text-align: center;
-  font-variant: small-caps;
+  text-transform: uppercase;
 }
 
 .column {
