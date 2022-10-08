@@ -8,6 +8,7 @@
           <h4>Blacksburg, VA</h4>
           <p>Virginia Tech's Biggest Annual Hackathon.</p>
           <p>Register to attend VTHacks X, <b>November 11 - 13th, 2022</b></p>
+          <!--TODO: Make hover animation-->
           <button class="shadow-none">Register</button>
         </div>
       </div>

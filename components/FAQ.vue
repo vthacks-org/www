@@ -91,7 +91,7 @@ export default {
     padding: 1em 0;
     color: white;
     font-size: 1.15rem;
-    font-weight: 400;
+    font-weight: 700;
     border: none;
     background: none;
     outline: none;
@@ -155,7 +155,7 @@ export default {
 
     p {
       font-size: 1rem;
-      font-weight: 300;
+      font-weight: 500;
       margin: 2em 0;
     }
   }

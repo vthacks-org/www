@@ -1,5 +1,5 @@
 <template>
-  <section id="team-section">
+  <section id="team-section" class="section">
     <!-- <iframe
       src="https://tally.so/embed/nrjZ0M?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
       width="100%"

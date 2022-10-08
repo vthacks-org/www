@@ -8,8 +8,9 @@
       role="navigation"
       aria-label="main navigation"
     >
+      <!--TODO: Make work-->
       <div class="navbar-brand">
-        <a class="ml-0 navbar-burger burger" tag="button">
+        <a class="ml-0 mt-3 navbar-burger burger" tag="button">
           <span></span>
           <span></span>
           <span></span>
