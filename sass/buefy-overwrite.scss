@@ -1,19 +1,17 @@
 @import './theme.scss';
 
 // colors
-$primary: $day;
-$link: $twilight;
-$info: $sunset;
-$black: $midnight;
-$dark: $night;
+// $primary: $day;
+// $link: $twilight;
+// $info: $sunset;
+// $black: $midnight;
+// $dark: $night;
 
 // fonts
-$title-family: $bnr22;
-$family-sans-serif: $font-round;
-$family-monospace: $font-mono;
+// $title-family: $bnr22;
+// $family-sans-serif: $font-round;
+// $family-monospace: $font-mono;
 $text: #fff;
-
-$hero-body-padding: 3rem;
 
 @import '~bulma';
 @import '~buefy/src/scss/buefy';

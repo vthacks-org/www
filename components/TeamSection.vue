@@ -168,7 +168,7 @@ export default {
 
 #team-section {
   padding-top: 3vw;
-  background: #19112a;
+  background: $background;
   flex-direction: column;
   align-items: center;
 }
@@ -182,44 +182,42 @@ export default {
   column-gap: 2rem;
 }
 
+.title {
+  color: white;
+  font-variant: small-caps;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
 .team-member {
-  background-color: $peach;
+  background: hsla(259, 65%, 31%, 0.3);
   width: 300px;
   justify-self: center;
   padding: 1rem 0.5rem;
   border-radius: 8px;
-  border-color: $peach;
   border-width: 1px;
-  border-style: solid;
-  color: $dark-blue;
+  color: white;
   font-size: 17px;
-  font-family: $font-mono;
+  box-shadow: 1px 1px 1px black;
   // border: 1px solid red;
-}
 
-.team-member > img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 1px $dark-blue solid;
-}
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
 
-.team-member > p {
-  margin-bottom: 0;
-  color: $dark-blue;
-}
+  p {
+    margin-bottom: 0;
+    color: white;
 
-.team-member > p > strong {
-  color: $dark-blue;
+    strong {
+      color: white;
+    }
+  }
 }
 
 .committee-tag {
   width: '';
-}
-
-h1 {
-  // display: none; // Remove to show sponsor text
-  color: $peach;
-  font-family: $bnr22;
 }
 </style>

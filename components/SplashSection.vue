@@ -27,6 +27,12 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
+.lighting {
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+
 .details {
   display: flex;
   flex-direction: column;
@@ -86,7 +92,7 @@ export default {
 
 .splash {
   width: 100%;
-  background: url('../static/splash/background.svg') #2d195e no-repeat;
+  background: url('../static/splash/background.svg') $background no-repeat;
 }
 
 @media screen and (max-width: 479px) {

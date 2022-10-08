@@ -3,12 +3,8 @@
     <div id="gradient" class="zBox"></div>
     <span id="nuxt-content" class="zBox">
       <SplashSection />
-      <DetailsSection id="details" />
-      <div id="blankSpace1"></div>
-      <!-- <RegistrationSection /> -->
-      <div id="registration-section" />
-      <div id="blankSpace2"></div>
       <AboutSection />
+      <FAQ />
       <TeamSection />
       <SponsorsSection />
       <FooterSection />
@@ -17,8 +13,8 @@
 </template>
 
 <script>
+import FAQ from '../components/FAQ.vue'
 import SplashSection from '~/components/SplashSection.vue'
-import DetailsSection from '~/components/DetailsSection.vue'
 // import RegistrationSection from '~/components/RegistrationSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
@@ -29,12 +25,12 @@ export default {
   name: 'HomePage',
   components: {
     SplashSection,
-    DetailsSection,
     // RegistrationSection,
     AboutSection,
     SponsorsSection,
     TeamSection,
     FooterSection,
+    FAQ,
   },
   data() {
     return {
