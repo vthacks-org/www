@@ -10,7 +10,16 @@
           <p>Register to attend VTHacks X, <b>November 11 - 13th, 2022</b></p>
           <!--TODO: Make hover animation-->
           <a href="/registration">
-            <button class="shadow-none">Register</button>
+            <div class="shadow-none reg-button">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <span>Register</span>
+            </div>
+            <!-- <button class="shadow-none reg-hover">Register</button> -->
           </a>
         </div>
       </div>
@@ -35,6 +44,11 @@ export default {
   top: -100px;
   left: 0;
 }
+
+$line-size: 4px;
+$distance: 4px;
+$delay1: 0.5s;
+$delay2: 0.6s;
 
 .details {
   display: flex;
@@ -68,7 +82,7 @@ export default {
     font-size: x-large;
   }
 
-  button {
+  .reg-button {
     width: 150px;
     background: transparent;
     border: 1px solid white;
@@ -79,6 +93,92 @@ export default {
     margin-top: 30px;
     text-transform: uppercase;
     border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 2s;
+    text-align: center;
+
+    .line {
+      background: rgb(255, 255, 255);
+      position: absolute;
+      transition: none;
+      transform: scale(0);
+      opacity: 1;
+    }
+
+    .line:nth-child(1) {
+      transform-origin: 100% 100%;
+      height: $line-size;
+      width: 20%;
+      bottom: 0;
+    }
+
+    .line:nth-child(4) {
+      transform-origin: 0 100%;
+      height: $line-size;
+      width: 20%;
+      top: $distance;
+      right: 0;
+    }
+
+    .line:nth-child(2) {
+      transform-origin: 100% 100%;
+      height: 100%;
+      width: $line-size;
+      bottom: 0;
+      left: $distance;
+    }
+
+    .line:nth-child(5) {
+      transform-origin: 100% 0;
+      height: 100%;
+      width: $line-size;
+      bottom: 0;
+      right: $distance;
+    }
+
+    .line:nth-child(3) {
+      transform-origin: 0 100%;
+      height: $line-size;
+      width: 100%;
+      top: $distance;
+      left: $distance;
+    }
+
+    .line:nth-child(6) {
+      transform-origin: 100% 0;
+      height: $line-size;
+      width: 100%;
+      bottom: 0;
+      right: $distance;
+    }
+
+    &:hover > .line {
+      transform: scale(1);
+      opacity: 0;
+      transition: all 3s;
+    }
+
+    &:hover > .line:nth-child(2),
+    &:hover > .line:nth-child(5) {
+      transition-delay: $delay1;
+    }
+
+    &:hover > .line:nth-child(3),
+    &:hover > .line:nth-child(6) {
+      transition-delay: $delay2;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.03);
+      opacity: 0.9;
+    }
+
+    &:active {
+      border-color: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.363);
+      opacity: 1;
+    }
   }
 
   .logo {

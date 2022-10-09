@@ -32,7 +32,7 @@
           <div
             v-for="section in sections"
             :key="section.name"
-            class="text navbar-item"
+            class="text navbar-item lighten-hover"
             @click="scrollToId(section.id)"
           >
             {{ section.name }}
@@ -131,8 +131,18 @@ export default {
   padding-top: 1px;
   padding-bottom: 1px;
   border-radius: 100px;
-  color: white;
+  color: white !important;
   background-color: rgba(108, 34, 227, 0.2);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: rgba(108, 34, 227, 0.517);
+    color: white !important;
+  }
+
+  &:active {
+    background-color: rgba(124, 59, 228, 0.751);
+  }
 }
 
 .navLogo {
@@ -145,6 +155,14 @@ export default {
   transition: top 0.3s;
   height: var(--navHeight);
   padding: 0 120px 0 0;
+}
+
+.lighten-hover {
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: rgb(254, 204, 254, 0.9);
+  }
 }
 
 .text {
