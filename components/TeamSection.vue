@@ -158,6 +158,13 @@ export default {
           committees: 'Sponsorship, Logistics',
           pic: 'raaghav_mtt.jpg',
         },
+        {
+          name: 'Luke DiGiovanna',
+          gradYear: 2025,
+          major: 'Computer Science',
+          committees: 'Web Dev',
+          pic: 'luke_mtt.jpg',
+        },
       ],
     }
   },
