@@ -1,5 +1,5 @@
 <template>
-  <section class="splash section">
+  <section id="splash-section" class="splash section">
     <div class="columns">
       <div class="column details">
         <img class="logo" src="~/static/splash/logo.svg" />
@@ -9,7 +9,9 @@
           <p>Virginia Tech's Biggest Annual Hackathon.</p>
           <p>Register to attend VTHacks X, <b>November 11 - 13th, 2022</b></p>
           <!--TODO: Make hover animation-->
-          <button class="shadow-none">Register</button>
+          <a href="/registration">
+            <button class="shadow-none">Register</button>
+          </a>
         </div>
       </div>
       <img class="column astronaut" src="~/static/splash/astronaut.svg" />

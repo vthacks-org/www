@@ -1,5 +1,5 @@
 <template>
-  <section class="section is-medium">
+  <section id="faq-section" class="section is-medium">
     <h1 class="title">Frequently Asked Questions</h1>
     <div class="accordion">
       <div

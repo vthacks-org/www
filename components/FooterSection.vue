@@ -22,9 +22,8 @@
           ><span class="icon is-medium"><i class="fab fa-twitter"></i></span
         ></a>
       </div>
-      <!-- TODO: Add Discord Permalink -->
       <div class="column">
-        <a href="mailto:hacker@vthacks.com" class="link">
+        <a href="https://discord.gg/gHUfdHE7e8" class="link">
           <span class="icon is-medium"> <i class="fab fa-discord"> </i></span>
         </a>
       </div>
@@ -96,6 +95,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: -10px;
 }
 
 .footerTitle {

@@ -8,18 +8,23 @@
       role="navigation"
       aria-label="main navigation"
     >
-      <!--TODO: Make work-->
       <div class="navbar-brand">
-        <a class="ml-0 mt-3 navbar-burger burger" tag="button">
+        <a
+          class="ml-0 mt-3 navbar-burger burger"
+          tag="button"
+          aria-expanded="false"
+        >
           <span></span>
           <span></span>
           <span></span>
         </a>
-        <img
-          class="navLogo navbar-item"
-          src="~/static/navLogo.svg"
-          alt="Lightweight UI components for Vue.js based on Bulma"
-        />
+        <a href="/#splash-section">
+          <img
+            class="navLogo navbar-item"
+            src="~/static/navLogo.svg"
+            alt="VT Hacks"
+          />
+        </a>
       </div>
 
       <div id="navbarItems" class="navbar-menu">
@@ -33,7 +38,7 @@
             {{ section.name }}
           </div>
           <div class="navbar-item">
-            <a class="button regButton">
+            <a class="button regButton" href="/registration">
               <strong>Register</strong>
             </a>
           </div>
@@ -65,16 +70,13 @@ export default {
         },
         {
           name: 'Getting Started',
-          id: 'registration-section',
-        },
-        {
-          name: 'About Us',
-          id: 'about-content',
+          id: 'about-section',
         },
         {
           name: 'FAQ',
-          id: 'about-content',
+          id: 'faq-section',
         },
+        { name: 'Our Team', id: 'team-section' },
         {
           name: 'Sponsors',
           id: 'sponsors-section',
@@ -135,6 +137,7 @@ export default {
 
 .navLogo {
   width: 150px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -145,6 +148,7 @@ export default {
 }
 
 .text {
+  cursor: pointer;
   font-weight: 700;
 }
 
