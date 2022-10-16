@@ -11,9 +11,9 @@
     >
       <div class="navbar-brand">
         <a
+          ref="hamburger"
           class="ml-0 mt-3 navbar-burger burger"
           tag="button"
-          ref="hamburger"
           aria-expanded="false"
           @click="hamburger()"
         >
@@ -21,7 +21,7 @@
           <span></span>
           <span></span>
         </a>
-        <a href="/#splash-section" ref="hamburger2">
+        <a ref="hamburger2" href="/#splash-section">
           <img
             class="navLogo navbar-item"
             src="~/static/navLogo.svg"
@@ -214,24 +214,16 @@ export default {
   }
   @keyframes open {
     0% {
+      font-size: 0;
       width: 0;
     }
 
     100% {
+      font-size: 1.2rem;
       width: 250px;
       display: block;
     }
   }
-
-  // @keyframes close {
-  //   100% {
-  //     width: 100px;
-  //   }
-
-  //   0% {
-  //     width: 0;
-  //   }
-  // }
 }
 
 .regButton {
