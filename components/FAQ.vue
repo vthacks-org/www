@@ -171,7 +171,7 @@ export default {
 
     + .accordion-content {
       opacity: 1;
-      max-height: 9em;
+      max-height: 200px;
       transition: all 200ms linear;
       will-change: opacity, max-height;
     }

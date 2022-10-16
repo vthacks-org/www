@@ -10,15 +10,6 @@
           <p>Register to attend VTHacks X, <b>November 11 - 13th, 2022</b></p>
           <!--TODO: Make hover animation-->
           <a href="/registration">
-            <!-- <div class="shadow-none reg-button">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-              <span>Register</span>
-            </div> -->
             <button class="shadow-none reg-button">
               <div class="line"></div>
               <div class="line"></div>

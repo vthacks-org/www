@@ -72,7 +72,7 @@
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 960px) {
   .mobile {
     display: flex;
     flex-direction: column;
