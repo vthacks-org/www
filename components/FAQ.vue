@@ -149,7 +149,7 @@ export default {
   .accordion-content {
     opacity: 0;
     max-height: 0;
-    overflow: hidden;
+    overflow: auto;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
 

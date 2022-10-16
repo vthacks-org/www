@@ -2,6 +2,7 @@
 @@ -1,162 +1,173 @@
 <template>
   <div>
+    <!-- Following Bulma Structure -->
     <nav
       id="navbar"
       class="navbar is-fixed-top"
@@ -12,19 +13,40 @@
         <a
           class="ml-0 mt-3 navbar-burger burger"
           tag="button"
+          ref="hamburger"
           aria-expanded="false"
+          @click="hamburger()"
         >
           <span></span>
           <span></span>
           <span></span>
         </a>
-        <a href="/#splash-section">
+        <a href="/#splash-section" ref="hamburger2">
           <img
             class="navLogo navbar-item"
             src="~/static/navLogo.svg"
             alt="VT Hacks"
           />
         </a>
+      </div>
+
+      <div ref="modal" class="hiddenModal">
+        <div class="content">
+          <div class="contentTitle">
+            <span @click="closeMenu()"><i class="fa fa-times"></i></span>
+            <img class="navLogo" src="~/static/navLogo.svg" alt="VT Hacks" />
+          </div>
+          <div>
+            <li
+              v-for="section in sections"
+              :key="section.name"
+              class="text navbar-item lighten-hover"
+              @click="scrollToId(section.id)"
+            >
+              {{ section.name }}
+            </li>
+          </div>
+        </div>
       </div>
 
       <div id="navbarItems" class="navbar-menu">
@@ -101,6 +123,7 @@ export default {
       if (menu.getAttribute('class').includes('is-active')) {
         menu.setAttribute('class', 'navbar-menu')
       }
+      this.closeMenu()
     },
     handleScroll() {
       // const currentScrollPos = window.scrollY
@@ -115,6 +138,19 @@ export default {
     register() {
       // window.open('https://forms.gle/9nCe4389KENDdNYw7')
     },
+    hamburger() {
+      this.$refs.modal.style.display = 'block'
+      this.$refs.hamburger.style.display = 'none'
+      this.$refs.hamburger2.style.display = 'none'
+      // this.$refs.hamburger.children.forEach((element) => {
+      //   console.log(element)
+      // })
+    },
+    closeMenu() {
+      this.$refs.modal.style.display = 'none'
+      this.$refs.hamburger.style.display = 'block'
+      this.$refs.hamburger2.style.display = 'block'
+    },
   },
 }
 </script>
@@ -124,6 +160,78 @@ export default {
 
 :root {
   --navHeight: 70px;
+}
+
+.hiddenModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  // animation: close 1s;
+
+  .content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    height: 100%;
+    border: 1px solid #888;
+    width: 250px;
+    font-size: 1.2rem;
+    animation: open 1s;
+
+    li {
+      animation: open 1s;
+      text-decoration: none;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .contentTitle {
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .close {
+      color: #aaa;
+      float: left;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  @keyframes open {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 250px;
+      display: block;
+    }
+  }
+
+  // @keyframes close {
+  //   100% {
+  //     width: 100px;
+  //   }
+
+  //   0% {
+  //     width: 0;
+  //   }
+  // }
 }
 
 .regButton {
@@ -168,11 +276,5 @@ export default {
 .text {
   cursor: pointer;
   font-weight: 700;
-}
-
-@media screen and (max-width: 479px) {
-  .navLogo {
-    display: none;
-  }
 }
 </style>

@@ -10,7 +10,7 @@
           <p>Register to attend VTHacks X, <b>November 11 - 13th, 2022</b></p>
           <!--TODO: Make hover animation-->
           <a href="/registration">
-            <div class="shadow-none reg-button">
+            <!-- <div class="shadow-none reg-button">
               <div class="line"></div>
               <div class="line"></div>
               <div class="line"></div>
@@ -18,8 +18,16 @@
               <div class="line"></div>
               <div class="line"></div>
               <span>Register</span>
-            </div>
-            <!-- <button class="shadow-none reg-hover">Register</button> -->
+            </div> -->
+            <button class="shadow-none reg-button">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              Register
+            </button>
           </a>
         </div>
       </div>
@@ -83,9 +91,9 @@ $delay2: 0.6s;
   }
 
   .reg-button {
-    width: 150px;
-    background: transparent;
+    background: $background;
     border: 1px solid white;
+    width: 150px;
     color: white;
     padding: 15px;
     font-size: 1rem;
@@ -93,7 +101,7 @@ $delay2: 0.6s;
     margin-top: 30px;
     text-transform: uppercase;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     cursor: pointer;
     transition: all 2s;
     text-align: center;
@@ -170,7 +178,7 @@ $delay2: 0.6s;
     }
 
     &:hover {
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255, 255, 255, 0.1);
       opacity: 0.9;
     }
 
