@@ -190,6 +190,22 @@ $delay2: 0.6s;
   min-width: 500px;
   max-width: 700px;
   width: 100%;
+
+  @keyframes rock {
+    0% {
+      transform: rotate(3deg);
+    }
+
+    50% {
+      transform: rotate(-3deg);
+    }
+
+    100% {
+      transform: rotate(3deg);
+    }
+  }
+
+  animation: rock 2.5s linear infinite;
 }
 
 .splash {
