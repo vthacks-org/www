@@ -1,11 +1,11 @@
 <template>
   <footer id="footer-section" class="footer">
     <h1 class="footerTitle">Stay Updated</h1>
-    <input
+    <!-- <input
       class="input is-medium is-rounded"
       placeholder="Your Email..."
       type="email"
-    />
+    /> -->
     <div class="columns is-mobile">
       <div class="column">
         <a href="https://www.facebook.com/vthacks" class="link"
