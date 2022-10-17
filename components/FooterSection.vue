@@ -1,3 +1,4 @@
+<!-- <html> -->
 <template>
   <footer id="footer-section" class="level">
     <div class="level-left">

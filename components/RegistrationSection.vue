@@ -1,3 +1,4 @@
+<!-- <html> -->
 <template>
   <div id="registration-section">
     <div class="extra-space"></div>

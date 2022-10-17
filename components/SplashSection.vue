@@ -1,3 +1,4 @@
+<!-- <html> -->
 <template>
   <section id="splash-section" class="hero is-fullheight-with-navbar">
     <div class="hero-body level is-flex">

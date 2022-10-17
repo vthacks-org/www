@@ -1,3 +1,4 @@
+<!-- <html> -->
 <template>
   <section id="about-section">
     <div v-lazy-load class="trees" alt="Forest">
