@@ -3,18 +3,18 @@
     <h1 class="title">Get Ready For VT Hacks X</h1>
     <div class="columns desktop level">
       <div class="column">
-        <img src="~/static/about/discordInfo.svg" />
+        <img src="~/static/about/discordInfo.svg" class="hidden" />
         <h1>Follow the Socials</h1>
-        <img src="~/static/about/devPostInfo.svg" />
+        <img src="~/static/about/devPostInfo.svg" class="hidden" />
       </div>
       <div class="column">
-        <h1>
+        <h1 class="hidden">
           Join the
           <a target="_blank" href="https://discord.gg/Bk5t9Pr2">Discord</a>
           Server
         </h1>
-        <img class="twitter" src="~/static/about/twitterInfo.svg" />
-        <h1>Add Your Team on DevPost</h1>
+        <img class="twitter hidden" src="~/static/about/twitterInfo.svg" />
+        <h1 class="hidden">Add Your Team on DevPost</h1>
       </div>
     </div>
 
@@ -32,7 +32,26 @@
   </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  beforeMount: () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show')
+        } else {
+          entry.target.classList.remove('show')
+        }
+      })
+    })
+
+    const hiddenElements = document.querySelectorAll('.hidden')
+    hiddenElements.forEach((el) => {
+      observer.observe(el)
+    })
+  },
+}
+</script>
 
 <!-- Add "scoped" attribute to limit SCSS to this component only -->
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
@@ -45,6 +64,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1.25s;
+}
+
+.show {
+  filter: blur(0);
+  opacity: 1;
 }
 
 .title {
