@@ -2,7 +2,7 @@
 <template>
   <section id="about-section" class="section is-medium">
     <h1 class="title">Get Ready For VT Hacks X</h1>
-    <div class="columns desktop level">
+    <div ref="test" class="columns desktop level">
       <div class="column">
         <img src="~/static/about/discordInfo.svg" class="hidden" />
         <h1 class="hidden">Follow the Socials</h1>
@@ -23,7 +23,8 @@
       <img src="~/static/about/discordInfo.svg" />
       <h1>
         Join the
-        <a target="_blank" href="https://discord.gg/Bk5t9Pr2">Discord</a> Server
+        <a target="_blank" href="https://discord.gg/Bk5t9Pr2">Discord</a>
+        Server
       </h1>
       <img class="twitter" src="~/static/about/twitterInfo.svg" />
       <h1>Follow the Socials</h1>
@@ -45,7 +46,6 @@ export default {
         }
       })
     })
-
     const hiddenElements = document.querySelectorAll('.hidden')
     hiddenElements.forEach((el) => {
       observer.observe(el)
@@ -67,16 +67,16 @@ export default {
   align-items: center;
 }
 
-.hidden {
-  opacity: 0;
-  filter: blur(2px);
-  transition: all 2s;
-}
+// .hidden {
+//   opacity: 0;
+//   filter: blur(2px);
+//   transition: all 2s;
+// }
 
-.show {
-  filter: blur(0);
-  opacity: 1;
-}
+// .show {
+//   filter: blur(0);
+//   opacity: 1;
+// }
 
 .title {
   color: white;
