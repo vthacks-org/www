@@ -4,7 +4,7 @@
     <div class="columns desktop level">
       <div class="column">
         <img src="~/static/about/discordInfo.svg" class="hidden" />
-        <h1>Follow the Socials</h1>
+        <h1 class="hidden">Follow the Socials</h1>
         <img src="~/static/about/devPostInfo.svg" class="hidden" />
       </div>
       <div class="column">
@@ -68,8 +68,8 @@ export default {
 
 .hidden {
   opacity: 0;
-  filter: blur(5px);
-  transition: all 1.25s;
+  filter: blur(2px);
+  transition: all 2s;
 }
 
 .show {

@@ -1,5 +1,5 @@
 <template>
-  <section id="splash-section" class="splash section">
+  <section id="splash-section" class="splash section is-medium">
     <div class="columns">
       <div class="column details">
         <img class="logo" src="~/static/splash/logo.svg" />

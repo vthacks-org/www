@@ -21,7 +21,11 @@
       >
         <div class="tile is-child is-flex flex-center">
           <figure class="image">
-            <img class="sponsor-img" :src="sponsor.src" :alt="sponsor.alt" />
+            <img
+              :class="[sponsor.big ? 'sponsorBig' : 'sponsorImg']"
+              :src="sponsor.src"
+              :alt="sponsor.alt"
+            />
           </figure>
           <!-- <a href="" target="_blank">
             </a> -->
@@ -41,7 +45,11 @@
       >
         <div class="tile is-child is-flex flex-center">
           <figure class="image">
-            <img class="sponsor-img" :src="sponsor.src" :alt="sponsor.alt" />
+            <img
+              :class="[sponsor.big ? 'sponsorBig' : 'sponsorImg']"
+              :src="sponsor.src"
+              :alt="sponsor.alt"
+            />
           </figure>
         </div>
       </div>
@@ -89,7 +97,14 @@ export default {
     platSponsors: {
       type: Array,
       default() {
-        return []
+        return [
+          {
+            id: 0,
+            src: '/sponsors/capgeminiLogo.png',
+            alt: 'Capgemini',
+            big: true,
+          },
+        ]
       },
     },
     sponsors: {
@@ -99,15 +114,23 @@ export default {
           [
             {
               id: 0,
-              src: '/sponsors/mantech-logo.png',
-              alt: 'ManTech',
+              src: '/sponsors/Peraton-Full-Color.png',
+              alt: 'Peraton Logo',
+              big: true,
             },
           ],
           [
             {
-              id: 0,
-              src: '/sponsors/Peraton-Full-Color.png',
-              alt: 'Peraton Logo',
+              id: 1,
+              src: '/sponsors/JBHunt.svg',
+              alt: 'JBHunt Logo',
+              big: false,
+            },
+            {
+              id: 2,
+              src: '/sponsors/eyLogo.png',
+              alt: 'EY Logo',
+              big: false,
             },
             // {
             //   id: 1,
@@ -123,24 +146,22 @@ export default {
           [
             {
               id: 0,
+              src: '/sponsors/ciphertechLogo.png',
+              alt: 'Ciphertech Logo',
+              big: true,
+            },
+            {
+              id: 1,
+              src: '/sponsors/standoutLogo.png',
+              alt: 'Standout Logo',
+              big: false,
+            },
+            {
+              id: 2,
               src: '/sponsors/mlh-white.png',
               alt: 'Major League Hacking Logo',
+              big: false,
             },
-            // {
-            //   id: 1,
-            //   src: '/sponsors/GoogleCloud.png',
-            //   alt: 'Google Cloud Logo',
-            // },
-            // {
-            //   id: 2,
-            //   src: '/sponsors/ultrapress.png',
-            //   alt: 'UltraPress Logo',
-            // },
-            // {
-            //   id: 3,
-            //   src: '/sponsors/StickerMule.svg',
-            //   alt: 'stickermule Logo',
-            // },
           ],
         ]
       },
@@ -189,7 +210,7 @@ export default {
   align-self: center;
 }
 
-.sponsor-img {
+.sponsorImg {
   // display: none; // Remove to show sponsor images
   height: auto;
   max-width: 300px;
@@ -198,6 +219,11 @@ export default {
     max-width: 600px;
     min-width: 400px;
   }
+}
+
+.sponsorBig {
+  max-width: 600px;
+  min-width: 400px;
 }
 
 .flex-center {

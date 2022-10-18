@@ -32,14 +32,39 @@ export default {
     return {
       questions: [
         {
-          title: 'Why is the moon sometimes out during the day?',
+          title: 'What is VTHacks? What is a hackathon?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti',
+            'VTHacks is an annual event where participants from around the globe come together and spend 36 hours learning and creating a project they are passionate about with their friends',
         },
         {
-          title: 'What is the meaning of life?',
+          title: 'Who can attend?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti',
+            'All current undergraduate, graduate, and high school students at least 18 years of age may attend VTHacks. No coding experience necessary! Non-STEM majors, first time hackers, and beginner coders are welcome and encouraged to join us!',
+        },
+        {
+          title: 'Do I need a team?',
+          answer:
+            "If you are planning to compete for a prize, you may be in a team of 1-4 people. If you don't have one yet, no worries! We will have a team formation workshop before hacking begins.",
+        },
+        {
+          title: 'Is there any cost?',
+          answer:
+            'VTHacks is free for all participants! This includes free food throughout the weekend, T-shirts, swag, and more!',
+        },
+        {
+          title: 'Do I need to know how to program?',
+          answer:
+            'No! We have workshops running throughout the weekend to help you learn everything you need to know.',
+        },
+        {
+          title: "Isn't hacking illegal?",
+          answer:
+            'In the context of a hackathon, "hacking" is to build a project over the length of the event. We are excited to welcome you as a hacker at VTHacks!',
+        },
+        {
+          title: 'Any other questions',
+          answer:
+            'Contact us at hacker@vthacks.com if you have any questions, concerns, or feedback',
         },
       ],
     }
