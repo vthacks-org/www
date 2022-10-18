@@ -1,3 +1,4 @@
+<!-- <html> -->
 <template>
   <section id="details-section" class="section">
     <div id="detail-content" class="is-flex has-text-centered">
@@ -152,10 +153,10 @@ export default {
       } else {
         // note there are spaces at the end of lines
         this.countdownTimer = `
-      ${days} ${days === 1 ? 'day' : 'days'} 
-      ${hours} ${hours === 1 ? 'hour' : 'hours'} 
-      ${minutes} ${minutes === 1 ? 'minute' : 'minutes'} 
-      ${seconds} ${seconds === 1 ? 'second' : 'seconds'} 
+      ${days} ${days === 1 ? 'day' : 'days'}
+      ${hours} ${hours === 1 ? 'hour' : 'hours'}
+      ${minutes} ${minutes === 1 ? 'minute' : 'minutes'}
+      ${seconds} ${seconds === 1 ? 'second' : 'seconds'}
       until Registration
       `
       }

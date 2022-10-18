@@ -1,3 +1,4 @@
+<!-- <html> -->
 <template>
   <footer id="footer-section" class="footer">
     <h1 class="footerTitle">Stay Updated</h1>

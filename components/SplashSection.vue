@@ -1,3 +1,4 @@
+<!-- <html> -->
 <template>
   <section id="splash-section" class="splash section is-medium">
     <div class="columns">

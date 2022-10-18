@@ -1,3 +1,4 @@
+<!-- <html> -->
 <template>
   <section id="sponsors-section">
     <div class="content has-text-centered">

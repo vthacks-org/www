@@ -1,3 +1,4 @@
+<!-- <html> -->
 <template>
   <section id="about-section" class="section is-medium">
     <h1 class="title">Get Ready For VT Hacks X</h1>
