@@ -87,7 +87,6 @@
         <a href="" target="_blank"> </a>
       </div>
     </div> -->
-    <img class="bridge" src="~/static/footer/bridge.svg" />
   </section>
 </template>
 
@@ -189,12 +188,9 @@ export default {
 #sponsors-section {
   z-index: -1;
   padding-top: 3vw;
-  background: $background;
   width: 100%;
-}
-
-.bridge {
-  margin-top: 10px;
+  overflow: hidden;
+  // background-color: $background;
 }
 
 #sponsor-container {

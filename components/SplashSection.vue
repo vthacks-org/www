@@ -211,10 +211,11 @@ $delay2: 0.6s;
 
 .splash {
   width: 100%;
-  background: url('../static/splash/background.svg') $background no-repeat;
+  background: url('../static/splash/background.svg') no-repeat;
+  // overflow: hidden;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .details {
     align-items: center;
 

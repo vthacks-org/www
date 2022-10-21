@@ -255,6 +255,7 @@ export default {
   transition: top 0.3s;
   height: var(--navHeight);
   padding: 0 120px 0 0;
+  overflow: hidden;
 }
 
 .lighten-hover {

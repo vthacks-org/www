@@ -2,11 +2,17 @@
   <div id="container">
     <div id="gradient" class="zBox"></div>
     <span id="nuxt-content" class="zBox">
-      <SplashSection />
+      <SplashSection class="forward" />
       <AboutSection />
       <FAQ />
-      <TeamSection />
-      <SponsorsSection />
+      <div class="forward">
+        <TeamSection />
+      </div>
+      <img class="spiral" src="~/static/spiral.svg" />
+      <div id="sponsors" class="forward">
+        <SponsorsSection />
+      </div>
+      <img id="bridge" class="bridge" src="~/static/footer/bridge.svg" />
       <FooterSection />
     </span>
   </div>
@@ -48,6 +54,23 @@ export default {
       ],
     }
   },
+  mounted() {
+    this.getHeight()
+    window.addEventListener('resize', () => {
+      this.getHeight()
+    })
+    window.addEventListener('scroll', () => {
+      this.getHeight()
+    })
+  },
+  methods: {
+    // gets the height of the gradient background
+    getHeight() {
+      const content = document.getElementById('nuxt-content')
+      const gradient = document.getElementById('gradient')
+      gradient.style.height = `${content.clientHeight}px`
+    },
+  },
 }
 </script>
 
@@ -55,6 +78,21 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../sass/theme';
+
+.spiral {
+  position: absolute;
+  bottom: 125vh;
+  z-index: 1;
+}
+
+.bridge {
+  background-color: adjust-hue($background, 20deg);
+}
+
+.forward {
+  position: relative;
+  z-index: 4;
+}
 
 #container {
   position: relative;
@@ -68,15 +106,9 @@ export default {
 }
 
 #gradient {
-  background: linear-gradient(
-    0deg,
-    // $night 10%,
-    // $twilight 42%,
-    #8a6e5e 50%,
-    #3c4e55 90%
-  );
-  z-index: 1;
-  height: fit-content;
+  background: linear-gradient($background, adjust-hue($background, 20deg));
+  z-index: -1;
+  position: absolute;
 }
 
 #svgMountain {

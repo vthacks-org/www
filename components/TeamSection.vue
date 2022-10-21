@@ -176,9 +176,10 @@ export default {
 
 #team-section {
   padding-top: 3vw;
-  background: $background;
+  background-position: bottom;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 #team-content {

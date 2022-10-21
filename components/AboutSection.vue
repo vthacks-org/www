@@ -4,32 +4,36 @@
     <h1 class="title">Get Ready For VT Hacks X</h1>
     <div ref="test" class="columns desktop level">
       <div class="column">
-        <img src="~/static/about/discordInfo.svg" class="hidden" />
-        <h1 class="hidden">Follow the Socials</h1>
-        <img src="~/static/about/devPostInfo.svg" class="hidden" />
-      </div>
-      <div class="column">
+        <div class="imgContainer">
+          <img class="img" src="~/static/about/vthackregisterpage.png" />
+        </div>
         <h1 class="hidden">
           Join the
           <a target="_blank" href="https://discord.gg/Bk5t9Pr2">Discord</a>
           Server
         </h1>
+        <img src="~/static/about/devPostInfo.svg" class="hidden" />
+      </div>
+      <div class="column">
+        <h1><a href="/registration">Register</a> for VTHacks</h1>
         <img class="twitter hidden" src="~/static/about/twitterInfo.svg" />
-        <h1 class="hidden">Add Your Team on DevPost</h1>
+        <h1 class="hidden">Follow the Socials</h1>
       </div>
     </div>
 
     <div class="mobile">
-      <img src="~/static/about/discordInfo.svg" />
+      <h1><a href="/registration">Register</a> for VTHacks</h1>
+      <div class="imgContainer">
+        <img class="img" src="~/static/about/vthackregisterpage.png" />
+      </div>
       <h1>
         Join the
-        <a target="_blank" href="https://discord.gg/Bk5t9Pr2">Discord</a>
+        <a target="_blank" href="https://discord.gg/5TAJxqtApf">Discord</a>
         Server
+        <img src="~/static/about/discordInfo.svg" />
       </h1>
-      <img class="twitter" src="~/static/about/twitterInfo.svg" />
       <h1>Follow the Socials</h1>
-      <img src="~/static/about/devPostInfo.svg" />
-      <h1>Add Your Team on DevPost</h1>
+      <img class="twitter" src="~/static/about/twitterInfo.svg" />
     </div>
   </section>
 </template>
@@ -61,10 +65,11 @@ export default {
 
 .section {
   // background-color: #2d195e;
-  background: url('~/static/about/backgroundLighting.svg') $background no-repeat;
+  background: url('~/static/about/backgroundLighting.svg') no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 // .hidden {
@@ -86,6 +91,12 @@ export default {
   text-transform: uppercase;
 }
 
+.columns {
+  img {
+    max-width: 500px;
+  }
+}
+
 .column {
   h1 {
     font-size: 3rem;
@@ -96,6 +107,17 @@ export default {
     a {
       color: #9b88cb;
     }
+  }
+}
+
+.imgContainer {
+  display: grid;
+  place-content: center;
+  padding: 10px;
+
+  .img {
+    border-radius: 50px;
+    box-shadow: 0 16px 16px rgb(0, 0, 0, 0.05);
   }
 }
 

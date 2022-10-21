@@ -92,10 +92,10 @@ export default {
 @import '../sass/theme';
 
 .section {
-  background: $background;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .title {

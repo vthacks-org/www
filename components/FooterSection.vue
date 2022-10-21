@@ -87,7 +87,6 @@ export default {
 #footer-section {
   width: 100%;
   min-height: 70px;
-  // background: #19112a;
   background: #271e52;
 }
 
@@ -97,6 +96,7 @@ export default {
   align-items: center;
   justify-content: space-evenly;
   margin-top: -10px;
+  overflow: hidden;
 }
 
 .footerTitle {
