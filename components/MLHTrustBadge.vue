@@ -6,9 +6,8 @@
     target="_blank"
   >
     <img
-      src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg"
+      src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-black.svg"
       alt="Major League Hacking 2023 Hackathon Season"
-      style="width: 100%"
     />
   </a>
 </template>
@@ -24,7 +23,7 @@ export default {
   display: block;
   max-width: 100px;
   min-width: 60px;
-  position: absolute;
+  position: fixed;
   right: 1rem;
   top: 0;
   width: 10%;

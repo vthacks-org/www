@@ -2,42 +2,41 @@
   <div id="container">
     <div id="gradient" class="zBox"></div>
     <span id="nuxt-content" class="zBox">
-      <MountSVG id="svgMountain" class="zBox" />
-      <SplashSection />
-      <DetailsSection id="details" />
-      <div id="blankSpace1"></div>
-      <RegistrationSection />
-      <div id="registration-section" />
-      <div id="blankSpace2"></div>
+      <SplashSection class="forward" />
       <AboutSection />
-      <TeamSection />
-      <SponsorsSection />
+      <FAQ />
+      <div class="forward">
+        <TeamSection />
+      </div>
+      <img class="spiral" src="~/static/spiral.svg" />
+      <div id="sponsors" class="forward">
+        <SponsorsSection />
+      </div>
+      <img id="bridge" class="bridge" src="~/static/footer/bridge.svg" />
       <FooterSection />
     </span>
   </div>
 </template>
 
 <script>
+import FAQ from '../components/FAQ.vue'
 import SplashSection from '~/components/SplashSection.vue'
-import DetailsSection from '~/components/DetailsSection.vue'
-import RegistrationSection from '~/components/RegistrationSection.vue'
+// import RegistrationSection from '~/components/RegistrationSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SponsorsSection from '~/components/SponsorsSection.vue'
 import FooterSection from '~/components/FooterSection.vue'
-import MountSVG from '~/assets/mount.svg?inline'
 import TeamSection from '~/components/TeamSection.vue'
 
 export default {
   name: 'HomePage',
   components: {
     SplashSection,
-    DetailsSection,
-    RegistrationSection,
+    // RegistrationSection,
     AboutSection,
     SponsorsSection,
     TeamSection,
     FooterSection,
-    MountSVG,
+    FAQ,
   },
   data() {
     return {
@@ -55,69 +54,22 @@ export default {
       ],
     }
   },
-  beforeMount() {
-    window.addEventListener('scroll', this.handleScroll)
-  },
   mounted() {
-    this.calculateSVGHeight()
+    this.getHeight()
+    window.addEventListener('resize', () => {
+      this.getHeight()
+    })
+    window.addEventListener('scroll', () => {
+      this.getHeight()
+    })
   },
   methods: {
-    calculateSVGHeight() {
+    // gets the height of the gradient background
+    getHeight() {
       const content = document.getElementById('nuxt-content')
-      const mount = document.getElementById('svgMountain')
-      const registration = document.getElementById('registration-section')
-      const sponsor = document.getElementById('sponsors-section')
-
-      // set trees
-      let height =
-        content.offsetHeight -
-        document.getElementById('footer-section').offsetHeight -
-        600
-      const dist = (height - registration.offsetTop) / 4
-      document.getElementById('blankSpace1').style.paddingTop = `${dist}px`
-      document.getElementById('blankSpace2').style.paddingTop = `${dist}px`
-
-      // set mountain
-      height =
-        content.offsetHeight - sponsor.offsetHeight - content.offsetHeight * 0.2
-      mount.setAttribute('height', height)
-      if (content.offsetWidth < 1920) {
-        mount.setAttribute('viewBox', `0 0 ${content.offsetWidth} ${height}`)
-      } else {
-        mount.setAttribute('viewBox', `0 0 1920 ${height}`)
-      }
-
-      // set gradient
-      document.getElementById(
-        'gradient'
-      ).style.height = `${content.offsetHeight}px`
+      const gradient = document.getElementById('gradient')
+      gradient.style.height = `${content.clientHeight}px`
     },
-    handleScroll() {
-      const content = document.getElementById('nuxt-content')
-      const mBack = document.getElementById('MountainBack')
-      const scrollPercent = (window.scrollY / content.offsetHeight) * 3
-      let backColor
-      if (scrollPercent < 1) {
-        backColor = this.LerpRGB(this.day, this.sunsetI, scrollPercent)
-      } else if (scrollPercent < 2) {
-        backColor = this.LerpRGB(this.sunsetI, this.sunsetF, scrollPercent - 1)
-      } else {
-        backColor = this.LerpRGB(this.sunsetF, this.night, scrollPercent - 2)
-      }
-
-      mBack.style.fill = backColor
-    },
-    LerpRGB(a, b, t) {
-      return `rgba(
-      ${Math.floor(a[0] + (b[0] - a[0]) * t)},
-      ${Math.floor(a[1] + (b[1] - a[1]) * t)},
-      ${Math.floor(a[2] + (b[2] - a[2]) * t)},
-      ${Math.floor(a[3] + (b[3] - a[3]) * t)}
-      )`
-    },
-  },
-  beforeDestroyed() {
-    window.removeEventListener('scroll', this.handleScroll)
   },
 }
 </script>
@@ -126,6 +78,21 @@ export default {
 <!-- SCSS is a CSS preprocessor. Check out http://sass-lang.com/ -->
 <style lang="scss" scoped>
 @import '../sass/theme';
+
+.spiral {
+  position: absolute;
+  bottom: 125vh;
+  z-index: 1;
+}
+
+.bridge {
+  background-color: adjust-hue($background, 20deg);
+}
+
+.forward {
+  position: relative;
+  z-index: 4;
+}
 
 #container {
   position: relative;
@@ -139,15 +106,9 @@ export default {
 }
 
 #gradient {
-  background: linear-gradient(
-    0deg,
-    // $night 10%,
-    // $twilight 42%,
-    #8a6e5e 50%,
-    #3c4e55 90%
-  );
-  z-index: 1;
-  height: fit-content;
+  background: linear-gradient($background, adjust-hue($background, 20deg));
+  z-index: -1;
+  position: absolute;
 }
 
 #svgMountain {

@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 @font-face {
   font-family: 'BNRoute22';
@@ -13,9 +14,9 @@ $font-round: 'Comfortaa', sans-serif;
 $min-width: 780px;
 
 /* Colors */
-$blue: #3d4e55;
+$blue: #2daadc;
 $peach: #f89b6a;
-$dark-gray: #3a3a3a;
+$dark-gray: #cc2828;
 $light-gray: #7e7e7e;
 $dark-blue: darkblue;
 
@@ -27,6 +28,8 @@ $twilight: #475255;
 $sunset: #6d615a;
 // $day: rgba(50, 157, 216, 1);
 $day: #92705e;
+
+$background: #1e1c4b;
 
 /* Text Colors */
 $text-primary: #fff;

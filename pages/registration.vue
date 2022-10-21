@@ -54,7 +54,6 @@ iframe {
   bottom: 0;
   left: 0;
   border: 0;
-  margin-top: 70px;
   z-index: 3;
 }
 </style>

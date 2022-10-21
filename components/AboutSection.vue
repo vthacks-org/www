@@ -1,130 +1,59 @@
 <!-- <html> -->
 <template>
-  <section id="about-section">
-    <div v-lazy-load class="trees" alt="Forest">
-      <div><div></div></div>
-    </div>
-    <div id="about-content" class="content has-text-centered">
-      <h1 class="title is-1">F.A.Q.</h1>
-      <p id="faq-click-text">Click on the campers to learn more!</p>
-      <div class="section">
-        <b-modal v-model="active.isOpen">
-          <template #default="props">
-            <div id="modal-card">
-              <div class="card">
-                <header class="card-header">
-                  <p id="faq-modal-header" class="card-header-title">
-                    {{ general[active.index].title }}
-                  </p>
-                  <button
-                    class="card-header-icon"
-                    aria-label="Close FAQ modal"
-                    @click="props.close"
-                  >
-                    <span class="icon">
-                      <i
-                        class="fas fa-times close-faq-modal-button"
-                        aria-hidden="true"
-                      />
-                    </span>
-                  </button>
-                </header>
-                <div class="card-content">
-                  <div class="content" v-html="general[active.index].text" />
-                </div>
-              </div>
-            </div>
-          </template>
-        </b-modal>
-
-        <div class="campers-container">
-          <span
-            v-for="(collapse, index) of general"
-            :key="index"
-            class="camper-wrapper"
-            @click="openModal(index)"
-          >
-            <span v-if="!collapse.disabled" class="chat-bubble">
-              {{ general[index].title }}
-            </span>
-            <img class="camper" :src="collapse.img" alt="Click for FAQ" />
-          </span>
+  <section id="about-section" class="section is-medium">
+    <h1 class="title">Get Ready For VT Hacks X</h1>
+    <div ref="test" class="columns desktop level">
+      <div class="column">
+        <div class="imgContainer">
+          <img class="img" src="~/static/about/vthackregisterpage.png" />
         </div>
+        <h1 class="hidden">
+          Join the
+          <a target="_blank" href="https://discord.gg/Bk5t9Pr2">Discord</a>
+          Server
+        </h1>
+        <img src="~/static/about/devPostInfo.svg" class="hidden" />
       </div>
-      <div v-lazy-load class="trees" alt="Forest">
-        <div><div id="treesBottom"></div></div>
+      <div class="column">
+        <h1><a href="/registration">Register</a> for VTHacks</h1>
+        <img class="twitter hidden" src="~/static/about/twitterInfo.svg" />
+        <h1 class="hidden">Follow the Socials</h1>
       </div>
+    </div>
+
+    <div class="mobile">
+      <h1><a href="/registration">Register</a> for VTHacks</h1>
+      <div class="imgContainer">
+        <img class="img" src="~/static/about/vthackregisterpage.png" />
+      </div>
+      <h1>
+        Join the
+        <a target="_blank" href="https://discord.gg/5TAJxqtApf">Discord</a>
+        Server
+        <img src="~/static/about/discordInfo.svg" />
+      </h1>
+      <h1>Follow the Socials</h1>
+      <img class="twitter" src="~/static/about/twitterInfo.svg" />
     </div>
   </section>
 </template>
 
 <script>
-// import wallet from '~/assets/wallet.svg'
-// import climbinggear from '~/assets/climbinggear.svg'
-// import bottle from '~/assets/bottle.svg'
-// import trailmix from '~/assets/trailmix.png'
-// import rope from '~/assets/rope.png'
-
 export default {
-  name: 'AboutSection',
-  data() {
-    return {
-      // isOpen: false,
-      active: {
-        isOpen: false,
-        index: 0,
-      },
-      general: [
-        {
-          img: '/faq/Camper1.svg',
-          title: `What is VTHacks?`,
-          text: `It's an annual event where participants from around the globe come together and spend 36 hours working on teams of up to four people to create a project they are passionate about.`,
-        },
-        {
-          img: '/faq/Camper2.svg',
-          title: `Will the event be in-person or virtual?`,
-          text: `This year, we are planning to have a completely in-person event! However, This will be subject to change based on university Covid-19 guidelines.`,
-        },
-        {
-          img: '/faq/Camper3.svg',
-          title: `How much does it cost?`,
-          text: `The event is completely free for all registered participants! Additionally, we will be awarding prizes and swag to eligible participants on a first come first served basis pending international shipping constraints.`,
-        },
-        {
-          img: '/faq/Camper4.svg',
-          title: `How big can each team be?`,
-          text: `We like to keep teams at 4 or less participants so that the competition is fair between teams.`,
-        },
-        {
-          img: '/faq/Fire.svg',
-          title: '',
-          text: '',
-          disabled: true,
-        },
-        {
-          img: '/faq/Camper5.svg',
-          title: `Where is the schedule?`,
-          text: `You can find our schedule on our <a target="_blank" href="https://live.vthacks.com">livesite</a>, along with other great bits of information.`,
-        },
-        {
-          img: '/faq/Campers6-7.svg',
-          title: `Do I need to know how to program?`,
-          text: `No! We will have workshops designed show you the ropes on how to program. Additionally we promote hacks that are purely ideological. If you can sell us a product or an idea, do that instead.`,
-        },
-        {
-          img: '/faq/Camper1.svg',
-          title: `Any more questions?`,
-          text: `Send us an email at <a href="mailto:hacker@vthacks.com">hacker@vthacks.com</a> and we'll get back to you!`,
-        },
-      ],
-    }
-  },
-  methods: {
-    openModal(index) {
-      if (this.general[index].disabled) return
-
-      this.active = { isOpen: true, index }
-    },
+  beforeMount: () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show')
+        } else {
+          entry.target.classList.remove('show')
+        }
+      })
+    })
+    const hiddenElements = document.querySelectorAll('.hidden')
+    hiddenElements.forEach((el) => {
+      observer.observe(el)
+    })
   },
 }
 </script>
@@ -134,216 +63,88 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
-#about-content {
-  background-color: #19112a;
-}
-
-.card-header-title {
-  font-size: 1.2em;
-  font-weight: initial;
-}
-
-.card-img {
-  height: auto;
-  width: 64px;
-}
-
-.content {
-  color: $midnight;
-}
-
-.dropdown {
-  margin: 3vw;
-  width: 25%;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-#modal-card {
-  background-color: white;
-  border-radius: 10px;
-}
-
-.campers-container {
-  display: grid;
-  max-width: 1000px;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: 4px;
-  column-gap: 8px;
-}
-
-.camper-wrapper {
-  display: inline-block;
-  position: relative;
-}
-
-.chat-bubble {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
-  width: 10rem;
-  bottom: 90%;
-  left: 20%;
-  background-color: white;
-  color: black;
-  text-align: center;
-  border-radius: 50%;
-  padding: 1rem 1rem;
-  margin-left: -60px;
-
-  @media (min-width: 650px) {
-    left: 5%;
-  }
-
-  @media (min-width: 780px) {
-    left: 10%;
-  }
-
-  @media (min-width: 920px) {
-    left: 15%;
-  }
-
-  @media (min-width: 970px) {
-    left: 7%;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 75%;
-    right: 5%;
-    border-width: 15px;
-    clip-path: polygon(50% 0%, 20% 35%, 85% 60%);
-    border-style: solid;
-    border-color: white;
-  }
-}
-
-.camper-wrapper:hover .chat-bubble {
-  visibility: visible;
-}
-
-.camper-wrapper:hover {
-  cursor: pointer;
-}
-
-.camper {
-  height: 150px;
-  width: auto;
-}
-
-.is-flex {
-  margin: 3vw;
-}
-
-.subtitle {
-  color: $day;
-}
-
 .section {
-  justify-content: space-evenly;
+  // background-color: #2d195e;
+  background: url('~/static/about/backgroundLighting.svg') no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
+
+// .hidden {
+//   opacity: 0;
+//   filter: blur(2px);
+//   transition: all 2s;
+// }
+
+// .show {
+//   filter: blur(0);
+//   opacity: 1;
+// }
 
 .title {
-  color: $peach;
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.trees {
-  height: 600px;
-  width: 100%;
-  background: url('~assets/mount_trees.svg'),
-    linear-gradient(0deg, rgba(25, 17, 42, 1) 0%, rgba(255, 255, 255, 0) 85%);
-  background-repeat: repeat-x;
+.columns {
+  img {
+    max-width: 500px;
+  }
+}
 
-  div {
-    height: 650px;
-    background-image: url('~assets/mount_trees.svg');
-    background-repeat: repeat-x;
-    background-position: -33% 0%;
+.column {
+  h1 {
+    font-size: 3rem;
+    padding: 100px;
+    font-weight: 700;
+    text-align: center;
 
-    div {
-      height: 680px;
-      background: url('~assets/mount_trees.svg'),
-        linear-gradient(
-          0deg,
-          rgba(25, 17, 42, 1) 0%,
-          rgba(25, 17, 42, 1) 30%,
-          rgba(255, 255, 255, 0) 60%
-        );
-      background-repeat: repeat-x;
-      background-position: -66% 0%;
+    a {
+      color: #9b88cb;
     }
   }
 }
 
-#treesBottom {
-  background: url('~assets/mount_trees.svg'),
-    linear-gradient(
-      0deg,
-      rgba(34, 13, 51, 1) 0%,
-      rgba(34, 13, 51, 1) 13%,
-      rgba(28, 21, 87, 0) 25%
-    );
+.imgContainer {
+  display: grid;
+  place-content: center;
+  padding: 10px;
+
+  .img {
+    border-radius: 50px;
+    box-shadow: 0 16px 16px rgb(0, 0, 0, 0.05);
+  }
 }
 
-@media (max-width: $min-width) {
-  .dropdown {
-    width: 93%;
-    justify-content: center;
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .mobile {
+    display: flex;
     flex-direction: column;
-  }
+    align-items: center;
 
-  .section {
-    flex-direction: column;
-  }
+    h1 {
+      font-size: 2rem;
+      padding: 10px;
+      font-weight: 700;
+      text-align: center;
+    }
 
-  .trees {
-    height: 300px;
-    width: 100%;
-    background: url('~assets/mount_trees.svg'),
-      linear-gradient(
-        0deg,
-        rgba(25, 17, 42, 1) 0%,
-        rgba(26, 17, 42, 1) 30%,
-        rgba(28, 21, 87, 0) 60%
-      );
-    background-repeat: repeat-x;
-
-    div {
-      height: 320px;
-      background-repeat: repeat-x;
-      background-position: -33% 0%;
-
-      div {
-        height: 380px;
-        background-repeat: repeat-x;
-        background-position: -300px 0%;
-      }
+    a {
+      color: #9b88cb;
     }
   }
 
-  #treesBottom {
-    background: url('~assets/mount_trees.svg'),
-      linear-gradient(
-        0deg,
-        rgba(34, 13, 51, 1) 0%,
-        rgba(34, 13, 51, 1) 13%,
-        rgba(28, 21, 87, 0) 25%
-      );
+  .desktop {
+    display: none;
   }
-}
-
-.close-faq-modal-button {
-  color: gray;
-}
-
-#faq-modal-header {
-  margin: auto;
-}
-
-#faq-click-text {
-  color: #fff;
-  font-size: 20px;
 }
 </style>

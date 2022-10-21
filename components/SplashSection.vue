@@ -1,28 +1,36 @@
 <!-- <html> -->
 <template>
-  <section id="splash-section" class="hero is-fullheight-with-navbar">
-    <div class="hero-body level is-flex">
-      <DetailsSection id="details" class="level-item" />
-      <div id="splash-container" class="level-item">
-        <img
-          id="splash-logo"
-          src="~assets/VTHacks-X-logo.png"
-          alt="VTHacks logo"
-        />
-        <img id="sun-image" src="~/assets/moon2.svg" alt="Sun" />
+  <section id="splash-section" class="splash section is-medium">
+    <div class="columns">
+      <div class="column details">
+        <img class="logo" src="~/static/splash/logo.svg" />
+        <div class="text">
+          <h1>10<span>th</span> Anniversary</h1>
+          <h4>Blacksburg, VA</h4>
+          <p>Virginia Tech's Biggest Annual Hackathon.</p>
+          <p>Register to attend VTHacks X, <b>November 11 - 13th, 2022</b></p>
+          <!--TODO: Make hover animation-->
+          <a href="/registration">
+            <button class="shadow-none reg-button">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              Register
+            </button>
+          </a>
+        </div>
       </div>
+      <img class="column astronaut" src="~/static/splash/astronaut.svg" />
     </div>
   </section>
 </template>
 
 <script>
-import DetailsSection from '~/components/DetailsSection.vue'
-
 export default {
   name: 'SplashSection',
-  components: {
-    DetailsSection,
-  },
 }
 </script>
 
@@ -31,36 +39,199 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/theme';
 
-#splash-logo {
-  width: 25vw;
+.lighting {
+  position: absolute;
+  top: -100px;
+  left: 0;
 }
 
-#sun-image {
-  position: fixed;
-  width: 20%;
-  z-index: -2;
-}
+$line-size: 4px;
+$distance: 4px;
+$delay1: 0.5s;
+$delay2: 0.6s;
 
-.level-item {
-  padding: 1vw;
-}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Roboto', sans-serif;
 
-.level {
-  margin: 3vw 1.5vw 1px;
-  justify-content: center;
-}
-
-@media (max-width: $min-width) {
-  #splash-logo {
-    width: 50vw;
+  .text {
+    margin-left: 15px;
   }
 
-  #sun-image {
+  h1 {
+    font-weight: 900;
+    font-size: xx-large;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+
+    span {
+      font-size: x-large;
+    }
+  }
+
+  h4 {
+    font-weight: 900;
+    font-size: large;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: x-large;
+  }
+
+  .reg-button {
+    background: $background;
+    border: 1px solid white;
+    width: 150px;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 2s;
+    text-align: center;
+
+    .line {
+      background: rgb(255, 255, 255);
+      position: absolute;
+      transition: none;
+      transform: scale(0);
+      opacity: 1;
+    }
+
+    .line:nth-child(1) {
+      transform-origin: 100% 100%;
+      height: $line-size;
+      width: 20%;
+      bottom: 0;
+    }
+
+    .line:nth-child(4) {
+      transform-origin: 0 100%;
+      height: $line-size;
+      width: 20%;
+      top: $distance;
+      right: 0;
+    }
+
+    .line:nth-child(2) {
+      transform-origin: 100% 100%;
+      height: 100%;
+      width: $line-size;
+      bottom: 0;
+      left: $distance;
+    }
+
+    .line:nth-child(5) {
+      transform-origin: 100% 0;
+      height: 100%;
+      width: $line-size;
+      bottom: 0;
+      right: $distance;
+    }
+
+    .line:nth-child(3) {
+      transform-origin: 0 100%;
+      height: $line-size;
+      width: 100%;
+      top: $distance;
+      left: $distance;
+    }
+
+    .line:nth-child(6) {
+      transform-origin: 100% 0;
+      height: $line-size;
+      width: 100%;
+      bottom: 0;
+      right: $distance;
+    }
+
+    &:hover > .line {
+      transform: scale(1);
+      opacity: 0;
+      transition: all 3s;
+    }
+
+    &:hover > .line:nth-child(2),
+    &:hover > .line:nth-child(5) {
+      transition-delay: $delay1;
+    }
+
+    &:hover > .line:nth-child(3),
+    &:hover > .line:nth-child(6) {
+      transition-delay: $delay2;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      opacity: 0.9;
+    }
+
+    &:active {
+      border-color: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.363);
+      opacity: 1;
+    }
+  }
+
+  .logo {
+    max-width: 500px;
+    width: 70%;
+  }
+}
+
+.astronaut {
+  min-width: 500px;
+  max-width: 700px;
+  width: 100%;
+
+  @keyframes rock {
+    0% {
+      transform: rotate(3deg);
+    }
+
+    50% {
+      transform: rotate(-3deg);
+    }
+
+    100% {
+      transform: rotate(3deg);
+    }
+  }
+
+  animation: rock 2.5s linear infinite;
+}
+
+.splash {
+  width: 100%;
+  background: url('../static/splash/background.svg') no-repeat;
+  // overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .details {
+    align-items: center;
+
+    .text {
+      text-align: center;
+    }
+  }
+
+  .astronaut {
     display: none;
   }
 
-  #details {
-    display: none;
+  .splash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>
