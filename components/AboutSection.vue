@@ -9,14 +9,14 @@
         </div>
         <h1 class="hidden">
           Join the
-          <a target="_blank" href="https://discord.gg/Bk5t9Pr2">Discord</a>
+          <a target="_blank" href="https://discord.gg/5TAJxqtApf">Discord</a>
           Server
         </h1>
-        <img src="~/static/about/devPostInfo.svg" class="hidden" />
+        <img src="~/static/about/twitterInfo.svg" class="twitter" />
       </div>
       <div class="column">
         <h1><a href="/registration">Register</a> for VTHacks</h1>
-        <img class="twitter hidden" src="~/static/about/twitterInfo.svg" />
+        <img class="hidden" src="~/static/about/discordInfo.svg" />
         <h1 class="hidden">Follow the Socials</h1>
       </div>
     </div>
