@@ -166,6 +166,13 @@ export default {
           committees: 'Web Dev',
           pic: 'luke_mtt.jpg',
         },
+        {
+          name: 'Veda Hegde',
+          gradYear: 2024,
+          major: 'Computer Science, Mathematics',
+          committees: 'Sponsorship, Logistics',
+          pic: 'veda_mtt.jpg',
+        },
       ],
     }
   },
