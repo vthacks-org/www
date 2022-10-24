@@ -58,7 +58,7 @@ export default {
           name: 'Anika Thatavarthy',
           gradYear: 2024,
           major: 'Computer Science',
-          committees: 'Sponsorship lead',
+          committees: 'Sponsorship Lead',
           pic: 'anika_mtt.jpg',
         },
         {
