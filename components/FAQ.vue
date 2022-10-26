@@ -32,7 +32,7 @@ export default {
     return {
       questions: [
         {
-          title: 'What is VTHacks? What is a hackathon?',
+          title: 'What is VTHacks?',
           answer:
             'VTHacks is an annual event where participants from around the globe come together and spend 36 hours learning and creating a project they are passionate about with their friends',
         },
@@ -40,6 +40,11 @@ export default {
           title: 'Who can attend?',
           answer:
             'All current undergraduate, graduate, and high school students at least 18 years of age may attend VTHacks. No coding experience necessary! Non-STEM majors, first time hackers, and beginner coders are welcome and encouraged to join us!',
+        },
+        {
+          title: 'Is VTHacks in-person?',
+          answer:
+            'We are excited for VTHacks to be back fully in-person for our 10th anniversary! It will take place it on VT Campus and hackers must be in attendance to participate.',
         },
         {
           title: 'Do I need a team?',
