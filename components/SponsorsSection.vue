@@ -22,11 +22,13 @@
       >
         <div class="tile is-child is-flex flex-center">
           <figure class="image">
-            <img
-              :class="[sponsor.big ? 'sponsorBig' : 'sponsorImg']"
-              :src="sponsor.src"
-              :alt="sponsor.alt"
-            />
+            <a :href="sponsor.href" :target="'_blank'">
+              <img
+                :class="[sponsor.big ? 'sponsorBig' : 'sponsorImg']"
+                :src="sponsor.src"
+                :alt="sponsor.alt"
+              />
+            </a>
           </figure>
           <!-- <a href="" target="_blank">
             </a> -->
@@ -46,11 +48,13 @@
       >
         <div class="tile is-child is-flex flex-center">
           <figure class="image">
-            <img
-              :class="[sponsor.big ? 'sponsorBig' : 'sponsorImg']"
-              :src="sponsor.src"
-              :alt="sponsor.alt"
-            />
+            <a :href="sponsor.href" :target="'_blank'">
+              <img
+                :class="[sponsor.big ? 'sponsorBig' : 'sponsorImg']"
+                :src="sponsor.src"
+                :alt="sponsor.alt"
+              />
+            </a>
           </figure>
         </div>
       </div>
@@ -103,6 +107,7 @@ export default {
             src: '/sponsors/capgeminiLogo.png',
             alt: 'Capgemini',
             big: true,
+            href: 'https://www.capgemini.com/us-en/',
           },
         ]
       },
@@ -117,6 +122,7 @@ export default {
               src: '/sponsors/Peraton-Full-Color.png',
               alt: 'Peraton Logo',
               big: true,
+              href: 'https://www.peraton.com/',
             },
           ],
           [
@@ -125,12 +131,14 @@ export default {
               src: '/sponsors/JBHunt.svg',
               alt: 'JBHunt Logo',
               big: false,
+              href: 'https://www.jbhunt.com/',
             },
             {
               id: 2,
               src: '/sponsors/eyLogo.png',
               alt: 'EY Logo',
               big: false,
+              href: 'https://www.ey.com/en_us',
             },
             // {
             //   id: 1,
@@ -149,18 +157,21 @@ export default {
               src: '/sponsors/ciphertechLogo.png',
               alt: 'Ciphertech Logo',
               big: true,
+              href: 'https://www.ciphertechsolutions.com/',
             },
             {
               id: 1,
               src: '/sponsors/standoutLogo.png',
               alt: 'Standout Logo',
               big: false,
+              href: 'http://hackp.ac/mlh-StandOutStickers-hackathons',
             },
             {
               id: 2,
               src: '/sponsors/mlh-white.png',
               alt: 'Major League Hacking Logo',
               big: false,
+              href: 'https://mlh.io/',
             },
           ],
         ]
