@@ -5,12 +5,12 @@
       <SplashSection class="forward" />
       <AboutSection />
       <FAQ />
-      <div class="forward">
-        <TeamSection />
-      </div>
       <img class="spiral" src="~/static/spiral.svg" />
-      <div id="sponsors" class="forward">
+      <div class="forward">
         <SponsorsSection />
+      </div>
+      <div id="sponsors" class="forward">
+        <TeamSection />
       </div>
       <img id="bridge" class="bridge" src="~/static/footer/bridge.svg" />
       <FooterSection />
@@ -81,7 +81,7 @@ export default {
 
 .spiral {
   position: absolute;
-  bottom: 125vh;
+  bottom: 350vh;
   z-index: 1;
 }
 
