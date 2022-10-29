@@ -125,6 +125,7 @@ export default {
     border: none;
     background: none;
     outline: none;
+    overflow: hidden;
 
     &:hover,
     &:focus {
@@ -179,7 +180,7 @@ export default {
   .accordion-content {
     opacity: 0;
     max-height: 0;
-    overflow: auto;
+    overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
 
