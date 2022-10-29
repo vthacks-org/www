@@ -20,7 +20,7 @@
         :key="sponsor.alt"
         class="flex-container centered"
       >
-        <div class="tile is-child is-flex flex-center">
+        <div class="is-child is-flex flex-center">
           <figure class="image">
             <a :href="sponsor.href" :target="'_blank'">
               <img
@@ -30,8 +30,6 @@
               />
             </a>
           </figure>
-          <!-- <a href="" target="_blank">
-            </a> -->
         </div>
       </div>
     </div>
@@ -121,7 +119,7 @@ export default {
               id: 0,
               src: '/sponsors/Peraton-Full-Color.png',
               alt: 'Peraton Logo',
-              big: true,
+              big: false,
               href: 'https://www.peraton.com/',
             },
           ],
@@ -135,7 +133,7 @@ export default {
             },
             {
               id: 2,
-              src: '/sponsors/eyLogo.png',
+              src: '/sponsors/EY.png',
               alt: 'EY Logo',
               big: false,
               href: 'https://www.ey.com/en_us',
@@ -156,7 +154,7 @@ export default {
               id: 0,
               src: '/sponsors/ciphertechLogo.png',
               alt: 'Ciphertech Logo',
-              big: true,
+              big: false,
               href: 'https://www.ciphertechsolutions.com/',
             },
             {
@@ -221,16 +219,12 @@ export default {
 .sponsorImg {
   // display: none; // Remove to show sponsor images
   height: auto;
-  max-width: 300px;
-
-  &.big {
-    max-width: 600px;
-    min-width: 400px;
-  }
+  max-width: 400px;
+  min-width: 200px;
 }
 
 .sponsorBig {
-  max-width: 600px;
+  max-width: 700px;
   min-width: 400px;
 }
 
@@ -241,5 +235,14 @@ export default {
 
 .is-child {
   padding: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .sponsorImg {
+    // display: none; // Remove to show sponsor images
+    height: auto;
+    max-width: 300px;
+    min-width: 200px;
+  }
 }
 </style>
