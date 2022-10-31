@@ -42,6 +42,11 @@ export default {
             'All current undergraduate, graduate, and high school students at least 18 years of age may attend VTHacks. No coding experience necessary! Non-STEM majors, first time hackers, and beginner coders are welcome and encouraged to join us!',
         },
         {
+          title: 'What is the schedule for VTHacks?',
+          answer:
+            'Check-in will begin at 5 PM on Friday November 11th, 2022 with opening ceremonies starting at 7 PM. Closing ceremonies will end at 2:30 PM on Sunday November 13th, 2022. Be on the lookout as we release a more detailed schedule soon!',
+        },
+        {
           title: 'Is VTHacks in-person?',
           answer:
             'We are excited for VTHacks to be back fully in-person for our 10th anniversary! It will take place it on VT Campus and hackers must be in attendance to participate.',
