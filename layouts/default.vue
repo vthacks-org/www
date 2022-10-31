@@ -98,11 +98,11 @@ export default {
           name: 'FAQ',
           id: 'faq-section',
         },
-        { name: 'Our Team', id: 'team-section' },
         {
           name: 'Sponsors',
           id: 'sponsors-section',
         },
+        { name: 'Our Team', id: 'team-section' },
       ],
     }
   },

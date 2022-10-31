@@ -172,6 +172,15 @@ export default {
               href: 'https://mlh.io/',
             },
           ],
+          [
+            {
+              id: 0,
+              src: '/sponsors/vt-computer-science.png',
+              alt: 'VT Computer Science',
+              big: true,
+              href: 'https://cs.vt.edu/',
+            },
+          ],
         ]
       },
     },
