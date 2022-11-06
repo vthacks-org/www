@@ -175,9 +175,9 @@ export default {
           [
             {
               id: 0,
-              src: '/sponsors/vt-computer-science.png',
+              src: '/sponsors/csSource.png',
               alt: 'VT Computer Science',
-              big: true,
+              big: false,
               href: 'https://cs.vt.edu/',
             },
           ],
