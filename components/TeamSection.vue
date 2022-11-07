@@ -170,7 +170,7 @@ export default {
           name: 'Guido Visioni',
           gradYear: 2025,
           major: 'Computer Science',
-          committees: 'Web Dev',
+          committees: 'UX',
           pic: 'guido_mtt.jpg',
         },
         {
