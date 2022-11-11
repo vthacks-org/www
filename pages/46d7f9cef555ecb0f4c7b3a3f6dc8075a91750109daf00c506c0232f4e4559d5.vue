@@ -15,7 +15,19 @@ navigation: false
         message in this image?
       </h3>
       <hr />
-      <img src="~/static/spaceship.jpeg" />
+      <a
+        href="https://drive.google.com/uc?export=download&id=1K61D-Peq8_cPMYcnQ3RbNU7HZnQ237Kf"
+        download
+      >
+        <img src="~/static/spaceship.jpeg" />
+      </a>
+
+      <a
+        href="https://drive.google.com/uc?export=download&id=1K61D-Peq8_cPMYcnQ3RbNU7HZnQ237Kf"
+        download
+      >
+        <h3>Download Image</h3>
+      </a>
     </div>
   </div>
 </template>
