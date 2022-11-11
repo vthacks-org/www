@@ -60,8 +60,8 @@
             {{ section.name }}
           </div>
           <div class="navbar-item">
-            <a class="button regButton" href="/registration">
-              <strong>Register</strong>
+            <a class="button regButton" href="https://live.vthacks.com/">
+              <strong>Live Site</strong>
             </a>
           </div>
         </div>
