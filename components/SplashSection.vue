@@ -10,7 +10,7 @@
           <p>Virginia Tech's Biggest Annual Hackathon.</p>
           <p>Register to attend VTHacks X, <b>November 11 - 13th, 2022</b></p>
           <!--TODO: Make hover animation-->
-          <a href="/registration">
+          <a href="https://live.vthacks.com/">
             <button class="shadow-none reg-button">
               <div class="line"></div>
               <div class="line"></div>
@@ -18,7 +18,7 @@
               <div class="line"></div>
               <div class="line"></div>
               <div class="line"></div>
-              Register
+              Live Schedule
             </button>
           </a>
         </div>
@@ -83,11 +83,11 @@ $delay2: 0.6s;
   }
 
   .reg-button {
-    background: $background;
+    background: adjust-hue($color: $background, $degrees: -40);
     border: 1px solid white;
-    width: 150px;
+    width: 200px;
     color: white;
-    padding: 15px;
+    padding: 30px;
     font-size: 1rem;
     font-weight: 700;
     margin-top: 30px;
