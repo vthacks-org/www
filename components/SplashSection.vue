@@ -8,9 +8,9 @@
           <h1>10<span>th</span> Anniversary</h1>
           <h4>Blacksburg, VA</h4>
           <p>Virginia Tech's Biggest Annual Hackathon.</p>
-          <p>Register to attend VTHacks X, <b>November 11 - 13th, 2022</b></p>
+          <p>Thank You For Attending VTHacks! See You Next Year</p>
           <!--TODO: Make hover animation-->
-          <a href="https://live.vthacks.com/">
+          <a href="https://tally.so/r/mDqd05">
             <button class="shadow-none reg-button">
               <div class="line"></div>
               <div class="line"></div>
@@ -18,7 +18,7 @@
               <div class="line"></div>
               <div class="line"></div>
               <div class="line"></div>
-              Live Schedule
+              Post Hack Survey
             </button>
           </a>
         </div>
