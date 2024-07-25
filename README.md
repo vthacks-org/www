@@ -6,7 +6,7 @@
 <h1 align="center">
   VTHacks 2022 Website
 </h1>
-
+ 
 ## Local Setup
 
 ``` bash
